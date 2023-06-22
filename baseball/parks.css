@@ -1,0 +1,418 @@
+
+
+body {
+	font-family: 'Urbanist', sans-serif;
+	font-size: 18px;
+	background-color: #e2d3a6;
+	border: 0px solid red;
+	margin: 0px;
+	padding: 0px;
+}
+
+* {box-sizing: border-box;}
+@media print { @page { size: portrait; }}
+
+
+a {text-decoration: none;}
+
+
+.pagetitlecontainer {
+	color: darkred;
+	font-size: 30px;
+	text-align: center;
+	margin: 20px 0px;
+	font-weight: bold;
+}
+
+
+.pagetitle {
+
+}
+
+
+
+.whiteback  {background-color: #ffffff; padding: 20px 0px; border-top: 2px solid darkred;}
+
+@media print {
+.whiteback {border-top: 1px solid #aaaaaa;}
+}
+
+
+#pagestructure {
+	display: flex;
+	flex-direction: row-reverse;
+	border: 0px solid red;
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 0px 0px
+	width: 100%;
+}
+
+
+@media screen and (max-width: 1000px) {
+#pagestructure {flex-direction: column;}
+}
+
+@media print {
+#pagestructure {flex-direction: column;}
+}
+
+
+
+#mapcontainer {
+	position: relative;
+	margin: 5px 0px;
+	width: 100%;
+	border: 0px solid red;
+}
+
+.mapoutline {
+	border: 0px solid #19325a;
+	padding: 0px;
+	width: 95%;
+	margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+.mapoutline {border-bottom: 1px solid #a57b5c;}
+}
+
+@media print {
+#mapcontainer {margin:0px;}
+.mapoutline {border-bottom: 0px solid #a57b5c;}
+}
+
+
+#USmap {
+	width: 100%;
+	opacity: .4;
+}
+
+
+
+
+
+
+
+@media print {
+.ClickBox {color: #eeeeee; font-size: 10px;}
+.statename {font-size: 14px;}
+}
+
+.ClickBox:hover {
+	cursor: pointer;
+}
+
+
+
+
+.parkdot {
+	width: 50px; 
+	height: 50px; 
+	-webkit-print-color-adjust: exact;
+	background-size: cover;
+	position: absolute;
+	border: 0px;
+}
+
+.parkdoton {border: 0px solid darkgreen;}
+.parkdotdim {background-color: #dddddd; border: 0px solid #cccccc;}
+.parkdothidden {display: none;}
+
+
+/*-----------------------------------------------------------*/
+
+
+@media screen and (max-width: 800px) {
+.parkdot {height: 35px; width: 35px;}
+}
+@media screen and (max-width: 600px) {
+.parkdot {height: 30px; width: 30px;}
+}
+@media screen and (max-width: 500px) {
+.parkdot {height: 25px; width: 25px;}
+}
+@media screen and (max-width: 400px) {
+.parkdot {height: 20px; width: 20px;}
+}
+
+
+
+#parknamescontainer {
+	border: 0px solid #19325a;
+	position: relative;
+	display: flex;
+	margin-right: 20px;
+	font-size: 13px;
+	font-family: 'Oswald', sans-serif;
+	padding: 0px;
+	border-radius: 10px;
+	gap: 20px;
+}
+
+.Leagues {
+	display: block;
+}
+
+.LeagueName {
+	color: #888888;
+	border-bottom: 1px solid #888888;
+	margin-top: 20px;
+	font-size: 16px;
+}
+
+
+
+.ClickBox {
+	color: #aaaaaa;
+	display: block;
+	white-space: nowrap;
+	margin-left: 5px;
+	font-size: 16px;
+}
+
+
+
+
+
+
+
+@media print {
+#parknamescontainer {columns: 4; border: 0px; margin-right: 0px; margin-top: 20px; border-top: 1px solid #aaaaaa; border-radius: 0px; padding-top: 10px;}
+}
+
+@media screen and (max-width: 1000px) {
+#parknamescontainer {margin: 20px auto; width: 80%;}
+}
+
+/*-----------------------------------------------------------*/
+
+
+
+
+#ParkCount {
+	font-size: 26px;
+	font-weight: bold;
+	color: darkred;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 800px) {
+#ParkCount {font-size: 16px;}
+}
+
+@media screen and (max-width: 500px) {
+}
+
+@media print {
+#ParkCount {font-size: 20px;}
+}
+
+#bottommenu {
+	margin: 0px auto 100px 0px;
+	text-align: center;
+	background-color: darkred;
+}
+
+#bottommenucontainer {
+	display: flex;
+	justify-content: space-around;
+	max-width: 1200px;
+	margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+#bottommenucontainer {flex-direction: column;}
+}
+
+.bottommenubutton {
+	text-align: center;
+	display: inline-block;
+	padding: 5px;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.bottommenubutton:hover, .parkdot:hover {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+.bottommenubutton {width: 80%; margin: 1px auto; display: block;}
+}
+
+@media print {
+#bottommenu {display: none;}
+}
+
+
+
+
+
+
+
+
+
+
+#Orioles {
+	top: 32.5%;
+	left: 86.3%;
+}
+
+#RedSox {
+	top: 17.2%;
+	left: 93.8%;
+}
+
+#Yankees {
+	top: 20%;
+	left: 87.4%;
+}
+
+#Rays {
+	top: 74.1%;
+	left: 77.5%;
+}
+
+#BlueJays {
+	top: 16.1%;
+	left: 75.9%;
+}
+
+#WhiteSox {
+	top: 31.7%;
+	left: 63.0%;
+
+}
+
+#Guardians {
+	top: 28.4%;
+	left: 72.4%;
+}
+
+#Tigers {
+	top: 21.1%;
+	left: 71.4%;
+}
+
+#Royals {
+	top: 39.9%;
+	left: 50.9%;
+}
+
+#Twins {
+	top: 17.3%;
+	left: 50.5%;
+}
+
+#Astros {
+	top: 73.3%;
+	left: 46.2%;
+}
+
+#Angels {
+	top: 47.5%;
+	left: 6.7%;
+}
+
+#As {
+	top: 36.5%;
+	left: 2.6%;
+}
+
+#Mariners {
+	top: .5%;
+	left: 5.5%;
+}
+
+#Rangers {
+	top: 62.3%;
+	left: 41.8%;
+}
+
+#Braves {
+	top: 54.2%;
+	left: 72%;
+}
+
+#Marlins {
+	top: 81.1%;
+	left: 83.8%;
+}
+
+#Phillies {
+	top: 26.4%;
+	left: 83.1%;
+}
+
+#Mets {
+	top: 27.1%;
+	left: 90.9%;
+}
+
+#Nationals {
+	top: 37.1%;
+	left: 81.9%;
+}
+
+#Cubs {
+	top: 24.7%;
+	left: 65.5%;
+}
+
+
+#Reds {
+	top: 36.7%;
+	left: 70.7%;
+}
+
+#Brewers {
+	top: 19%;
+	left: 61.7%;
+}
+
+#Pirates {
+	top: 29.1%;
+	left: 77.9%;
+}
+
+#Cardinals {
+	top: 40.1%;
+	left: 58.7%;
+}
+
+#Diamondbacks {
+	top: 56.4%;
+	left: 18.4%;
+}
+
+#Rockies {
+	top: 37.3%;
+	left: 31.5%;
+}
+
+#Dodgers {
+	top: 47.0%;
+	left: 1.2%;
+}
+
+#Padres {
+	top: 55.0%;
+	left: 4.7%;
+}
+
+#Giants {
+	top: 33.5%;
+	left: -2.5%;
+}
+
+
+
+
+
+
+
+
+
+

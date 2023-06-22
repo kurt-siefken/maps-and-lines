@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MLB Ballparks Visited</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="parks.css">
+<script type="text/javascript" src="parks.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="CheckURL()">
+
+
+<div class="pagetitlecontainer">
+<div class="pagetitle">Ballparks Visited</div>
+<div id="ParkCount" class="parkcout"><span id="ParkCounter">0</span> out of 30 (<span id="ParkPercent">0</span>%)</div>
+</div>
+
+<div class="whiteback">
+<div id="pagestructure">
+
+<div class="mapoutline">
+<div id="mapcontainer">
+<img src="us-map.png" id="USmap">
+
+<img id="Orioles" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="RedSox" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Rays" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="BlueJays" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Yankees" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="WhiteSox" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Guardians" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Tigers" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Royals" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Twins" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Astros" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Angels" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="As" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Mariners" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Rangers" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Braves" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Marlins" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Mets" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Phillies" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Nationals" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Cubs" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Reds" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Brewers" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Pirates" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Cardinals" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Diamondbacks" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Rockies" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Dodgers" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Padres" class="parkdot" onclick="TogglePark(this)"></img>
+<img id="Giants" class="parkdot" onclick="TogglePark(this)"></img>
+</div>
+
+</div>
+
+
+
+
+<div id="parknamescontainer">
+
+
+<div class="Leagues">
+<div class="LeagueName">AL East</div>
+<div id="Click-Orioles" onclick="TogglePark(this)" class="ClickBox">Baltimore Orioles</div>
+<div id="Click-RedSox" onclick="TogglePark(this)" class="ClickBox">Boston Red Sox</div>
+<div id="Click-Yankees" onclick="TogglePark(this)" class="ClickBox">New York Yankees</div>
+<div id="Click-Rays" onclick="TogglePark(this)" class="ClickBox">Tampa Bay Rays</div>
+<div id="Click-BlueJays" onclick="TogglePark(this)" class="ClickBox">Toronto Blue Jays</div>
+
+
+<div class="LeagueName">AL Central</div>
+<div id="Click-WhiteSox" onclick="TogglePark(this)" class="ClickBox">Chicago White Sox</div>
+<div id="Click-Guardians" onclick="TogglePark(this)" class="ClickBox">Cleveland Guardians</div>
+<div id="Click-Tigers" onclick="TogglePark(this)" class="ClickBox">Detroit Tigers</div>
+<div id="Click-Royals" onclick="TogglePark(this)" class="ClickBox">Kansas City Royals</div>
+<div id="Click-Twins" onclick="TogglePark(this)" class="ClickBox">Minnesota Twins</div>
+
+<div class="LeagueName">AL West</div>
+<div id="Click-Astros" onclick="TogglePark(this)" class="ClickBox">Houston Astros</div>
+<div id="Click-Angels" onclick="TogglePark(this)" class="ClickBox">Los Angeles Angels</div>
+<div id="Click-As" onclick="TogglePark(this)" class="ClickBox">Oakland As</div>
+<div id="Click-Mariners" onclick="TogglePark(this)" class="ClickBox">Seattle Mariners</div>
+<div id="Click-Rangers" onclick="TogglePark(this)" class="ClickBox">Texas Rangers</div>
+</div>
+
+<div class="Leagues">
+<div class="LeagueName">NL East</div>
+<div id="Click-Braves" onclick="TogglePark(this)" class="ClickBox">Atlanta Braves</div>
+<div id="Click-Marlins" onclick="TogglePark(this)" class="ClickBox">Miami Marlins</div>
+<div id="Click-Mets" onclick="TogglePark(this)" class="ClickBox">New York Mets</div>
+<div id="Click-Phillies" onclick="TogglePark(this)" class="ClickBox">Philadelphia Phillies</div>
+<div id="Click-Nationals" onclick="TogglePark(this)" class="ClickBox">Washington Nationals</div>
+
+<div class="LeagueName">NL Central</div>
+<div id="Click-Cubs" onclick="TogglePark(this)" class="ClickBox">Chicago Cubs</div>
+<div id="Click-Reds" onclick="TogglePark(this)" class="ClickBox">Cincinnati Reds</div>
+<div id="Click-Brewers" onclick="TogglePark(this)" class="ClickBox">Milwaukee Brewers</div>
+<div id="Click-Pirates" onclick="TogglePark(this)" class="ClickBox">Pittsburgh Pirates</div>
+<div id="Click-Cardinals" onclick="TogglePark(this)" class="ClickBox">St. Louis Cardinals</div>
+
+<div class="LeagueName">NL West</div>
+<div id="Click-Diamondbacks" onclick="TogglePark(this)" class="ClickBox">Arizona Diamondbacks</div>
+<div id="Click-Rockies" onclick="TogglePark(this)" class="ClickBox">Colorado Rockies</div>
+<div id="Click-Dodgers" onclick="TogglePark(this)" class="ClickBox">Los Angeles Dodgers</div>
+<div id="Click-Padres" onclick="TogglePark(this)" class="ClickBox">San Diego Padres</div>
+<div id="Click-Giants" onclick="TogglePark(this)" class="ClickBox">San Francisco Giants</div>
+</div>
+
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+
+	<div id="bottommenu">
+	<div id="bottommenucontainer">
+	<a href="index.html" onclick="ResetList()" class="bottommenubutton">Reset List</a>
+	<div onclick="ToggleUnvisited()" id="ToggleUnvisited" class="bottommenubutton">Hide Unvisited</div>
+	<div onclick="CopyURL()" class="bottommenubutton">Copy Direct URL</div>
+	<div onclick="PrintList()" class="bottommenubutton">Print</div>
+	</div>
+	</div>
+
+
+
+
+
+<div id="ParkList" style="display: none;"></div>
+<div id="ParkDotStatus" style="display: none;"></div>
+
+
+
+</body>
+</html>
+
+
+
+
+
