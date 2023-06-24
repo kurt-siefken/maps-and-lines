@@ -83,8 +83,9 @@ background-color: #ffffff;
 
 @media screen and (max-width: 600px) {
 .listoflinks {flex-direction: column;}
-.linkcolumn {width: 90%;}
-
+.linkcolumn {width: 80%;}
+.pagename {font-size: 40px;}
+.pagestructure {align-items: flex-start;}
 }
 
 
