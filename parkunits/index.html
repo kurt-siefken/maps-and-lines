@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>National Park Units Map</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="parks.css">
+<link rel="stylesheet" href="parklist.css">
+
+<script type="text/javascript" src="checkparks.js"></script>
+<style>
+@media print { @page { size: landscape; }}
+</style>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="CheckURLLights()">
+
+
+
+
+
+
+<div class="bannerhead">
+	<div class="pagetitle">National Park Units Checklist</div>
+	<div class="pagetitlecounter"><div id="ParkCounter">0</div> out of 423 (<div id="ParkPercent">0</div>%)</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="bannermenu">
+	<div class="headgrid">
+	<div><a href="parkslist.html" id="ViewAsList" class="hoverlink" style="color: #ffffff;">Switch to List View</a></div>
+	<div><div onclick="ToggleUnvisited()" class="hoverlink" id="ToggleUnvisited">Dim Unvisited</div></div>
+	<div><div onclick="copyURL()" class="hoverlink">Copy Link</div></div>
+	<div><div class="hoverlink" style="color: #ffffff;" onclick="if (confirm('You are about to delete your parks.  Are you sure you want to continue?')){location.href = 'index.html';}">Reset</div></div>
+	<div><div onclick="print_onclick()" class="hoverlink">Print</div></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="whiteback">
+<div class="pagestructure">
+
+<div class="mapoutline">
+<div id="mapcontainer">
+<img src="us-map.png" id="USmap">
+
+
+
+<!--------- Alabama --------------!>
+ <div id="bicr" class="parkdot">Birmingham Civil Rights NM</div>
+ <div id="frri" class="parkdot">Freedom Riders NM</div>
+ <div id="hobe" class="parkdot">Horseshoe Bend NMP</div>
+ <div id="liri" class="parkdot">Little River Canyon N PRES</div>
+ <div id="ruca" class="parkdot">Russell Cave NM</div>
+ <div id="tuai" class="parkdot">Tuskegee Airmen NHS</div>
+ <div id="tuin" class="parkdot">Tuskegee Institute NHS</div>
+
+<!--------- Alaska --------------!>
+ <div id="alag" class="parkdot">Alagnak WR</div>
+ <div id="ania" class="parkdot">Aniakchak NM</div>
+ <div id="aniap" class="parkdot">Aniakchak Preserve N PRES</div>
+ <div id="bela" class="parkdot">Bering Land Bridge N PRES</div>
+ <div id="kakr" class="parkdot">Cape Krusenstern NM</div>
+ <div id="dena" class="parkdot">Denali NP</div>
+ <div id="denap" class="parkdot">Denali Preserve N PRES</div>
+ <div id="gaar" class="parkdot">Gates of the Arctic NP</div>
+ <div id="gaarp" class="parkdot">Gates of the Arctic Preserve N PRES</div>
+ <div id="glba" class="parkdot">Glacier Bay NP</div>
+ <div id="glbap" class="parkdot">Glacier Bay Preserve N PRES</div>
+ <div id="katm" class="parkdot">Katmai NP</div>
+ <div id="kamtp" class="parkdot">Katmai Preserve N PRES</div>
+ <div id="kefj" class="parkdot">Kenai Fjords NP</div>
+ <div id="klgo" class="parkdot">Klondike Gold Rush NHP</div>
+ <div id="kova" class="parkdot">Kobuk Valley NP</div>
+ <div id="lacl" class="parkdot">Lake Clark NP</div>
+ <div id="laclp" class="parkdot">Lake Clark Preserve N PRES</div>
+ <div id="noat" class="parkdot">Noatak N PRES</div>
+ <div id="sitk" class="parkdot">Sitka NHP</div>
+ <div id="wrst" class="parkdot">Wrangell-St. Elias NP</div>
+ <div id="wrstp" class="parkdot">Wrangell-St. Elias Preserve N PRES</div>
+ <div id="yucj" class="parkdot">Yukon-Charley Rivers N PRES</div>
+
+<!--------- American Samoa --------------!>
+ <div id="npsa" class="parkdot">American Samoa NP</div>
+
+<!--------- Arizona --------------!>
+ <div id="cach" class="parkdot">Canyon De Chelly NM</div>
+ <div id="cagr" class="parkdot">Casa Grande Ruins NM</div>
+ <div id="chir" class="parkdot">Chiricahua NM</div>
+ <div id="coro" class="parkdot">Coronado N MEM</div>
+ <div id="fobo" class="parkdot">Fort Bowie NHS</div>
+ <div id="glca" class="parkdot">Glen Canyon NRA</div>
+ <div id="grca" class="parkdot">Grand Canyon NP</div>
+ <div id="hopi" class="parkdot">Hohokam Pima NM</div>
+ <div id="hutr" class="parkdot">Hubbell Trading Post NHS</div>
+ <div id="moca" class="parkdot">Montezuma Castle NM</div>
+ <div id="nava" class="parkdot">Navajo NM</div>
+ <div id="orpi" class="parkdot">Organ Pipe Cactus NM</div>
+ <div id="pefo" class="parkdot">Petrified Forest NP</div>
+ <div id="pisp" class="parkdot">Pipe Spring NM</div>
+ <div id="sagu" class="parkdot">Saguaro NP</div>
+ <div id="sucr" class="parkdot">Sunset Crater Volcano NM</div>
+ <div id="tont" class="parkdot">Tonto NM</div>
+ <div id="tuma" class="parkdot">Tumacacori NHP</div>
+ <div id="tuzi" class="parkdot">Tuzigoot NM</div>
+ <div id="waca" class="parkdot">Walnut Canyon NM</div>
+ <div id="wupa" class="parkdot">Wupatki NM</div>
+
+<!--------- Arkansas --------------!>
+ <div id="arpo" class="parkdot">Arkansas Post N MEM</div>
+ <div id="buff" class="parkdot">Buffalo River NR</div>
+ <div id="fosm" class="parkdot">Fort Smith NHS</div>
+ <div id="hosp" class="parkdot">Hot Springs NP</div>
+ <div id="chsc" class="parkdot">Little Rock Central High School NHS</div>
+ <div id="peri" class="parkdot">Pea Ridge NMP</div>
+ <div id="wicl" class="parkdot">President Clinton Birthplace NHS</div>
+
+<!--------- California --------------!>
+ <div id="cabr" class="parkdot">Cabrillo NM</div>
+ <div id="camo" class="parkdot">Castle Mountains NM</div>
+ <div id="cech" class="parkdot">César Chávez NM</div>
+ <div id="chis" class="parkdot">Channel Islands NP</div>
+ <div id="deva" class="parkdot">Death Valley NP</div>
+ <div id="depo" class="parkdot">Devils Postpile NM</div>
+ <div id="euon" class="parkdot">Eugene O'Neill NHS</div>
+ <div id="fopo" class="parkdot">Fort Point NHS</div>
+ <div id="goga" class="parkdot">Golden Gate NRA</div>
+ <div id="jomu" class="parkdot">John Muir NHS</div>
+ <div id="jotr" class="parkdot">Joshua Tree NP</div>
+ <div id="kica" class="parkdot">Kings Canyon NP</div>
+ <div id="lavo" class="parkdot">Lassen Volcanic NP</div>
+ <div id="labe" class="parkdot">Lava Beds NM</div>
+ <div id="manz" class="parkdot">Manzanar NHS</div>
+ <div id="moja" class="parkdot">Mojave N PRES</div>
+ <div id="muwo" class="parkdot">Muir Woods NM</div>
+ <div id="pinn" class="parkdot">Pinnacles NP</div>
+ <div id="pore" class="parkdot">Point Reyes NS</div>
+ <div id="poch" class="parkdot">Port Chicago Naval Magazine N MEM</div>
+ <div id="redw" class="parkdot">Redwood NP</div>
+ <div id="rori" class="parkdot">Rosie the Riveter WW II Home Front NHP</div>
+ <div id="safr" class="parkdot">San Francisco Maritime NHP</div>
+ <div id="samo" class="parkdot">Santa Monica Mountains NRA</div>
+ <div id="sequ" class="parkdot">Sequoia NP</div>
+ <div id="tule" class="parkdot">Tule Lake NM</div>
+ <div id="whis" class="parkdot">Whiskeytown NRA</div>
+ <div id="yose" class="parkdot">Yosemite NP</div>
+
+<!--------- Colorado --------------!>
+ <div id="beol" class="parkdot">Bent's Old Fort NHS</div>
+ <div id="blca" class="parkdot">Black Canyon of the Gunnison NP</div>
+ <div id="colm" class="parkdot">Colorado NM</div>
+ <div id="cure" class="parkdot">Curecanti NRA</div>
+ <div id="dino" class="parkdot">Dinosaur NM</div>
+ <div id="flfo" class="parkdot">Florissant Fossil Beds NM</div>
+ <div id="grsa" class="parkdot">Great Sand Dunes NP</div>
+ <div id="grsap" class="parkdot">Great Sand Dunes Preserve N PRES</div>
+ <div id="hove" class="parkdot">Hovenweep NM</div>
+ <div id="meve" class="parkdot">Mesa Verde NP</div>
+ <div id="romo" class="parkdot">Rocky Mountain NP</div>
+ <div id="sand" class="parkdot">Sand Creek Massacre NHS</div>
+ <div id="yuho" class="parkdot">Yucca House NM</div>
+
+<!--------- Connecticut--------------!>
+ <div id="wefa" class="parkdot">Weir Farm NHP</div>
+
+<!--------- Delaware --------------!>
+ <div id="frst" class="parkdot">First State NHP</div>
+
+<!--------- Florida --------------!>
+ <div id="bicy" class="parkdot">Big Cypress N PRES</div>
+ <div id="bisc" class="parkdot">Biscayne NP</div>
+ <div id="cana" class="parkdot">Canaveral NS</div>
+ <div id="casa" class="parkdot">Castillo de San Marcos NM</div>
+ <div id="deso" class="parkdot">De Soto N MEM</div>
+ <div id="drto" class="parkdot">Dry Tortugas NP</div>
+ <div id="ever" class="parkdot">Everglades NP</div>
+ <div id="foca" class="parkdot">Fort Caroline N MEM</div>
+ <div id="foma" class="parkdot">Fort Matanzas NM</div>
+ <div id="guis" class="parkdot">Gulf Islands NS</div>
+ <div id="timu" class="parkdot">Timucuan N PRES</div>
+
+<!--------- Georgia--------------!>
+ <div id="ande" class="parkdot">Andersonville NHS</div>
+ <div id="chat" class="parkdot">Chattahoochee River NRA</div>
+ <div id="chch" class="parkdot">Chickamauga & Chattanooga NMP</div>
+ <div id="cuis" class="parkdot">Cumberland Island NS</div>
+ <div id="fofr" class="parkdot">Fort Frederica NM</div>
+ <div id="fopu" class="parkdot">Fort Pulaski NM</div>
+ <div id="jica" class="parkdot">Jimmy Carter NHP</div>
+ <div id="kemo" class="parkdot">Kennesaw Mountain NBP</div>
+ <div id="malu" class="parkdot">Martin Luther King, Jr. NHP</div>
+ <div id="ocmu" class="parkdot">Ocmulgee Mounds NHP</div>
+
+<!--------- Guam --------------!>
+ <div id="wapa" class="parkdot">War in the Pacific NHP</div>
+
+<!--------- Hawaii --------------!>
+ <div id="hale" class="parkdot">Haleakalā NP</div>
+ <div id="havo" class="parkdot">Hawai'i Volcanoes NP</div>
+ <div id="hono" class="parkdot">Honouliuli National NHS</div>
+ <div id="kala" class="parkdot">Kalaupapa NHP</div>
+ <div id="kaho" class="parkdot">Kaloko-Honokohau NHP</div>
+ <div id="perl" class="parkdot">Pearl Harbor N MEM</div>
+ <div id="puho" class="parkdot">Pu'uhonua O Honaunau NHP</div>
+ <div id="puhe" class="parkdot">Pu'ukohola Heiau NHS</div>
+
+<!--------- Idaho --------------!>
+ <div id="ciro" class="parkdot">City of Rocks N RES</div>
+ <div id="crmo" class="parkdot">Craters of the Moon NM</div>
+ <div id="crmop" class="parkdot">Craters of the Moon Preserve N PRES</div>
+ <div id="hafo" class="parkdot">Hagerman Fossil Beds NM</div>
+ <div id="miin" class="parkdot">Minidoka NHS</div>
+ <div id="nepe" class="parkdot">Nez Perce NHP</div>
+
+<!--------- Illinois --------------!>
+ <div id="liho" class="parkdot">Lincoln Home NHS</div>
+ <div id="pull" class="parkdot">Pullman NM</div>
+
+<!--------- Indiana --------------!>
+ <div id="gero" class="parkdot">George Rogers Clark NHP</div>
+ <div id="indu" class="parkdot">Indiana Dunes NP</div>
+ <div id="libo" class="parkdot">Lincoln Boyhood N MEM</div>
+
+<!--------- Iowa --------------!>
+ <div id="efmo" class="parkdot">Effigy Mounds NM</div>
+ <div id="heho" class="parkdot">Herbert Hoover NHS</div>
+
+<!--------- Kansas --------------!>
+ <div id="brvb" class="parkdot">Brown v. Board of Education NHS</div>
+ <div id="fols" class="parkdot">Fort Larned NHS</div>
+ <div id="fosc" class="parkdot">Fort Scott NHS</div>
+ <div id="nico" class="parkdot">Nicodemus NHS</div>
+ <div id="tapr" class="parkdot">Tallgrass Prairie N PRES</div>
+
+<!--------- Kentucky --------------!>
+ <div id="abli" class="parkdot">Abraham Lincoln Birthplace NHP</div>
+ <div id="cane" class="parkdot">Camp Nelson NM</div>
+ <div id="cuga" class="parkdot">Cumberland Gap NHP</div>
+ <div id="maca" class="parkdot">Mammoth Cave NP</div>
+ <div id="misp" class="parkdot">Mill Springs Battlefield NM</div>
+
+<!--------- Louisiana--------------!>
+ <div id="cari" class="parkdot">Cane River Creole NHP</div>
+ <div id="jefa" class="parkdot">Jean Lafitte NHP</div>
+ <div id="jazz" class="parkdot">New Orleans Jazz NHP</div>
+ <div id="popo" class="parkdot">Poverty Point NM</div>
+
+<!--------- Maine--------------!>
+ <div id="acad" class="parkdot">Acadia NP</div>
+ <div id="kaww" class="parkdot">Katahdin Woods and Waters NM</div>
+ <div id="sacr" class="parkdot">Saint Croix Island NHS</div>
+
+<!--------- Maryland --------------!>
+ <div id="anti" class="parkdot">Antietam NB</div>
+ <div id="asis" class="parkdot">Assateague Island NS</div>
+ <div id="cato" class="parkdot">Catoctin Mountain Park </div>
+ <div id="choh" class="parkdot">Chesapeake and Ohio Canal NHP</div>
+ <div id="clba" class="parkdot">Clara Barton NHS</div>
+ <div id="fomc" class="parkdot">Fort McHenry NM</div>
+ <div id="fowa" class="parkdot">Fort Washington Park </div>
+ <div id="gree" class="parkdot">Greenbelt Park </div>
+ <div id="hamp" class="parkdot">Hampton NHS</div>
+ <div id="hatu" class="parkdot">Harriet Tubman Underground Railroad NHP</div>
+ <div id="mono" class="parkdot">Monocacy NB</div>
+ <div id="pisc" class="parkdot">Piscataway Park </div>
+ <div id="pohe" class="parkdot">Potomac Heritage NST</div>
+ <div id="thst" class="parkdot">Thomas Stone NHS</div>
+
+<!--------- Massachusetts --------------!>
+ <div id="adam" class="parkdot">Adams NHP</div>
+ <div id="bost" class="parkdot">Boston NHP</div>
+ <div id="boaf" class="parkdot">Boston African American NHS</div>
+ <div id="boha" class="parkdot">Boston Harbor Islands NRA</div>
+ <div id="caco" class="parkdot">Cape Cod NS</div>
+ <div id="frla" class="parkdot">Frederick Law Olmsted NHS</div>
+ <div id="jofi" class="parkdot">John F. Kennedy NHS</div>
+ <div id="long" class="parkdot">Longfellow House Washington's Headquarters NHS</div>
+ <div id="lowe" class="parkdot">Lowell NHP</div>
+ <div id="mima" class="parkdot">Minute Man NHP</div>
+ <div id="nebe" class="parkdot">New Bedford Whaling NHP</div>
+ <div id="sama" class="parkdot">Salem Maritime NHS</div>
+ <div id="sair" class="parkdot">Saugus Iron Works NHS</div>
+ <div id="spar" class="parkdot">Springfield Armory NHS</div>
+
+<!--------- Michigan--------------!>
+ <div id="isro" class="parkdot">Isle Royale NP</div>
+ <div id="kewe" class="parkdot">Keweenaw NHP</div>
+ <div id="piro" class="parkdot">Pictured Rocks NL</div>
+ <div id="rira" class="parkdot">River Raisin NBP</div>
+ <div id="sibe" class="parkdot">Sleeping Bear Dunes NL</div>
+
+<!--------- Minnesota--------------!>
+ <div id="grpo" class="parkdot">Grand Portage NM</div>
+ <div id="miss" class="parkdot">Mississippi NRRA</div>
+ <div id="pipe" class="parkdot">Pipestone NM</div>
+ <div id="voya" class="parkdot">Voyageurs NP</div>
+
+<!--------- Mississippi --------------!>
+ <div id="brce" class="parkdot">Brices Cross Roads NB</div>
+ <div id="memy" class="parkdot">Medgar and Myrlie Evers Home NM</div>
+ <div id="natc" class="parkdot">Natchez NHP</div>
+ <div id="natr" class="parkdot">Natchez Trace Parkway </div>
+ <div id="natt" class="parkdot">Natchez Trace Trail NST</div>
+ <div id="tupe" class="parkdot">Tupelo NB</div>
+ <div id="vick" class="parkdot">Vicksburg NMP</div>
+
+<!--------- Missouri--------------!>
+ <div id="garc" class="parkdot">Gateway Arch NP</div>
+ <div id="gwca" class="parkdot">George Washington Carver NM</div>
+ <div id="hstr" class="parkdot">Harry S Truman NHS</div>
+ <div id="ozar" class="parkdot">Ozark NSR</div>
+ <div id="stge" class="parkdot">Ste. Genevieve NHP</div>
+ <div id="ulsg" class="parkdot">Ulysses S. Grant NHS</div>
+ <div id="wicr" class="parkdot">Wilson's Creek NB</div>
+
+<!--------- Montana --------------!>
+ <div id="biho" class="parkdot">Big Hole NB</div>
+ <div id="bica" class="parkdot">Bighorn Canyon NRA</div>
+ <div id="glac" class="parkdot">Glacier NP</div>
+ <div id="grko" class="parkdot">Grant-Kohrs Ranch NHS</div>
+ <div id="libi" class="parkdot">Little Bighorn Battlefield NM</div>
+
+<!--------- Nebraska --------------!>
+ <div id="agfo" class="parkdot">Agate Fossil Beds NM</div>
+ <div id="home" class="parkdot">Homestead NHP</div>
+ <div id="niob" class="parkdot">Niobrara NSR</div>
+ <div id="scbl" class="parkdot">Scotts Bluff NM</div>
+
+<!--------- Nevada --------------!>
+ <div id="grba" class="parkdot">Great Basin NP</div>
+ <div id="lake" class="parkdot">Lake Mead NRA</div>
+ <div id="tusk" class="parkdot">Tule Springs Fossil Beds NM</div>
+
+<!--------- New Hampshire --------------!>
+ <div id="saga" class="parkdot">Saint-Gaudens NHP</div>
+
+<!--------- New Jersey--------------!>
+ <div id="greg" class="parkdot">Great Egg Harbor NSRR</div>
+ <div id="morr" class="parkdot">Morristown NHP</div>
+ <div id="pagr" class="parkdot">Paterson Great Falls NHP</div>
+ <div id="edis" class="parkdot">Thomas Edison NHP</div>
+
+<!--------- New Mexico --------------!>
+ <div id="azru" class="parkdot">Aztec Ruins NM</div>
+ <div id="band" class="parkdot">Bandelier NM</div>
+ <div id="cavo" class="parkdot">Capulin Volcano NM</div>
+ <div id="cave" class="parkdot">Carlsbad Caverns NP</div>
+ <div id="chcu" class="parkdot">Chaco Culture NHP</div>
+ <div id="elma" class="parkdot">El Malpais NM</div>
+ <div id="elmo" class="parkdot">El Morro NM</div>
+ <div id="foun" class="parkdot">Fort Union NM</div>
+ <div id="gicl" class="parkdot">Gila Cliff Dwellings NM</div>
+ <div id="peco" class="parkdot">Pecos NHP</div>
+ <div id="petr" class="parkdot">Petroglyph NM</div>
+ <div id="sapu" class="parkdot">Salinas Pueblo Missions NM</div>
+ <div id="vall" class="parkdot">Valles Caldera N PRES</div>
+ <div id="whsa" class="parkdot">White Sands NP</div>
+
+<!--------- New York --------------!>
+ <div id="afbg" class="parkdot">African Burial Ground NM</div>
+ <div id="cacl" class="parkdot">Castle Clinton NM</div>
+ <div id="elro" class="parkdot">Eleanor Roosevelt NHS</div>
+ <div id="feha" class="parkdot">Federal Hall N MEM</div>
+ <div id="fiis" class="parkdot">Fire Island NS</div>
+ <div id="fost" class="parkdot">Fort Stanwix NM</div>
+ <div id="gate" class="parkdot">Gateway NRA</div>
+ <div id="gegr" class="parkdot">General Grant N MEM</div>
+ <div id="gois" class="parkdot">Governors Island NM</div>
+ <div id="hagr" class="parkdot">Hamilton Grange N MEM</div>
+ <div id="hart" class="parkdot">Harriet Tubman NHP</div>
+ <div id="hofr" class="parkdot">Home of Franklin D. Roosevelt NHS</div>
+ <div id="mava" class="parkdot">Martin Van Buren NHS</div>
+ <div id="sahi" class="parkdot">Sagamore Hill NHS</div>
+ <div id="sapa" class="parkdot">Saint Paul's Church NHS</div>
+ <div id="sara" class="parkdot">Saratoga NHP</div>
+ <div id="stli" class="parkdot">Statue of Liberty NM</div>
+ <div id="ston" class="parkdot">Stonewall NM</div>
+ <div id="thrb" class="parkdot">Theodore Roosevelt Birthplace NHS</div>
+ <div id="thri" class="parkdot">Theodore Roosevelt Inaugural NHS</div>
+ <div id="vama" class="parkdot">Vanderbilt Mansion NHS</div>
+ <div id="wori" class="parkdot">Women's Rights NHP</div>
+
+<!--------- North Carolina--------------!>
+ <div id="blri" class="parkdot">Blue Ridge Parkway </div>
+ <div id="caha" class="parkdot">Cape Hatteras NS</div>
+ <div id="calo" class="parkdot">Cape Lookout NS</div>
+ <div id="carl" class="parkdot">Carl Sandburg Home NHS</div>
+ <div id="fora" class="parkdot">Fort Raleigh NHS</div>
+ <div id="guco" class="parkdot">Guilford Courthouse NMP</div>
+ <div id="mocr" class="parkdot">Moores Creek NB</div>
+ <div id="wrbr" class="parkdot">Wright Brothers N MEM</div>
+
+<!--------- North Dakota--------------!>
+ <div id="fous" class="parkdot">Fort Union Trading Post NHS</div>
+ <div id="knri" class="parkdot">Knife River Indian Villages NHS</div>
+ <div id="thro" class="parkdot">Theodore Roosevelt NP</div>
+
+<!--------- Ohio --------------!>
+ <div id="chyo" class="parkdot">Charles Young Buffalo Soldiers NM</div>
+ <div id="cuva" class="parkdot">Cuyahoga Valley NP</div>
+ <div id="daav" class="parkdot">Dayton Aviation Heritage NHP</div>
+ <div id="fila" class="parkdot">First Ladies NHS</div>
+ <div id="hocu" class="parkdot">Hopewell Culture NHP</div>
+ <div id="jaga" class="parkdot">James A. Garfield NHS</div>
+ <div id="pevi" class="parkdot">Perry's Victory and International Peace Memorial </div>
+ <div id="wiho" class="parkdot">William Howard Taft NHS</div>
+
+<!--------- Oklkahoma --------------!>
+ <div id="chic" class="parkdot">Chickasaw NRA</div>
+ <div id="waba" class="parkdot">Washita Battlefield NHS</div>
+
+<!--------- Oregon --------------!>
+ <div id="crla" class="parkdot">Crater Lake NP</div>
+ <div id="joda" class="parkdot">John Day Fossil Beds NM</div>
+ <div id="lecl" class="parkdot">Lewis and Clark NHP</div>
+ <div id="orca" class="parkdot">Oregon Caves NM</div>
+
+<!--------- Pennsylvania--------------!>
+ <div id="alpo" class="parkdot">Allegheny Portage Railroad NHS</div>
+ <div id="dewa" class="parkdot">Delaware Water Gap NRA</div>
+ <div id="edal" class="parkdot">Edgar Allan Poe NHS</div>
+ <div id="eise" class="parkdot">Eisenhower NHS</div>
+ <div id="flni" class="parkdot">Flight 93 N MEM</div>
+ <div id="fone" class="parkdot">Fort Necessity NB</div>
+ <div id="frhi" class="parkdot">Friendship Hill NHS</div>
+ <div id="gett" class="parkdot">Gettysburg NMP</div>
+ <div id="hofu" class="parkdot">Hopewell Furnace NHS</div>
+ <div id="inde" class="parkdot">Independence NHP</div>
+ <div id="jofl" class="parkdot">Johnstown Flood N MEM</div>
+ <div id="mide" class="parkdot">Middle Delaware NSR</div>
+ <div id="stea" class="parkdot">Steamtown NHS</div>
+ <div id="thko" class="parkdot">Thaddeus Kosciuszko N MEM</div>
+ <div id="upde" class="parkdot">Upper Delaware NSRR</div>
+ <div id="vafo" class="parkdot">Valley Forge NHP</div>
+
+<!--------- Puerto Rico--------------!>
+ <div id="saju" class="parkdot">San Juan NHS</div>
+
+<!--------- Rhode Island --------------!>
+ <div id="blvr" class="parkdot">Blackstone River Valley NHP</div>
+ <div id="rowi" class="parkdot">Roger Williams N MEM</div>
+
+<!--------- South Carolina --------------!>
+ <div id="chpi" class="parkdot">Charles Pinckney NHS</div>
+ <div id="cong" class="parkdot">Congaree NP</div>
+ <div id="cowp" class="parkdot">Cowpens NB</div>
+ <div id="fosu" class="parkdot">Fort Sumter and Fort Moultrie NHP</div>
+ <div id="kimo" class="parkdot">Kings Mountain NMP</div>
+ <div id="nisi" class="parkdot">Ninety Six NHS</div>
+ <div id="reer" class="parkdot">Reconstruction Era NHP</div>
+
+<!--------- South Dakota --------------!>
+ <div id="badl" class="parkdot">Badlands NP</div>
+ <div id="jeca" class="parkdot">Jewel Cave NM</div>
+ <div id="mimi" class="parkdot">Minuteman Missile NHS</div>
+ <div id="mnrr" class="parkdot">Missouri NRR</div>
+ <div id="moru" class="parkdot">Mount Rushmore N MEM</div>
+ <div id="wica" class="parkdot">Wind Cave NP</div>
+
+<!--------- Tennessee --------------!>
+ <div id="anjo" class="parkdot">Andrew Johnson NHS</div>
+ <div id="biso" class="parkdot">Big South Fork NRRA</div>
+ <div id="fodo" class="parkdot">Fort Donelson NB</div>
+ <div id="grsm" class="parkdot">Great Smoky Mountains NP</div>
+ <div id="obed" class="parkdot">Obed WSR</div>
+ <div id="shil" class="parkdot">Shiloh NMP</div>
+ <div id="stri" class="parkdot">Stones River NB</div>
+
+<!--------- Texas --------------!>
+ <div id="alfl" class="parkdot">Alibates Flint Quarries NM</div>
+ <div id="amis" class="parkdot">Amistad NRA</div>
+ <div id="bibe" class="parkdot">Big Bend NP</div>
+ <div id="bith" class="parkdot">Big Thicket N PRES</div>
+ <div id="cham" class="parkdot">Chamizal National Memorial N MEM</div>
+ <div id="foda" class="parkdot">Fort Davis NHS</div>
+ <div id="gumo" class="parkdot">Guadalupe Mountains NP</div>
+ <div id="lamr" class="parkdot">Lake Meredith NRA</div>
+ <div id="lyjo" class="parkdot">Lyndon B. Johnson NHP</div>
+ <div id="pais" class="parkdot">Padre Island NS</div>
+ <div id="paal" class="parkdot">Palo Alto Battlefield NHP</div>
+ <div id="rigr" class="parkdot">Rio Grande WSR</div>
+ <div id="saan" class="parkdot">San Antonio Missions NHP</div>
+ <div id="waco" class="parkdot">Waco Mammoth NM</div>
+
+<!--------- Utah --------------!>
+ <div id="arch" class="parkdot">Arches NP</div>
+ <div id="brca" class="parkdot">Bryce Canyon NP</div>
+ <div id="cany" class="parkdot">Canyonlands NP</div>
+ <div id="care" class="parkdot">Capitol Reef NP</div>
+ <div id="cebr" class="parkdot">Cedar Breaks NM</div>
+ <div id="gosp" class="parkdot">Golden Spike NHP</div>
+ <div id="nabr" class="parkdot">Natural Bridges NM</div>
+ <div id="rabr" class="parkdot">Rainbow Bridge NM</div>
+ <div id="tica" class="parkdot">Timpanogos Cave NM</div>
+ <div id="zion" class="parkdot">Zion NP</div>
+
+<!--------- Vermont --------------!>
+ <div id="mabi" class="parkdot">Marsh-Billings-Rockefeller NHP</div>
+
+<!--------- Virgin Islands --------------!>
+ <div id="buis" class="parkdot">Buck Island Reef NM</div>
+ <div id="chri" class="parkdot">Christiansted NHS</div>
+ <div id="sari" class="parkdot">Salt River Bay NHP</div>
+ <div id="viis" class="parkdot">Virgin Islands NP</div>
+ <div id="vicr" class="parkdot">Virgin Islands Coral Reef NM</div>
+
+<!--------- Virginia --------------!>
+ <div id="apco" class="parkdot">Appomattox Court House NHP</div>
+ <div id="arho" class="parkdot">Arlington House, The Robert E. Lee Memorial </div>
+ <div id="bowa" class="parkdot">Booker T. Washington NM</div>
+ <div id="cebe" class="parkdot">Cedar Creek and Belle Grove NHP</div>
+ <div id="colo" class="parkdot">Colonial NHP</div>
+ <div id="fomr" class="parkdot">Fort Monroe NM</div>
+ <div id="frsp" class="parkdot">Fredericksburg and Spotsylvania NMP</div>
+ <div id="gwmp" class="parkdot">George Washington Mem PKWY</div>
+ <div id="gewa" class="parkdot">George Washington Birthplace NM</div>
+ <div id="mawa" class="parkdot">Maggie L. Walker NHS</div>
+ <div id="mana" class="parkdot">Manassas NBP</div>
+ <div id="pete" class="parkdot">Petersburg NB</div>
+ <div id="prwi" class="parkdot">Prince William Forest Park </div>
+ <div id="rich" class="parkdot">Richmond NBP</div>
+ <div id="shen" class="parkdot">Shenandoah NP</div>
+ <div id="wotr" class="parkdot">Wolf Trap </div>
+
+<!--------- Washington --------------!>
+ <div id="ebla" class="parkdot">Ebey's Landing NHR</div>
+ <div id="fova" class="parkdot">Fort Vancouver NHS</div>
+ <div id="lach" class="parkdot">Lake Chelan NRA</div>
+ <div id="laro" class="parkdot">Lake Roosevelt NRA</div>
+ <div id="mapr" class="parkdot">Manhattan Project NHP</div>
+ <div id="mora" class="parkdot">Mount Rainier NP</div>
+ <div id="noca" class="parkdot">North Cascades NP</div>
+ <div id="olym" class="parkdot">Olympic NP</div>
+ <div id="rola" class="parkdot">Ross Lake NRA</div>
+ <div id="sajh" class="parkdot">San Juan Island NHP</div>
+ <div id="whmi" class="parkdot">Whitman Mission NHS</div>
+
+<!--------- Washington DC --------------!>
+ <div id="bepa" class="parkdot">Belmont-Paul Women's Equality NM</div>
+ <div id="cawo" class="parkdot">Carter G. Woodson Home NHS</div>
+ <div id="coga" class="parkdot">Constitution Gardens </div>
+ <div id="ddem" class="parkdot">Dwight D. Eisenhower Memorial </div>
+ <div id="foth" class="parkdot">Ford's Theatre NHS</div>
+ <div id="frde" class="parkdot">Franklin D. Roosevelt Memorial </div>
+ <div id="frdo" class="parkdot">Frederick Douglass NHS</div>
+ <div id="kowa" class="parkdot">Korean War Veterans Memorial </div>
+ <div id="lyba" class="parkdot">LBJ Memorial Grove on the Potomac </div>
+ <div id="linc" class="parkdot">Lincoln Memorial </div>
+ <div id="mlkm" class="parkdot">Martin Luther King, Jr. Memorial </div>
+ <div id="mamc" class="parkdot">Mary McLeod Bethune Council NHS</div>
+ <div id="nace" class="parkdot">National Capital Parks-East </div>
+ <div id="nama" class="parkdot">National Mall and Memorial Parks </div>
+ <div id="paav" class="parkdot">Pennsylvania Avenue NHS</div>
+ <div id="rocr" class="parkdot">Rock Creek Park </div>
+ <div id="this" class="parkdot">Theodore Roosevelt Island </div>
+ <div id="thje" class="parkdot">Thomas Jefferson Memorial </div>
+ <div id="vive" class="parkdot">Vietnam Veterans Memorial </div>
+ <div id="wamo" class="parkdot">Washington Monument </div>
+ <div id="whhp" class="parkdot">White House and President's Park </div>
+ <div id="wwim" class="parkdot">World War I Memorial </div>
+ <div id="wwii" class="parkdot">World War II Memorial </div>
+
+<!--------- West Virginia --------------!>
+ <div id="appa" class="parkdot">Appalachian NST</div>
+ <div id="blue" class="parkdot">Bluestone NSR</div>
+ <div id="gari" class="parkdot">Gauley River NRA</div>
+ <div id="hafe" class="parkdot">Harpers Ferry NHP</div>
+ <div id="neri" class="parkdot">New River Gorge NP&P</div>
+
+<!--------- Wisconsin --------------!>
+ <div id="apis" class="parkdot">Apostle Islands NL</div>
+ <div id="sacn" class="parkdot">Saint Croix NSR</div>
+
+<!--------- Wyoming --------------!>
+ <div id="deto" class="parkdot">Devils Tower NM</div>
+ <div id="fola" class="parkdot">Fort Laramie NHS</div>
+ <div id="fobu" class="parkdot">Fossil Butte NM</div>
+ <div id="grte" class="parkdot">Grand Teton NP</div>
+ <div id="jdjr" class="parkdot">John D. Rockefeller Jr. Mem PKWY</div>
+ <div id="yell" class="parkdot">Yellowstone National Park NP</div>
+
+
+
+ <div id="ParkName" class="parknamebox"></div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+<div id="ParkList" style="display: none;"></div>
+
+
+
+
+<div class="footer">
+<div class="pagestructure">
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
+
+
+
+
+

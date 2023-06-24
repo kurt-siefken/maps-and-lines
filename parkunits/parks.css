@@ -1,0 +1,276 @@
+
+
+body {
+	font-family: 'Urbanist', sans-serif;
+	font-size: 18px;
+	/*-- background-color: #BFD0EA; --*/
+	border: 0px solid red;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	color: #19325a;
+	background-color: #bfd0ea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+a {text-decoration: none; color: #19325a;}
+
+.hoverlink:hover {cursor: pointer;}
+
+
+.headercount {
+
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.headercount > div {width: 33%;}
+.headercount > div:first-child {text-align: left;}
+.headercount > div:nth-child(2) {font-size: 26px;}
+.headercount > div:nth-child(3) {text-align: right;}
+
+
+#ParkCounter, #ParkPercent {display: inline-block;}
+
+
+.whiteback {background-color: white; padding: 10px 0px; border:0px solid red;}
+
+.pagestructure {
+	border: 0px solid red;
+	width: 97%;
+	max-width: 1200px;
+	margin: 20px auto;
+}
+
+.bannerhead {
+	background-color: #bfd0ea;
+	padding: 10px 0px 10px 0px;
+	border-bottom: 2px solid #19325a;
+	position: relative;
+}
+
+.SwitchView {
+	background-color: #19325a;
+	font-size: 14px;
+	text-align: center;
+	color: #ffffff;
+	padding: 5px;
+}
+
+.SwitchView a {
+	color: #ffffff;
+}
+
+@media print {.SwitchView { display:none;} }
+
+
+.bannermenu {background-color: #19325a; color: #ffffff;}
+
+.pagetitle {text-align: center; font-size: 30px;}
+.pagetitlecounter {text-align: center; font-size: 20px;}
+.headgrid {display: flex; justify-content: center;  gap: 50px; font-size: 16px; padding: 10px 0px; text-align: center;}
+
+
+@media screen and (max-width: 750px) {
+.pagetitle {font-size: 26px;}
+.headgrid {justify-content: space-around;  gap: 2px; flex-direction: column; font-size: 12px; padding: 5px 0px;}
+}
+
+.footer {
+	background-color: #bfd0ea;
+	padding: 5px 0px 60px 0px;
+	border-top: 3px solid #19325a;
+}
+
+@media print {
+	.bannerhead {
+	background-color: #ffffff;
+	border-bottom: 1px solid #19325a;
+	margin-bottom: 30px;
+	}
+	.footer {display: none;}
+	.headgrid {display: none;}
+}
+
+
+
+.ClickBox {
+	color: #999999;
+	display: block;
+	white-space: nowrap;
+	margin-left: 5px;
+	-webkit-print-color-adjust: exact;
+}
+
+.ClickBoxOn {color: #19325a;}
+
+
+@media print {
+.ClickBox { color: #999999;}
+.ClickBoxOn {color: #19325a;}
+}
+
+.ClickBox:hover {
+	cursor: pointer;
+}
+
+
+#parknamescontainer {
+	position: relative;
+	display: block;
+	font-size: 13px;
+	font-family: 'Oswald', sans-serif;
+	background-color: #ffffff;
+	padding: 10px;
+	border-radius: 10px;
+	columns: 4;
+	border: 0px solid #19325a;
+	margin: 20px 0px;
+}
+
+
+
+
+
+.statelist {
+	margin-bottom: 20px;
+	display: block;
+-webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+}
+
+
+.StateName {
+	font-size: 22px;
+	border-bottom: 1px solid #cccccc;
+	width: 80%;
+	color: #666666;
+	font-family: 'Urbanist', sans-serif;
+	margin-bottom: 5px;
+}
+
+
+
+@media print {
+.statelist {font-size: 7px; line-height: 7px; margin-bottom: 5px; border-bottom: 0px; font-family: 'Urbanist', sans-serif;}
+.StateName {font-size: 8px;  margin-bottom: 0px; font-family: 'Urbanist', sans-serif; }
+.statelist {-webkit-column-break-inside: auto;
+          page-break-inside: auto;
+               break-inside: auto;}
+}
+
+@media screen and (max-width: 1000px) {
+#parknamescontainer {columns: 3;}
+}
+
+@media screen and (max-width: 750px) {
+#parknamescontainer {columns: 2;}
+}
+
+@media screen and (max-width: 550px) {
+#parknamescontainer {columns: 1;}
+}
+
+
+
+
+#mapcontainer {
+	position: relative;
+	margin: 0px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.mapoutline {
+	border: 0px solid #19325a;
+	padding: 0px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	width: 85%;
+	margin: auto;
+}
+
+#USmap {
+	width: 100%;
+	opacity: .4;
+}
+
+.parkdot {
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	border: 1px solid white;
+	-webkit-print-color-adjust: exact;
+	margin-top: -5px;
+	margin-left: -5px;
+
+}
+
+
+
+
+.unclickable {
+	pointer-events: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+.parkdot {height: 7px; width: 7px; margin-top: -3px; margin-left: -3px; border: 1px solid white;}
+}
+
+@media screen and (max-width: 750px) {
+.parkdot {height: 6px; width: 6px; margin-top: -2px; margin-left: -2px; border: 1px solid white;}
+}
+
+@media screen and (max-width: 550px) {
+.parkdot {height: 5px; width: 5px; margin-top: -2px; margin-left: -2px; border: 0px;}
+}
+
+@media print {
+.parkdot {height: 9px; width: 9px; margin-top: -4px; margin-left: -4px; border: 1px solid white;}
+}
+
+
+.parkdotoff {background-color: red;  border: 1px solid white;}
+.parkdoton {background-color: green; border: 1px solid white;}
+.parkdothidden {display: none;}
+.parkdotdim {background-color: #dddddd; border: 1px solid white;}
+
+
+
+.parknamebox {
+	position: absolute;
+	top: 3%;
+	left: 62%;
+	border: 0px solid red;
+	text-align: center;
+	width: 30%;
+	font-size: 22px;
+}
+
+
+@media screen and (max-width: 750px) {
+.parknamebox {font-size: 10px;  left: 50%; top: 0%; width: 50%;}
+}
+
+.parkdot:hover {cursor:pointer;}
+
+
+.parkdot .tooltiptext {
+  visibility: hidden;
+}
+
+
+.tooltiptext {
+	color: #19325a;
+}

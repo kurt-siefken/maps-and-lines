@@ -1,0 +1,599 @@
+
+
+body {
+	font-family: 'Urbanist', sans-serif;
+	font-size: 18px;
+	background-color: #c1cede;
+	border: 0px solid red;
+	margin: 0px;
+	padding: 0px;
+}
+
+* {box-sizing: border-box;}
+@media print { @page { size: portrait; }}
+
+@media print { .dontprint { display: none; }}
+
+
+a {text-decoration: none;}
+
+
+.pagetitlecontainer {
+	color: #19325a;
+	font-size: 30px;
+	text-align: center;
+	margin: 20px 0px;
+	font-weight: bold;
+}
+
+@media print {
+.pagetitlecontainer {border-bottom: 1px solid #aaaaaa; color: #19325a;}
+}
+
+
+#ParkCount {
+	font-size: 26px;
+	font-weight: bold;
+	color: #19325a;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 800px) {
+#ParkCount {font-size: 16px;}
+}
+
+@media screen and (max-width: 500px) {
+}
+
+@media print {
+#ParkCount {font-size: 20px; color: #19325a}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.whiteback  {background-color: #ffffff; padding: 20px 0px; }
+
+#pagestructure {
+	display: flex;
+	flex-direction: row-reverse;
+	border: 0px solid red;
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 0px 0px
+	width: 100%;
+}
+
+
+@media screen and (max-width: 900px) {
+#pagestructure {flex-direction: column;}
+}
+
+@media print {
+#pagestructure {flex-direction: column;}
+.whiteback {border: 0px;}
+}
+
+
+
+#mapcontainer {
+	position: relative;
+	margin: 5px 0px;
+	width: 100%;
+}
+
+.mapoutline {
+	border: 0px solid #19325a;
+	padding: 0px;
+	width: 95%;
+	margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+.mapoutline {border-bottom: 1px solid #a57b5c;}
+}
+
+@media print {
+#mapcontainer {margin:0px;}
+.mapoutline {border-bottom: 0px solid #a57b5c;}
+}
+
+
+#USmap {
+	width: 100%;
+	opacity: .4;
+}
+
+.ClickBox {
+	color: #aaaaaa;
+	display: block;
+	white-space: nowrap;
+	margin-left: 5px;
+}
+
+@media print {
+.ClickBox {color: #eeeeee;}
+}
+
+.ClickBox:hover {
+	cursor: pointer;
+}
+
+/*---
+.parkdot {
+	height: 18px;
+	width: 18px;
+	background-color: red;
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	border: 2px solid white;
+	-webkit-print-color-adjust: exact;
+}
+
+.parkdoton {background-color: green;}
+.parkdotdim {background-color: #cccccc;}
+---*/
+
+.parkdot {
+	width: 30px; 
+	height: 30px; 
+	-webkit-print-color-adjust: exact;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	background-image: url("icon-park-off.png");
+	border: 0px solid red;
+}
+
+.parkdoton {background-image: url("icon-park-on.png");}
+.parkdotdim {background-image: url("icon-park-dim.png");}
+.parkdothidden {display: none;}
+
+@media screen and (max-width: 1000px) {
+.parkdot {height: 25px; width: 25px;}
+}
+@media screen and (max-width: 700px) {
+.parkdot {height: 20px; width: 20px;}
+}
+@media screen and (max-width: 500px) {
+.parkdot {height: 15px; width: 15px;}
+}
+
+
+@media print {
+.parkdot {height: 25px; width: 25px;}
+}
+
+#parknamescontainer {
+	border: 0px solid #19325a;
+	position: relative;
+	display: block;
+	margin-right: 20px;
+	font-size: 13px;
+	columns: 2;
+	font-family: 'Oswald', sans-serif;
+	padding: 0px;
+	border-radius: 10px;
+}
+
+
+@media print {
+#parknamescontainer {columns: 4; border: 0px; margin-right: 0px; margin-top: 20px; border-top: 1px solid #aaaaaa; border-radius: 0px;}
+}
+
+@media screen and (max-width: 900px) {
+#parknamescontainer {margin: 20px auto; width: 80%;}
+}
+
+
+
+
+#bottommenu {
+	margin: 0px auto;
+	text-align: center;
+	background-color: #19325a;
+}
+
+.bottommenubutton {
+	text-align: center;
+	display: inline-block;
+	padding: 5px;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.bottommenubutton:hover, .parkdot:hover {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+.bottommenucontainer {flex-direction: column;}
+.bottommenubutton {width: 80%; margin: 1px auto; padding: 2px; display: block;}
+}
+
+@media print {
+#bottommenu {display: none;}
+}
+
+.bottommenucontainer {
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+.parkdot .tooltiptext {
+  visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+#ParkName {
+	position: absolute;
+	border: 0px solid red;
+	top: 3%;
+	left: 62%;
+	text-align: center;
+	width: 30%;
+	font-size: 22px;
+	color: #19325a;
+}
+
+
+@media screen and (max-width: 800px) {
+#ParkName {font-size: 18px;}
+}
+@media screen and (max-width: 500px) {
+#ParkName {font-size: 14px;}
+}
+
+
+
+
+#Acadia {
+	top: 11%;
+	left: 95.5%;
+}
+
+#AmericanSamoa {
+	top: 83.5%;
+	left: 59%;
+}
+
+#Arches {
+	top: 37%;
+	left: 24.7%;
+}
+
+#Badlands {
+	top: 23%;
+	left: 40%;
+}
+
+#BigBend {
+	top: 73%;
+	left: 35%;
+}
+
+#Biscayne {
+	top: 82.5%;
+	left: 85.5%;
+}
+
+#BlackCanyon {
+	top: 39%;
+	left: 29.4%;
+}
+
+#BryceCanyon {
+	top: 41%;
+	left: 19.9%;
+}
+
+#Canyonlands {
+	top: 41.2%;
+	left: 23.3%;
+}
+
+#CapitolReef {
+	top: 37%;
+	left: 21.5%;
+}
+
+#CarlsbadCaverns {
+	top: 61.6%;
+	left: 33.6%;
+}
+
+#ChannelIslands {
+	top: 52%;
+	left: 4%;
+}
+
+#Congaree {
+	top: 54%;
+	left: 80%;
+}
+
+#CraterLake {
+	top: 18.5%;
+	left: 4%;
+}
+
+#CuyahogaValley {
+	top: 31%;
+	left: 75%;
+}
+
+#DeathValley {
+	top: 46%;
+	left: 10%;
+}
+
+#Denali {
+	top: 79%;
+	left: 15%;
+}
+
+#DryTortugas {
+	top: 86.5%;
+	left: 82%;
+}
+
+#Everglades {
+	top: 81.9%;
+	left: 82.6%;
+}
+
+#GatesoftheArctic {
+	top: 72%;
+	left: 15%;
+}
+
+#GatewayArch {
+	top: 41%;
+	left: 59.6%;
+}
+
+#Glacier {
+	top: 4%;
+	left: 22%;
+}
+
+#GlacierBay {
+	top: 87.5%;
+	left: 22%;
+}
+
+#GrandCanyon {
+	top: 47%;
+	left: 19%;
+}
+
+#GrandTeton {
+	top: 22%;
+	left: 25%;
+}
+
+#GreatBasin {
+	top: 34%;
+	left: 15%;
+}
+
+#GreatSandDunes {
+	top: 43%;
+	left: 31.6%;
+}
+
+#GreatSmokyMountains {
+	top: 48.2%;
+	left: 75.5%;
+}
+
+#GuadalupeMountains {
+	top: 65.3%;
+	left: 31.6%;
+}
+
+#Haleakala {
+	top: 82.5%;
+	left: 34%;
+}
+
+#HawaiiVolcanoes {
+	top: 89%;
+	left: 37%;
+}
+
+#HotSprings {
+	top: 55%;
+	left: 56%;
+}
+
+#IndianaDunes {
+	top: 30%;
+	left: 66%;
+}
+
+#IsleRoyale {
+	top: 10%;
+	left: 60%;
+}
+
+#JoshuaTree {
+	top: 54%;
+	left: 10%;
+}
+
+#Katmai {
+	top: 89.4%;
+	left: 13%;
+}
+
+#KenaiFjords {
+	top: 86%;
+	left: 17%;
+}
+
+#KingsCanyon {
+	top: 41.1%;
+	left: 6.8%;
+}
+
+#KobukValley {
+	top: 72.5%;
+	left: 12%;
+}
+
+#LakeClark {
+	top: 85%;
+	left: 13.5%;
+}
+
+#LassenVolcanic {
+	top: 26%;
+	left: 4.6%;
+}
+
+#MammothCave {
+	top: 44.6%;
+	left: 68%;
+}
+
+#MesaVerde {
+	top: 43.5%;
+	left: 27%;
+}
+
+#MountRainier {
+	top: 5.5%;
+	left: 8%;
+}
+
+#NewRiverGorge {
+	top: 38.5%;
+	left: 77.9%;
+}
+
+#NorthCascades {
+	top: 1%;
+	left: 9%;
+}
+
+#Olympic {
+	top: 2%;
+	left: 5.5%;
+}
+
+#PetrifiedForest {
+	top: 51%;
+	left: 22%;
+}
+
+#Pinnacles {
+	top: 39%;
+	left: 3%;
+}
+
+#Redwood {
+	top: 23.5%;
+	left: 0%;
+}
+
+#RockyMountain {
+	top: 36%;
+	left: 32.5%;
+}
+
+#Saguaro {
+	top: 61%;
+	left: 20%;
+}
+
+#Sequoia {
+	top: 45.5%;
+	left: 6.6%;
+}
+
+#Shenandoah {
+	top: 37.9%;
+	left: 82.7%;
+}
+
+#TheodoreRoosevelt {
+	top: 11%;
+	left: 39%;
+}
+
+#VirginIslands {
+	top: 87.5%;
+	left: 74%;
+}
+
+#Voyageurs {
+	top: 8%;
+	left: 53%;
+}
+
+#WhiteSands {
+	top: 60%;
+	left: 29%;
+}
+
+#WindCave {
+	top: 24%;
+	left: 37%;
+}
+
+#WrangellStElias {
+	top: 82%;
+	left: 19%;
+}
+
+#Yellowstone {
+	top: 17.4%;
+	left: 25.5%;
+}
+
+#Yosemite {
+	top: 36%;
+	left: 5.5%;
+}
+
+#Zion {
+	top: 42%;
+	left: 17%;
+}
+
+
+
+

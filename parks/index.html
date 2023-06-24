@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>National Parks</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="parks.css">
+<script type="text/javascript" src="parks.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="CheckURL()">
+
+
+<div class="pagetitlecontainer">
+<div class="pagetitle">National Parks Checklist</div>
+<div id="ParkCount" class="parkcout"><span id="ParkCounter">0</span> out of 63 (<span id="ParkPercent">0</span>%)</div>
+</div>
+
+
+
+	<div id="bottommenu">
+	<div class="bottommenucontainer">
+		<div onclick="if (confirm('You are about to delete your parks.  Are you sure you want to continue?')){location.href = 'index.html';}" class="bottommenubutton">Reset List</div>
+		<div onclick="ToggleUnvisited()" id="ToggleUnvisited" class="bottommenubutton">Dim Unvisited</div>
+		<div onclick="CopyURL()" class="bottommenubutton">Copy Direct URL</div>
+		<a href="nationalparkschecklist.pdf" class="bottommenubutton">Blank Checklist</a>
+		<div onclick="PrintList()" class="bottommenubutton">Print</div>
+	</div>
+	</div>
+
+<div class="whiteback">
+<div id="pagestructure">
+
+<div class="mapoutline">
+<div id="mapcontainer">
+<img src="us-map.png" id="USmap">
+
+<div id=ParkName></div>
+
+<div id="Acadia" class="parkdot">Acadia</div>
+<div id="AmericanSamoa" class="parkdot">American Samoa</div>
+<div id="Arches" class="parkdot">Arches</div>
+<div id="Badlands" class="parkdot">Badlands</div>
+<div id="BigBend" class="parkdot">Big Bend</div>
+<div id="Biscayne" class="parkdot">Biscayne</div>
+<div id="BlackCanyon" class="parkdot">Black Canyon</div>
+<div id="BryceCanyon" class="parkdot">Bryce Canyon</div>
+<div id="Canyonlands" class="parkdot">Canyonlands</div>
+<div id="CapitolReef" class="parkdot">Capitol Reef</div>
+<div id="CarlsbadCaverns" class="parkdot">Carlsbad Caverns</div>
+<div id="ChannelIslands" class="parkdot">Channel Islands</div>
+<div id="Congaree" class="parkdot">Congaree</div>
+<div id="CraterLake" class="parkdot">Crater Lake</div>
+<div id="CuyahogaValley" class="parkdot">Cuyahoga Valley</div>
+<div id="DeathValley" class="parkdot">Death Valley</div>
+<div id="Denali" class="parkdot">Denali</div>
+<div id="DryTortugas" class="parkdot">Dry Tortugas</div>
+<div id="Everglades" class="parkdot">Everglades</div>
+<div id="GatesoftheArctic" class="parkdot">Gates of the Arctic</div>
+<div id="GatewayArch" class="parkdot">Gateway Arch</div>
+<div id="Glacier" class="parkdot">Glacier</div>
+<div id="GlacierBay" class="parkdot">Glacier Bay</div>
+<div id="GrandCanyon" class="parkdot">Grand Canyon</div>
+<div id="GrandTeton" class="parkdot">Grand Teton</div>
+<div id="GreatBasin" class="parkdot">Great Basin</div>
+<div id="GreatSandDunes" class="parkdot">Great Sand Dunes</div>
+<div id="GreatSmokyMountains" class="parkdot">Great Smoky Mountains</div>
+<div id="GuadalupeMountains" class="parkdot">Guadalupe Mountains</div>
+<div id="Haleakala" class="parkdot">Haleakala</div>
+<div id="HawaiiVolcanoes" class="parkdot">Hawaii Volcanoes</div>
+<div id="HotSprings" class="parkdot">Hot Springs</div>
+<div id="IndianaDunes" class="parkdot">Indiana Dunes</div>
+<div id="IsleRoyale" class="parkdot">Isle Royale</div>
+<div id="JoshuaTree" class="parkdot">Joshua Tree</div>
+<div id="Katmai" class="parkdot">Katmai</div>
+<div id="KenaiFjords" class="parkdot">Kenai Fjords</div>
+<div id="KingsCanyon" class="parkdot">Kings Canyon</div>
+<div id="KobukValley" class="parkdot">Kobuk Valley</div>
+<div id="LakeClark" class="parkdot">Lake Clark</div>
+<div id="LassenVolcanic" class="parkdot">Lassen Volcanic</div>
+<div id="MammothCave" class="parkdot">Mammoth Cave</div>
+<div id="MesaVerde" class="parkdot">Mesa Verde</div>
+<div id="MountRainier" class="parkdot">Mount Rainier</div>
+<div id="NewRiverGorge" class="parkdot">New River Gorge</div>
+<div id="NorthCascades" class="parkdot">North Cascades</div>
+<div id="Olympic" class="parkdot">Olympic</div>
+<div id="PetrifiedForest" class="parkdot">Petrified Forest</div>
+<div id="Pinnacles" class="parkdot">Pinnacles</div>
+<div id="Redwood" class="parkdot">Redwood</div>
+<div id="RockyMountain" class="parkdot">Rocky Mountain</div>
+<div id="Saguaro" class="parkdot">Saguaro</div>
+<div id="Sequoia" class="parkdot">Sequoia</div>
+<div id="Shenandoah" class="parkdot">Shenandoah</div>
+<div id="TheodoreRoosevelt" class="parkdot">Theodore Roosevelt</div>
+<div id="VirginIslands" class="parkdot">Virgin Islands</div>
+<div id="Voyageurs" class="parkdot">Voyageurs</div>
+<div id="WhiteSands" class="parkdot">White Sands</div>
+<div id="WindCave" class="parkdot">Wind Cave</div>
+<div id="WrangellStElias" class="parkdot">Wrangell-St. Elias</div>
+<div id="Yellowstone" class="parkdot">Yellowstone</div>
+<div id="Yosemite" class="parkdot">Yosemite</div>
+<div id="Zion" class="parkdot">Zion</div>
+
+
+
+</div>
+
+</div>
+
+<div id="parknamescontainer">
+	<div id="Click-Acadia" onclick="TogglePark(this)" class="ClickBox">Acadia</div>
+	<div id="Click-AmericanSamoa" onclick="TogglePark(this)" class="ClickBox">American Samoa</div>
+	<div id="Click-Arches" onclick="TogglePark(this)" class="ClickBox">Arches</div>
+	<div id="Click-Badlands" onclick="TogglePark(this)" class="ClickBox">Badlands</div>
+	<div id="Click-BigBend" onclick="TogglePark(this)" class="ClickBox">Big Bend</div>
+	<div id="Click-Biscayne" onclick="TogglePark(this)" class="ClickBox">Biscayne</div>
+	<div id="Click-BlackCanyon" onclick="TogglePark(this)" class="ClickBox">Black Canyon</div>
+	<div id="Click-BryceCanyon" onclick="TogglePark(this)" class="ClickBox">Bryce Canyon</div>
+	<div id="Click-Canyonlands" onclick="TogglePark(this)" class="ClickBox">Canyonlands</div>
+	<div id="Click-CapitolReef" onclick="TogglePark(this)" class="ClickBox">Capitol Reef</div>
+	<div id="Click-CarlsbadCaverns" onclick="TogglePark(this)" class="ClickBox">Carlsbad Caverns</div>
+	<div id="Click-ChannelIslands" onclick="TogglePark(this)" class="ClickBox">Channel Islands</div>
+	<div id="Click-Congaree" onclick="TogglePark(this)" class="ClickBox">Congaree</div>
+	<div id="Click-CraterLake" onclick="TogglePark(this)" class="ClickBox">Crater Lake</div>
+	<div id="Click-CuyahogaValley" onclick="TogglePark(this)" class="ClickBox">Cuyahoga Valley</div>
+	<div id="Click-DeathValley" onclick="TogglePark(this)" class="ClickBox">Death Valley</div>
+	<div id="Click-Denali" onclick="TogglePark(this)" class="ClickBox">Denali</div>
+	<div id="Click-DryTortugas" onclick="TogglePark(this)" class="ClickBox">Dry Tortugas</div>
+	<div id="Click-Everglades" onclick="TogglePark(this)" class="ClickBox">Everglades</div>
+	<div id="Click-GatesoftheArctic" onclick="TogglePark(this)" class="ClickBox">Gates of the Arctic</div>
+	<div id="Click-GatewayArch" onclick="TogglePark(this)" class="ClickBox">Gateway Arch</div>
+	<div id="Click-Glacier" onclick="TogglePark(this)" class="ClickBox">Glacier</div>
+	<div id="Click-GlacierBay" onclick="TogglePark(this)" class="ClickBox">Glacier Bay</div>
+	<div id="Click-GrandCanyon" onclick="TogglePark(this)" class="ClickBox">Grand Canyon</div>
+	<div id="Click-GrandTeton" onclick="TogglePark(this)" class="ClickBox">Grand Teton</div>
+	<div id="Click-GreatBasin" onclick="TogglePark(this)" class="ClickBox">Great Basin</div>
+	<div id="Click-GreatSandDunes" onclick="TogglePark(this)" class="ClickBox">Great Sand Dunes</div>
+	<div id="Click-GreatSmokyMountains" onclick="TogglePark(this)" class="ClickBox">Great Smoky Mountains</div>
+	<div id="Click-GuadalupeMountains" onclick="TogglePark(this)" class="ClickBox">Guadalupe Mountains</div>
+	<div id="Click-Haleakala" onclick="TogglePark(this)" class="ClickBox">Haleakala</div>
+	<div id="Click-HawaiiVolcanoes" onclick="TogglePark(this)" class="ClickBox">Hawaii Volcanoes</div>
+	<div id="Click-HotSprings" onclick="TogglePark(this)" class="ClickBox">Hot Springs</div>
+	<div id="Click-IndianaDunes" onclick="TogglePark(this)" class="ClickBox">Indiana Dunes</div>
+	<div id="Click-IsleRoyale" onclick="TogglePark(this)" class="ClickBox">Isle Royale</div>
+	<div id="Click-JoshuaTree" onclick="TogglePark(this)" class="ClickBox">Joshua Tree</div>
+	<div id="Click-Katmai" onclick="TogglePark(this)" class="ClickBox">Katmai</div>
+	<div id="Click-KenaiFjords" onclick="TogglePark(this)" class="ClickBox">Kenai Fjords</div>
+	<div id="Click-KingsCanyon" onclick="TogglePark(this)" class="ClickBox">Kings Canyon</div>
+	<div id="Click-KobukValley" onclick="TogglePark(this)" class="ClickBox">Kobuk Valley</div>
+	<div id="Click-LakeClark" onclick="TogglePark(this)" class="ClickBox">Lake Clark</div>
+	<div id="Click-LassenVolcanic" onclick="TogglePark(this)" class="ClickBox">Lassen Volcanic</div>
+	<div id="Click-MammothCave" onclick="TogglePark(this)" class="ClickBox">Mammoth Cave</div>
+	<div id="Click-MesaVerde" onclick="TogglePark(this)" class="ClickBox">Mesa Verde</div>
+	<div id="Click-MountRainier" onclick="TogglePark(this)" class="ClickBox">Mount Rainier</div>
+	<div id="Click-NewRiverGorge" onclick="TogglePark(this)" class="ClickBox">New River Gorge</div>
+	<div id="Click-NorthCascades" onclick="TogglePark(this)" class="ClickBox">North Cascades</div>
+	<div id="Click-Olympic" onclick="TogglePark(this)" class="ClickBox">Olympic</div>
+	<div id="Click-PetrifiedForest" onclick="TogglePark(this)" class="ClickBox">Petrified Forest</div>
+	<div id="Click-Pinnacles" onclick="TogglePark(this)" class="ClickBox">Pinnacles</div>
+	<div id="Click-Redwood" onclick="TogglePark(this)" class="ClickBox">Redwood</div>
+	<div id="Click-RockyMountain" onclick="TogglePark(this)" class="ClickBox">Rocky Mountain</div>
+	<div id="Click-Saguaro" onclick="TogglePark(this)" class="ClickBox">Saguaro</div>
+	<div id="Click-Sequoia" onclick="TogglePark(this)" class="ClickBox">Sequoia</div>
+	<div id="Click-Shenandoah" onclick="TogglePark(this)" class="ClickBox">Shenandoah</div>
+	<div id="Click-TheodoreRoosevelt" onclick="TogglePark(this)" class="ClickBox">Theodore Roosevelt</div>
+	<div id="Click-VirginIslands" onclick="TogglePark(this)" class="ClickBox">Virgin Islands</div>
+	<div id="Click-Voyageurs" onclick="TogglePark(this)" class="ClickBox">Voyageurs</div>
+	<div id="Click-WhiteSands" onclick="TogglePark(this)" class="ClickBox">White Sands</div>
+	<div id="Click-WindCave" onclick="TogglePark(this)" class="ClickBox">Wind Cave</div>
+	<div id="Click-WrangellStElias" onclick="TogglePark(this)" class="ClickBox">Wrangell-St. Elias</div>
+	<div id="Click-Yellowstone" onclick="TogglePark(this)" class="ClickBox">Yellowstone</div>
+	<div id="Click-Yosemite" onclick="TogglePark(this)" class="ClickBox">Yosemite</div>
+	<div id="Click-Zion" onclick="TogglePark(this)" class="ClickBox">Zion</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+<div class="dontprint" style="border-top: 5px solid #19325a;">
+<br><br><br><br><br><br><br><br><br>
+</div>
+
+
+
+
+<div id="ParkList" style="display: none;"></div>
+<div id="ParkStatus" style="display: none;"></div>
+
+
+
+
+<!---------------------
+Acadia
+American Samoa
+Arches
+Badlands
+Big Bend
+Biscayne
+Black Canyon
+Bryce Canyon
+Canyonlands
+Capitol Reef
+Carlsbad Caverns
+Channel Islands
+Congaree
+Crater Lake
+Cuyahoga Valley
+Death Valley
+Denali
+Dry Tortugas
+Everglades
+Gates of the Arctic
+Gateway Arch
+Glacier
+Glacier Bay
+Grand Canyon
+Grand Teton
+Great Basin
+Great Sand Dunes
+Great Smoky Mountains
+Guadalupe Mountains
+Haleakala
+Hawaii Volcanoes
+Hot Springs
+Indiana Dunes
+Isle Royale
+Joshua Tree
+Katmai
+Kenai Fjords
+Kings Canyon
+Kobuk Valley
+Lake Clark
+Lassen Volcanic
+Mammoth Cave
+Mesa Verde
+Mount Rainier
+New River Gorge
+North Cascades
+Olympic
+Petrified Forest
+Pinnacles
+Redwood
+Rocky Mountain
+Saguaro
+Sequoia
+Shenandoah
+Theodore Roosevelt
+Virgin Islands
+Voyageurs
+White Sands
+Wind Cave
+Wrangell-St. Elias
+Yellowstone
+Yosemite
+Zion
+-------------------!>
+
+</body>
+</html>
+
+
+
+
+

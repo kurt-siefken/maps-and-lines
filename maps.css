@@ -1,0 +1,97 @@
+
+
+body {
+	font-family: 'Patrick Hand SC', cursive;
+	font-size: 30px;
+	background-color: #f0f0e1;
+	border: 0px solid red;
+	margin: 0px;
+	padding: 0px;
+	line-height: 30px;
+}
+
+
+
+
+a {text-decoration: none; color: #1b407d;}
+
+.pagestructure {
+display: flex;
+justify-content: center;
+align-items: center;
+border: 0px solid green;
+height: 100%;
+color: #1b407d;
+}
+
+.pagestructure > div {
+width: 100%;
+max-width: 800px;
+border: 0px solid blue;
+}
+
+.pagename {
+font-family: 'Orelega One', cursive;
+text-align: center;
+font-size: 60px;
+display: block;
+line-height: 60px;
+margin-bottom: 30px;
+text-transform: lowercase; 
+}
+
+
+
+.listoflinks {
+display: flex;
+width: 100%;
+max-width: 800px;
+border: 0px solid red;
+}
+
+.linkcolumn {
+margin: 30px;
+width: 50%;
+}
+
+.linkcolumn > div {
+
+}
+
+.smalltext {
+font-size: 18px;
+line-height: 18px;
+}
+
+.sectiontitle {
+font-family: 'Orelega One', cursive;
+border-bottom: 2px solid #1b407d;
+margin-bottom: 10px;
+}
+
+.linkcolumn a {
+display: block;
+border-radius: 10px;
+padding: 10px;
+}
+
+.linkcolumn a:hover
+{
+background-color: #ffffff;
+}
+
+
+@media screen and (max-width: 600px) {
+.listoflinks {flex-direction: column;}
+.linkcolumn {width: 90%;}
+
+}
+
+
+
+
+
+
+
+
+

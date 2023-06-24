@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>US High Points Summited</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="parks.css">
+<script type="text/javascript" src="parks.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="CheckURL()">
+
+
+<div class="pagetitlecontainer">
+<div class="pagetitle">State High Points Summited</div>
+<div id="ParkCount" class="parkcout"><span id="ParkCounter">0</span> out of 50 (<span id="ParkPercent">0</span>%)</div>
+</div>
+
+<div class="whiteback">
+<div id="pagestructure">
+
+<div class="mapoutline">
+<div id="mapcontainer">
+<img src="us-map.png" id="USmap">
+
+<div id="Alabama" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Alaska" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Arizona" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Arkansas" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="California" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Colorado" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Connecticut" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Delaware" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Florida" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Georgia" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Hawaii" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Idaho" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Illinois" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Indiana" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Iowa" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Kansas" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Kentucky" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Louisiana" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Maine" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Maryland" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Massachusetts" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Michigan" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Minnesota" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Mississippi" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Missouri" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Montana" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Nebraska" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Nevada" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="NewHampshire" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="NewJersey" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="NewMexico" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="NewYork" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="NorthCarolina" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="NorthDakota" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Ohio" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Oklahoma" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Oregon" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Pennsylvania" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="RhodeIsland" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="SouthCarolina" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="SouthDakota" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Tennessee" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Texas" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Utah" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Vermont" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Virginia" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Washington" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="WestVirginia" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Wisconsin" class="parkdot" onclick="TogglePark(this)"></div>
+<div id="Wyoming" class="parkdot" onclick="TogglePark(this)"></div>
+
+
+
+</div>
+
+</div>
+
+<div id="parknamescontainer">
+
+	<div id="Click-Alabama" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Alabama</span>
+		Cheaha Mountain
+	</div>
+	<div id="Click-Alaska" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Alaska</span>
+		Denali
+	</div>
+	<div id="Click-Arizona" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Arizona</span>
+		Humphreys Peak
+	</div>
+	<div id="Click-Arkansas" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Arkansas</span>
+		Mount Magazine
+	</div>
+	<div id="Click-California" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">California</span>
+		Mount Whitney
+	</div>
+	<div id="Click-Colorado" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Colorado</span>
+		Mount Elbert
+	</div>
+	<div id="Click-Connecticut" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Connecticut</span>
+		Mount Frissell
+	</div>
+	<div id="Click-Delaware" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Delaware</span>
+		Ebright Azimuth
+	</div>
+	<div id="Click-Florida" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Florida</span>
+		Britton Hill
+	</div>
+	<div id="Click-Georgia" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Georgia</span>
+		Brasstown Bald
+	</div>
+	<div id="Click-Hawaii" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Hawaii</span>
+		Mauna Kea
+	</div>
+	<div id="Click-Idaho" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Idaho</span>
+		Borah Peak
+	</div>
+	<div id="Click-Illinois" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Illinois</span>
+		Charles Mound
+	</div>
+	<div id="Click-Indiana" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Indiana</span>
+		Hoosier Hill
+	</div>
+	<div id="Click-Iowa" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Iowa</span>
+		Hawkeye Point
+	</div>
+	<div id="Click-Kansas" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Kansas</span>
+		Mount Sunflower
+	</div>
+	<div id="Click-Kentucky" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Kentucky</span>
+		Black Mountain
+	</div>
+	<div id="Click-Louisiana" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Louisiana</span>
+		Driskill Mountain
+	</div>
+	<div id="Click-Maine" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Maine</span>
+		Mount Katahdin
+	</div>
+	<div id="Click-Maryland" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Maryland</span>
+		Backbone Mountain
+	</div>
+	<div id="Click-Massachusetts" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Massachusetts</span>
+		Mount Greylock
+	</div>
+	<div id="Click-Michigan" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Michigan</span>
+		Mount Arvon
+	</div>
+	<div id="Click-Minnesota" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Minnesota</span>
+		Eagle Mountain
+	</div>
+	<div id="Click-Mississippi" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Mississippi</span>
+		Woodall Mountain
+	</div>
+	<div id="Click-Missouri" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Missouri</span>
+		Taum Sauk Mountain
+	</div>
+	<div id="Click-Montana" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Montana</span>
+		Granite Peak
+	</div>
+	<div id="Click-Nebraska" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Nebraska</span>
+		Panorama Point
+	</div>
+	<div id="Click-Nevada" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Nevada</span>
+		Boundary Peak
+	</div>
+	<div id="Click-NewHampshire" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">New Hampshire</span>
+		Mount Washington
+	</div>
+	<div id="Click-NewJersey" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">New Jersey</span>
+		High Point
+	</div>
+	<div id="Click-NewMexico" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">New Mexico</span>
+		Wheeler Peak
+	</div>
+	<div id="Click-NewYork" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">New York</span>
+		Mount Marcy
+	</div>
+	<div id="Click-NorthCarolina" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">North Carolina</span>
+		Mount Mitchell
+	</div>
+	<div id="Click-NorthDakota" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">North Dakota</span>
+		White Butte
+	</div>
+	<div id="Click-Ohio" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Ohio</span>
+		Campbell Hill
+	</div>
+	<div id="Click-Oklahoma" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Oklahoma</span>
+		Black Mesa
+	</div>
+	<div id="Click-Oregon" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Oregon</span>
+		Mount Hood
+	</div>
+	<div id="Click-Pennsylvania" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Pennsylvania</span>
+		Mount Davis
+	</div>
+	<div id="Click-RhodeIsland" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Rhode Island</span>
+		Jerimoth Hill
+	</div>
+	<div id="Click-SouthCarolina" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">South Carolina</span>
+		Sassafras Mountain
+	</div>
+	<div id="Click-SouthDakota" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">South Dakota</span>
+		Black Elk Peak
+	</div>
+	<div id="Click-Tennessee" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Tennessee</span>
+		Clingmans Dome
+	</div>
+	<div id="Click-Texas" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Texas</span>
+		Guadalupe Peak
+	</div>
+	<div id="Click-Utah" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Utah</span>
+		Kings Peak
+	</div>
+	<div id="Click-Vermont" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Vermont</span>
+		Mount Mansfield
+	</div>
+	<div id="Click-Virginia" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Virginia</span>
+		Mount Rogers
+	</div>
+	<div id="Click-Washington" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Washington</span>
+		Mount Rainier
+	</div>
+	<div id="Click-WestVirginia" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">West Virginia</span>
+		Spruce Knob
+	</div>
+	<div id="Click-Wisconsin" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Wisconsin</span>
+		Timms Hill
+	</div>
+	<div id="Click-Wyoming" onclick="TogglePark(this)" class="ClickBox">
+		<span class="statename">Wyoming</span>
+		Gannett Peak
+	</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+	<div id="bottommenu">
+	<div id="bottommenucontainer">
+	<a href="index.html" onclick="ResetList()" class="bottommenubutton">Reset List</a>
+	<div onclick="ToggleUnvisited()" id="ToggleUnvisited" class="bottommenubutton">Dim Unvisited</div>
+	<div onclick="CopyURL()" class="bottommenubutton">Copy Direct URL</div>
+	<a href="highpoints-checklist.pdf" class="bottommenubutton">Blank Checklist</a>
+	<div onclick="PrintList()" class="bottommenubutton">Print</div>
+	</div>
+	</div>
+
+
+
+
+
+<div id="ParkList" style="display: none;"></div>
+<div id="ParkDotStatus" style="display: none;"></div>
+
+
+
+</body>
+</html>
+
+
+
+
+

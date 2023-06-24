@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>National Park Units Checklist</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="parks.css">
+
+
+<script type="text/javascript" src="checkparks.js"></script>
+	<style>
+	@media print { 
+		@page { size: portrait; }
+		.bannerhead { margin-bottom: 0px; display: flex; justify-content: space-between; padding: 0px;}
+		.pagetitle {font-size: 12px;}
+		.pagetitlecounter {font-size: 10px;}
+		#parknamescontainer {margin: 0px 0px;}
+		.pagestructure { margin: 0px auto;}
+	}
+	</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="CheckURL()">
+
+
+
+
+
+<div class="bannerhead">
+	<div class="pagetitle">National Park Units Checklist</div>
+	<div class="pagetitlecounter"><div id="ParkCounter">0</div> out of 423 (<div id="ParkPercent">0</div>%)</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="bannermenu">
+	<div class="headgrid">
+	<div><a href="index.html" id="ViewAsMap" class="hoverlink" style="color: #ffffff;">Switch to Map View</a></div>
+	<div><div onclick="copyURL()" class="hoverlink">Copy Link</div></div>
+	<div><div class="hoverlink" style="color: #ffffff;" onclick="if (confirm('You are about to delete all your parks.  Are you sure you want to continue?')){location.href = 'parkslist.html';}">Reset</div></div>
+	<div><div onclick="print_onclick()" class="hoverlink">Print</div></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="whiteback">
+<div class="pagestructure">
+
+<div id="parknamescontainer">
+
+
+
+
+<div class="statelist">
+<div class="StateName">Alabama</div>
+ <div id="Click-bicr" onclick="TogglePark(this)" class="ClickBox">Birmingham Civil Rights NM</div>
+ <div id="Click-frri" onclick="TogglePark(this)" class="ClickBox">Freedom Riders NM</div>
+ <div id="Click-hobe" onclick="TogglePark(this)" class="ClickBox">Horseshoe Bend NMP</div>
+ <div id="Click-liri" onclick="TogglePark(this)" class="ClickBox">Little River Canyon N PRES</div>
+ <div id="Click-ruca" onclick="TogglePark(this)" class="ClickBox">Russell Cave NM</div>
+ <div id="Click-tuai" onclick="TogglePark(this)" class="ClickBox">Tuskegee Airmen NHS</div>
+ <div id="Click-tuin" onclick="TogglePark(this)" class="ClickBox">Tuskegee Institute NHS</div>
+</div>
+
+
+
+
+<div class="statelist">
+<div class="StateName">Alaska</div>
+ <div id="Click-alag" onclick="TogglePark(this)" class="ClickBox">Alagnak WR</div>
+ <div id="Click-ania" onclick="TogglePark(this)" class="ClickBox">Aniakchak NM</div>
+ <div id="Click-aniap" onclick="TogglePark(this)" class="ClickBox">Aniakchak Preserve N PRES</div>
+ <div id="Click-bela" onclick="TogglePark(this)" class="ClickBox">Bering Land Bridge N PRES</div>
+ <div id="Click-kakr" onclick="TogglePark(this)" class="ClickBox">Cape Krusenstern NM</div>
+ <div id="Click-dena" onclick="TogglePark(this)" class="ClickBox">Denali NP</div>
+ <div id="Click-denap" onclick="TogglePark(this)" class="ClickBox">Denali Preserve N PRES</div>
+ <div id="Click-gaar" onclick="TogglePark(this)" class="ClickBox">Gates of the Arctic NP</div>
+ <div id="Click-gaarp" onclick="TogglePark(this)" class="ClickBox">Gates of the Arctic Preserve N PRES</div>
+ <div id="Click-glba" onclick="TogglePark(this)" class="ClickBox">Glacier Bay NP</div>
+ <div id="Click-glbap" onclick="TogglePark(this)" class="ClickBox">Glacier Bay Preserve N PRES</div>
+ <div id="Click-katm" onclick="TogglePark(this)" class="ClickBox">Katmai NP</div>
+ <div id="Click-kamtp" onclick="TogglePark(this)" class="ClickBox">Katmai Preserve N PRES</div>
+ <div id="Click-kefj" onclick="TogglePark(this)" class="ClickBox">Kenai Fjords NP</div>
+ <div id="Click-klgo" onclick="TogglePark(this)" class="ClickBox">Klondike Gold Rush NHP</div>
+ <div id="Click-kova" onclick="TogglePark(this)" class="ClickBox">Kobuk Valley NP</div>
+ <div id="Click-lacl" onclick="TogglePark(this)" class="ClickBox">Lake Clark NP</div>
+ <div id="Click-laclp" onclick="TogglePark(this)" class="ClickBox">Lake Clark Preserve N PRES</div>
+ <div id="Click-noat" onclick="TogglePark(this)" class="ClickBox">Noatak N PRES</div>
+ <div id="Click-sitk" onclick="TogglePark(this)" class="ClickBox">Sitka NHP</div>
+ <div id="Click-wrst" onclick="TogglePark(this)" class="ClickBox">Wrangell-St. Elias NP</div>
+ <div id="Click-wrstp" onclick="TogglePark(this)" class="ClickBox">Wrangell-St. Elias Preserve N PRES</div>
+ <div id="Click-yucj" onclick="TogglePark(this)" class="ClickBox">Yukon-Charley Rivers N PRES</div>
+</div>
+
+
+
+<div class="statelist">
+<div class="StateName">American Samoa</div>
+ <div id="Click-npsa" onclick="TogglePark(this)" class="ClickBox">American Samoa NP</div>
+</div>
+
+
+
+
+<div class="statelist">
+<div class="StateName">Arizona</div>
+ <div id="Click-cach" onclick="TogglePark(this)" class="ClickBox">Canyon De Chelly NM</div>
+ <div id="Click-cagr" onclick="TogglePark(this)" class="ClickBox">Casa Grande Ruins NM</div>
+ <div id="Click-chir" onclick="TogglePark(this)" class="ClickBox">Chiricahua NM</div>
+ <div id="Click-coro" onclick="TogglePark(this)" class="ClickBox">Coronado N MEM</div>
+ <div id="Click-fobo" onclick="TogglePark(this)" class="ClickBox">Fort Bowie NHS</div>
+ <div id="Click-glca" onclick="TogglePark(this)" class="ClickBox">Glen Canyon NRA</div>
+ <div id="Click-grca" onclick="TogglePark(this)" class="ClickBox">Grand Canyon NP</div>
+ <div id="Click-hopi" onclick="TogglePark(this)" class="ClickBox">Hohokam Pima NM</div>
+ <div id="Click-hutr" onclick="TogglePark(this)" class="ClickBox">Hubbell Trading Post NHS</div>
+ <div id="Click-moca" onclick="TogglePark(this)" class="ClickBox">Montezuma Castle NM</div>
+ <div id="Click-nava" onclick="TogglePark(this)" class="ClickBox">Navajo NM</div>
+ <div id="Click-orpi" onclick="TogglePark(this)" class="ClickBox">Organ Pipe Cactus NM</div>
+ <div id="Click-pefo" onclick="TogglePark(this)" class="ClickBox">Petrified Forest NP</div>
+ <div id="Click-pisp" onclick="TogglePark(this)" class="ClickBox">Pipe Spring NM</div>
+ <div id="Click-sagu" onclick="TogglePark(this)" class="ClickBox">Saguaro NP</div>
+ <div id="Click-sucr" onclick="TogglePark(this)" class="ClickBox">Sunset Crater Volcano NM</div>
+ <div id="Click-tont" onclick="TogglePark(this)" class="ClickBox">Tonto NM</div>
+ <div id="Click-tuma" onclick="TogglePark(this)" class="ClickBox">Tumacacori NHP</div>
+ <div id="Click-tuzi" onclick="TogglePark(this)" class="ClickBox">Tuzigoot NM</div>
+ <div id="Click-waca" onclick="TogglePark(this)" class="ClickBox">Walnut Canyon NM</div>
+ <div id="Click-wupa" onclick="TogglePark(this)" class="ClickBox">Wupatki NM</div>
+</div>
+
+
+
+
+<div class="statelist">
+<div class="StateName">Arkansas</div>
+ <div id="Click-arpo" onclick="TogglePark(this)" class="ClickBox">Arkansas Post N MEM</div>
+ <div id="Click-buff" onclick="TogglePark(this)" class="ClickBox">Buffalo River NR</div>
+ <div id="Click-fosm" onclick="TogglePark(this)" class="ClickBox">Fort Smith NHS</div>
+ <div id="Click-hosp" onclick="TogglePark(this)" class="ClickBox">Hot Springs NP</div>
+ <div id="Click-chsc" onclick="TogglePark(this)" class="ClickBox">Little Rock Central High School NHS</div>
+ <div id="Click-peri" onclick="TogglePark(this)" class="ClickBox">Pea Ridge NMP</div>
+ <div id="Click-wicl" onclick="TogglePark(this)" class="ClickBox">President Clinton Birthplace NHS</div>
+</div>
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">California</div>
+ <div id="Click-cabr" onclick="TogglePark(this)" class="ClickBox">Cabrillo NM</div>
+ <div id="Click-camo" onclick="TogglePark(this)" class="ClickBox">Castle Mountains NM</div>
+ <div id="Click-cech" onclick="TogglePark(this)" class="ClickBox">César Chávez NM</div>
+ <div id="Click-chis" onclick="TogglePark(this)" class="ClickBox">Channel Islands NP</div>
+ <div id="Click-deva" onclick="TogglePark(this)" class="ClickBox">Death Valley NP</div>
+ <div id="Click-depo" onclick="TogglePark(this)" class="ClickBox">Devils Postpile NM</div>
+ <div id="Click-euon" onclick="TogglePark(this)" class="ClickBox">Eugene O'Neill NHS</div>
+ <div id="Click-fopo" onclick="TogglePark(this)" class="ClickBox">Fort Point NHS</div>
+ <div id="Click-goga" onclick="TogglePark(this)" class="ClickBox">Golden Gate NRA</div>
+ <div id="Click-jomu" onclick="TogglePark(this)" class="ClickBox">John Muir NHS</div>
+ <div id="Click-jotr" onclick="TogglePark(this)" class="ClickBox">Joshua Tree NP</div>
+ <div id="Click-kica" onclick="TogglePark(this)" class="ClickBox">Kings Canyon NP</div>
+ <div id="Click-lavo" onclick="TogglePark(this)" class="ClickBox">Lassen Volcanic NP</div>
+ <div id="Click-labe" onclick="TogglePark(this)" class="ClickBox">Lava Beds NM</div>
+ <div id="Click-manz" onclick="TogglePark(this)" class="ClickBox">Manzanar NHS</div>
+ <div id="Click-moja" onclick="TogglePark(this)" class="ClickBox">Mojave N PRES</div>
+ <div id="Click-muwo" onclick="TogglePark(this)" class="ClickBox">Muir Woods NM</div>
+ <div id="Click-pinn" onclick="TogglePark(this)" class="ClickBox">Pinnacles NP</div>
+ <div id="Click-pore" onclick="TogglePark(this)" class="ClickBox">Point Reyes NS</div>
+ <div id="Click-poch" onclick="TogglePark(this)" class="ClickBox">Port Chicago Naval Magazine N MEM</div>
+ <div id="Click-redw" onclick="TogglePark(this)" class="ClickBox">Redwood NP</div>
+ <div id="Click-rori" onclick="TogglePark(this)" class="ClickBox">Rosie the Riveter WW II Home Front NHP</div>
+ <div id="Click-safr" onclick="TogglePark(this)" class="ClickBox">San Francisco Maritime NHP</div>
+ <div id="Click-samo" onclick="TogglePark(this)" class="ClickBox">Santa Monica Mountains NRA</div>
+ <div id="Click-sequ" onclick="TogglePark(this)" class="ClickBox">Sequoia NP</div>
+ <div id="Click-tule" onclick="TogglePark(this)" class="ClickBox">Tule Lake NM</div>
+ <div id="Click-whis" onclick="TogglePark(this)" class="ClickBox">Whiskeytown NRA</div>
+ <div id="Click-yose" onclick="TogglePark(this)" class="ClickBox">Yosemite NP</div>
+</div>
+
+
+
+
+<div class="statelist">
+<div class="StateName">Colorado</div>
+ <div id="Click-beol" onclick="TogglePark(this)" class="ClickBox">Bent's Old Fort NHS</div>
+ <div id="Click-blca" onclick="TogglePark(this)" class="ClickBox">Black Canyon of the Gunnison NP</div>
+ <div id="Click-colm" onclick="TogglePark(this)" class="ClickBox">Colorado NM</div>
+ <div id="Click-cure" onclick="TogglePark(this)" class="ClickBox">Curecanti NRA</div>
+ <div id="Click-dino" onclick="TogglePark(this)" class="ClickBox">Dinosaur NM</div>
+ <div id="Click-flfo" onclick="TogglePark(this)" class="ClickBox">Florissant Fossil Beds NM</div>
+ <div id="Click-grsa" onclick="TogglePark(this)" class="ClickBox">Great Sand Dunes NP</div>
+ <div id="Click-grsap" onclick="TogglePark(this)" class="ClickBox">Great Sand Dunes Preserve N PRES</div>
+ <div id="Click-hove" onclick="TogglePark(this)" class="ClickBox">Hovenweep NM</div>
+ <div id="Click-meve" onclick="TogglePark(this)" class="ClickBox">Mesa Verde NP</div>
+ <div id="Click-romo" onclick="TogglePark(this)" class="ClickBox">Rocky Mountain NP</div>
+ <div id="Click-sand" onclick="TogglePark(this)" class="ClickBox">Sand Creek Massacre NHS</div>
+ <div id="Click-yuho" onclick="TogglePark(this)" class="ClickBox">Yucca House NM</div>
+</div>
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Connecticut</div>
+ <div id="Click-wefa" onclick="TogglePark(this)" class="ClickBox">Weir Farm NHP</div>
+</div>
+
+
+
+
+<div class="statelist">
+<div class="StateName">Delaware</div>
+ <div id="Click-frst" onclick="TogglePark(this)" class="ClickBox">First State NHP</div>
+</div>
+
+
+
+
+<div class="statelist">
+<div class="StateName">Florida</div>
+ <div id="Click-bicy" onclick="TogglePark(this)" class="ClickBox">Big Cypress N PRES</div>
+ <div id="Click-bisc" onclick="TogglePark(this)" class="ClickBox">Biscayne NP</div>
+ <div id="Click-cana" onclick="TogglePark(this)" class="ClickBox">Canaveral NS</div>
+ <div id="Click-casa" onclick="TogglePark(this)" class="ClickBox">Castillo de San Marcos NM</div>
+ <div id="Click-deso" onclick="TogglePark(this)" class="ClickBox">De Soto N MEM</div>
+ <div id="Click-drto" onclick="TogglePark(this)" class="ClickBox">Dry Tortugas NP</div>
+ <div id="Click-ever" onclick="TogglePark(this)" class="ClickBox">Everglades NP</div>
+ <div id="Click-foca" onclick="TogglePark(this)" class="ClickBox">Fort Caroline N MEM</div>
+ <div id="Click-foma" onclick="TogglePark(this)" class="ClickBox">Fort Matanzas NM</div>
+ <div id="Click-guis" onclick="TogglePark(this)" class="ClickBox">Gulf Islands NS</div>
+ <div id="Click-timu" onclick="TogglePark(this)" class="ClickBox">Timucuan N PRES</div>
+</div>
+
+
+
+
+<div class="statelist">
+<div class="StateName">Georgia</div>
+ <div id="Click-ande" onclick="TogglePark(this)" class="ClickBox">Andersonville NHS</div>
+ <div id="Click-chat" onclick="TogglePark(this)" class="ClickBox">Chattahoochee River NRA</div>
+ <div id="Click-chch" onclick="TogglePark(this)" class="ClickBox">Chickamauga & Chattanooga NMP</div>
+ <div id="Click-cuis" onclick="TogglePark(this)" class="ClickBox">Cumberland Island NS</div>
+ <div id="Click-fofr" onclick="TogglePark(this)" class="ClickBox">Fort Frederica NM</div>
+ <div id="Click-fopu" onclick="TogglePark(this)" class="ClickBox">Fort Pulaski NM</div>
+ <div id="Click-jica" onclick="TogglePark(this)" class="ClickBox">Jimmy Carter NHP</div>
+ <div id="Click-kemo" onclick="TogglePark(this)" class="ClickBox">Kennesaw Mountain NBP</div>
+ <div id="Click-malu" onclick="TogglePark(this)" class="ClickBox">Martin Luther King, Jr. NHP</div>
+ <div id="Click-ocmu" onclick="TogglePark(this)" class="ClickBox">Ocmulgee Mounds NHP</div>
+</div>
+
+
+
+
+<div class="statelist">
+<div class="StateName">Guam</div>
+ <div id="Click-wapa" onclick="TogglePark(this)" class="ClickBox">War in the Pacific NHP</div>
+</div>
+
+
+
+
+<div class="statelist">
+<div class="StateName">Hawaii</div>
+ <div id="Click-hale" onclick="TogglePark(this)" class="ClickBox">Haleakalā NP</div>
+ <div id="Click-havo" onclick="TogglePark(this)" class="ClickBox">Hawai'i Volcanoes NP</div>
+ <div id="Click-hono" onclick="TogglePark(this)" class="ClickBox">Honouliuli National NHS</div>
+ <div id="Click-kala" onclick="TogglePark(this)" class="ClickBox">Kalaupapa NHP</div>
+ <div id="Click-kaho" onclick="TogglePark(this)" class="ClickBox">Kaloko-Honokohau NHP</div>
+ <div id="Click-perl" onclick="TogglePark(this)" class="ClickBox">Pearl Harbor N MEM</div>
+ <div id="Click-puho" onclick="TogglePark(this)" class="ClickBox">Pu'uhonua O Honaunau NHP</div>
+ <div id="Click-puhe" onclick="TogglePark(this)" class="ClickBox">Pu'ukohola Heiau NHS</div>
+</div>
+
+
+
+
+<div class="statelist">
+<div class="StateName">Idaho</div>
+ <div id="Click-ciro" onclick="TogglePark(this)" class="ClickBox">City of Rocks N RES</div>
+ <div id="Click-crmo" onclick="TogglePark(this)" class="ClickBox">Craters of the Moon NM</div>
+ <div id="Click-crmop" onclick="TogglePark(this)" class="ClickBox">Craters of the Moon Preserve N PRES</div>
+ <div id="Click-hafo" onclick="TogglePark(this)" class="ClickBox">Hagerman Fossil Beds NM</div>
+ <div id="Click-miin" onclick="TogglePark(this)" class="ClickBox">Minidoka NHS</div>
+ <div id="Click-nepe" onclick="TogglePark(this)" class="ClickBox">Nez Perce NHP</div>
+</div>
+
+
+
+
+<div class="statelist">
+<div class="StateName">Illinois</div>
+ <div id="Click-liho" onclick="TogglePark(this)" class="ClickBox">Lincoln Home NHS</div>
+ <div id="Click-pull" onclick="TogglePark(this)" class="ClickBox">Pullman NM</div>
+</div>
+
+
+
+
+<div class="statelist">
+<div class="StateName">Indiana</div>
+ <div id="Click-gero" onclick="TogglePark(this)" class="ClickBox">George Rogers Clark NHP</div>
+ <div id="Click-indu" onclick="TogglePark(this)" class="ClickBox">Indiana Dunes NP</div>
+ <div id="Click-libo" onclick="TogglePark(this)" class="ClickBox">Lincoln Boyhood N MEM</div>
+</div>
+
+
+
+<div class="statelist">
+<div class="StateName">Iowa</div>
+ <div id="Click-efmo" onclick="TogglePark(this)" class="ClickBox">Effigy Mounds NM</div>
+ <div id="Click-heho" onclick="TogglePark(this)" class="ClickBox">Herbert Hoover NHS</div>
+</div>
+
+
+
+
+<div class="statelist">
+<div class="StateName">Kansas</div>
+ <div id="Click-brvb" onclick="TogglePark(this)" class="ClickBox">Brown v. Board of Education NHS</div>
+ <div id="Click-fols" onclick="TogglePark(this)" class="ClickBox">Fort Larned NHS</div>
+ <div id="Click-fosc" onclick="TogglePark(this)" class="ClickBox">Fort Scott NHS</div>
+ <div id="Click-nico" onclick="TogglePark(this)" class="ClickBox">Nicodemus NHS</div>
+ <div id="Click-tapr" onclick="TogglePark(this)" class="ClickBox">Tallgrass Prairie N PRES</div>
+</div>
+
+
+
+<div class="statelist">
+<div class="StateName">Kentucky</div>
+ <div id="Click-abli" onclick="TogglePark(this)" class="ClickBox">Abraham Lincoln Birthplace NHP</div>
+ <div id="Click-cane" onclick="TogglePark(this)" class="ClickBox">Camp Nelson NM</div>
+ <div id="Click-cuga" onclick="TogglePark(this)" class="ClickBox">Cumberland Gap NHP</div>
+ <div id="Click-maca" onclick="TogglePark(this)" class="ClickBox">Mammoth Cave NP</div>
+ <div id="Click-misp" onclick="TogglePark(this)" class="ClickBox">Mill Springs Battlefield NM</div>
+</div>
+
+
+
+<div class="statelist">
+<div class="StateName">Louisiana</div>
+ <div id="Click-cari" onclick="TogglePark(this)" class="ClickBox">Cane River Creole NHP</div>
+ <div id="Click-jefa" onclick="TogglePark(this)" class="ClickBox">Jean Lafitte NHP</div>
+ <div id="Click-jazz" onclick="TogglePark(this)" class="ClickBox">New Orleans Jazz NHP</div>
+ <div id="Click-popo" onclick="TogglePark(this)" class="ClickBox">Poverty Point NM</div>
+</div>
+
+
+
+
+<div class="statelist">
+<div class="StateName">Maine</div>
+ <div id="Click-acad" onclick="TogglePark(this)" class="ClickBox">Acadia NP</div>
+ <div id="Click-kaww" onclick="TogglePark(this)" class="ClickBox">Katahdin Woods and Waters NM</div>
+ <div id="Click-sacr" onclick="TogglePark(this)" class="ClickBox">Saint Croix Island NHS</div>
+</div>
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Maryland</div>
+ <div id="Click-anti" onclick="TogglePark(this)" class="ClickBox">Antietam NB</div>
+ <div id="Click-asis" onclick="TogglePark(this)" class="ClickBox">Assateague Island NS</div>
+ <div id="Click-cato" onclick="TogglePark(this)" class="ClickBox">Catoctin Mountain Park </div>
+ <div id="Click-choh" onclick="TogglePark(this)" class="ClickBox">Chesapeake and Ohio Canal NHP</div>
+ <div id="Click-clba" onclick="TogglePark(this)" class="ClickBox">Clara Barton NHS</div>
+ <div id="Click-fomc" onclick="TogglePark(this)" class="ClickBox">Fort McHenry NM</div>
+ <div id="Click-fowa" onclick="TogglePark(this)" class="ClickBox">Fort Washington Park </div>
+ <div id="Click-gree" onclick="TogglePark(this)" class="ClickBox">Greenbelt Park </div>
+ <div id="Click-hamp" onclick="TogglePark(this)" class="ClickBox">Hampton NHS</div>
+ <div id="Click-hatu" onclick="TogglePark(this)" class="ClickBox">Harriet Tubman Underground Railroad NHP</div>
+ <div id="Click-mono" onclick="TogglePark(this)" class="ClickBox">Monocacy NB</div>
+ <div id="Click-pisc" onclick="TogglePark(this)" class="ClickBox">Piscataway Park </div>
+ <div id="Click-pohe" onclick="TogglePark(this)" class="ClickBox">Potomac Heritage NST</div>
+ <div id="Click-thst" onclick="TogglePark(this)" class="ClickBox">Thomas Stone NHS</div>
+</div>
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Massachusetts</div>
+ <div id="Click-adam" onclick="TogglePark(this)" class="ClickBox">Adams NHP</div>
+ <div id="Click-bost" onclick="TogglePark(this)" class="ClickBox">Boston NHP</div>
+ <div id="Click-boaf" onclick="TogglePark(this)" class="ClickBox">Boston African American NHS</div>
+ <div id="Click-boha" onclick="TogglePark(this)" class="ClickBox">Boston Harbor Islands NRA</div>
+ <div id="Click-caco" onclick="TogglePark(this)" class="ClickBox">Cape Cod NS</div>
+ <div id="Click-frla" onclick="TogglePark(this)" class="ClickBox">Frederick Law Olmsted NHS</div>
+ <div id="Click-jofi" onclick="TogglePark(this)" class="ClickBox">John F. Kennedy NHS</div>
+ <div id="Click-long" onclick="TogglePark(this)" class="ClickBox">Longfellow House Washington's Headquarters NHS</div>
+ <div id="Click-lowe" onclick="TogglePark(this)" class="ClickBox">Lowell NHP</div>
+ <div id="Click-mima" onclick="TogglePark(this)" class="ClickBox">Minute Man NHP</div>
+ <div id="Click-nebe" onclick="TogglePark(this)" class="ClickBox">New Bedford Whaling NHP</div>
+ <div id="Click-sama" onclick="TogglePark(this)" class="ClickBox">Salem Maritime NHS</div>
+ <div id="Click-sair" onclick="TogglePark(this)" class="ClickBox">Saugus Iron Works NHS</div>
+ <div id="Click-spar" onclick="TogglePark(this)" class="ClickBox">Springfield Armory NHS</div>
+</div>
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Michigan</div>
+ <div id="Click-isro" onclick="TogglePark(this)" class="ClickBox">Isle Royale NP</div>
+ <div id="Click-kewe" onclick="TogglePark(this)" class="ClickBox">Keweenaw NHP</div>
+ <div id="Click-piro" onclick="TogglePark(this)" class="ClickBox">Pictured Rocks NL</div>
+ <div id="Click-rira" onclick="TogglePark(this)" class="ClickBox">River Raisin NBP</div>
+ <div id="Click-sibe" onclick="TogglePark(this)" class="ClickBox">Sleeping Bear Dunes NL</div>
+</div>
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Minnesota</div>
+ <div id="Click-grpo" onclick="TogglePark(this)" class="ClickBox">Grand Portage NM</div>
+ <div id="Click-miss" onclick="TogglePark(this)" class="ClickBox">Mississippi NRRA</div>
+ <div id="Click-pipe" onclick="TogglePark(this)" class="ClickBox">Pipestone NM</div>
+ <div id="Click-voya" onclick="TogglePark(this)" class="ClickBox">Voyageurs NP</div>
+</div>
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Mississippi</div>
+ <div id="Click-brce" onclick="TogglePark(this)" class="ClickBox">Brices Cross Roads NB</div>
+ <div id="Click-memy" onclick="TogglePark(this)" class="ClickBox">Medgar and Myrlie Evers Home NM</div>
+ <div id="Click-natc" onclick="TogglePark(this)" class="ClickBox">Natchez NHP</div>
+ <div id="Click-natr" onclick="TogglePark(this)" class="ClickBox">Natchez Trace Parkway </div>
+ <div id="Click-natt" onclick="TogglePark(this)" class="ClickBox">Natchez Trace Trail NST</div>
+ <div id="Click-tupe" onclick="TogglePark(this)" class="ClickBox">Tupelo NB</div>
+ <div id="Click-vick" onclick="TogglePark(this)" class="ClickBox">Vicksburg NMP</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Missouri</div>
+ <div id="Click-garc" onclick="TogglePark(this)" class="ClickBox">Gateway Arch NP</div>
+ <div id="Click-gwca" onclick="TogglePark(this)" class="ClickBox">George Washington Carver NM</div>
+ <div id="Click-hstr" onclick="TogglePark(this)" class="ClickBox">Harry S Truman NHS</div>
+ <div id="Click-ozar" onclick="TogglePark(this)" class="ClickBox">Ozark NSR</div>
+ <div id="Click-stge" onclick="TogglePark(this)" class="ClickBox">Ste. Genevieve NHP</div>
+ <div id="Click-ulsg" onclick="TogglePark(this)" class="ClickBox">Ulysses S. Grant NHS</div>
+ <div id="Click-wicr" onclick="TogglePark(this)" class="ClickBox">Wilson's Creek NB</div>
+</div>
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Montana</div>
+ <div id="Click-biho" onclick="TogglePark(this)" class="ClickBox">Big Hole NB</div>
+ <div id="Click-bica" onclick="TogglePark(this)" class="ClickBox">Bighorn Canyon NRA</div>
+ <div id="Click-glac" onclick="TogglePark(this)" class="ClickBox">Glacier NP</div>
+ <div id="Click-grko" onclick="TogglePark(this)" class="ClickBox">Grant-Kohrs Ranch NHS</div>
+ <div id="Click-libi" onclick="TogglePark(this)" class="ClickBox">Little Bighorn Battlefield NM</div>
+</div>
+
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Nebraska</div>
+ <div id="Click-agfo" onclick="TogglePark(this)" class="ClickBox">Agate Fossil Beds NM</div>
+ <div id="Click-home" onclick="TogglePark(this)" class="ClickBox">Homestead NHP</div>
+ <div id="Click-niob" onclick="TogglePark(this)" class="ClickBox">Niobrara NSR</div>
+ <div id="Click-scbl" onclick="TogglePark(this)" class="ClickBox">Scotts Bluff NM</div>
+</div>
+
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Nevada</div>
+ <div id="Click-grba" onclick="TogglePark(this)" class="ClickBox">Great Basin NP</div>
+ <div id="Click-lake" onclick="TogglePark(this)" class="ClickBox">Lake Mead NRA</div>
+ <div id="Click-tusk" onclick="TogglePark(this)" class="ClickBox">Tule Springs Fossil Beds NM</div>
+</div>
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">New Hampshire</div>
+ <div id="Click-saga" onclick="TogglePark(this)" class="ClickBox">Saint-Gaudens NHP</div>
+</div>
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">New Jersey</div>
+ <div id="Click-greg" onclick="TogglePark(this)" class="ClickBox">Great Egg Harbor NSRR</div>
+ <div id="Click-morr" onclick="TogglePark(this)" class="ClickBox">Morristown NHP</div>
+ <div id="Click-pagr" onclick="TogglePark(this)" class="ClickBox">Paterson Great Falls NHP</div>
+ <div id="Click-edis" onclick="TogglePark(this)" class="ClickBox">Thomas Edison NHP</div>
+</div>
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">New Mexico</div>
+ <div id="Click-azru" onclick="TogglePark(this)" class="ClickBox">Aztec Ruins NM</div>
+ <div id="Click-band" onclick="TogglePark(this)" class="ClickBox">Bandelier NM</div>
+ <div id="Click-cavo" onclick="TogglePark(this)" class="ClickBox">Capulin Volcano NM</div>
+ <div id="Click-cave" onclick="TogglePark(this)" class="ClickBox">Carlsbad Caverns NP</div>
+ <div id="Click-chcu" onclick="TogglePark(this)" class="ClickBox">Chaco Culture NHP</div>
+ <div id="Click-elma" onclick="TogglePark(this)" class="ClickBox">El Malpais NM</div>
+ <div id="Click-elmo" onclick="TogglePark(this)" class="ClickBox">El Morro NM</div>
+ <div id="Click-foun" onclick="TogglePark(this)" class="ClickBox">Fort Union NM</div>
+ <div id="Click-gicl" onclick="TogglePark(this)" class="ClickBox">Gila Cliff Dwellings NM</div>
+ <div id="Click-peco" onclick="TogglePark(this)" class="ClickBox">Pecos NHP</div>
+ <div id="Click-petr" onclick="TogglePark(this)" class="ClickBox">Petroglyph NM</div>
+ <div id="Click-sapu" onclick="TogglePark(this)" class="ClickBox">Salinas Pueblo Missions NM</div>
+ <div id="Click-vall" onclick="TogglePark(this)" class="ClickBox">Valles Caldera N PRES</div>
+ <div id="Click-whsa" onclick="TogglePark(this)" class="ClickBox">White Sands NP</div>
+</div>
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">New York</div>
+ <div id="Click-afbg" onclick="TogglePark(this)" class="ClickBox">African Burial Ground NM</div>
+ <div id="Click-cacl" onclick="TogglePark(this)" class="ClickBox">Castle Clinton NM</div>
+ <div id="Click-elro" onclick="TogglePark(this)" class="ClickBox">Eleanor Roosevelt NHS</div>
+ <div id="Click-feha" onclick="TogglePark(this)" class="ClickBox">Federal Hall N MEM</div>
+ <div id="Click-fiis" onclick="TogglePark(this)" class="ClickBox">Fire Island NS</div>
+ <div id="Click-fost" onclick="TogglePark(this)" class="ClickBox">Fort Stanwix NM</div>
+ <div id="Click-gate" onclick="TogglePark(this)" class="ClickBox">Gateway NRA</div>
+ <div id="Click-gegr" onclick="TogglePark(this)" class="ClickBox">General Grant N MEM</div>
+ <div id="Click-gois" onclick="TogglePark(this)" class="ClickBox">Governors Island NM</div>
+ <div id="Click-hagr" onclick="TogglePark(this)" class="ClickBox">Hamilton Grange N MEM</div>
+ <div id="Click-hart" onclick="TogglePark(this)" class="ClickBox">Harriet Tubman NHP</div>
+ <div id="Click-hofr" onclick="TogglePark(this)" class="ClickBox">Home of Franklin D. Roosevelt NHS</div>
+ <div id="Click-mava" onclick="TogglePark(this)" class="ClickBox">Martin Van Buren NHS</div>
+ <div id="Click-sahi" onclick="TogglePark(this)" class="ClickBox">Sagamore Hill NHS</div>
+ <div id="Click-sapa" onclick="TogglePark(this)" class="ClickBox">Saint Paul's Church NHS</div>
+ <div id="Click-sara" onclick="TogglePark(this)" class="ClickBox">Saratoga NHP</div>
+ <div id="Click-stli" onclick="TogglePark(this)" class="ClickBox">Statue of Liberty NM</div>
+ <div id="Click-ston" onclick="TogglePark(this)" class="ClickBox">Stonewall NM</div>
+ <div id="Click-thrb" onclick="TogglePark(this)" class="ClickBox">Theodore Roosevelt Birthplace NHS</div>
+ <div id="Click-thri" onclick="TogglePark(this)" class="ClickBox">Theodore Roosevelt Inaugural NHS</div>
+ <div id="Click-vama" onclick="TogglePark(this)" class="ClickBox">Vanderbilt Mansion NHS</div>
+ <div id="Click-wori" onclick="TogglePark(this)" class="ClickBox">Women's Rights NHP</div>
+</div>
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">North Carolina</div>
+ <div id="Click-blri" onclick="TogglePark(this)" class="ClickBox">Blue Ridge Parkway </div>
+ <div id="Click-caha" onclick="TogglePark(this)" class="ClickBox">Cape Hatteras NS</div>
+ <div id="Click-calo" onclick="TogglePark(this)" class="ClickBox">Cape Lookout NS</div>
+ <div id="Click-carl" onclick="TogglePark(this)" class="ClickBox">Carl Sandburg Home NHS</div>
+ <div id="Click-fora" onclick="TogglePark(this)" class="ClickBox">Fort Raleigh NHS</div>
+ <div id="Click-guco" onclick="TogglePark(this)" class="ClickBox">Guilford Courthouse NMP</div>
+ <div id="Click-mocr" onclick="TogglePark(this)" class="ClickBox">Moores Creek NB</div>
+ <div id="Click-wrbr" onclick="TogglePark(this)" class="ClickBox">Wright Brothers N MEM</div>
+</div>
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">North Dakota</div>
+ <div id="Click-fous" onclick="TogglePark(this)" class="ClickBox">Fort Union Trading Post NHS</div>
+ <div id="Click-knri" onclick="TogglePark(this)" class="ClickBox">Knife River Indian Villages NHS</div>
+ <div id="Click-thro" onclick="TogglePark(this)" class="ClickBox">Theodore Roosevelt NP</div>
+</div>
+
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Ohio</div>
+ <div id="Click-chyo" onclick="TogglePark(this)" class="ClickBox">Charles Young Buffalo Soldiers NM</div>
+ <div id="Click-cuva" onclick="TogglePark(this)" class="ClickBox">Cuyahoga Valley NP</div>
+ <div id="Click-daav" onclick="TogglePark(this)" class="ClickBox">Dayton Aviation Heritage NHP</div>
+ <div id="Click-fila" onclick="TogglePark(this)" class="ClickBox">First Ladies NHS</div>
+ <div id="Click-hocu" onclick="TogglePark(this)" class="ClickBox">Hopewell Culture NHP</div>
+ <div id="Click-jaga" onclick="TogglePark(this)" class="ClickBox">James A. Garfield NHS</div>
+ <div id="Click-pevi" onclick="TogglePark(this)" class="ClickBox">Perry's Victory and International Peace Memorial </div>
+ <div id="Click-wiho" onclick="TogglePark(this)" class="ClickBox">William Howard Taft NHS</div>
+</div>
+
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Oklahoma</div>
+ <div id="Click-chic" onclick="TogglePark(this)" class="ClickBox">Chickasaw NRA</div>
+ <div id="Click-waba" onclick="TogglePark(this)" class="ClickBox">Washita Battlefield NHS</div>
+</div>
+
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Oregon</div>
+ <div id="Click-crla" onclick="TogglePark(this)" class="ClickBox">Crater Lake NP</div>
+ <div id="Click-joda" onclick="TogglePark(this)" class="ClickBox">John Day Fossil Beds NM</div>
+ <div id="Click-lecl" onclick="TogglePark(this)" class="ClickBox">Lewis and Clark NHP</div>
+ <div id="Click-orca" onclick="TogglePark(this)" class="ClickBox">Oregon Caves NM</div>
+</div>
+
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Pennsylvania</div>
+ <div id="Click-alpo" onclick="TogglePark(this)" class="ClickBox">Allegheny Portage Railroad NHS</div>
+ <div id="Click-dewa" onclick="TogglePark(this)" class="ClickBox">Delaware Water Gap NRA</div>
+ <div id="Click-edal" onclick="TogglePark(this)" class="ClickBox">Edgar Allan Poe NHS</div>
+ <div id="Click-eise" onclick="TogglePark(this)" class="ClickBox">Eisenhower NHS</div>
+ <div id="Click-flni" onclick="TogglePark(this)" class="ClickBox">Flight 93 N MEM</div>
+ <div id="Click-fone" onclick="TogglePark(this)" class="ClickBox">Fort Necessity NB</div>
+ <div id="Click-frhi" onclick="TogglePark(this)" class="ClickBox">Friendship Hill NHS</div>
+ <div id="Click-gett" onclick="TogglePark(this)" class="ClickBox">Gettysburg NMP</div>
+ <div id="Click-hofu" onclick="TogglePark(this)" class="ClickBox">Hopewell Furnace NHS</div>
+ <div id="Click-inde" onclick="TogglePark(this)" class="ClickBox">Independence NHP</div>
+ <div id="Click-jofl" onclick="TogglePark(this)" class="ClickBox">Johnstown Flood N MEM</div>
+ <div id="Click-mide" onclick="TogglePark(this)" class="ClickBox">Middle Delaware NSR</div>
+ <div id="Click-stea" onclick="TogglePark(this)" class="ClickBox">Steamtown NHS</div>
+ <div id="Click-thko" onclick="TogglePark(this)" class="ClickBox">Thaddeus Kosciuszko N MEM</div>
+ <div id="Click-upde" onclick="TogglePark(this)" class="ClickBox">Upper Delaware NSRR</div>
+ <div id="Click-vafo" onclick="TogglePark(this)" class="ClickBox">Valley Forge NHP</div>
+</div>
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Puerto Rico</div>
+ <div id="Click-saju" onclick="TogglePark(this)" class="ClickBox">San Juan NHS</div>
+</div>
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Rhode Island</div>
+ <div id="Click-blvr" onclick="TogglePark(this)" class="ClickBox">Blackstone River Valley NHP</div>
+ <div id="Click-rowi" onclick="TogglePark(this)" class="ClickBox">Roger Williams N MEM</div>
+</div>
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">South Carolina</div>
+ <div id="Click-chpi" onclick="TogglePark(this)" class="ClickBox">Charles Pinckney NHS</div>
+ <div id="Click-cong" onclick="TogglePark(this)" class="ClickBox">Congaree NP</div>
+ <div id="Click-cowp" onclick="TogglePark(this)" class="ClickBox">Cowpens NB</div>
+ <div id="Click-fosu" onclick="TogglePark(this)" class="ClickBox">Fort Sumter and Fort Moultrie NHP</div>
+ <div id="Click-kimo" onclick="TogglePark(this)" class="ClickBox">Kings Mountain NMP</div>
+ <div id="Click-nisi" onclick="TogglePark(this)" class="ClickBox">Ninety Six NHS</div>
+ <div id="Click-reer" onclick="TogglePark(this)" class="ClickBox">Reconstruction Era NHP</div>
+</div>
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">South Dakota</div>
+ <div id="Click-badl" onclick="TogglePark(this)" class="ClickBox">Badlands NP</div>
+ <div id="Click-jeca" onclick="TogglePark(this)" class="ClickBox">Jewel Cave NM</div>
+ <div id="Click-mimi" onclick="TogglePark(this)" class="ClickBox">Minuteman Missile NHS</div>
+ <div id="Click-mnrr" onclick="TogglePark(this)" class="ClickBox">Missouri NRR</div>
+ <div id="Click-moru" onclick="TogglePark(this)" class="ClickBox">Mount Rushmore N MEM</div>
+ <div id="Click-wica" onclick="TogglePark(this)" class="ClickBox">Wind Cave NP</div>
+
+</div>
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Tennessee</div>
+ <div id="Click-anjo" onclick="TogglePark(this)" class="ClickBox">Andrew Johnson NHS</div>
+ <div id="Click-biso" onclick="TogglePark(this)" class="ClickBox">Big South Fork NRRA</div>
+ <div id="Click-fodo" onclick="TogglePark(this)" class="ClickBox">Fort Donelson NB</div>
+ <div id="Click-grsm" onclick="TogglePark(this)" class="ClickBox">Great Smoky Mountains NP</div>
+ <div id="Click-obed" onclick="TogglePark(this)" class="ClickBox">Obed WSR</div>
+ <div id="Click-shil" onclick="TogglePark(this)" class="ClickBox">Shiloh NMP</div>
+ <div id="Click-stri" onclick="TogglePark(this)" class="ClickBox">Stones River NB</div>
+</div>
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Texas</div>
+ <div id="Click-alfl" onclick="TogglePark(this)" class="ClickBox">Alibates Flint Quarries NM</div>
+ <div id="Click-amis" onclick="TogglePark(this)" class="ClickBox">Amistad NRA</div>
+ <div id="Click-bibe" onclick="TogglePark(this)" class="ClickBox">Big Bend NP</div>
+ <div id="Click-bith" onclick="TogglePark(this)" class="ClickBox">Big Thicket N PRES</div>
+ <div id="Click-cham" onclick="TogglePark(this)" class="ClickBox">Chamizal National Memorial N MEM</div>
+ <div id="Click-foda" onclick="TogglePark(this)" class="ClickBox">Fort Davis NHS</div>
+ <div id="Click-gumo" onclick="TogglePark(this)" class="ClickBox">Guadalupe Mountains NP</div>
+ <div id="Click-lamr" onclick="TogglePark(this)" class="ClickBox">Lake Meredith NRA</div>
+ <div id="Click-lyjo" onclick="TogglePark(this)" class="ClickBox">Lyndon B. Johnson NHP</div>
+ <div id="Click-pais" onclick="TogglePark(this)" class="ClickBox">Padre Island NS</div>
+ <div id="Click-paal" onclick="TogglePark(this)" class="ClickBox">Palo Alto Battlefield NHP</div>
+ <div id="Click-rigr" onclick="TogglePark(this)" class="ClickBox">Rio Grande WSR</div>
+ <div id="Click-saan" onclick="TogglePark(this)" class="ClickBox">San Antonio Missions NHP</div>
+ <div id="Click-waco" onclick="TogglePark(this)" class="ClickBox">Waco Mammoth NM</div>
+</div>
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Utah</div>
+ <div id="Click-arch" onclick="TogglePark(this)" class="ClickBox">Arches NP</div>
+ <div id="Click-brca" onclick="TogglePark(this)" class="ClickBox">Bryce Canyon NP</div>
+ <div id="Click-cany" onclick="TogglePark(this)" class="ClickBox">Canyonlands NP</div>
+ <div id="Click-care" onclick="TogglePark(this)" class="ClickBox">Capitol Reef NP</div>
+ <div id="Click-cebr" onclick="TogglePark(this)" class="ClickBox">Cedar Breaks NM</div>
+ <div id="Click-gosp" onclick="TogglePark(this)" class="ClickBox">Golden Spike NHP</div>
+ <div id="Click-nabr" onclick="TogglePark(this)" class="ClickBox">Natural Bridges NM</div>
+ <div id="Click-rabr" onclick="TogglePark(this)" class="ClickBox">Rainbow Bridge NM</div>
+ <div id="Click-tica" onclick="TogglePark(this)" class="ClickBox">Timpanogos Cave NM</div>
+ <div id="Click-zion" onclick="TogglePark(this)" class="ClickBox">Zion NP</div>
+</div>
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Vermont</div>
+ <div id="Click-mabi" onclick="TogglePark(this)" class="ClickBox">Marsh-Billings-Rockefeller NHP</div>
+</div>
+
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Virgin Islands</div>
+ <div id="Click-buis" onclick="TogglePark(this)" class="ClickBox">Buck Island Reef NM</div>
+ <div id="Click-chri" onclick="TogglePark(this)" class="ClickBox">Christiansted NHS</div>
+ <div id="Click-sari" onclick="TogglePark(this)" class="ClickBox">Salt River Bay NHP</div>
+ <div id="Click-viis" onclick="TogglePark(this)" class="ClickBox">Virgin Islands NP</div>
+ <div id="Click-vicr" onclick="TogglePark(this)" class="ClickBox">Virgin Islands Coral Reef NM</div>
+</div>
+
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Virginia</div>
+ <div id="Click-apco" onclick="TogglePark(this)" class="ClickBox">Appomattox Court House NHP</div>
+ <div id="Click-arho" onclick="TogglePark(this)" class="ClickBox">Arlington House, The Robert E. Lee Memorial </div>
+ <div id="Click-bowa" onclick="TogglePark(this)" class="ClickBox">Booker T. Washington NM</div>
+ <div id="Click-cebe" onclick="TogglePark(this)" class="ClickBox">Cedar Creek and Belle Grove NHP</div>
+ <div id="Click-colo" onclick="TogglePark(this)" class="ClickBox">Colonial NHP</div>
+ <div id="Click-fomr" onclick="TogglePark(this)" class="ClickBox">Fort Monroe NM</div>
+ <div id="Click-frsp" onclick="TogglePark(this)" class="ClickBox">Fredericksburg and Spotsylvania NMP</div>
+ <div id="Click-gwmp" onclick="TogglePark(this)" class="ClickBox">George Washington Mem PKWY</div>
+ <div id="Click-gewa" onclick="TogglePark(this)" class="ClickBox">George Washington Birthplace NM</div>
+ <div id="Click-mawa" onclick="TogglePark(this)" class="ClickBox">Maggie L. Walker NHS</div>
+ <div id="Click-mana" onclick="TogglePark(this)" class="ClickBox">Manassas NBP</div>
+ <div id="Click-pete" onclick="TogglePark(this)" class="ClickBox">Petersburg NB</div>
+ <div id="Click-prwi" onclick="TogglePark(this)" class="ClickBox">Prince William Forest Park </div>
+ <div id="Click-rich" onclick="TogglePark(this)" class="ClickBox">Richmond NBP</div>
+ <div id="Click-shen" onclick="TogglePark(this)" class="ClickBox">Shenandoah NP</div>
+ <div id="Click-wotr" onclick="TogglePark(this)" class="ClickBox">Wolf Trap </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Washington</div>
+ <div id="Click-ebla" onclick="TogglePark(this)" class="ClickBox">Ebey's Landing NHR</div>
+ <div id="Click-fova" onclick="TogglePark(this)" class="ClickBox">Fort Vancouver NHS</div>
+ <div id="Click-lach" onclick="TogglePark(this)" class="ClickBox">Lake Chelan NRA</div>
+ <div id="Click-laro" onclick="TogglePark(this)" class="ClickBox">Lake Roosevelt NRA</div>
+ <div id="Click-mapr" onclick="TogglePark(this)" class="ClickBox">Manhattan Project NHP</div>
+ <div id="Click-mora" onclick="TogglePark(this)" class="ClickBox">Mount Rainier NP</div>
+ <div id="Click-noca" onclick="TogglePark(this)" class="ClickBox">North Cascades NP</div>
+ <div id="Click-olym" onclick="TogglePark(this)" class="ClickBox">Olympic NP</div>
+ <div id="Click-rola" onclick="TogglePark(this)" class="ClickBox">Ross Lake NRA</div>
+ <div id="Click-sajh" onclick="TogglePark(this)" class="ClickBox">San Juan Island NHP</div>
+ <div id="Click-whmi" onclick="TogglePark(this)" class="ClickBox">Whitman Mission NHS</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Washington DC</div>
+ <div id="Click-bepa" onclick="TogglePark(this)" class="ClickBox">Belmont-Paul Women's Equality NM</div>
+ <div id="Click-cawo" onclick="TogglePark(this)" class="ClickBox">Carter G. Woodson Home NHS</div>
+ <div id="Click-coga" onclick="TogglePark(this)" class="ClickBox">Constitution Gardens </div>
+ <div id="Click-ddem" onclick="TogglePark(this)" class="ClickBox">Dwight D. Eisenhower Memorial </div>
+ <div id="Click-foth" onclick="TogglePark(this)" class="ClickBox">Ford's Theatre NHS</div>
+ <div id="Click-frde" onclick="TogglePark(this)" class="ClickBox">Franklin D. Roosevelt Memorial </div>
+ <div id="Click-frdo" onclick="TogglePark(this)" class="ClickBox">Frederick Douglass NHS</div>
+ <div id="Click-kowa" onclick="TogglePark(this)" class="ClickBox">Korean War Veterans Memorial </div>
+ <div id="Click-lyba" onclick="TogglePark(this)" class="ClickBox">LBJ Memorial Grove on the Potomac </div>
+ <div id="Click-linc" onclick="TogglePark(this)" class="ClickBox">Lincoln Memorial </div>
+ <div id="Click-mlkm" onclick="TogglePark(this)" class="ClickBox">Martin Luther King, Jr. Memorial </div>
+ <div id="Click-mamc" onclick="TogglePark(this)" class="ClickBox">Mary McLeod Bethune Council NHS</div>
+ <div id="Click-nace" onclick="TogglePark(this)" class="ClickBox">National Capital Parks-East </div>
+ <div id="Click-nama" onclick="TogglePark(this)" class="ClickBox">National Mall and Memorial Parks </div>
+ <div id="Click-paav" onclick="TogglePark(this)" class="ClickBox">Pennsylvania Avenue NHS</div>
+ <div id="Click-rocr" onclick="TogglePark(this)" class="ClickBox">Rock Creek Park </div>
+ <div id="Click-this" onclick="TogglePark(this)" class="ClickBox">Theodore Roosevelt Island </div>
+ <div id="Click-thje" onclick="TogglePark(this)" class="ClickBox">Thomas Jefferson Memorial </div>
+ <div id="Click-vive" onclick="TogglePark(this)" class="ClickBox">Vietnam Veterans Memorial </div>
+ <div id="Click-wamo" onclick="TogglePark(this)" class="ClickBox">Washington Monument </div>
+ <div id="Click-whhp" onclick="TogglePark(this)" class="ClickBox">White House and President's Park </div>
+ <div id="Click-wwim" onclick="TogglePark(this)" class="ClickBox">World War I Memorial </div>
+ <div id="Click-wwii" onclick="TogglePark(this)" class="ClickBox">World War II Memorial </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">West Virginia</div>
+ <div id="Click-appa" onclick="TogglePark(this)" class="ClickBox">Appalachian NST</div>
+ <div id="Click-blue" onclick="TogglePark(this)" class="ClickBox">Bluestone NSR</div>
+ <div id="Click-gari" onclick="TogglePark(this)" class="ClickBox">Gauley River NRA</div>
+ <div id="Click-hafe" onclick="TogglePark(this)" class="ClickBox">Harpers Ferry NHP</div>
+ <div id="Click-neri" onclick="TogglePark(this)" class="ClickBox">New River Gorge NP&P</div>
+</div>
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Wisconsin</div>
+ <div id="Click-apis" onclick="TogglePark(this)" class="ClickBox">Apostle Islands NL</div>
+ <div id="Click-sacn" onclick="TogglePark(this)" class="ClickBox">Saint Croix NSR</div>
+</div>
+
+
+
+
+
+
+<div class="statelist">
+<div class="StateName">Wyoming</div>
+ <div id="Click-deto" onclick="TogglePark(this)" class="ClickBox">Devils Tower NM</div>
+ <div id="Click-fola" onclick="TogglePark(this)" class="ClickBox">Fort Laramie NHS</div>
+ <div id="Click-fobu" onclick="TogglePark(this)" class="ClickBox">Fossil Butte NM</div>
+ <div id="Click-grte" onclick="TogglePark(this)" class="ClickBox">Grand Teton NP</div>
+ <div id="Click-jdjr" onclick="TogglePark(this)" class="ClickBox">John D. Rockefeller Jr. Mem PKWY</div>
+ <div id="Click-yell" onclick="TogglePark(this)" class="ClickBox">Yellowstone National Park NP</div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+</div>
+
+
+
+<div class="footer">
+
+</div>
+
+
+
+
+<div id="ParkList" style="display: none;"></div>
+
+
+
+</body>
+
+
+</html>

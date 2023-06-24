@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learn Your World Capitals</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="worldcapitals.css">
+<script type="text/javascript" src="listofcapitals.js"></script>
+<script type="text/javascript" src="worldcapitals.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+<div id="StatsBox">
+Right: <div id="NumRight" class="StreakNum">0</div><div class="divider"></div>
+Wrong: <div id="NumWrong" class="StreakNum">0</div><div class="divider"></div>
+Win Percent: <div id="NumPercent" class="StreakNum">-</div>%<br>
+Current Streak: <div id="NumStreak" class="StreakNum">0</div><div class="divider"></div>
+Longest Streak: <div id="NumStreakLong" class="StreakNum">0</div>
+</div>
+
+
+<div id="GameBoard">
+
+
+<div id="StartGame">
+<div class="PageTitle">World Capitals Quiz</div>
+<div onclick="StartGame();" class="LinkButton">Start Game</div>
+</div>
+
+
+<div id="GamePlay" style="display: none;">
+
+<form autocomplete="off">
+	<div id="Question">
+	<div style="white-space: nowrap; display: inline;"><div class="capitalid"></div> is the capital of where?</div><br><br>
+
+
+  <div class="autocomplete" style="width:300px;">
+    <input id="ListOfCountries" type="text" name="ListOfCountries" placeholder="Country">
+  </div>
+</form>
+
+<br><br>
+	<div onclick="CheckAnswer();" class="LinkButton">Check Answer</div>
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="Answer" style="display: none;">
+	<div id="YesOrNo"></div><div id="RightOrWrong"></div><br><br>
+	<div class="capitalid"></div> is the capital of 
+	<div class="countryid" id="countryid"></div>
+
+	<br><br>
+	<div id="PlayAgain" class="LinkButton" onclick="NewRound();">Let's Go Again!</div>
+	</div>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+</body>
+
+
+
+
+
+
