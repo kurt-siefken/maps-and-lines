@@ -70,7 +70,7 @@ function TurnParkOn(ParkBox) {
 	ParkList += ParkBox + ",";
 
 	        document.getElementById("ParkCounter").innerHTML = ParkCounter;
-	        document.getElementById("ParkPercent").innerHTML = ((ParkCounter / 423) * 100).toFixed(1);
+	        document.getElementById("ParkPercent").innerHTML = ((ParkCounter / 429) * 100).toFixed(1);
 		document.getElementById("ParkList").innerHTML = ParkList;
 }
 /*---------------------------------------------------*/
@@ -98,7 +98,7 @@ function ClickDot(ParkBox) {
 
 		document.getElementById("ParkList").innerHTML = ParkList;
 	        document.getElementById("ParkCounter").innerHTML = ParkCounter;
-	        document.getElementById("ParkPercent").innerHTML = ((ParkCounter / 423) * 100).toFixed(1);
+	        document.getElementById("ParkPercent").innerHTML = ((ParkCounter / 429) * 100).toFixed(1);
 
 		GetURLmap();
 
@@ -133,7 +133,7 @@ function TogglePark(ParkBox) {
 
 
 	        document.getElementById("ParkCounter").innerHTML = ParkCounter;
-	        document.getElementById("ParkPercent").innerHTML = ((ParkCounter / 423) * 100).toFixed(1);
+	        document.getElementById("ParkPercent").innerHTML = ((ParkCounter / 429) * 100).toFixed(1);
 		document.getElementById("ParkList").innerHTML = ParkList;
 
 		GetURL();
