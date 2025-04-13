@@ -5,7 +5,7 @@ const AskQuestion = [];
 /*----*/
 AskQuestion[0] = "What was your worst injury?";
 AskQuestion[1] = "What is the best Olympic sport to watch?";
-AskQuestion[2] = "What was your first job?";
+AskQuestion[2] = "Where have you been that you really want to go back to?";
 AskQuestion[3] = "What wild animal would you like to keep as a pet?";
 AskQuestion[4] = "Where is the coolest place you've been on vacation?";
 AskQuestion[5] = "What is your favorite article of clothing you own?";
@@ -19,8 +19,8 @@ AskQuestion[11] = "What is the best smell?";
 AskQuestion[12] = "Fill in the blank: When I dance, I look ___.";
 AskQuestion[13] = "What is the best thing to play on at a playground?";
 AskQuestion[14] = "What is your guilty pleasure food?";
-AskQuestion[15] = "What was the last movie you watched and loved?";
-AskQuestion[16] = "What store can you spend a lot of time looking around?";
+AskQuestion[15] = "What was the last movie or show you watched and loved?";
+AskQuestion[16] = "What store can you spend a lot of time just looking around?";
 AskQuestion[17] = "What is your favorite non-alcoholic drink?";
 AskQuestion[18] = "What is a charity or cause you feel strongly about?";
 
