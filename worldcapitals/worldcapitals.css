@@ -15,6 +15,7 @@ a {text-decoration: none;}
 
 .countryid, .capitalid {
 	display: inline-block;
+	font-weight: bold;
 }
 
 
