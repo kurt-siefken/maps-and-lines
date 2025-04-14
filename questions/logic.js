@@ -19,6 +19,8 @@ AskQuestion.forEach(creatediv);
 
 document.getElementById("questionlist").classList.remove("stopanimation"); 
  document.getElementById("questionlist").classList.add("startanimation");
+document.getElementById("startbutton").classList.add("startbuttonon");
+document.getElementById("stopbutton").classList.remove("stopbuttonon");
 }
 
 
@@ -41,5 +43,7 @@ document.getElementById("questionlist").innerHTML += "<div>" + questionnumber + 
 function stopwheel() {
 document.getElementById("questionlist").classList.remove("startanimation");
 document.getElementById("questionlist").classList.add("stopanimation");
+document.getElementById("startbutton").classList.remove("startbuttonon");
+document.getElementById("stopbutton").classList.add("stopbuttonon");
 
 }

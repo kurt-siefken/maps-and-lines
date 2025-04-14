@@ -2,7 +2,7 @@
 
 body {
 	font-family: "Rancho", cursive;
-	font-size: 30px;
+	font-size: 40px;
 	background-color: #f0f0e1;
 	border: 0px solid red;
 	margin: 0px;
@@ -34,11 +34,12 @@ border: 0px solid blue;
 .pagename {
  font-family: "Special Elite", system-ui;
 text-align: center;
-font-size: 60px;
+font-size: 50px;
 display: block;
 line-height: 60px;
 margin-bottom: 30px;
 text-transform: lowercase; 
+color: #777;
 }
 
 
@@ -51,24 +52,32 @@ font-family: "Special Elite", system-ui;
   border-radius: 50%;
   font-size: 30px;
   text-align: center;
+margin: 0px 30px;
 }
 
-.buttonstart {color: #fff; background-color: green; border: 2px solid darkgreen;}
-.buttonstop {color: #fff; background-color: red; border: 2px solid darkred;}
-.buttonstart:hover {background-color: #0c6806;}
-.buttonstop:hover {background-color: #c40404;}
+.buttonstart {color: #fff; background-color: #12b61a; border: 3px solid #346D37;}
+.buttonstop {color: #fff; background-color: red; border: 3px solid #8C3737;}
+.buttonstart:hover {background-color: #346D37;}
+.buttonstop:hover {background-color: #8C3737;}
+
+.startbuttonon {background-color: #346D37; pointer-events: none;}
+.stopbuttonon {background-color: #8C3737; pointer-events: none;}
+
+
+
+
 
 .startstop {
 display: flex;
 width: 100%;
-justify-content: space-around;
+justify-content: center;
 }
 
 .thequestion {
-border: 1px solid #1b407d;
+border: 2px solid #1b407d;
 position: relative;
 overflow: hidden;
-height: 50px;
+height: 100px;
 width: 100%;
 margin: 50px 0px;
 }
@@ -76,10 +85,12 @@ margin: 50px 0px;
 #questionlist {
 position: relative;
 text-align: center;
+width: 95%;
+margin: auto;
 }
 
 #questionlist div {
-height: 50px;
+height: 100px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -89,14 +100,15 @@ border: 0px solid red;
 
 
 @media screen and (max-width: 600px) {
-body {font-size: 24px;}
-.pagename {font-size: 40px; margin-top: 20px; margin-bottom: 10px;}
+body {font-size: 28px; line-height: 26px;}
+.pagename {font-size: 30px; margin-top: 20px; margin-bottom: 10px; line-height: 30px;}
 .thequestion {margin: 30px 0px;}
 .startstopbutton{
   width: 80px;
   height: 80px;
   line-height: 80px;
   font-size: 22px;
+margin: 0px 20px;
 	}
 }
 
@@ -107,8 +119,8 @@ body {font-size: 24px;}
 
 /* The animation code */
 @keyframes startroll {
-  from {top: -625px;}
-  to {top: -25px;}
+  from {top: -1050px;}
+  to {top: -50px;}
 }
 
 .startanimation {
@@ -120,7 +132,7 @@ animation-timing-function: linear;
 
 /* The animation code */
 @keyframes stoproll {
-  from {top: -275px;}
+  from {top: -400px;}
   to {top: 0px;}
 }
 
