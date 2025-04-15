@@ -11,7 +11,7 @@ AskQuestion[4] = "Where is the coolest place you've been on vacation?";
 AskQuestion[5] = "What is your favorite article of clothing you own?";
 AskQuestion[6] = "What is your breakfast food of choice?";
 AskQuestion[6] = "What wild animal would you be terrified to face?";
-AskQuestion[7] = "What subject can you ace on trivia night?";
+AskQuestion[7] = "What subject could you ace on Jeopardy?";
 AskQuestion[8] = "What is a place you've always wanted to visit?";
 AskQuestion[9] = "If you had to eat a crayon, what color would you choose?";
 AskQuestion[10] = "If you had to move to a new state, where would you move?";
@@ -23,7 +23,7 @@ AskQuestion[15] = "What was the last movie or show you really got into?";
 AskQuestion[16] = "What store can you spend a lot of time just looking around?";
 AskQuestion[17] = "What is your favorite non-alcoholic drink?";
 AskQuestion[18] = "What is a charity or cause you feel strongly about?";
-
+AskQuestion[19] = "What is hanging on your refrigerator door?";
 
 /*---
 how many taylor swift songs can you name?
