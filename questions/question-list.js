@@ -22,11 +22,9 @@ AskQuestion[14] = "What is your guilty pleasure food?";
 AskQuestion[15] = "What was the last movie or show you really got into?";
 AskQuestion[16] = "What store can you spend a lot of time just looking around?";
 AskQuestion[17] = "What is your favorite non-alcoholic drink?";
-AskQuestion[18] = "What is a charity or cause you feel strongly about?";
+AskQuestion[18] = "If you had a million dollars to donate to charity, which charity would you choose?";
 AskQuestion[19] = "What is hanging on your refrigerator door?";
 
-/*---
-how many taylor swift songs can you name?
-fill in the blank: When I dance, i look ___.
--*/
+AskQuestion[20] = "How many taylor swift songs can you name?";
+AskQuestion[21] = "Fill in the blank: When I dance, i look ___.";
 
