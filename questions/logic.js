@@ -11,16 +11,26 @@ function shuffle(array) {
 
 function startwheel() {
 
-	document.getElementById("questionlist").innerHTML = ""
-shuffle(AskQuestion);
-for (let i = 0; i < 3; i++) {
-AskQuestion.forEach(creatediv);
+	document.getElementById("questionlist").innerHTML = "";
+if (document.getElementById('questioncheckbox').checked) {
+	shuffle(AskQuestion);
+	for (let i = 0; i < 3; i++) {
+	AskQuestion.forEach(creatediv);
+	} 
+} else {
+	shuffle(DiscQuestion);
+	for (let i = 0; i < 3; i++) {
+	DiscQuestion.forEach(creatediv);
+	}
 }
 
+
 document.getElementById("questionlist").classList.remove("stopanimation"); 
- document.getElementById("questionlist").classList.add("startanimation");
+document.getElementById("questionlist").classList.add("startanimation");
 document.getElementById("startbutton").classList.add("startbuttonon");
 document.getElementById("stopbutton").classList.remove("stopbuttonon");
+document.getElementById("flipswitch").classList.add("flipswitchoff");
+document.getElementById("flipswitch").classList.remove("flipswitchon");
 }
 
 
@@ -45,5 +55,24 @@ document.getElementById("questionlist").classList.remove("startanimation");
 document.getElementById("questionlist").classList.add("stopanimation");
 document.getElementById("startbutton").classList.remove("startbuttonon");
 document.getElementById("stopbutton").classList.add("stopbuttonon");
+document.getElementById("flipswitch").classList.remove("flipswitchoff");
+document.getElementById("flipswitch").classList.add("flipswitchon");
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
