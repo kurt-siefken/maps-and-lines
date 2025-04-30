@@ -37,7 +37,7 @@ AskQuestion[24] = "How far do you live from where you grew up?";
 
 const DiscQuestion = [];
 
-DiscQuestion[0] = "What is something you can't google?";
+DiscQuestion[0] = "What is a question you have that google can't answer?";
 DiscQuestion[1] = "What is an embarrassing situation from your past that you're willing to admit?";
 DiscQuestion[2] = "What is something kind that a stranger has done for you?";
 DiscQuestion[3] = "What is a small part of your life that you really enjoy?";
@@ -45,12 +45,12 @@ DiscQuestion[4] = "If you had to give a half hour talk right now, what could you
 DiscQuestion[5] = "What is something you hated as a kid, but love now?";
 DiscQuestion[6] = "What would look really cool if it was made out of legos?";
 DiscQuestion[7] = "What's an annoying pet peeve?";
-DiscQuestion[8] = "What's a quality that makes in instantly respect someone?";
+DiscQuestion[8] = "What's a quality in someone that makes you respect them instantly?";
 DiscQuestion[9] = "What's a show or movie that, whenever it's on tv, you always stop and watch it?";
 DiscQuestion[10] = "What is a word that you say wrong on purpose because it's funny?";
 DiscQuestion[11] = "What is something from your childhood that kids today won't understand?";
-DiscQuestion[12] = "What is a word or lingo used in your part of the country?";
-DiscQuestion[13] = "When you hear 'a guy walks into a bar' joke, what kind of bar do you picture?";
+DiscQuestion[12] = "What is a word or saying local to the area where you live?";
+DiscQuestion[13] = "When you hear <i>a guy walks into a bar</i> jokes, what kind of bar do you picture?";
 DiscQuestion[14] = "What do you think of possums?";
 DiscQuestion[15] = "When you think about school lunch, what do you think of?";
 DiscQuestion[16] = "What is a word you mispronounced for a long time?";

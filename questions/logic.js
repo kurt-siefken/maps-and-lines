@@ -39,7 +39,7 @@ document.getElementById("flipswitch").classList.remove("flipswitchon");
 
 function creatediv(questionnumber) {
 
-document.getElementById("questionlist").innerHTML += "<div>" + questionnumber + "</div>";
+document.getElementById("questionlist").innerHTML += "<div><p>" + questionnumber + "</p></div>";
 
 }
 
