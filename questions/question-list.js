@@ -29,7 +29,7 @@ AskQuestion[21] = "Fill in the blank: When I dance, I look ___.";
 AskQuestion[22] = "What food is the most healthy and delicioius?";
 AskQuestion[23] = "What streaming service do you use most?";
 AskQuestion[24] = "How far do you live from where you grew up?";
-
+AskQuestion[25] = "What is the best way to eat a potato?";
 
 
 
