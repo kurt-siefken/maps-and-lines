@@ -89,7 +89,7 @@ const countryBordersWithDirections = [
     country: "Rwanda",
     borders: [
       { country: "Burundi", direction: "⇓" },
-      { country: "DR Congo", direction: "⇐" },
+      { country: "Democratic Republic of the Congo", direction: "⇐" },
       { country: "Tanzania", direction: "⇘" },
       { country: "Uganda", direction: "⇗" }
     ]
@@ -149,7 +149,7 @@ const countryBordersWithDirections = [
     country: "Tanzania",
     borders: [
       { country: "Burundi", direction: "⇖" },
-      { country: "DR Congo", direction: "⇖" },
+      { country: "Democratic Republic of the Congo", direction: "⇖" },
       { country: "Kenya", direction: "⇗" },
       { country: "Malawi", direction: "⇓" },
       { country: "Mozambique", direction: "⇓" },
@@ -677,7 +677,7 @@ const countryBordersWithDirections = [
       { country: "Angola", direction: "⇓" },
       { country: "Cameroon", direction: "⇖" },
       { country: "Central African Republic", direction: "⇗" },
-      { country: "DR Congo", direction: "⇒" },
+      { country: "Democratic Republic of the Congo", direction: "⇒" },
       { country: "Gabon", direction: "⇐" }
     ]
   },
@@ -869,7 +869,7 @@ const countryBordersWithDirections = [
     country: "Angola",
     borders: [
       { country: "Republic of the Congo", direction: "⇑" },
-      { country: "DR Congo", direction: "⇗" },
+      { country: "Democratic Republic of the Congo", direction: "⇗" },
       { country: "Zambia", direction: "⇒" },
       { country: "Namibia", direction: "⇓" }
     ]
@@ -1035,7 +1035,7 @@ const countryBordersWithDirections = [
     borders: [
       { country: "Angola", direction: "⇐" },
       { country: "Botswana", direction: "⇙" },
-      { country: "DR Congo", direction: "⇑" },
+      { country: "Democratic Republic of the Congo", direction: "⇑" },
       { country: "Malawi", direction: "⇒" },
       { country: "Mozambique", direction: "⇘" },
       { country: "Namibia", direction: "⇙" },
@@ -1106,7 +1106,7 @@ const countryBordersWithDirections = [
     ]
   },
   {
-    country: "DR Congo",
+    country: "Democratic Republic of the Congo",
     borders: [
       { country: "Angola", direction: "⇙" },
       { country: "Burundi", direction: "⇘" },
@@ -1223,7 +1223,7 @@ const countryBordersWithDirections = [
     country: "South Sudan",
     borders: [
       { country: "Central African Republic", direction: "⇐" },
-      { country: "DR Congo", direction: "⇙" },
+      { country: "Democratic Republic of the Congo", direction: "⇙" },
       { country: "Ethiopia", direction: "⇒" },
       { country: "Kenya", direction: "⇘" },
       { country: "Sudan", direction: "⇑" },
@@ -1356,7 +1356,7 @@ const countryBordersWithDirections = [
   {
     country: "Burundi",
     borders: [
-      { country: "DR Congo", direction: "⇖" },
+      { country: "Democratic Republic of the Congo", direction: "⇖" },
       { country: "Rwanda", direction: "⇑" },
       { country: "Tanzania", direction: "⇘" }
     ]
@@ -1366,7 +1366,7 @@ const countryBordersWithDirections = [
     borders: [
       { country: "Cameroon", direction: "⇐" },
       { country: "Chad", direction: "⇑" },
-      { country: "DR Congo", direction: "⇘" },
+      { country: "Democratic Republic of the Congo", direction: "⇘" },
       { country: "Republic of the Congo", direction: "⇙" },
       { country: "South Sudan", direction: "⇒" },
       { country: "Sudan", direction: "⇗" }
@@ -1382,7 +1382,7 @@ const countryBordersWithDirections = [
   {
     country: "Uganda",
     borders: [
-      { country: "DR Congo", direction: "⇐" },
+      { country: "Democratic Republic of the Congo", direction: "⇐" },
       { country: "Kenya", direction: "⇒" },
       { country: "Rwanda", direction: "⇙" },
       { country: "South Sudan", direction: "⇑" },
