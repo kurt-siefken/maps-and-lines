@@ -222,6 +222,10 @@ border: 1px solid #ccc;
 background-color: #fff;
 padding: 30px;
 margin: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
 }
 
 
