@@ -475,7 +475,7 @@ const countryBordersWithDirections = [
     country: "Gabon",
     borders: [
       { country: "Cameroon", direction: "⇑" },
-      { country: "Republic of the Congo", direction: "⇒" },
+      { country: "Congo", direction: "⇒" },
       { country: "Equatorial Guinea", direction: "⇖" }
     ]
   },
@@ -672,7 +672,7 @@ const countryBordersWithDirections = [
     ]
   },
   {
-    country: "Republic of the Congo",
+    country: "Congo",
     borders: [
       { country: "Angola", direction: "⇓" },
       { country: "Cameroon", direction: "⇖" },
@@ -800,7 +800,7 @@ const countryBordersWithDirections = [
     borders: [
       { country: "Central African Republic", direction: "⇒" },
       { country: "Chad", direction: "⇗" },
-      { country: "Republic of the Congo", direction: "⇘" },
+      { country: "Congo", direction: "⇘" },
       { country: "Equatorial Guinea", direction: "⇙" },
       { country: "Gabon", direction: "⇓" },
       { country: "Nigeria", direction: "⇖" }
@@ -868,7 +868,7 @@ const countryBordersWithDirections = [
   {
     country: "Angola",
     borders: [
-      { country: "Republic of the Congo", direction: "⇑" },
+      { country: "Congo", direction: "⇑" },
       { country: "Democratic Republic of the Congo", direction: "⇗" },
       { country: "Zambia", direction: "⇒" },
       { country: "Namibia", direction: "⇓" }
@@ -1111,7 +1111,7 @@ const countryBordersWithDirections = [
       { country: "Angola", direction: "⇙" },
       { country: "Burundi", direction: "⇘" },
       { country: "Central African Republic", direction: "⇖" },
-      { country: "Republic of the Congo", direction: "⇐" },
+      { country: "Congo", direction: "⇐" },
       { country: "Rwanda", direction: "⇒" },
       { country: "South Sudan", direction: "⇗" },
       { country: "Tanzania", direction: "⇘" },
@@ -1367,7 +1367,7 @@ const countryBordersWithDirections = [
       { country: "Cameroon", direction: "⇐" },
       { country: "Chad", direction: "⇑" },
       { country: "Democratic Republic of the Congo", direction: "⇘" },
-      { country: "Republic of the Congo", direction: "⇙" },
+      { country: "Congo", direction: "⇙" },
       { country: "South Sudan", direction: "⇒" },
       { country: "Sudan", direction: "⇗" }
     ]

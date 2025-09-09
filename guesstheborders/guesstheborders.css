@@ -123,9 +123,13 @@ margin-bottom: 10px;
 
 #gamestatus {
   margin-top: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   text-align: center;
   padding: 30px;
+}
+
+#gamestatus > div:first-child {
+  font-weight: bold;
 }
 
 #GameGuessBox {
@@ -153,6 +157,8 @@ margin-bottom: 10px;
 #BordersListNums {
   margin-right: 7px;
 }
+
+.borderrownum {margin-bottom: 1px;}
 
 #BordersHints {
   font-size: 26px;
@@ -242,7 +248,7 @@ font-size: .8em;
 align-items: center;
 }
 
-#GiveUpYes, #GiveUpNo, #NewGameYes, #NewGameNo, #PlayAgain
+#GiveUpYes, #GiveUpNo, #NewGameYes, #NewGameNo,
 {
   margin-left: 10px;
 
@@ -250,7 +256,8 @@ border: 1px solid #999;
 padding: 5px 10px;
 }
 
-#PlayAgain {margin-top: 10px;}
+#PlayAgain {margin-top: 10px; border: 2px solid darkblue; color: darkblue;
+padding: 5px 10px;}
 
 
 #NewGameButton {
