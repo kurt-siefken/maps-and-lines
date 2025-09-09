@@ -257,6 +257,7 @@ numToGo = randomRegion.borders.length;
 
     btn.addEventListener("click", function () {
       this.textContent = this.textContent === "Show Hints" ? "Hide Hints" : "Show Hints";
+      btn.classList.toggle("buttonactive");
       hints.classList.toggle("flexme");
       hints.classList.toggle("hideme");
 
@@ -302,16 +303,14 @@ function InitializeGiveUp() {
     document.getElementById("GiveUpButton").addEventListener("click", GiveUpStepOne);
     document.getElementById("GiveUpYes").addEventListener("click", GiveUpYes);
     document.getElementById("GiveUpNo").addEventListener("click", GiveUpNo);
-	byId("GiveUpButton")?.classList.remove("hideme");
-	byId("GiveUpButton")?.classList.add("inlineme");
+
 	byId("GiveUpConfirm")?.classList.add("hideme");
 	byId("GiveUpConfirm")?.classList.remove("flexme");
 }
 
 
 function GiveUpStepOne() {
-	byId("GiveUpButton")?.classList.toggle("hideme");
-	byId("GiveUpButton")?.classList.toggle("inlineme");
+	byId("GiveUpButton")?.classList.toggle("buttonactive");
 	byId("GiveUpConfirm")?.classList.toggle("hideme");
 	byId("GiveUpConfirm")?.classList.toggle("flexme");
 }
@@ -362,14 +361,12 @@ GiveUpStepOne();
 
 
 
-  // -- Give Up ------------------------------------------------------------
+  // -- New Game ------------------------------------------------------------
 
 function InitializeNewGame() {
     document.getElementById("NewGameButton").addEventListener("click", NewGameStepOne);
     document.getElementById("NewGameYes").addEventListener("click", NewGameYes);
     document.getElementById("NewGameNo").addEventListener("click", NewGameNo);
-	byId("NewGameButton")?.classList.remove("hideme");
-	byId("NewGameButton")?.classList.add("inlineme");
 	byId("NewGameConfirm")?.classList.add("hideme");
 	byId("NewGameConfirm")?.classList.remove("flexme");
 
@@ -377,8 +374,7 @@ function InitializeNewGame() {
 
 
 function NewGameStepOne() {
-	byId("NewGameButton")?.classList.toggle("hideme");
-	byId("NewGameButton")?.classList.toggle("inlineme");
+	byId("NewGameButton")?.classList.toggle("buttonactive");
 	byId("NewGameConfirm")?.classList.toggle("hideme");
 	byId("NewGameConfirm")?.classList.toggle("flexme");
 
@@ -419,9 +415,11 @@ location.reload(true);
     });
   }
 
-  function toTitleCase(str) {
-    return str.toLowerCase().split(/\s+/).map(w => w[0].toUpperCase() + w.slice(1)).join(" ");
-  }
+function toTitleCase(str) {
+  return str.toLowerCase().split(/(\s+|-)/).map(part =>
+    part.match(/\s+|-/) ? part : part.charAt(0).toUpperCase() + part.slice(1)
+  ).join('');
+}
 
   function pickRandom(arr) {
     return Array.isArray(arr) && arr.length > 0 ? arr[Math.floor(Math.random() * arr.length)] : null;
