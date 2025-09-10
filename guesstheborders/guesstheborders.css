@@ -56,6 +56,11 @@ background-color: #efefef;
 background-color: #efefef;
 }
 
+.winnermessage {font-weight: bold;}
+
+.acemessage {color: darkblue; font-weight: bold;}
+
+
 /*-------------------------------------
   PAGE STRUCTURE
 -------------------------------------*/
@@ -334,6 +339,9 @@ padding: 7px 16px;
   0%   { width: 30px; opacity: 1; }
   100% { width: 0px; opacity: 0; display: none; margin: 0px; padding: 0px; border: 0px;}
 }
+
+
+
 
 
 /*-------------------------------------
