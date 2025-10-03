@@ -36,7 +36,9 @@ touch-action: none;
 }
 
 #bonusmessageshell {position: absolute; margin-top: 200px; display: block; width: 100%; z-index: 20; }
-#bonusmessage{z-index: 20; text-align: center; margin: auto; font-size: 50px; font-weight: bold; }
+#bonusmessage{z-index: 20; text-align: center; margin: auto; font-size: 50px; font-weight: bold;   font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;}
 
 
     .dip-bowl {
@@ -83,8 +85,12 @@ position: relative;
 
 .game-title {
 text-align: center;
-margin: 20px auto;
-font-size: 30px;
+margin: 10px auto;
+font-size: 40px;
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+color: #333;
 }
 
 .reset-button {
@@ -145,13 +151,18 @@ margin: auto;
 
   30% {
       rotate: -15deg;
-  	scale: 1.5;
     opacity: 1;
+color: blue;
   }
+  70% {
+  	scale: 1.5;
+  }
+
   100% {
       rotate: -15deg;
-  	scale: 1.5;
+  	scale: 1.0;
     opacity: 1;
+color: red;
   }
 }
 
