@@ -31,6 +31,48 @@ const chipQueue = [
   { type: 'sweet', label: 'Sweet Potato', matches: ['ranch', 'guac'] },
 ];
 
+
+
+
+const dipTypes = [
+  { id: 'onion', label: 'Onion' },
+  { id: 'ranch', label: 'Ranch' },
+  { id: 'salsa', label: 'Salsa' },
+  { id: 'guac', label: 'Guac' },
+  { id: 'hummus', label: 'Hummus' }
+];
+
+function shuffleDipAssignments() {
+  const bowls = document.querySelectorAll('.dip-bowl');
+  const shuffled = [...dipTypes];
+
+  // Fisher-Yates shuffle
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+
+  // Apply new dip data to the existing bowls
+  bowls.forEach((bowl, index) => {
+    const dip = shuffled[index];
+    bowl.id = dip.id;
+    bowl.dataset.dip = dip.id;
+    bowl.textContent = dip.label;
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ---------- Drag Start ----------
 chip.addEventListener('pointerdown', (e) => {
 e.preventDefault(); // inside pointerdown
@@ -161,6 +203,8 @@ setTimeout(() => {
 
 // ---------- Start New Round ----------
 function startNextChipRound() {
+shuffleDipAssignments();
+
   chip.style.left = "0px";
   chip.style.top = "0px";
 
