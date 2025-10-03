@@ -35,6 +35,10 @@ justify-content: center;
 touch-action: none;
 }
 
+#bonusmessageshell {position: absolute; margin-top: 200px; display: block; width: 100%; z-index: 20; }
+#bonusmessage{z-index: 20; text-align: center; margin: auto; font-size: 50px; font-weight: bold; }
+
+
     .dip-bowl {
       width: 100px;
       height: 70px;
@@ -127,4 +131,58 @@ margin: auto;
 
 .shrink-out {
   animation: shrinkOut 0.5s ease-out forwards;
+}
+
+
+
+
+@keyframes bonusOut {
+  0% {
+      rotate: 0deg;
+  scale: 0;
+    opacity: 0;
+  }
+
+  30% {
+      rotate: -15deg;
+  	scale: 1.5;
+    opacity: 1;
+  }
+  100% {
+      rotate: -15deg;
+  	scale: 1.5;
+    opacity: 1;
+  }
+}
+
+.bonus-out {
+  animation: bonusOut 1s ease-out forwards;
+}
+
+
+
+
+@keyframes tripOut {
+  0% {
+      rotate: 0deg;
+  scale: 0;
+    opacity: 0;
+  }
+
+  70% {
+      rotate: -15deg;
+  	scale: 2;
+    opacity: 1;
+color: blue;
+  }
+  100% {
+      rotate: -15deg;
+  	scale: 1.5;
+    opacity: 1;
+color: black;
+  }
+}
+
+.trip-out {
+  animation: tripOut .7s ease-out forwards;
 }

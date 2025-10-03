@@ -1,6 +1,10 @@
 const chip = document.getElementById('chip');
 const eatZone = document.getElementById('eatZone');
 const bowls = document.querySelectorAll('.dip-bowl');
+const bonus = document.getElementById('bonusmessage');
+
+
+
 
 let currentChipIndex = 0;
 let score = 0;
@@ -101,10 +105,22 @@ if (isOverEatZone) {
 
 if (pointsEarned == 2) {
 console.log(`🎉🎉 That's a double dip!`);
+	bonus.classList.add('bonus-out');
+	bonus.textContent = "DOUBLE DIP!";
+	setTimeout(() => {
+ 	 bonus.classList.remove('bonus-out'); // Reset for next round
+	bonus.textContent = "";
+	}, 500); // Match the CSS animation duration
 }
 
 if (pointsEarned == 3) {
 console.log(`🎉🎉🎉 You bet your ass that's a trip-dip!`);
+	bonus.classList.add('trip-out');
+	bonus.textContent = "TRIP DIP!";
+	setTimeout(() => {
+ 	 bonus.classList.remove('trip-out'); // Reset for next round
+	bonus.textContent = "";
+	}, 1000); // Match the CSS animation duration
 }
 
   eatZone.style.backgroundColor  = 'green';
