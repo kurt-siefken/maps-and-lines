@@ -29,6 +29,8 @@ const chipQueue = [
 
 // ---------- Drag Start ----------
 chip.addEventListener('pointerdown', (e) => {
+e.preventDefault(); // inside pointerdown
+
   isDragging = true;
   offsetX = e.clientX - chip.offsetLeft;
   offsetY = e.clientY - chip.offsetTop;
