@@ -50,8 +50,7 @@ touch-action: none;
 
 #scoreboard {
   position: relative;
-  top: 20px;
-  left: 20px;
+margin: 30px auto;
   font-size: 14px;
   font-family: sans-serif;
   font-weight: bold;
@@ -68,8 +67,6 @@ text-align: center;
 #gameboard {
   display: flex;
   flex-direction: row;
-  width: 100vw;
-  height: 100vh;
 max-width: 500px;
 margin: auto;
 }
@@ -86,15 +83,15 @@ margin: auto;
 #play-column {
   flex: 1;
   position: relative;
-
+display: flex;
+align-items: flex-end;
 }
 
 #chip {
 }
 
 #eatZone {
-bottom: 50px;
-position: absolute;
+position: relative;
 border: 3px dashed black;
 border-radius: 10px;
 height: 100px;

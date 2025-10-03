@@ -63,7 +63,6 @@ chip.addEventListener('pointermove', (e) => {
       if (currentValidDips.includes(dip)) {
         bowl.style.backgroundColor  = 'green';
 	bowl.style.color  = 'white';
-	currentRoundValid = true; // mark the round as invalid
         console.log(`✅ Live dip success: chip in ${dip}`);
       } else {
         bowl.style.backgroundColor = 'red';
@@ -94,7 +93,7 @@ if (isOverEatZone) {
   console.log("😋 You ate the chip!");
 
   // Scoring
-  if (currentRoundValid) {
+  if (currentRoundValid && dipsHitThisRound.size > 0) {
     const pointsEarned = dipsHitThisRound.size;
     score += pointsEarned;
     console.log(`🎉 You earned ${pointsEarned} point(s)!`);
@@ -165,7 +164,7 @@ const nextChip = chipQueue[Math.floor(Math.random() * chipQueue.length)];
   currentValidDips = nextChip.matches;
 
   currentChipIndex = (currentChipIndex + 1) % chipQueue.length;
-  currentRoundValid = false;
+  currentRoundValid = true;
   dipsHitThisRound.clear();
 }
 
