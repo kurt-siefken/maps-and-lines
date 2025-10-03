@@ -145,8 +145,8 @@ setTimeout(() => {
 
 // ---------- Start New Round ----------
 function startNextChipRound() {
-  chip.style.left = "100px";
-  chip.style.top = "100px";
+  chip.style.left = "0px";
+  chip.style.top = "0px";
 
  bowls.forEach(bowl => bowl.style.backgroundColor = "");
 bowls.forEach(bowl => bowl.style.color = "#000")
@@ -174,7 +174,9 @@ const nextChip = chipQueue[Math.floor(Math.random() * chipQueue.length)];
 // ---------- Update Score Display ----------
 function updateScoreboard() {
   document.getElementById('scoreboard').textContent =
-    `Score: ${score} | Level: ${level} | Streak: ${streak} | Longest: ${longestStreak}`;
+  //  `Score: ${score} | Level: ${level} | Streak: ${streak} | Longest: ${longestStreak}`;
+`Level: ${level}`;
+
 }
 
 

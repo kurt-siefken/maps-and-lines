@@ -22,15 +22,13 @@
   cursor: pointer;
   z-index: 10;
   position: absolute;
-  top: 100px;
-  left: 100px;
+
   text-align: center;
   line-height: 1em;
   font-weight: bold;
   cursor: grab;
   user-select: none;
 color: #000;
-  z-index: 10; /* 👈 This brings it to the front */
 display: flex;
 align-items: center;
 justify-content: center;
@@ -39,10 +37,10 @@ touch-action: none;
 
     .dip-bowl {
       width: 100px;
-      height: 100px;
-      border-radius: 30px 0px 0px 30px;
+      height: 70px;
+      border-radius: 0px 0px 30px 30px;
       font-weight: bold;
-      line-height: 100px;
+      line-height: 70px;
       text-align: center;
       border: 2px solid #333;
   flex-shrink: 0;
@@ -50,7 +48,7 @@ touch-action: none;
 
 #scoreboard {
   position: relative;
-margin: 30px auto;
+margin: 20px auto;
   font-size: 14px;
   font-family: sans-serif;
   font-weight: bold;
@@ -58,48 +56,50 @@ text-align: center;
 }
 
 
-
-
-
-
-
-
-#gameboard {
-  display: flex;
-  flex-direction: row;
-max-width: 500px;
+.dip-table {
+ max-width: 400px;
+width: 90%;
 margin: auto;
-}
-
-#dip-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  gap: 20px;
-}
-
-#play-column {
-  flex: 1;
-  position: relative;
+border: 0px solid red;
 display: flex;
-align-items: flex-end;
+flex-direction: column;
 }
 
-#chip {
+.dip-table-row {display: flex; margin-top: 50px;}
+.dip-table-row1 {justify-content: space-between;}
+.dip-table-row2 {justify-content: space-around;}
+.dip-table-row3 {justify-content: center;}
+
+
+
+.game-setup {
+position: relative;
 }
+
+
+.game-title {
+text-align: center;
+margin: 20px auto;
+font-size: 30px;
+}
+
+.reset-button {
+margin: auto;
+text-align: center;
+}
+
 
 #eatZone {
 position: relative;
-border: 3px dashed black;
-border-radius: 10px;
-height: 100px;
+border: 3px dashed #ccc;
+border-radius: 20px;
+height: 60px;
 width: 200px;
-background-color: #efefef;
+background-color: #fafafa;
 display: flex;
 align-items: center;
 justify-content: center;
+margin: auto;
 }
 
 

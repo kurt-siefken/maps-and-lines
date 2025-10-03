@@ -12,29 +12,53 @@
 </head>
 <body>
 
+<div class="game-setup dip-table">
 
+
+<div class="game-title">Dip-A-Chip</div>
 <div id="scoreboard">Score: 0</div>
-
-
-<div id="gameboard">
-  <div id="dip-column">
-  <div class="dip-bowl" id="onion" data-dip="onion">Onion</div>
-  <div class="dip-bowl" id="ranch" data-dip="ranch">Ranch</div>
-  <div class="dip-bowl" id="salsa" data-dip="salsa">Salsa</div>
-  <div class="dip-bowl" id="guac" data-dip="guac">Guac</div>
-  <div class="dip-bowl" id="hummus" data-dip="hummus">Hummus</div>
-  </div>
-  <div id="play-column">
-
-<div id="chip" data-chip="plain"></div>
-
     <div id="eatZone">EAT</div>
 
-  </div>
+	<div style="position: relative; margin: auto; margin-top: -40px;">
+		<div style="margin-left: -40px; margin-top: 60px; position: relative;">
+		<div id="chip" data-chip="plain">
+		</div>
+		</div>
+	</div>
 </div>
 
-<button onclick="resetGame()">Reset Game</button>
 
+
+
+
+
+
+
+<div class="dip-table">
+
+<div class="dip-table-row dip-table-row1">
+  <div class="dip-bowl" id="onion" data-dip="onion">Onion</div>
+  <div class="dip-bowl" id="ranch" data-dip="ranch">Ranch</div>
+</div>
+<div class="dip-table-row dip-table-row2">
+  <div class="dip-bowl" id="salsa" data-dip="salsa">Salsa</div>
+  <div class="dip-bowl" id="guac" data-dip="guac">Guac</div>
+</div>
+<div class="dip-table-row dip-table-row3">
+  <div class="dip-bowl" id="hummus" data-dip="hummus">Hummus</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div  class="reset-button">
+<button onclick="resetGame()">Reset Game</button>
+</div>
 
 
 
