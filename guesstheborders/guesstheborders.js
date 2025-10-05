@@ -268,9 +268,12 @@ numToGo = randomRegion.borders.length;
   function gameWinner() {
 
     let msg = pickRandom(WinnerMessage) || "That's a game winner!";
+
     if (numWrong === 0) msg = pickRandom(AceMessage) || "That's a clean sweep!";
     if (numTotal === 0) msg = "Congratulations, there are 0 borders.<br>That wasn't too hard now, was it?";
     statusMsg(msg);
+
+
 
     gameOver();
   }

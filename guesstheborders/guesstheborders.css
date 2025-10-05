@@ -56,9 +56,18 @@ background-color: #efefef;
 background-color: #efefef;
 }
 
-.winnermessage {font-weight: bold;}
+.winnermessage {
+	font-weight: bold;
+	animation: winMe 0.9s ease-out forwards;
+	display: inline-block;
+}
 
-.acemessage {color: darkblue; font-weight: bold;}
+.acemessage {
+	color: darkblue; 
+	font-weight: bold; 
+	animation: aceMe 1.4s ease-out forwards;
+	display: inline-block;
+}
 
 
 /*-------------------------------------
@@ -339,6 +348,66 @@ padding: 7px 16px;
   0%   { width: 30px; opacity: 1; }
   100% { width: 0px; opacity: 0; display: none; margin: 0px; padding: 0px; border: 0px;}
 }
+
+
+
+
+@keyframes winMe {
+  0% {
+    transform: rotate(0deg) scale(0);
+    opacity: 0;
+  }
+  40% {
+    transform: rotate(-10deg) scale(1.2);
+    opacity: 1;
+    color: crimson;
+  }
+  70% {
+    transform: rotate(5deg) scale(0.95);
+    color: orange;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    color: darkblue;
+  }
+}
+
+@keyframes aceMe {
+  0% {
+    transform: rotate(0deg) scale(0);
+    opacity: 0;
+  }
+  30% {
+    transform: rotate(-15deg) scale(1.5);
+    opacity: 1;
+    color: crimson;
+  }
+  50% {
+    transform: rotate(10deg) scale(1.2);
+    color: gold;
+  }
+  70% {
+    transform: rotate(-5deg) scale(1.05);
+    color: limegreen;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    color: darkblue;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
