@@ -60,6 +60,7 @@ background-color: #efefef;
 	font-weight: bold;
 	animation: winMe 0.9s ease-out forwards;
 	display: inline-block;
+	text-align: balance;
 }
 
 .acemessage {
@@ -67,8 +68,10 @@ background-color: #efefef;
 	font-weight: bold; 
 	animation: aceMe 1.4s ease-out forwards;
 	display: inline-block;
+	text-wrap: balance;
 }
 
+.aceemoji {font-size: 26px;}
 
 /*-------------------------------------
   PAGE STRUCTURE
