@@ -27,7 +27,7 @@ const chipQueue = [
   { type: 'pita', label: 'Pita', matches: ['hummus', 'ranch'] },
   { type: 'crinkle', label: 'Crinkle', matches: ['onion', 'ranch'] },
   { type: 'kettle', label: 'Kettle', matches: ['onion', 'ranch'] },
-  { type: 'tortilla', label: 'Tortilla', matches: ['salsa', 'guac', 'hummus'] },
+  { type: 'tortilla', label: 'Tortilla', matches: ['salsa', 'guac', 'hummus'] }, // Trip-dip!
   { type: 'sweet', label: 'Sweet Potato', matches: ['ranch', 'guac'] },
 ];
 
@@ -152,7 +152,7 @@ console.log(`🎉🎉 That's a double dip!`);
 	setTimeout(() => {
  	 bonus.classList.remove('bonus-out'); // Reset for next round
 	bonus.textContent = "";
-	}, 1000); // Match the CSS animation duration
+	}, 1500); // Match the CSS animation duration
 }
 
 if (pointsEarned == 3) {
@@ -162,7 +162,7 @@ console.log(`🎉🎉🎉 You bet your ass that's a trip-dip!`);
 	setTimeout(() => {
  	 bonus.classList.remove('trip-out'); // Reset for next round
 	bonus.textContent = "";
-	}, 1000); // Match the CSS animation duration
+	}, 3000); // Match the CSS animation duration
 }
 
   eatZone.style.backgroundColor  = 'green';

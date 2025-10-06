@@ -144,56 +144,84 @@ margin: auto;
 
 @keyframes bonusOut {
   0% {
-      rotate: 0deg;
-  scale: 0;
+    transform: rotate(0deg) scale(0);
     opacity: 0;
   }
-
-  30% {
-      rotate: -15deg;
+  40% {
+    transform: rotate(-10deg) scale(1.2);
     opacity: 1;
-color: blue;
+    color: crimson;
   }
   70% {
-  	scale: 1.5;
+    transform: rotate(5deg) scale(0.95);
+    color: orange;
   }
-
-  100% {
-      rotate: -15deg;
-  	scale: 1.0;
+  /* Add a settle frame */
+  90% {
+    transform: rotate(0deg) scale(1);
     opacity: 1;
-color: red;
+    color: darkblue;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    color: darkblue;
   }
 }
 
 .bonus-out {
-  animation: bonusOut 1s ease-out forwards;
+  animation: bonusOut 1.5s ease-out forwards;
 }
+
 
 
 
 
 @keyframes tripOut {
   0% {
-      rotate: 0deg;
-  scale: 0;
+    transform: rotate(0deg) scale(0);
     opacity: 0;
   }
-
-  70% {
-      rotate: -15deg;
-  	scale: 2;
+  15% {
+    transform: rotate(-20deg) scale(1.6);
     opacity: 1;
-color: blue;
+    color: crimson;
+  }
+  30% {
+    transform: rotate(20deg) scale(0.8);
+    color: gold;
+  }
+  45% {
+    transform: rotate(-25deg) scale(1.7);
+    color: hotpink;
+  }
+  60% {
+    transform: rotate(15deg) scale(0.9);
+    color: limegreen;
+  }
+  75% {
+    transform: rotate(-10deg) scale(1.4);
+    color: orange;
+  }
+  90% {
+    transform: rotate(5deg) scale(1.1);
+    color: cyan;
+  }
+  /* Add a “pause” before final */
+  95% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    color: darkblue;
   }
   100% {
-      rotate: -15deg;
-  	scale: 1.5;
+    transform: rotate(0deg) scale(1);
     opacity: 1;
-color: black;
+    color: darkblue;
   }
 }
 
 .trip-out {
-  animation: tripOut .7s ease-out forwards;
+  animation: tripOut 3s ease-in-out forwards;
 }
+
+
