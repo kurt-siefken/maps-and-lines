@@ -163,14 +163,14 @@ margin: auto;
     color: darkblue;
   }
   100% {
-    transform: rotate(0deg) scale(1);
+    transform: rotate(3deg) scale(1);
     opacity: 1;
     color: darkblue;
   }
 }
 
 .bonus-out {
-  animation: bonusOut 1.5s ease-out forwards;
+  animation: bonusOut 1s ease-out forwards;
 }
 
 

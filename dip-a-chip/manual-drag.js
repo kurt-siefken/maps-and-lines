@@ -152,7 +152,7 @@ console.log(`🎉🎉 That's a double dip!`);
 	setTimeout(() => {
  	 bonus.classList.remove('bonus-out'); // Reset for next round
 	bonus.textContent = "";
-	}, 1500); // Match the CSS animation duration
+	}, 1000); // Match the CSS animation duration
 }
 
 if (pointsEarned == 3) {
