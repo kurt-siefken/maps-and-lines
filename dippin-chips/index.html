@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dippin' Chips</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap" rel="stylesheet">
+
+ <link rel="stylesheet" type="text/css" href="dipachip.css">
+</head>
+<body>
+
+<div class="game-setup dip-table">
+
+		<div id="bonusmessageshell"><div id="bonusmessage"></div></div>
+
+
+
+
+<div class="game-title">Dippin' Chips</div>
+<div id="scoreboard">Score: 0</div>
+    <div id="eatZone">EAT</div>
+
+	<div style="position: relative; margin: auto; margin-top: -40px;">
+		<div style="margin-left: -40px; margin-top: 60px; position: relative;">
+		<div id="chip" data-chip="plain"></div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="dip-table">
+
+<div class="dip-table-row dip-table-row1">
+  <div class="dip-bowl" id="onion" data-dip="onion">Onion</div>
+  <div class="dip-bowl" id="ranch" data-dip="ranch">Ranch</div>
+</div>
+<div class="dip-table-row dip-table-row2">
+  <div class="dip-bowl" id="salsa" data-dip="salsa">Salsa</div>
+  <div class="dip-bowl" id="guac" data-dip="guac">Guac</div>
+</div>
+<div class="dip-table-row dip-table-row3">
+  <div class="dip-bowl" id="hummus" data-dip="hummus">Hummus</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div  class="reset-button" style="display: none;">
+<button onclick="resetGame()">Reset Game</button>
+</div>
+
+
+
+
+  <script src="manual-drag.js"></script>
+</body>
+</html>
