@@ -138,9 +138,9 @@ text-decoration: none;
 
 &quot;You&#39;re hitting the drinks pretty hard,&quot; the bartender says. &quot;Are you doing alright?&quot;
 
-[[🗩 Yeah, I&#39;m just a little bummed about life.|Explain what&#39;s wrong][$firstmood = &quot;bummed&quot;]]
-[[🗩 Yep! Everything is perfectly fine! Heh heh, yeesh.|Explain what&#39;s wrong][$firstmood = &quot;fine&quot;]]
-[[🗩 No, I am freaking out!|Explain what&#39;s wrong][$firstmood = &quot;freaked&quot;]]
+[[🗨️ Yeah, I&#39;m just a little bummed about life.|Explain what&#39;s wrong][$firstmood = &quot;bummed&quot;]]
+[[🗨️ Yep! Everything is perfectly fine! Heh heh, yeesh.|Explain what&#39;s wrong][$firstmood = &quot;fine&quot;]]
+[[🗨️ No, I am freaking out!|Explain what&#39;s wrong][$firstmood = &quot;freaked&quot;]]
 </tw-passagedata><tw-passagedata pid="3" name="Explain what&#39;s wrong" tags="" position="1175,75" size="100,100">&lt;&lt;if $firstmood is &quot;bummed&quot;&gt;&gt;
 &quot;Sorry to hear that,&quot; the bartender says. &quot;Is there anything I can help you with, Mrs. Whitten?&quot;
 &lt;&lt;elseif  $firstmood is &quot;freaked&quot;&gt;&gt;
@@ -148,26 +148,26 @@ text-decoration: none;
 &lt;&lt;elseif  $firstmood is &quot;fine&quot;&gt;&gt;
 &quot;No offense, but you don&#39;t sound fine,&quot; the bartender says. &quot;Tell me what&#39;s on your mind, Mrs. Whitten.&quot;
 &lt;&lt;/if&gt;&gt;
-[[🗩 Please don&#39;t call me Mrs. Whitten.|Explain name]]
-[[🗩 Stop calling me Mrs. Whitten!|Explain name]]
-[[🗩 That&#39;s not my name. *sniffle*|Explain name]]</tw-passagedata><tw-passagedata pid="4" name="Explain name" tags="" position="1375,75" size="100,100">&quot;Oh, I&#39;m sorry, Mrs. umm...&quot; the bartender stammers. &quot;But you&#39;ve been charging your drinks to room 316. Did I mispronounce your name?&quot;
+[[🗨️ Please don&#39;t call me Mrs. Whitten.|Explain name]]
+[[🗨️ Stop calling me Mrs. Whitten!|Explain name]]
+[[🗨️ That&#39;s not my name. *sniffle*|Explain name]]</tw-passagedata><tw-passagedata pid="4" name="Explain name" tags="" position="1375,75" size="100,100">&quot;Oh, I&#39;m sorry, Mrs. umm...&quot; the bartender stammers. &quot;But you&#39;ve been charging your drinks to room 316. Did I mispronounce your name?&quot;
 
-&quot;No, no, it&#39;s fine,&quot; you say with a sigh. &quot;I am supposed to be here on my honeymoon. But when I showed up for my wedding, Mr. Whitten didn&#39;t.&quot;
+&quot;No, no, it&#39;s fine,&quot; you say with a sigh. &quot;I am supposed to be here on my honeymoon. But when I showed up for my wedding, &lt;i&gt;Mr.&lt;/i&gt; Whitten didn&#39;t.&quot;
 
 &quot;Oh, gosh. I&#39;m so sorry,&quot; the bartender says.
 
-&quot;The honeymoon reservation was already paid for, so I figured I might as well use it. So yes, room 316 is for Mrs. Whitten, but I never became Mrs. Whitten.&quot;
+&quot;The honeymoon reservation was already paid for, so I figured I might as well use it. So yes, room 316 is for Mr. and Mrs. Whitten, but I never became Mrs. Whitten.&quot;
 
 &quot;Then what should I call you?&quot; the bartender asks.
 
-[[🗩 My name is Melissa Dungotten|Real name]]
-[[🗩 Call me Melissa. Melissa Dungotten|Real name]]</tw-passagedata><tw-passagedata pid="5" name="Real name" tags="" position="1550,75" size="100,100">&quot;So, Miss Dungotten,&quot; the bartender says. &quot;You&#39;re here on a healing mission after being left at the alter, huh? You don&#39;t particularly healed, no offense.&quot;
+[[🗨️ My name is Melissa Dungotten|Real name]]
+[[🗨️ Call me Melissa. Melissa Dungotten|Real name]]</tw-passagedata><tw-passagedata pid="5" name="Real name" tags="" position="1550,75" size="100,100">&quot;So, Miss Dungotten,&quot; the bartender says. &quot;You&#39;re here on a healing mission after being left at the alter, huh? You don&#39;t particularly healed, no offense.&quot;
 
 For the first time in a week you muster a small laugh. &quot;I am trying to make the best of it, but I&#39;m not doing so well. Meanwhile, my ex-fiance is...&quot;
 
-[[🗩 ...probably out with some floozy|Mr Whitten]]
-[[🗩 ...probably playing video games with his dork-ass friends|Mr Whitten]]
-[[🗩 ...hopefully burning in hell|Mr Whitten]]</tw-passagedata><tw-passagedata pid="6" name="Mr Whitten" tags="" position="1725,75" size="100,100">&quot;Well, whatever he&#39;s doing,&quot; the bartender says. &quot;I hope he&#39;s miserable.&quot;
+[[🗨️ ...probably out with some floozy|Mr Whitten]]
+[[🗨️ ...probably playing video games with his dork-ass friends|Mr Whitten]]
+[[🗨️ ...hopefully burning in hell|Mr Whitten]]</tw-passagedata><tw-passagedata pid="6" name="Mr Whitten" tags="" position="1725,75" size="100,100">&quot;Well, whatever he&#39;s doing,&quot; the bartender says. &quot;I hope he&#39;s miserable.&quot;
 
 &quot;Cheers to that,&quot; you say, holding up your almost empty glass. You drain the last of your $preferreddrink, and lick the glass clean.
 
@@ -175,9 +175,9 @@ For the first time in a week you muster a small laugh. &quot;I am trying to make
 
 &quot;The name is Barry,&quot; the bartender says. &quot;Barry the bartender.&quot;
 
-[[🗩 Seriously?|Bartender Name Meaning][$firstbar = &quot;eyeroll&quot;]]
-[[🗩 Onomatopoeia. I like it!|Bartender Name Meaning][$firstbar = &quot;wordy&quot;]]
-[[🗩 Nice to meet you, Bartender Barry!|Bartender Name Meaning][$firstbar = &quot;flirty&quot;]]
+[[🗨️ Seriously?|Bartender Name Meaning][$firstbar = &quot;eyeroll&quot;]]
+[[🗨️ Onomatopoeia. I like it!|Bartender Name Meaning][$firstbar = &quot;wordy&quot;]]
+[[🗨️ Nice to meet you, Bartender Barry!|Bartender Name Meaning][$firstbar = &quot;flirty&quot;]]
 
 </tw-passagedata><tw-passagedata pid="8" name="Bartender Name Meaning" tags="" position="2075,75" size="100,100">&lt;&lt;if $firstbar is &quot;eyeroll&quot;&gt;&gt;
 &quot;I know,&quot; Barry says. &quot;It&#39;s the job I was born for.&quot;
@@ -188,9 +188,9 @@ For the first time in a week you muster a small laugh. &quot;I am trying to make
 &lt;&lt;/if&gt;&gt;
 &quot;So, how long is your solo honeymoon?&quot; he asks.
 
-[[🗩 I&#39;m miserable. I&#39;ll probably leave tomorrow.|Solo Honeymoon][$action = &quot;tomorrow&quot;]]
-[[🗩 I&#39;m going to stick it out for another week.|Solo Honeymoon][$action = &quot;week&quot;]]
-[[🗩 I don&#39;t know yet. I&#39;ll see how I feel.|Solo Honeymoon][$action = &quot;unknown&quot;]]
+[[🗨️ I&#39;m miserable. I&#39;ll probably leave tomorrow.|Solo Honeymoon][$action = &quot;tomorrow&quot;]]
+[[🗨️ I&#39;m going to stick it out for another week.|Solo Honeymoon][$action = &quot;week&quot;]]
+[[🗨️ I don&#39;t know yet. I&#39;ll see how I feel.|Solo Honeymoon][$action = &quot;unknown&quot;]]
 </tw-passagedata><tw-passagedata pid="9" name="Who is DJ" tags="" position="1725,225" size="100,100">&lt;&lt;if $firstdj is &quot;curious&quot;&gt;&gt;
 &quot;You know who I am, wikki-wikki-wah!&quot; the man in the shiny suit says.
 &lt;&lt;elseif  $firstdj is &quot;angry&quot;&gt;&gt;
@@ -200,14 +200,14 @@ For the first time in a week you muster a small laugh. &quot;I am trying to make
 &lt;&lt;/if&gt;&gt;
 You recognize the man as the deejay from the adjacent club where you spent a miserable hour watching all the happy couples dancing. &quot;I couldn&#39;t help but notice you staring at me while I was spinning tracks,&quot; he says.
 
-[[🗩 Yeah, your taste in music sucks.|Meet the DJ]]
-[[🗩 Yeah, I&#39;ve never seen a pimple that big.|Meet the DJ]]
-[[🗩 Yeah, I&#39;m writing an article on basement dwelling gargoyles.|Meet the DJ]]</tw-passagedata><tw-passagedata pid="10" name="Meet the DJ" tags="" position="1575,225" size="100,100">The bartender snorts a laugh without looking up. He is scribbiling on a piece of paper.
+[[🗨️ Yeah, your taste in music sucks.|Meet the DJ]]
+[[🗨️ Yeah, I&#39;ve never seen a pimple that big.|Meet the DJ]]
+[[🗨️ Yeah, I&#39;m writing an article on basement dwelling gargoyles.|Meet the DJ]]</tw-passagedata><tw-passagedata pid="10" name="Meet the DJ" tags="" position="1575,225" size="100,100">The bartender snorts a laugh without looking up. He is scribbiling on a piece of paper.
 
 &quot;Ouch,&quot; the deejay says. &quot;But I respect the attitude. My name is CJ.&quot; He holds out his hand to shake.
 
 [[Shake CJ&#39;s hand. |CJ the DJ][$action = &quot;shake&quot;]]
-[[🗩 CJ the Deejay? Are you kidding me?|CJ the DJ][$action = &quot;name&quot;]]</tw-passagedata><tw-passagedata pid="11" name="CJ the DJ" tags="" position="1425,225" size="100,100">&lt;&lt;if $action is &quot;shake&quot;&gt;&gt;
+[[🗨️ CJ the Deejay? Are you kidding me?|CJ the DJ][$action = &quot;name&quot;]]</tw-passagedata><tw-passagedata pid="11" name="CJ the DJ" tags="" position="1425,225" size="100,100">&lt;&lt;if $action is &quot;shake&quot;&gt;&gt;
 &quot;Nice to meet you, CJ,&quot;  you say. 
 
 CJ shakes your hand a beat too long. &quot;Now, can I buy you a drink?&quot;
@@ -232,24 +232,24 @@ You crumple up the napkin and wipe the side of your mouth.
 &lt;&lt;/if&gt;&gt;
 CJ is waving his credit card around. &quot;Now, can I finally buy you a drink?&quot;
 
-[[🗩 Thanks, but I better be going|Reject drink][$firstnightresult= &quot;sober&quot;]]
-[[🗩 Sure, I can always use another drink|Accept drink][$firstnightresult= &quot;drunk&quot;]]
+[[🗨️ Thanks, but I better be going|Reject drink][$firstnightresult= &quot;sober&quot;]]
+[[🗨️ Sure, I can always use another drink|Accept drink][$firstnightresult= &quot;drunk&quot;]]
 </tw-passagedata><tw-passagedata pid="13" name="Reject drink" tags="" position="1125,325" size="100,100">&quot;I think I&#39;ve had enough,&quot; you say. &quot;In fact, I better be going. Barry, can I have my check please?&quot;
 
 &quot;Aw, come on. What fun is that?&quot; CJ pleads. &quot;You don&#39;t have to have another drink. But just hang out and talk a bit?&quot;
 
 Barry gives you a skeptical look.
 
-[[🗩 I really need to leave|Immediate Room]]
-[[🗩 I suppose I could stay a bit|Tarry Room]]</tw-passagedata><tw-passagedata pid="14" name="Accept drink" tags="" position="1000,275" size="100,100">&quot;Yeah, sure. Bring it on,&quot; you say.
+[[🗨️ I really need to leave|Immediate Room]]
+[[🗨️ I suppose I could stay a bit|Tarry Room]]</tw-passagedata><tw-passagedata pid="14" name="Accept drink" tags="" position="1000,275" size="100,100">&quot;Yeah, sure. Bring it on,&quot; you say.
 
 Barry gives you a long, piercing stare as he hands you another $preferreddrink. It tastes... strange. It has been watered down.
 
 &quot;So, what brings you here?&quot; CJ asks.
 
-[[🗩 I&#39;m overcoming heartbreak|Why here - Jilted][$firstnightwhy= &quot;jilted&quot;]]
-[[🗩 I&#39;m evading the police|Why here - Police][$firstnightwhy= &quot;police&quot;]]
-[[🗩 My cousin&#39;s birthday party|Why here - Cousin][$firstnightwhy= &quot;cousin&quot;]]</tw-passagedata><tw-passagedata pid="15" name="Immediate Room" tags="" position="1300,350" size="100,100">CJ scoffs. &quot;Fine,&quot; he says. &quot;No wonder you&#39;re sitting here alone and miserable.&quot;
+[[🗨️ I&#39;m overcoming heartbreak|Why here - Jilted][$firstnightwhy= &quot;jilted&quot;]]
+[[🗨️ I&#39;m evading the police|Why here - Police][$firstnightwhy= &quot;police&quot;]]
+[[🗨️ My cousin&#39;s birthday party|Why here - Cousin][$firstnightwhy= &quot;cousin&quot;]]</tw-passagedata><tw-passagedata pid="15" name="Immediate Room" tags="" position="1300,350" size="100,100">CJ scoffs. &quot;Fine,&quot; he says. &quot;No wonder you&#39;re sitting here alone and miserable.&quot;
 
 Before you can control yourself, you push CJ off his barstool. He crashes to the ground. &quot;I&#39;ve got a lot going on, and I&#39;m not in the mood for this shit right now!&quot; you scream. &quot;Leave me alone you disgusting maggot scum!&quot;
 
@@ -260,9 +260,9 @@ There are only a few patrons in the bar, and they are all staring at you.
 
 &quot;So, what brings you here?&quot; CJ asks.
 
-[[🗩 I&#39;m overcoming heartbreak|Why here - Jilted]]
-[[🗩 I&#39;m evading the police|Why here - Police]]
-[[🗩 My cousin&#39;s birthday party|Why here - Cousin]]</tw-passagedata><tw-passagedata pid="17" name="Straight Room" tags="" position="1450,350" size="100,100">CJ is sitting in shock on the floor with the barstool fallen beside him. The room is silent.
+[[🗨️ I&#39;m overcoming heartbreak|Why here - Jilted]]
+[[🗨️ I&#39;m evading the police|Why here - Police]]
+[[🗨️ My cousin&#39;s birthday party|Why here - Cousin]]</tw-passagedata><tw-passagedata pid="17" name="Straight Room" tags="" position="1450,350" size="100,100">CJ is sitting in shock on the floor with the barstool fallen beside him. The room is silent.
 
 Barry nods at you. &quot;We can settle up tomorrow,&quot; he says.
 
@@ -295,9 +295,9 @@ You sit down on the bed and close your eyes.
 
 You stare at CJ for a moment.
 
-[[🗩 He met someone else|Reason here][$reasonhere = &quot;jiltedsensible&quot;]]
-[[🗩 I ran over his dog|Reason here][$reasonhere = &quot;jiltedabsurd&quot;]]
-[[🗩 None of your damn business!|Reason here][$reasonhere = &quot;jiltedrude&quot;]]</tw-passagedata><tw-passagedata pid="22" name="Start" tags="" position="525,75" size="100,100">&lt;div style=&quot;font-size: 1.3em;&quot;&gt;CHAPTER 1&lt;/div&gt;
+[[🗨️ He met someone else|Reason here][$reasonhere = &quot;jiltedsensible&quot;]]
+[[🗨️ I ran over his dog|Reason here][$reasonhere = &quot;jiltedabsurd&quot;]]
+[[🗨️ None of your damn business!|Reason here][$reasonhere = &quot;jiltedrude&quot;]]</tw-passagedata><tw-passagedata pid="22" name="Start" tags="" position="525,75" size="100,100">&lt;div style=&quot;font-size: 1.3em;&quot;&gt;CHAPTER 1&lt;/div&gt;
 Tuesday Night. 12:30AM
 Crystal Summit Ski Resort
 
@@ -321,19 +321,19 @@ You drop your purse and your key card on the desk. You are angry, tired, and mad
 &lt;&lt;/if&gt;&gt;
 A younger man in a shiny suit glides into the seat next to you. &quot;Well, here is a glum looking little lady,&quot; he says. &quot;Hey Barry, how about buying the lady a drink on me?&quot;
 
-[[🗩 And you are...?|Who is DJ][$firstdj = &quot;curious&quot;]]
-[[🗩 Who are you calling a little lady?|Who is DJ][$firstdj = &quot;angry&quot;]]
-[[🗩 Go away, creep.|Who is DJ][$firstdj = &quot;dismissive&quot;]]</tw-passagedata><tw-passagedata pid="25" name="Why here - Police" tags="" position="800,350" size="100,100">&quot;Ooh, dangerous!&quot; CJ says. &quot;There&#39;s something sexy about a woman with criminal tendencies. What are you on the run for?&quot;
+[[🗨️ And you are...?|Who is DJ][$firstdj = &quot;curious&quot;]]
+[[🗨️ Who are you calling a little lady?|Who is DJ][$firstdj = &quot;angry&quot;]]
+[[🗨️ Go away, creep.|Who is DJ][$firstdj = &quot;dismissive&quot;]]</tw-passagedata><tw-passagedata pid="25" name="Why here - Police" tags="" position="800,350" size="100,100">&quot;Ooh, dangerous!&quot; CJ says. &quot;There&#39;s something sexy about a woman with criminal tendencies. What are you on the run for?&quot;
 
-[[🗩 Investment fraud|Reason here][$reasonhere = &quot;policesensible&quot;]]
-[[🗩 Jaywalking. So much jaywalking|Reason here][$reasonhere = &quot;policeabsurd&quot;]]
-[[🗩 I fed my ex-boyfriend to an alligator. And I&#39;d do it again.|Reason here][$reasonhere = &quot;policerude&quot;]]</tw-passagedata><tw-passagedata pid="26" name="Why here - Cousin" tags="" position="800,475" size="100,100">&quot;A cousin&#39;s birthday at a ski resort. Sounds festive! So, where is this cousin of yours?&quot; CJ asks.
+[[🗨️ Investment fraud|Reason here][$reasonhere = &quot;policesensible&quot;]]
+[[🗨️ Jaywalking. So much jaywalking|Reason here][$reasonhere = &quot;policeabsurd&quot;]]
+[[🗨️ I fed my ex-boyfriend to an alligator. And I&#39;d do it again.|Reason here][$reasonhere = &quot;policerude&quot;]]</tw-passagedata><tw-passagedata pid="26" name="Why here - Cousin" tags="" position="800,475" size="100,100">&quot;A cousin&#39;s birthday at a ski resort. Sounds festive! So, where is this cousin of yours?&quot; CJ asks.
 
 You stare CJ uneasily.
 
-[[🗩 She&#39;s upstairs sleeping|Reason here][$reasonhere = &quot;cousinsensible&quot;]]
-[[🗩She&#39;s getting my taser, in case I meet any creepy guys|Reason here][$reasonhere = &quot;cousinabsurd&quot;]]
-[[🗩 She&#39;s imaginary. I&#39;m trying to get rid of you.|Reason here][$reasonhere = &quot;cousinrude&quot;]]</tw-passagedata><tw-passagedata pid="27" name="Reason here" tags="" position="600,325" size="100,100">&lt;&lt;if $reasonhere is &quot;jiltedsensible&quot;&gt;&gt;
+[[🗨️ She&#39;s upstairs sleeping|Reason here][$reasonhere = &quot;cousinsensible&quot;]]
+[[🗨️She&#39;s getting my taser, in case I meet any creepy guys|Reason here][$reasonhere = &quot;cousinabsurd&quot;]]
+[[🗨️ She&#39;s imaginary. I&#39;m trying to get rid of you.|Reason here][$reasonhere = &quot;cousinrude&quot;]]</tw-passagedata><tw-passagedata pid="27" name="Reason here" tags="" position="600,325" size="100,100">&lt;&lt;if $reasonhere is &quot;jiltedsensible&quot;&gt;&gt;
 &quot;So what, did he leave you at the alter or something?&quot; CJ asks.
 &lt;&lt;elseif  $reasonhere is &quot;jiltedabsurd&quot;&gt;&gt;
 &quot;Why, was the dog cheating on you too?&quot; CJ says, with a proud chuckle.
@@ -387,9 +387,9 @@ You put on yesterday&#39;s clothes, and grab your purse and key card. Maybe some
 
 [[Sleep some more|Dark morning 4]]</tw-passagedata><tw-passagedata pid="33" name="Chapter 2 Start" tags="" position="2275,450" size="100,100">You come downstairs immediately into the hotel lobby. There are a few people gathered around in a circle. You spot Barry the bartender.
 
-[[🗩 Do you work the morning shift too?|Barry Morning 2][$action = &quot;work&quot;]]
-[[🗩What did I do last night?|Barry Morning 2][$action = &quot;last night&quot;]]
-[[🗩 Do you have any aspirin?|Barry Morning 2][$action = &quot;aspirin&quot;]]</tw-passagedata><tw-passagedata pid="34" name="Barry Morning 3" tags="" position="2275,150" size="100,100">&lt;&lt;if $action is &quot;shifts&quot;&gt;&gt;
+[[🗨️ Do you work the morning shift too?|Barry Morning 2][$action = &quot;work&quot;]]
+[[🗨️What did I do last night?|Barry Morning 2][$action = &quot;last night&quot;]]
+[[🗨️ Do you have any aspirin?|Barry Morning 2][$action = &quot;aspirin&quot;]]</tw-passagedata><tw-passagedata pid="34" name="Barry Morning 3" tags="" position="2275,150" size="100,100">&lt;&lt;if $action is &quot;shifts&quot;&gt;&gt;
 &quot;Why two shifts in a row?&quot; you ask.
 
 &quot;I don&#39;t fully know,&quot; Barry says. &quot;The owner asked me to say. And when the roads are slick, as they are this morning, I usually stay at the resort anyway.&quot;
@@ -408,24 +408,24 @@ You put on yesterday&#39;s clothes, and grab your purse and key card. Maybe some
 &lt;&lt;/if&gt;&gt;
 Someone from the small group of people approaches. &quot;Excuse me, Miss Dungotten,&quot; he says. &quot;May I have a word with Barry alone?&quot;
 
-[[🗩 How did you know my name?|Barry Morning 4][$action = &quot;name&quot;]]
-[[🗩 Of course |Barry Morning 4][$action = &quot;of course&quot;]]
+[[🗨️ How did you know my name?|Barry Morning 4][$action = &quot;name&quot;]]
+[[🗨️ Of course |Barry Morning 4][$action = &quot;of course&quot;]]
 
 
 </tw-passagedata><tw-passagedata pid="35" name="Barry Morning 2" tags="" position="2275,300" size="100,100">&lt;&lt;if $action is &quot;work&quot;&gt;&gt;
 &quot;Not normally,&quot; Barry says. &quot;But the owner asked me if I can stick around for a morning shift.&quot;
 
-[[🗩 Why two shifts in a row?|Barry Morning 3][$action = &quot;shifts&quot;]]
-[[🗩 I hope you&#39;re getting paid overtime.|Barry Morning 3][$action = &quot;overtime&quot;]]
+[[🗨️ Why two shifts in a row?|Barry Morning 3][$action = &quot;shifts&quot;]]
+[[🗨️ I hope you&#39;re getting paid overtime.|Barry Morning 3][$action = &quot;overtime&quot;]]
 &lt;&lt;elseif  $action is &quot;last night&quot;&gt;&gt;
 &quot;You had a lot to drink. Do you not remember?&quot; Barry says.
 
-[[🗩 Um... sort of|Barry Morning 3][$action = &quot;remember&quot;]]
-[[🗩 No... not really|Barry Morning 3][$action = &quot;remember&quot;]]
+[[🗨️ Um... sort of|Barry Morning 3][$action = &quot;remember&quot;]]
+[[🗨️ No... not really|Barry Morning 3][$action = &quot;remember&quot;]]
 &lt;&lt;elseif  $action is &quot;aspirin&quot;&gt;&gt;
 &quot;I have some behind the bar.&quot; Barry says. &quot;I can go get it in a few minutes. But first I need to talk to the owner.&quot;
 
-[[🗩 But my head is throbbing now!|Barry Morning 3][$action = &quot;aspirin&quot;]]
+[[🗨️ But my head is throbbing now!|Barry Morning 3][$action = &quot;aspirin&quot;]]
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="Barry Morning 4" tags="" position="2400,75" size="100,100">&lt;&lt;if $action is &quot;name&quot;&gt;&gt;
 &quot;We know all our guests names, Miss Dungotten. Now if you&#39;ll please excuse us.&quot;
 &lt;&lt;/if&gt;&gt;
