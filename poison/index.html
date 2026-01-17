@@ -119,7 +119,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 .show-profile img {width: 100%; border-radius: 10px; margin-right: 20px; }
 .suspect-profiles li {margin-bottom: 10px; margin-left: -10px;}
 
-.chapter-title {font-weight: bold; font-size: 1.5em; line-height: 1.7em;}
+.chapter-title {font-weight: bold; font-size: 1.5em; line-height: 1.2em;}
 
 
 .scene {display: flex; gap: 1.5rem;}
@@ -160,14 +160,20 @@ text-decoration: none;
 .simple-link a:hover {background-color: black; text-decoration: underline;}
 
 
+
 @media screen and (max-width: 800px) {
   .scene {flex-direction: column;}
-  .scene-image {text-align: center;}
+  .scene-image {text-align: center; margin-top: -20px;}
   .scene-image br {display: none;}
-  .scene-content {margin-top: -50px;}
+  .scene-content {margin-top: -80px;}
   .suspect-profiles {justify-content: flex-start;}
   .suspect-profiles > div {flex: 0 0 calc(50% - 28px);}
   .suspect-profiles a {padding: 10px;}
+  
+  #ui-bar.stowed~#story {
+    margin-left: 3.5em;
+    margin-right: 2.0em;
+}
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="noProfilesLink" color="red"></tw-tag><tw-tag name="widget" color="purple"></tw-tag><tw-passagedata pid="1" name="ARTISAN BAKER Poisons Chef!" tags="" position="2300,3100" size="100,100">&lt;div class=&quot;scene&quot;&gt;
     &lt;div class=&quot;scene-image&quot;&gt;
       &lt;&lt;showImage &quot;paper-baker&quot;&gt;&gt;
@@ -176,7 +182,7 @@ text-decoration: none;
     &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;&lt;i&gt;Artisan Baker Poisons Chef!&lt;/i&gt;&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 You write a bombshell report about poison, betrayal, and boulangerie. You target &lt;b&gt;Art the Artisan Baker&lt;/b&gt; as the poisoner. His motive was his escalating baker&#39;s feud with Jeff the Chef.
 
-You schedule a press conference at 10AM to discuss the details, and dream about for your impending Pulitzer Prize.
+You schedule a press conference for 10AM to discuss the details, and dream about for your impending Pulitzer Prize.
 
 [[Press Conference|Press Conference Art][$theAccused = &quot;Art&quot;]]
     &lt;/div&gt;
@@ -404,7 +410,7 @@ Well, let&#39;s see. My password is &quot;password&quot;. Pretty clever, huh? Wa
     &lt;div class=&quot;scene-content&quot;&gt;
 &lt;i&gt;Poisonous plants?!&lt;/i&gt; I already told you reporters, our factories are only three years away from meeting the standards set by the EPA, and we are very close to being ISO certified.
 
-Oh wait, you mean in the botanical sense? Not a chance. I don&#39;t believe in the all-natural organic growth trend. What consumers want is their food pumped full of preservatives that will endure to the apocalypse. I have the OSHA certification to prove my innocence.
+Oh wait, you mean in the botanical sense? Not a chance. I don&#39;t believe in the all-natural organic growth trend. What consumers want is their food pumped full of preservatives that will endure to the apocalypse. I have the FDA certification to prove my innocence.
 
 But &lt;b&gt;Gayle&lt;/b&gt; is a horticulturist. Last night I saw her having a debrief with &lt;b&gt;Art&lt;/b&gt; and &lt;b&gt;Mary&lt;/b&gt; about various toxins.
  
@@ -434,7 +440,7 @@ By the way, are you hiring? I&#39;ll ping you on LinkedIn.
     &lt;/div&gt;
     &lt;div class=&quot;scene-content&quot;&gt;
     &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;Fred the Frozen Food Magnate&lt;&lt;/type&gt;&gt;&lt;/div&gt;
-Hi, I&#39;m Fred. It&#39;s great to connect with you. Before we do a deep dive, can I get you anything? Facilities are down the hall, and there is bottled water in the fridge.
+Hello, I&#39;m Fred. It&#39;s great to connect with you. Before we do a deep dive, can I get you anything? Facilities are down the hall, and there is bottled water in the fridge.
 
 I am the Senior Vice Associate Sales Rep for Loaner&#39;s Frozen Foods. We are currently the number two legacy player in the Upstate New York frozen vertical. 
 
@@ -450,7 +456,7 @@ An interview? Absolutely! My calendar is wide open, and I’m eager to synergize
     &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;&lt;i&gt; Game Show Winner Poisons Chef!&lt;/i&gt;&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 You write a bombshell report about poison, betrayal, and pricing games. You pick out &lt;b&gt;Gayle the Game Show Winner&lt;/b&gt; as the poisoner. Her motive was to impress her hero Drew Carey, who hated Jeff the Chef&#39;s bagels.
 
-You schedule a press conference at 10AM to discuss the details, and dream about for your impending Pulitzer Prize.
+You schedule a press conference for 10AM to discuss the details, and dream about for your impending Pulitzer Prize.
 
 [[Press Conference|Press Conference Gayle][$theAccused = &quot;Gayle&quot;]]
     &lt;/div&gt;
@@ -591,7 +597,7 @@ Your newspaper review has suddenly gotten a lot more interesting.  Now you are w
     &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;&lt;i&gt;Influencer Poisons Chef!&lt;/i&gt;&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 You write a bombshell report about poison, betrayal, and influencer upvotes. You tag &lt;b&gt;Inga the Influencer&lt;/b&gt; as the poisoner. Her motive was that Jeff the Chef &quot;crashed her karma&quot; by ignoring her interview request.
 
-You schedule a press conference at 10AM to discuss the details, and dream about for your impending Pulitzer Prize.
+You schedule a press conference for 10AM to discuss the details, and dream about for your impending Pulitzer Prize.
 
 [[Press Conference|Press Conference Inga][$theAccused = &quot;Inga&quot;]]
     &lt;/div&gt;
@@ -621,7 +627,7 @@ You schedule a press conference at 10AM to discuss the details, and dream about 
       &lt;&lt;showImage &quot;inga&quot;&gt;&gt;
     &lt;/div&gt;
     &lt;div class=&quot;scene-content&quot;&gt;
-    Yes, I totes know Jeff! I promised my community that I would Insta his graham cracker crust. But he literally ghosted me to do the Patisserie Podcast. It was a total betrayal of my brand! The trolls were literally exploding my DMs for days!
+    Yes, I totes know Jeff! I promised my community that I would Insta his graham cracker crust. But he literally ghosted me to do the Patisserie Podcast. It was a total betrayal of my brand! The trolls literally exploded my DMs for days!
 
 But I would never &lt;i&gt;poison&lt;/i&gt; him. I am manifesting positivity right now, and that would totally crash my karma!
     
@@ -715,11 +721,12 @@ By the way, have you subscribed to my YouTube channel? The link is in my bio.
      &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;&lt;i&gt;Magazine Editor Poisons Chef!&lt;/i&gt;&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 You write a bombshell report about poison, betrayal, and muffin-based listicles. You point to &lt;b&gt;Mary the Magazine Editor&lt;/b&gt; as the poisoner. Her motive was that Jeff the Chef was an obstacle for her magazine circulation.
 
-You schedule a press conference at 10AM to discuss the details, and dream about for your impending Pulitzer Prize.
+You schedule a press conference for 10AM to discuss the details, and dream about for your impending Pulitzer Prize.
 
 [[Press Conference|Press Conference Mary][$theAccused = &quot;Mary&quot;]]
     &lt;/div&gt;
-  &lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Make Accusation" tags="" position="2300,2900" size="100,100">&lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;The Accusation&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+  &lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Make Accusation" tags="" position="2300,2900" size="100,100">&lt;div class=&quot;chapter-title&quot;&gt;
+&lt;&lt;type 80ms&gt;&gt;The Accusation&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &quot;Are you sure about this?&quot; your editor asks.
 
 &quot;I have done my research, and &lt;span class=&quot;simple-link&quot;&gt;[[triple checked my facts|Review Suspect Notes]]&lt;/span&gt;,&quot; you say. &quot;I am confident.&quot;
@@ -727,31 +734,68 @@ You schedule a press conference at 10AM to discuss the details, and dream about 
 Then you submit the headline for tomorrow&#39;s paper:
 
 &lt;div class=&quot;suspect-profiles accusation-profiles&quot;&gt;
+
+&lt;&lt;if $IngaAccused is &quot;no&quot;&gt;&gt;
 &lt;div class=&quot;Profile-Inga&quot;&gt;
 	&lt;img src = &quot;https://www.mapsandlines.com/twine/bagelry/inga.png&quot;&gt;
 &lt;span style=&quot;font-size: .9em;&quot;&gt;Headline:&lt;/span&gt; &lt;i&gt;&lt;b&gt;[[INFLUENCER Poisons Chef!]]&lt;/b&gt;&lt;/i&gt;
 &lt;/div&gt;
+	&lt;&lt;else&gt;&gt;
+    &lt;div class=&quot;Profile-Inga&quot; style=&quot;opacity: .5&quot;&gt;
+    	&lt;img src=&quot;https://www.mapsandlines.com/twine/bagelry/inga.png&quot;&gt;
+&lt;b&gt;Inga the Influencer&lt;/b&gt;
+&lt;/div&gt;
+&lt;&lt;/if&gt;&gt;
 
+&lt;&lt;if $FredAccused is &quot;no&quot;&gt;&gt;
 &lt;div class=&quot;Profile-Fred&quot;&gt;
 	&lt;img src = &quot;https://www.mapsandlines.com/twine/bagelry/fred.png&quot;&gt;
 &lt;span style=&quot;font-size: .9em;&quot;&gt;Headline:&lt;/span&gt; &lt;i&gt;&lt;b&gt;[[FROZEN FOOD REP Poisons Chef!]]&lt;/b&gt;&lt;/i&gt;
 &lt;/div&gt;
+	&lt;&lt;else&gt;&gt;
+    &lt;div class=&quot;Profile-Fred&quot; style=&quot;opacity: .5&quot;&gt;
+    	&lt;img src=&quot;https://www.mapsandlines.com/twine/bagelry/fred.png&quot;&gt;
+&lt;b&gt;Fred the Frozen Food Magnate&lt;/b&gt;
+&lt;/div&gt;
+&lt;&lt;/if&gt;&gt;
 
-
+&lt;&lt;if $ArtAccused is &quot;no&quot;&gt;&gt;
 &lt;div class=&quot;Profile-Art&quot;&gt;
 	&lt;img src = &quot;https://www.mapsandlines.com/twine/bagelry/art.png&quot;&gt;
 &lt;span style=&quot;font-size: .9em;&quot;&gt;Headline:&lt;/span&gt; &lt;i&gt;&lt;b&gt;[[ARTISAN BAKER Poisons Chef!]]&lt;/b&gt;&lt;/i&gt;
 &lt;/div&gt;
+	&lt;&lt;else&gt;&gt;
+        &lt;div class=&quot;Profile-Art&quot; style=&quot;opacity: .5&quot;&gt;
+    	&lt;img src=&quot;https://www.mapsandlines.com/twine/bagelry/art.png&quot;&gt;
+&lt;b&gt;Art the Artisan Baker&lt;/b&gt;
+&lt;/div&gt;
+&lt;&lt;/if&gt;&gt;
 
+&lt;&lt;if $MaryAccused is &quot;no&quot;&gt;&gt;
 &lt;div class=&quot;Profile-Mary&quot;&gt;
 	&lt;img src = &quot;https://www.mapsandlines.com/twine/bagelry/mary.png&quot;&gt;
 &lt;span style=&quot;font-size: .9em;&quot;&gt;Headline:&lt;/span&gt; &lt;i&gt;&lt;b&gt;[[MAGAZINE EDITOR Poisons Chef!]]&lt;/b&gt;&lt;/i&gt;
 &lt;/div&gt;
+	&lt;&lt;else&gt;&gt;
+        &lt;div class=&quot;Profile-Mary&quot; style=&quot;opacity: .5&quot;&gt;
+    	&lt;img src=&quot;https://www.mapsandlines.com/twine/bagelry/mary.png&quot;&gt;
+&lt;b&gt;Mary the Magazine Editor&lt;/b&gt;
+&lt;/div&gt;
+&lt;&lt;/if&gt;&gt;
 
+&lt;&lt;if $GayleAccused is &quot;no&quot;&gt;&gt;
 &lt;div class=&quot;Profile-Gayle&quot;&gt;
 	&lt;img src = &quot;https://www.mapsandlines.com/twine/bagelry/gayle.png&quot;&gt;
 &lt;span style=&quot;font-size: .9em;&quot;&gt;Headline:&lt;/span&gt; &lt;i&gt;&lt;b&gt;[[GAME SHOW WINNER Poisons Chef!]]&lt;/b&gt;&lt;/i&gt;
 &lt;/div&gt;
+	&lt;&lt;else&gt;&gt;
+        &lt;div class=&quot;Profile-Gayle&quot; style=&quot;opacity: .5&quot;&gt;
+    	&lt;img src=&quot;https://www.mapsandlines.com/twine/bagelry/gayle.png&quot;&gt;
+&lt;b&gt;Gayle the Game Show Host&lt;/b&gt;
+&lt;/div&gt;
+&lt;&lt;/if&gt;&gt;
+
+
 &lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="38" name="Mary 6AM" tags="" position="2600,1500" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $MaryEarlyDone is &quot;no&quot;&gt;&gt;
@@ -797,9 +841,9 @@ TL:DR. I was looking for a hero&#39;s journey to boost our lagging circulation, 
       &lt;&lt;showImage &quot;mary&quot;&gt;&gt;
     &lt;/div&gt;
     &lt;div class=&quot;scene-content&quot;&gt;
-Oh, here we go with the predictable password-guessing plot device. Let me guess, it&#39;s his dog&#39;s name? Or his password is password? Honestly, that&#39;s so passé. Please spare me. No one likes a low-effort revelation.
+Oh, here we go with the predictable password-guessing plot device. Let me guess, it&#39;s his dog&#39;s name? Or his password is &quot;password&quot;? Honestly, that&#39;s so passé. Please spare me. No one likes a low-effort revelation.
 
-I think his password should be &lt;i&gt;Sofia&lt;/i&gt;, the unrequited love he met 30 years ago in culinary school. But she broke his heart to study Portuguese cuisine in the Azores. Now he thinks about her every time he opens his password-protected refrigerator. Now &lt;i&gt;that&#39;s&lt;/i&gt; a story that people would buy on the newsstand!
+I think his password should be &lt;i&gt;Sofia&lt;/i&gt;, the unrequited love he met 30 years ago in culinary school. But she broke his heart to study Portuguese cuisine in the Azores. Now he thinks of her every time he opens his password-protected refrigerator. Now &lt;i&gt;that&#39;s&lt;/i&gt; a story that people would buy on the newsstand!
 
 But if you want a plausible answer, you can ask some of the other one-note characters in this hotel. I&#39;m sure &lt;b&gt;Art&lt;/b&gt; would have some pompous theory, and &lt;b&gt;Fred&lt;/b&gt; will give you the most gray-scale answer you can snooze through. Surely &lt;b&gt;Inga&lt;/b&gt; will come up with some influencer-speak gibberish and call it a &quot;vibe&quot;.  They&#39;re all such stereotypes, aren&#39;t they?
     
@@ -855,7 +899,8 @@ An interview? Talk about a role-reversal! Usually I am the one digging for dirt.
     
 [[Have you ever met Jeff the Chef?|Mary Meets Jeff]]
     &lt;/div&gt;
-  &lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Meet the Suspects" tags="" position="1600,450" size="100,100">&lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;The Suspects&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+  &lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Meet the Suspects" tags="" position="1600,450" size="100,100">&lt;div class=&quot;chapter-title&quot;&gt;
+&lt;&lt;type 80ms&gt;&gt;The Suspects&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 There were 5 VIPs at the bagel tasting:
 
 &lt;div class=&quot;suspect-profiles&quot; style=&quot;text-align: left; font-size: .9em;&quot;&gt;
@@ -921,8 +966,8 @@ There were 5 VIPs at the bagel tasting:
       &lt;&lt;showImage &quot;press-conference&quot;&gt;&gt;
     &lt;/div&gt;
     &lt;div class=&quot;scene-content&quot;&gt;
-    &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;Press Conference&lt;&lt;/type&gt;&gt;&lt;/div&gt;
-You stand at the podium, and explain in detail how you cracked the case of how &lt;b&gt;Inga&lt;/b&gt; poisoned Jeff the Chef.
+    &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;The Press Conference&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+You stand at the podium, and explain in detail that you cracked the case of how &lt;b&gt;Inga the Influencer&lt;/b&gt; poisoned Jeff the Chef.
 
 &quot;&lt;i&gt;But wait!&lt;/i&gt;&quot; the detective yells from the crowd. &quot;Inga &lt;i&gt;couldn&#39;t&lt;/i&gt; have been the murderer. Inga doesn&#39;t have access to any poison!&quot;
 
@@ -931,7 +976,7 @@ You stand at the podium, and explain in detail how you cracked the case of how &
 You look through your notes and realize the detective is right. How embarrassing! What do you do now?!
 
 [[Start Over|The Assignment]]
-[[Accuse Someone Else|Make Accusation]]
+[[Accuse Someone Else|Make Accusation][$IngaAccused = &quot;yes&quot;]]
 [[Accept Your Fate]]
     &lt;/div&gt;
   &lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="Review Suspect Notes" tags="noProfilesLink" position="300,300" size="100,100">&lt;&lt;showAllProfiles&gt;&gt;
@@ -955,6 +1000,8 @@ You look through your notes and realize the detective is right. How embarrassing
 &lt;&lt;set $IngaPasswordDone = &quot;no&quot;&gt;&gt;
 &lt;&lt;set $IngaAllFacts = &quot;&quot;&gt;&gt;
 &lt;&lt;set $IngaDone = &quot;no&quot;&gt;&gt;
+&lt;&lt;set $IngaAccused = &quot;no&quot;&gt;&gt;
+
 
 &lt;&lt;set $FredMotive = &quot;&lt;div class=&#39;suspect-fact&#39;&gt;&lt;hr&gt;Jeff is a threat to the Fred&#39;s frozen food industry.&lt;/div&gt;&quot;&gt;&gt;
 &lt;&lt;set $FredEarly = &quot;&lt;div class=&#39;suspect-fact&#39;&gt;&lt;hr&gt;&lt;u&gt;Fred&lt;/u&gt; was awake at 6AM. So were &lt;u&gt;Inga&lt;/u&gt; and &lt;u&gt;Mary&lt;/u&gt;.&lt;/div&gt;&quot;&gt;&gt;
@@ -966,6 +1013,8 @@ You look through your notes and realize the detective is right. How embarrassing
 &lt;&lt;set $FredPasswordDone = &quot;no&quot;&gt;&gt;
 &lt;&lt;set $FredAllFacts = &quot;&quot;&gt;&gt;
 &lt;&lt;set $FredDone = &quot;no&quot;&gt;&gt;
+&lt;&lt;set $FredAccused = &quot;no&quot;&gt;&gt;
+
 
 &lt;&lt;set $ArtMotive = &quot;&lt;div class=&#39;suspect-fact&#39;&gt;&lt;hr&gt;Jeff had a baker&#39;s rivalry with Art.&lt;/div&gt;&quot;&gt;&gt;
 &lt;&lt;set $ArtEarly = &quot;&lt;div class=&#39;suspect-fact&#39;&gt;&lt;hr&gt;Art was &lt;i&gt;not&lt;/i&gt; awake at 6AM&lt;/div&gt;&quot;&gt;&gt;
@@ -977,6 +1026,8 @@ You look through your notes and realize the detective is right. How embarrassing
 &lt;&lt;set $ArtPasswordDone = &quot;no&quot;&gt;&gt;
 &lt;&lt;set $ArtAllFacts = &quot;&quot;&gt;&gt;
 &lt;&lt;set $ArtDone = &quot;no&quot;&gt;&gt;
+&lt;&lt;set $ArtAccused = &quot;no&quot;&gt;&gt;
+
 
 &lt;&lt;set $MaryMotive = &quot;&lt;div class=&#39;suspect-fact&#39;&gt;&lt;hr&gt;Jeff is a threat to Mary&#39;s low magazine circulation.&lt;/div&gt;&quot;&gt;&gt;
 &lt;&lt;set $MaryEarly = &quot;&lt;div class=&#39;suspect-fact&#39;&gt;&lt;hr&gt;&lt;u&gt;Mary&lt;/u&gt; was awake at 6AM. So were &lt;u&gt;Inga&lt;/u&gt; and &lt;u&gt;Gayle&lt;/u&gt;.&lt;/div&gt;&quot;&gt;&gt;
@@ -988,6 +1039,8 @@ You look through your notes and realize the detective is right. How embarrassing
 &lt;&lt;set $MaryPasswordDone = &quot;no&quot;&gt;&gt;
 &lt;&lt;set $MaryAllFacts = &quot;&quot;&gt;&gt;
 &lt;&lt;set $MaryDone = &quot;no&quot;&gt;&gt;
+&lt;&lt;set $MaryAccused = &quot;no&quot;&gt;&gt;
+
 
 &lt;&lt;set $GayleMotive = &quot;&lt;div class=&#39;suspect-fact&#39;&gt;&lt;hr&gt;Gayle&#39;s hero (Drew Carey) hates Jeff&#39;s bagels.&lt;/div&gt;&quot;&gt;&gt;
 &lt;&lt;set $GayleEarly = &quot;&lt;div class=&#39;suspect-fact&#39;&gt;&lt;hr&gt;&lt;u&gt;Gayle&lt;/u&gt; was awake at 6AM. So were &lt;u&gt;Inga&lt;/u&gt; and &lt;u&gt;Fred&lt;/u&gt;.&lt;/div&gt;&quot;&gt;&gt;
@@ -998,7 +1051,9 @@ You look through your notes and realize the detective is right. How embarrassing
 &lt;&lt;set $GaylePoisonDone = &quot;no&quot;&gt;&gt;
 &lt;&lt;set $GaylePasswordDone = &quot;no&quot;&gt;&gt;
 &lt;&lt;set $GayleAllFacts = &quot;&quot;&gt;&gt;
-&lt;&lt;set $GayleDone = &quot;no&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="StoryMenu" tags="" position="100,700" size="100,100">&lt;&lt;if !tags().includes(&quot;noProfilesLink&quot;)&gt;&gt;[[Review Suspect Notes]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="Suspect Profile" tags="" position="300,500" size="100,100">&lt;&lt;back&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="The Assignment" tags="noProfilesLink" position="800,100" size="100,100">&lt;div class=&quot;scene&quot;&gt;
+&lt;&lt;set $GayleDone = &quot;no&quot;&gt;&gt;
+&lt;&lt;set $GayleAccused = &quot;no&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="51" name="StoryMenu" tags="" position="100,700" size="100,100">&lt;&lt;if !tags().includes(&quot;noProfilesLink&quot;)&gt;&gt;[[Review Suspect Notes]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="Suspect Profile" tags="" position="300,500" size="100,100">&lt;&lt;back&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="The Assignment" tags="noProfilesLink" position="800,100" size="100,100">&lt;div class=&quot;scene&quot;&gt;
     &lt;div class=&quot;scene-image&quot;&gt;
       &lt;&lt;showImage &quot;bulletin&quot;&gt;&gt;
     &lt;/div&gt;
@@ -1036,7 +1091,7 @@ So here&#39;s what we know:
 &lt;&lt;widget &quot;FredNav&quot;&gt;&gt;
 &lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $FredEarlyDone is &quot;no&quot;&gt;&gt;[[Where were you at 6AM yesterday?|Fred 6AM]]&lt;br&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $FredPoisonDone is &quot;no&quot;&gt;&gt;[[Do you know anything about poisonous plants?|Fred poison]]&lt;br&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $FredPoisonDone is &quot;no&quot;&gt;&gt;[[What do you know about poisonous plants?|Fred poison]]&lt;br&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $FredPasswordDone is &quot;no&quot;&gt;&gt;[[Can you guess Jeff&#39;s password?|Fred password]]&lt;br&gt;&lt;&lt;/if&gt;&gt;
 [[That&#39;s all the info I need.|Fred thank]]
 &lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;
@@ -1046,7 +1101,7 @@ So here&#39;s what we know:
 &lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $ArtEarlyDone is &quot;no&quot;&gt;&gt;[[What were you doing at 6AM yesterday?|Art 6AM]]&lt;br&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $ArtPoisonDone is &quot;no&quot;&gt;&gt;[[Do you have any poisonous seasoning?|Art poison]]&lt;br&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $ArtPasswordDone is &quot;no&quot;&gt;&gt;[[What do you think Jeff would use as a password?|Art password]]&lt;br&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $ArtPasswordDone is &quot;no&quot;&gt;&gt;[[Could you guess Jeff&#39;s password?|Art password]]&lt;br&gt;&lt;&lt;/if&gt;&gt;
 [[That&#39;s all the info I need.|Art thank]]
 &lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;
 
@@ -1173,7 +1228,7 @@ $GayleAllFacts
     &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;&lt;i&gt;Frozen Food Rep Poisons Chef!&lt;/i&gt;&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 You write a bombshell report about poison, betrayal, and poor corporate synergy. You target &lt;b&gt;Fred the Frozen Food Magnate&lt;/b&gt; as the poisoner. His motive was that Jeff the Chef&#39;s fresh bagels were a threat to his frozen food empire.
 
-You schedule a press conference at 10AM to discuss the details, and dream about for your impending Pulitzer Prize.
+You schedule a press conference for 10AM to discuss the details, and dream about for your impending Pulitzer Prize.
 
 [[Press Conference|Press Conference Fred][$theAccused = &quot;Fred&quot;]]
     &lt;/div&gt;
@@ -1206,8 +1261,8 @@ You remain unemployed for too long. As you get desperate for a job, you remember
       &lt;&lt;showImage &quot;press-conference&quot;&gt;&gt;
     &lt;/div&gt;
     &lt;div class=&quot;scene-content&quot;&gt;
-    &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;Press Conference&lt;&lt;/type&gt;&gt;&lt;/div&gt;
-You stand at the podium, and explain in detail how you cracked the case of how &lt;b&gt;Fred the Frozen Food Magnate&lt;/b&gt; poisoned Jeff the Chef.
+    &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;The Press Conference&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+You stand at the podium, and explain in detail that you cracked the case of how &lt;b&gt;Fred the Frozen Food Magnate&lt;/b&gt; poisoned Jeff the Chef.
 
 &quot;&lt;i&gt;But wait!&lt;/i&gt;&quot; the detective yells from the crowd. &quot;Fred &lt;i&gt;couldn&#39;t&lt;/i&gt; be the murderer! He doesn&#39;t have access to poison!&quot;
 
@@ -1216,7 +1271,7 @@ You stand at the podium, and explain in detail how you cracked the case of how &
 You look through your notes and realize the detective is right. How embarrassing! What do you do now?!
 
 [[Start Over|The Assignment]]
-[[Accuse Someone Else|Make Accusation]]
+[[Accuse Someone Else|Make Accusation][$FredAccused = &quot;yes&quot;]]
 [[Accept Your Fate]]
     &lt;/div&gt;
   &lt;/div&gt;</tw-passagedata><tw-passagedata pid="61" name="Press Conference Art" tags="" position="2300,3300" size="100,100">&lt;div class=&quot;scene&quot;&gt;
@@ -1224,17 +1279,17 @@ You look through your notes and realize the detective is right. How embarrassing
       &lt;&lt;showImage &quot;press-conference&quot;&gt;&gt;
     &lt;/div&gt;
     &lt;div class=&quot;scene-content&quot;&gt;
-    &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;Press Conference&lt;&lt;/type&gt;&gt;&lt;/div&gt;
-You stand at the podium, and explain in detail how you cracked the case of who poisoned Jeff the Chef.
+    &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;The Press Conference&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+You stand at the podium, and explain in detail that you cracked the case of how &lt;b&gt;Art the Artisan Baker&lt;/b&gt; poisoned Jeff the Chef.
 
 &quot;&lt;i&gt;But wait!&lt;/i&gt;&quot; the detective yells from the crowd. &quot;Art &lt;i&gt;couldn&#39;t&lt;/i&gt; be the murderer! He was asleep in his room at 6AM!&quot;
 
-&quot;&lt;i&gt;Zut Alors!&lt;/i&gt;&quot; Art says. &quot;That has been my datum all along. This is what I get for fraternizing with Chef Boyardee and his patrons. You are all banned from my bakery!&quot;
+&quot;&lt;i&gt;Zut Alors!&lt;/i&gt;&quot; Art says. &quot;That has been my datum all along. This is what I get for fraternizing with Jeff Boyardee and his patrons. You are all banned from my bakery!&quot;
 
 You look through your notes and realize the detective is right. How embarrassing! What do you do now?!
 
 [[Start Over|The Assignment]]
-[[Accuse Someone Else|Make Accusation]]
+[[Accuse Someone Else|Make Accusation][$ArtAccused = &quot;yes&quot;]]
 [[Accept Your Fate]]
     &lt;/div&gt;
   &lt;/div&gt;</tw-passagedata><tw-passagedata pid="62" name="Press Conference Mary" tags="" position="2500,3300" size="100,100">&lt;div class=&quot;scene&quot;&gt;
@@ -1242,8 +1297,8 @@ You look through your notes and realize the detective is right. How embarrassing
       &lt;&lt;showImage &quot;press-conference&quot;&gt;&gt;
     &lt;/div&gt;
     &lt;div class=&quot;scene-content&quot;&gt;
-    &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;Press Conference&lt;&lt;/type&gt;&gt;&lt;/div&gt;
-You stand at the podium, and explain in detail how you cracked the case of how &lt;b&gt;Mary the Magazine Editor&lt;/b&gt; poisoned Jeff the Chef.
+    &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;The Press Conference&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+You stand at the podium, and explain in detail that you cracked the case of how &lt;b&gt;Mary the Magazine Editor&lt;/b&gt; poisoned Jeff the Chef.
 
 &quot;What can I say?&quot; Mary says. &quot;You got me. Though it was a paper-thin plot with an obvious finale. But I&#39;m honored my muffins could be your macguffins.&quot;
 
@@ -1257,17 +1312,17 @@ You stand at the podium, and explain in detail how you cracked the case of how &
       &lt;&lt;showImage &quot;press-conference&quot;&gt;&gt;
     &lt;/div&gt;
     &lt;div class=&quot;scene-content&quot;&gt;
-    &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;Press Conference&lt;&lt;/type&gt;&gt;&lt;/div&gt;
-You stand at the podium, and explain in detail how you cracked the case of how &lt;b&gt;Gayle the Game Show Winner&lt;/b&gt; poisoned Jeff the Chef.
+    &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;The Press Conference&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+You stand at the podium, and explain in detail that you cracked the case of how &lt;b&gt;Gayle the Game Show Winner&lt;/b&gt; poisoned Jeff the Chef.
 
 &quot;&lt;i&gt;But wait!&lt;/i&gt;&quot; the detective yells from the crowd. &quot;Gayle &lt;i&gt;couldn&#39;t&lt;/i&gt; be the murderer! She didn&#39;t have access to the password!&quot;
 
-&quot;It&#39;s true. I&#39;m no poisoner, you goofball!&quot; Gayle says. &quot;But no hard feelings. Sorry you lost the Final Jeopardy round. I&#39;ll still send you home with a parting gift of some fresh baked brownies.&quot;
+&quot;It&#39;s true. I&#39;m no poisoner, you goofball!&quot; Gayle says. &quot;But no hard feelings. Sorry you lost this Final Jeopardy round. I&#39;ll still send you home with a parting gift of some fresh baked brownies.&quot;
 
 You look through your notes and realize the detective is right. How embarrassing!
 
 [[Start Over|The Assignment]]
-[[Accuse Someone Else|Make Accusation]]
+[[Accuse Someone Else|Make Accusation][$GayleAccused = &quot;yes&quot;]]
 [[Accept Your Fate]]
     &lt;/div&gt;
   &lt;/div&gt;</tw-passagedata><tw-passagedata pid="64" name="The End" tags="noProfilesLink" position="2300,3900" size="100,100">&lt;div style=&quot;text-align: center; font-size: 26px; font-weight: bold;&quot;&gt;
@@ -1280,10 +1335,13 @@ You look through your notes and realize the detective is right. How embarrassing
       &lt;&lt;showImage &quot;confession&quot;&gt;&gt;
     &lt;/div&gt;
     &lt;div class=&quot;scene-content&quot;&gt;
-     &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;&lt;i&gt;The Confession (aka The Monologue)&lt;/i&gt;&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+     &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;&lt;i&gt;The Confession
+     (aka The Monologue)&lt;/i&gt;&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &quot;Okay, here is my obligatory exposition dump,&quot; Mary says. &quot;You see, the circulation of &lt;i&gt;Muffin Magazine&lt;/i&gt; never took off, and the whole brand was headed for the slush pile. My life story was becoming a dead end narrative. I didn&#39;t need a lede, I needed a full-blown front-page tragedy.&quot;
 
-&quot;I never meant to poison the Chef,&quot; Mary pauses. Tears well in her eyes, and her lip quivers. She continues, &quot;I never meant to poison the Chef because I meant to poison you all! I wanted to take down the whole bagel industry. It was a hostile rebranding attempt.&quot;
+&quot;I never meant to poison the Chef,&quot; Mary pauses. Tears well in her eyes, and her lip quivers. 
+
+She continues, &quot;I never meant to poison the Chef because I meant to poison you all! I wanted to take down the whole bagel industry. It was a hostile rebranding attempt.&quot;
 
 &quot;So I snuck into the Chef&#39;s password protected refrigerator (his password was &lt;i&gt;DoughBoy76&lt;/i&gt;, by the way), and I poisoned the cream cheese. But Jeff the Chef was a hero archtype. He took one bite of the poisoned bagel knew something was wrong. He immediately switched to a non-toxic cream cheese, saving you all from gut-wrenching gastronomical doom.&quot;
 
@@ -1296,10 +1354,11 @@ You look through your notes and realize the detective is right. How embarrassing
       &lt;&lt;showImage &quot;winners&quot;&gt;&gt;
     &lt;/div&gt;
     &lt;div class=&quot;scene-content&quot;&gt;
-     &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;&lt;i&gt;The Resolution (aka the Denouement)&lt;/i&gt;&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+     &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;&lt;i&gt;The Resolution
+     (aka the Denouement)&lt;/i&gt;&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 Mary&#39;s monologue is met with stunned silence. You give it the one slow clap treatment, until the entire room joins in. Mary appreciates this. The police take her away in handcuffs, and she starts screaming something about demanding a rewrite.
 
-Jeff the Chef survives the poisoning. In a stunning upset, his Triple-Everything bagel takes a surprising second place in the Bayside Bagel Throwdown. Best in Show goes to Art the Artisan Baker, who submitted his &lt;i&gt;Quadruple-Everything&lt;/i&gt; bagel, a recipe that may or may not have been lifted from Jeff the Chef.
+Jeff the Chef survives the poisoning. In a stunning upset, his Triple-Everything bagel only takes second place in the Bayside Bagel Throwdown. Best in Show goes to Art the Artisan Baker, who submitted his &lt;i&gt;Quadruple-Everything&lt;/i&gt; bagel, a recipe that may or may not have been lifted from Jeff the Chef.
 
 You don&#39;t win a Pulitzer Prize for your investigative journalism, but you do get promoted to Junior Associate Food Editor. Jeff the Chef thanks you for foiling the plot to bring down the entire bagel industry. He offers you free bagels for life, backed by a zero-tolerance, poison-free guarantee.
 
@@ -1310,7 +1369,8 @@ You don&#39;t win a Pulitzer Prize for your investigative journalism, but you do
       &lt;&lt;showImage &quot;resolution&quot;&gt;&gt;
     &lt;/div&gt;
     &lt;div class=&quot;scene-content&quot;&gt;
-     &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;&lt;i&gt;The Epilogue (aka Three Months Later...)&lt;/i&gt;&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+     &lt;div class=&quot;chapter-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;&lt;i&gt;The Epilogue 
+     (aka Three Months Later...)&lt;/i&gt;&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 Three months later, you sit at the desk in your new Associate Food Editor role. You get nostalgic, and can&#39;t help but wonder about all the people who got you here. You open up Facebook and scroll through your Bagel Poisoning Survivor group.
 
 &lt;b&gt;Inga the Influencer&lt;/b&gt; has skyrocketed to stardom by documenting the entire #Bagelgate scandal on her socials. She now hosts a YouTube show called Bagels &amp; Besties.
@@ -1319,7 +1379,7 @@ Three months later, you sit at the desk in your new Associate Food Editor role. 
 
 &lt;b&gt;Art the Artisan Baker&lt;/b&gt; has only become more insufferable after the publicity of the scandal. Hulu is adapting a gritty, high-stakes bread drama based on his pâtisserie.
 
-&lt;b&gt;Gayle the Game Show Winner&lt;/b&gt; received an autographed headshot from Drew Carey after the scandal news broke, which she keeps on her nightstand. She is currently spamming the group chat to join her on Celebrity Family Feud.
+&lt;b&gt;Gayle the Game Show Winner&lt;/b&gt; received an autographed headshot from Drew Carey after the scandal broke, which she keeps on her nightstand. She is currently spamming the group chat to be her family her on Celebrity Family Feud.
 
 &lt;b&gt;Jeff the Chef&lt;/b&gt; has become a cult hero in the bagelverse. He lives as a reclusive bagel baron, making the occasional bakery related appearance, but enjoys his time out of the spotlight.
 
