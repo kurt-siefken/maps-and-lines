@@ -154,9 +154,9 @@ text-decoration: none;
 
 .suspect-profiles a {color: #fff; padding: 10px 10px; margin-top: 10px;}
 
-.accusation-profiles a {height: 60px;}
+.accusation-profiles a {}
 
-.simple-link a {border: 0px; padding: 0px; margin-bottom: 0px;}
+.simple-link a {border: 0px; padding: 0px; margin-bottom: 0px; width: auto; display: inline;}
 .simple-link a:hover {background-color: black; text-decoration: underline;}
 
 
@@ -740,65 +740,55 @@ Then you submit the headline for tomorrow&#39;s paper:
 
 &lt;div class=&quot;suspect-profiles accusation-profiles&quot;&gt;
 
-&lt;&lt;if $IngaAccused is &quot;no&quot;&gt;&gt;
+
 &lt;div class=&quot;Profile-Inga&quot;&gt;
+&lt;&lt;if $IngaAccused is &quot;no&quot;&gt;&gt;
 	&lt;img src = &quot;https://www.mapsandlines.com/poison/inga.png&quot;&gt;
 &lt;span style=&quot;font-size: .9em;&quot;&gt;Headline:&lt;/span&gt; &lt;i&gt;&lt;b&gt;[[INFLUENCER Poisons Chef!]]&lt;/b&gt;&lt;/i&gt;
-&lt;/div&gt;
 	&lt;&lt;else&gt;&gt;
-    &lt;div class=&quot;Profile-Inga&quot; style=&quot;opacity: .5&quot;&gt;
-    	&lt;img src=&quot;https://www.mapsandlines.com/poison/inga.png&quot;&gt;
-&lt;b&gt;Inga the Influencer&lt;/b&gt;
-&lt;/div&gt;
+    	&lt;img src=&quot;https://www.mapsandlines.com/poison/inga.png&quot; style=&quot;opacity: .5&quot;&gt;
 &lt;&lt;/if&gt;&gt;
+&lt;/div&gt;
 
-&lt;&lt;if $FredAccused is &quot;no&quot;&gt;&gt;
 &lt;div class=&quot;Profile-Fred&quot;&gt;
+&lt;&lt;if $FredAccused is &quot;no&quot;&gt;&gt;
 	&lt;img src = &quot;https://www.mapsandlines.com/poison/fred.png&quot;&gt;
 &lt;span style=&quot;font-size: .9em;&quot;&gt;Headline:&lt;/span&gt; &lt;i&gt;&lt;b&gt;[[FROZEN FOOD REP Poisons Chef!]]&lt;/b&gt;&lt;/i&gt;
-&lt;/div&gt;
 	&lt;&lt;else&gt;&gt;
-    &lt;div class=&quot;Profile-Fred&quot; style=&quot;opacity: .5&quot;&gt;
-    	&lt;img src=&quot;https://www.mapsandlines.com/poison/fred.png&quot;&gt;
-&lt;b&gt;Fred the Frozen Food Magnate&lt;/b&gt;
-&lt;/div&gt;
+    	&lt;img src=&quot;https://www.mapsandlines.com/poison/fred.png&quot;  style=&quot;opacity: .5&quot;&gt;
 &lt;&lt;/if&gt;&gt;
+&lt;/div&gt;
 
-&lt;&lt;if $ArtAccused is &quot;no&quot;&gt;&gt;
+
 &lt;div class=&quot;Profile-Art&quot;&gt;
+&lt;&lt;if $ArtAccused is &quot;no&quot;&gt;&gt;
 	&lt;img src = &quot;https://www.mapsandlines.com/poison/art.png&quot;&gt;
 &lt;span style=&quot;font-size: .9em;&quot;&gt;Headline:&lt;/span&gt; &lt;i&gt;&lt;b&gt;[[ARTISAN BAKER Poisons Chef!]]&lt;/b&gt;&lt;/i&gt;
-&lt;/div&gt;
 	&lt;&lt;else&gt;&gt;
-        &lt;div class=&quot;Profile-Art&quot; style=&quot;opacity: .5&quot;&gt;
-    	&lt;img src=&quot;https://www.mapsandlines.com/poison/art.png&quot;&gt;
-&lt;b&gt;Art the Artisan Baker&lt;/b&gt;
-&lt;/div&gt;
+    	&lt;img src=&quot;https://www.mapsandlines.com/poison/art.png&quot; style=&quot;opacity: .5&quot;&gt;
 &lt;&lt;/if&gt;&gt;
+&lt;/div&gt;
 
-&lt;&lt;if $MaryAccused is &quot;no&quot;&gt;&gt;
+
 &lt;div class=&quot;Profile-Mary&quot;&gt;
+&lt;&lt;if $MaryAccused is &quot;no&quot;&gt;&gt;
 	&lt;img src = &quot;https://www.mapsandlines.com/poison/mary.png&quot;&gt;
 &lt;span style=&quot;font-size: .9em;&quot;&gt;Headline:&lt;/span&gt; &lt;i&gt;&lt;b&gt;[[MAGAZINE EDITOR Poisons Chef!]]&lt;/b&gt;&lt;/i&gt;
-&lt;/div&gt;
 	&lt;&lt;else&gt;&gt;
-        &lt;div class=&quot;Profile-Mary&quot; style=&quot;opacity: .5&quot;&gt;
-    	&lt;img src=&quot;https://www.mapsandlines.com/poison/mary.png&quot;&gt;
-&lt;b&gt;Mary the Magazine Editor&lt;/b&gt;
-&lt;/div&gt;
+    	&lt;img src=&quot;https://www.mapsandlines.com/poison/mary.png&quot; style=&quot;opacity: .5&quot;&gt;
 &lt;&lt;/if&gt;&gt;
+&lt;/div&gt;
 
-&lt;&lt;if $GayleAccused is &quot;no&quot;&gt;&gt;
+
 &lt;div class=&quot;Profile-Gayle&quot;&gt;
+&lt;&lt;if $GayleAccused is &quot;no&quot;&gt;&gt;
 	&lt;img src = &quot;https://www.mapsandlines.com/poison/gayle.png&quot;&gt;
 &lt;span style=&quot;font-size: .9em;&quot;&gt;Headline:&lt;/span&gt; &lt;i&gt;&lt;b&gt;[[GAME SHOW WINNER Poisons Chef!]]&lt;/b&gt;&lt;/i&gt;
-&lt;/div&gt;
 	&lt;&lt;else&gt;&gt;
-        &lt;div class=&quot;Profile-Gayle&quot; style=&quot;opacity: .5&quot;&gt;
-    	&lt;img src=&quot;https://www.mapsandlines.com/poison/gayle.png&quot;&gt;
-&lt;b&gt;Gayle the Game Show Host&lt;/b&gt;
-&lt;/div&gt;
+    	&lt;img src=&quot;https://www.mapsandlines.com/poison/gayle.png&quot; style=&quot;opacity: .5&quot;&gt;
 &lt;&lt;/if&gt;&gt;
+&lt;/div&gt;
+
 
 
 &lt;/div&gt;
