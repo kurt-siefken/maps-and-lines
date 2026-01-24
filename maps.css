@@ -83,11 +83,16 @@ background-color: #ffffff;
 }
 
 
+.twine-stories {display: flex; justify-content: center;}
+.twine-stories img {max-width: 200px; margin-bottom: 20px; border-radius: 10px;}
+.twine-stories div {text-align: center; padding: 20px;}
+
 @media screen and (max-width: 600px) {
 .listoflinks {flex-direction: column;}
 .linkcolumn {width: 80%; margin: 20px auto;}
 .pagename {font-size: 2.5em; margin-top: 40px; margin-bottom: 40px;}
 .pagestructure {align-items: flex-start;}
+.twine-stories {flex-direction: column;}
 }
 
 
