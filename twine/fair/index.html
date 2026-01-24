@@ -133,7 +133,8 @@ a:hover {background-color: pink; color: darkred; text-decoration: none;}
 .suspect-notes hr {width: 30%; margin: 15px auto 15px auto;}
 .suspect-notes b {color: palegoldenrod;}
 
-
+.desktop-only {display: block;}
+.mobile-only {display: none;}
 
 
 @media screen and (max-width: 800px) {
@@ -154,7 +155,11 @@ a:hover {background-color: pink; color: darkred; text-decoration: none;}
     margin-left: 3.5em;
     margin-right: 2.0em;
     margin-top: 20px;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">$(document).ready(function() {
+}
+  
+ .desktop-only {display: none;}
+.mobile-only {display: block;} 
+} </style><script role="script" id="twine-user-script" type="text/twine-javascript">$(document).ready(function() {
   $('head').append('<link rel="icon" href="https://www.mapsandlines.com/twine/fair/frog-favicon.png" type="image/png">');
 });</script><tw-tag name="widget" color="purple"></tw-tag><tw-tag name="noProfilesLink" color="red"></tw-tag><tw-passagedata pid="1" name="Start" tags="noProfilesLink" position="300,100" size="100,100">
 &lt;div style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://www.mapsandlines.com/twine/fair/poster.jpg&quot; style=&quot;margin: auto; width: 100%; max-width: 600px;&quot; class=&quot;desktop-only&quot;&gt;&lt;img src=&quot;https://www.mapsandlines.com/twine/fair/poster-square.jpg&quot; style=&quot;margin: auto; width: 100%; max-width: 600px;&quot; class=&quot;mobile-only&quot;&gt;&lt;/div&gt;
@@ -1374,7 +1379,7 @@ Manny pats you on the back and promotes you to Chief Safety Inspector.
  
 &lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="59" name="The End" tags="noProfilesLink" position="1200,3900" size="100,100">&lt;div style=&quot;text-align: center; font-size: 26px; font-weight: bold; margin-top: 20px;&quot;&gt;&lt;&lt;type 80ms&gt;&gt;Thank you for playing...&lt;&lt;/type&gt;&gt;
-&lt;&lt;type 100ms&gt;&gt;&lt;img src=&quot;https://www.mapsandlines.com/twine/fair/bow.jpg&quot; style=&quot;width: 90%; max-width: 600px;&quot;&gt;&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+&lt;&lt;type 100ms&gt;&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://www.mapsandlines.com/twine/fair/bow.jpg&quot; style=&quot;margin: auto; width: 100%; max-width: 600px;&quot; class=&quot;desktop-only&quot;&gt;&lt;img src=&quot;https://www.mapsandlines.com/twine/fair/bow-square.jpg&quot; style=&quot;margin: auto; width: 100%; max-width: 600px;&quot; class=&quot;mobile-only&quot;&gt;&lt;/div&gt;&lt;&lt;/type&gt;&gt;
 </tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */

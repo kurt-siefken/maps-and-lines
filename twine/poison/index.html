@@ -159,7 +159,8 @@ text-decoration: none;
 .simple-link a {border: 0px; padding: 0px; margin-bottom: 0px; width: auto; display: inline;}
 .simple-link a:hover {background-color: black; text-decoration: underline;}
 
-
+.desktop-only {display: block;}
+.mobile-only {display: none;}
 
 @media screen and (max-width: 800px) {
   .scene {flex-direction: column;}
@@ -176,6 +177,9 @@ text-decoration: none;
     margin-right: 2.0em;
     margin-top: 20px;
 }
+  .desktop-only {display: none;}
+.mobile-only {display: block;}
+  
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">$(document).ready(function() {
   $('head').append('<link rel="icon" href="https://www.mapsandlines.com/twine/poison/poison-favicon.png" type="image/png">');
 });</script><tw-tag name="noProfilesLink" color="red"></tw-tag><tw-tag name="widget" color="purple"></tw-tag><tw-passagedata pid="1" name="ARTISAN BAKER Poisons Chef!" tags="" position="2300,3100" size="100,100">&lt;div class=&quot;scene&quot;&gt;
@@ -976,7 +980,7 @@ You look through your notes and realize the detective is right. How embarrassing
     &lt;/div&gt;
   &lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="Review Suspect Notes" tags="noProfilesLink" position="300,300" size="100,100">&lt;&lt;showAllProfiles&gt;&gt;
 &lt;div style=&quot;text-align: center;&quot;&gt;&lt;&lt;back&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="49" name="Start" tags="noProfilesLink" position="600,100" size="100,100">&lt;div style=&quot;text-align: center;&quot; class=&quot;title-page&quot;&gt;
-&lt;img src=&quot;https://www.mapsandlines.com/twine/poison/poster.jpg&quot; style=&quot;width: 90%; max-width: 800px;&quot;&gt;
+&lt;img src=&quot;https://www.mapsandlines.com/twine/poison/poster.jpg&quot; style=&quot;width: 90%; max-width: 800px;&quot; class=&quot;desktop-only&quot;&gt;&lt;img src=&quot;https://www.mapsandlines.com/twine/poison/poster-square.jpg&quot; style=&quot;width: 90%; max-width: 800px;&quot; class=&quot;mobile-only&quot;&gt;
 
 [[Begin|The Assignment]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="50" name="StoryInit" tags="" position="100,100" size="100,100">&lt;&lt;set $storyTitle = &quot;Poison at the Bagel Convention&quot;&gt;&gt;
@@ -1320,7 +1324,7 @@ You look through your notes and realize the detective is right. How embarrassing
   &lt;/div&gt;</tw-passagedata><tw-passagedata pid="64" name="The End" tags="noProfilesLink" position="2300,3900" size="100,100">&lt;div style=&quot;text-align: center; font-size: 26px; font-weight: bold;&quot;&gt;
 &lt;&lt;type 80ms&gt;&gt;Thank you for playing...&lt;&lt;/type&gt;&gt;
 
-&lt;&lt;type 100ms&gt;&gt;&lt;img src=&quot;https://www.mapsandlines.com/twine/poison/take-a-bow.jpg&quot; style=&quot;width: 90%; max-width: 600px;&quot;&gt;&lt;&lt;/type&gt;&gt;
+&lt;&lt;type 100ms&gt;&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://www.mapsandlines.com/twine/poison/take-a-bow.jpg&quot; style=&quot;margin: auto; width: 100%; max-width: 600px;&quot; class=&quot;desktop-only&quot;&gt;&lt;img src=&quot;https://www.mapsandlines.com/twine/poison/bow-square.jpg&quot; style=&quot;margin: auto; width: 100%; max-width: 600px;&quot; class=&quot;mobile-only&quot;&gt;&lt;/div&gt;&lt;&lt;/type&gt;&gt;
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="65" name="Mary&#39;s Confession" tags="" position="2500,3500" size="100,100">&lt;div class=&quot;scene&quot;&gt;
     &lt;div class=&quot;scene-image&quot;&gt;
