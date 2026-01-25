@@ -118,10 +118,10 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 .interview-suspects ul { font-size: .9em; line-height: 1.1em;}
 .interview-suspects li { margin-bottom: 10px;}
 .interview {font-size: .8em; margin: 10px auto 0px auto;}
-.simple-link a {display: inline-block; border: 0px; padding: 0px; line-height: 1em;}
+.simple-link a {display: inline; border: 0px; padding: 0px; line-height: 1em;}
 .simple-link a:hover {background-color: black;  color: #fff;}
 
-a {color: pink; border: 1px solid pink; padding: 5px 20px; border-radius: 10px; display: inline-block; margin-bottom: 10px;}
+a {color: pink; border: 1px solid pink; padding: 5px 20px; border-radius: 10px; display: inline-block; margin-bottom: 10px; line-height: 1.3em;}
 
 a:hover {background-color: pink; color: darkred; text-decoration: none;}
 
@@ -144,13 +144,14 @@ a:hover {background-color: pink; color: darkred; text-decoration: none;}
     .scene-image img {margin-bottom: 20px;}
   .scene-content {margin-top: -60px;}
   .suspect-profiles {justify-content: flex-start;}
-  .suspect-profiles > div {flex: 0 0 calc(50% - 28px);}
-  .suspect-profiles a {padding: 10px;}
+  .suspect-profiles > div {flex: 0 0 calc(50% - 30px);}
+  .suspect-profiles a {padding: 0px;}
   .link-internal {width: 100%; text-align: center; box-sizing: border-box; text-wrap: balance;}
   
   .interview-suspects {justify-content: flex-start; flex-wrap: wrap;}
-    .interview-suspects > div {flex: 0 0 calc(50% - 28px); margin-bottom: 30px; padding: 10px;}
-  
+    .interview-suspects > div {flex: 0 0 calc(50% - 30px); margin-bottom: 30px; padding: 10px;}
+  .interview-suspects img {width: 100%}
+      
   #ui-bar.stowed~#story {
     margin-left: 3.5em;
     margin-right: 2.0em;
@@ -365,7 +366,7 @@ You put together all the clues.  The suspect:
 &lt;div class=&quot;page-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;The Bodyguard&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 &quot;The Queen wanted to do something very American,&quot; he says. &quot;So I took her to the fair to get a corn dog and ride the ferris wheel.&quot;
 
-&quot;Someone set up a distraction,&quot; he says. &quot;They let the piglets out of the petting zoo, and they were just so cute. When I came back, the ferris wheel had been sabotaged!&quot;
+&quot;Someone set up a distraction,&quot; the bodyguard says. &quot;They let the piglets out of the petting zoo, and they were just so cute. When I came back, the ferris wheel had been sabotaged!&quot;
 
 &lt;&lt;if $choice is &quot;bodyguard&quot;&gt;&gt;[[Ask the ferris wheel operator what he saw|Ride Operator]]&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $choice is &quot;ride&quot;&gt;&gt;[[Start the Investigation|The Investigation]]&lt;&lt;/if&gt;&gt;
@@ -466,7 +467,7 @@ You put together all the clues.  The suspect:
 &lt;div class=&quot;page-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;Paul the Politician&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 Friends, neighbors, and fellow Americans. Thank you for hosting me here at the historic Cedar Island State Fair. My name is Paul, and it would be the honor of a lifetime if you made me your next Senator.
 
-You know, I grew up in a small town just 20 miles north of this fertile soil. There is nothing better than coming out to the fair to eat a funnel cake and participate in a meaningful photo op... uhh, I mean a meaningful dialog with my fellow citizens.
+You know, I grew up in a small town just 20 miles north of this fertile soil. There is nothing better than coming out to the fair to eat a funnel cake and participate in a meaningful &lt;span style=&quot;text-decoration: line-through&quot;&gt;photo op&lt;/span&gt;... uhh, I mean a meaningful dialog with my fellow citizens.
 
 I would gladly take an interview with you. I promise you I will be anything but truthful. My record of integrity speaks for itself. I have never, and will never, mislead you, the American people. Wait, where are the cameras?
 
@@ -511,7 +512,7 @@ Sure, I suppose I can spare the emotional labor for an interview. Are you with &
 &lt;div class=&quot;page-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;Fiona the Fortune Teller&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 Welcome, gentle being. Come, step into my discarnate light. I am Fiona: your forecaster of fate, oracle of the inevitable, diviner of destiny. 
 
-I sensed your arrival this morning, so I prepared a warm cup of probiotic kombucha for your journey. Have a seat, breathe in the eucalyptus leaves, and allow me to calibrate your aura.
+I sensed your arrival this morning, so I prepared a warm cup of probiotic kombucha. Have a seat, breathe in the eucalyptus leaves, and allow me to calibrate your aura.
 
 The stars have already revealed your true intentions. You are not hear to seek your own fate or the Powerball numbers. You are here on a quest for truth. I am spiritually prepared to oblige to your interview. Ask away.
 
@@ -544,7 +545,7 @@ As long as you ain&#39;t the health inspector, I&#39;d be glad to give you an in
 &lt;div class=&quot;scene-content&quot;&gt;
 Ah yes. Her majesty, the Queen of Havensborough. We crossed paths last year at the Statue of Liberty. The Queen was visiting our country for the first time, while I was on my weekly tribute to salute American sovereignty. 
 
-It is no secret that the Queen and I have our fundamental differences. We have deep disagreements. She prefers soccer, while I the tradition of all-American football. She insists on chips, I call them by their God-given name of freedom fries. 
+It is no secret that the Queen and I have our fundamental differences. She prefers soccer, while I prefer all-American football. She insists on chips, while I call them by their God-given name of freedom fries. 
 
 But let me be clear. While we have our ideological friction, I would &lt;i&gt;never&lt;/i&gt; stoop to sabotaging her ride. That&#39;s the kind of bottom-feeding, dirty tactic I would expect from my opponent, but never myself.
 
@@ -559,7 +560,7 @@ But let me be clear. While we have our ideological friction, I would &lt;i&gt;ne
 &lt;img src=&quot;https://www.mapsandlines.com/twine/fair/annie.jpg&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;scene-content&quot;&gt;
-Ugh, I have no desire to meet the Queen. I know her type. Are you aware that the limo she took to the fair released enough carbon to choke an entire pumpkin field full of pumpkins? Do you even hear the screams of the gourds?
+Ugh, I have no desire to meet the Queen. I know her type. Did you know that the limo she took here released enough carbon to choke an entire pumpkin field full of pumpkins? Do you even hear the screams of the gourds?
 
 But that&#39;s not my problem with the Queen. Her most egregious offense is that she wears a perfume that is made from rare sargassum, which is vital to the whales&#39; biodigestional health. It is human elitism at its most toxic!
 
@@ -597,7 +598,7 @@ Hmm. Nah, I don&#39;t know no one named &quot;Queen&quot;. Is she from Cincinnat
 
 The real royal pain is that rat who is running the ferris wheel. Last summer in Green River, he ran an extension cord right through my joint. I tripped over it, and dimmed his light show for three hours. He called me an oaching grifter and got me &#39;86ed from the midway.
 
-I&#39;d love to see that rat burn, but that don&#39;t mean I&#39;d throw no paste in his ride.  I&#39;ll call a waxie before the Queen takes a brodie. My beef is with the operator, not the cargo.
+I&#39;d love to see that rat burn, but that don&#39;t mean I&#39;d throw no paste in his ride.  I&#39;d call a waxie before the Queen takes a brodie. My beef is with the operator, not the cargo.
 
 &lt;&lt;KennyNav&gt;&gt;
 &lt;/div&gt;
@@ -623,7 +624,7 @@ I have since issued a sham apology for the reckless antics of my youth. The Quee
 &lt;img src=&quot;https://www.mapsandlines.com/twine/fair/manny.jpg&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;scene-content&quot;&gt;
-&lt;div class=&quot;page-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;The Queen&lt;&lt;/type&gt;&gt;&lt;/div&gt;&lt;&lt;if $tempvar is &quot;asleep&quot;&gt;&gt;
+&lt;&lt;if $tempvar is &quot;asleep&quot;&gt;&gt;
 &quot;I&#39;ll pretend I didn&#39;t hear that,&quot; Manny says.
 &lt;&lt;else&gt;&gt;
 &quot;I highly doubt that,&quot; Manny says.
@@ -696,7 +697,7 @@ My point here, folks, is that when I am elected, I will be &lt;i&gt;tough&lt;/i&
 &lt;img src=&quot;https://www.mapsandlines.com/twine/fair/paul.jpg&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;scene-content&quot;&gt;
-Ring toss is a fine game. But I am more of a baseball fan. America&#39;s pastime. There&#39;s nothing more patriotic than driving to the baseball game in my American made car, having some apple pie, and feeling the sturdy comfort of domestic-denim blue jeans.
+Ring toss is a fine game. But I am more of a baseball fan. America&#39;s pastime. There&#39;s nothing more patriotic than driving to a baseball game in my American made car, having some apple pie, and feeling the sturdy comfort of domestic-denim blue jeans.
 
 As for your culprit, I saw &lt;b&gt;Roger&lt;/b&gt; at the ring toss booth this afternoon. He was giving the game operator an autograph. And &lt;b&gt;Fiona&lt;/b&gt; knows the fair well, she could probably aim the ring with her subconsious mind.
 
@@ -713,7 +714,7 @@ But the bottom line is that under my policies, ring toss will be subsidized for 
 &lt;img src=&quot;https://www.mapsandlines.com/twine/fair/paul.jpg&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;scene-content&quot;&gt;
-Now if I may have a moment for a closing statement. We&#39;re at a crossroads, my friends. Under my opponent&#39;s radical agenda, your wages will plummet your taxes will skyrocket, and make no mistake, he &lt;i&gt;will&lt;/i&gt; put a complete and total ban on corn dogs. There is only one common-sense choice in this election.
+Now if I may have a moment for a closing statement. We&#39;re at a crossroads, my friends. Under my opponent&#39;s radical agenda, your wages will plummet, your taxes will skyrocket, and make no mistake, he &lt;i&gt;will&lt;/i&gt; put a complete and total ban on corn dogs. There is only one common-sense choice in this election.
 
 Sabotage at the fair is a very serious issue, and if elected, I will crack down on crime with an iron fist. But I also offer a vision of hope. I will eliminate the tax on kettle corn, and make cotton candy more affordable. Because every child, regardless of background, deserves the opportunity to enjoy a sugary treat then puke it all up after riding the tea cups.
 
@@ -735,7 +736,7 @@ Let me leave you with this. I would be deeply honored for your vote. Thank you, 
 &lt;div class=&quot;scene-content&quot;&gt;
 Surveillance? I&#39;m not exactly a fan. Not since they nabbed me for trashing that room at the Hotel 6 in Pine Bluff. &lt;span class=&quot;cough&quot;&gt;[Hah hah]&lt;/span&gt; &lt;span class=&quot;cough&quot;&gt;[hack]&lt;/span&gt; &lt;span class=&quot;cough&quot;&gt;[wheeze]&lt;/span&gt; But hey, I got the last laugh.  I used that footage in my music video for &quot;Girl, Your Boyfriend is a Doffhead&quot;.
 
-Now, if you&#39;re looking for who could make a camera go dark, I&#39;d bet on that slimy candidate &lt;b&gt;Paul&lt;/b&gt;. He&#39;ll mug for any camera, except the secret ones.  And while I wouldn&#39;t trust &lt;b&gt;Annie&lt;/b&gt; from destroying spy apparatus, you gotta respect that girl&#39;s rebel spirit. Even if she &lt;i&gt;is&lt;/i&gt; a buzzkill at a party.
+Now, if you&#39;re looking for who could make a camera go dark, I&#39;d bet on that slimy candidate &lt;b&gt;Paul&lt;/b&gt;. He&#39;ll mug for any camera, except the secret ones.  And while I wouldn&#39;t trust &lt;b&gt;Annie&lt;/b&gt; from destroyingany  spy apparatus, you gotta respect that girl&#39;s rebel spirit. Even if she &lt;i&gt;is&lt;/i&gt; a buzzkill at a party.
 
 &lt;&lt;RogerNav&gt;&gt;
 &lt;/div&gt;
@@ -748,7 +749,7 @@ Now, if you&#39;re looking for who could make a camera go dark, I&#39;d bet on t
 &lt;img src=&quot;https://www.mapsandlines.com/twine/fair/roger.jpg&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;scene-content&quot;&gt;
-The ring toss? &lt;span class=&quot;cough&quot;&gt;[hack]&lt;/span&gt; &lt;span class=&quot;cough&quot;&gt;[gasp]&lt;/span&gt; Forget it, man. I&#39;ve got &lt;i&gt;terrible&lt;/i&gt; aim. I once threw a bologna sandwich to Bob Dylan backstage, and I nailed the guy right in the temple. He had mustard in his hair through his entire Live Aid set. He was not amused, but I laughed my arse off.
+The ring toss? &lt;span class=&quot;cough&quot;&gt;[hack]&lt;/span&gt; &lt;span class=&quot;cough&quot;&gt;[gasp]&lt;/span&gt; Forget it, man. I&#39;ve got &lt;i&gt;terrible&lt;/i&gt; aim. I once threw a bologna sandwich to Bob Dylan, and I nailed the guy right in the temple. He had mustard in his hair through his entire Live Aid set. He was not amused, but I laughed my arse off.
 
 Now if you&#39;re looking for a ringer, look at that windbag &lt;b&gt;Paul&lt;/b&gt;. He is so full of hot air, he could easily land one of those rings powered by his own ego. And &lt;b&gt;Annie&lt;/b&gt;? That girl is so determined, she would spend hours to win the ring toss just to free those oppressed plush frogs.
 
@@ -763,7 +764,7 @@ Now if you&#39;re looking for a ringer, look at that windbag &lt;b&gt;Paul&lt;/b
 &lt;img src=&quot;https://www.mapsandlines.com/twine/fair/annie.jpg&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;scene-content&quot;&gt;
-The petting zoo? That human-centric, non-consensual invasion of animals&#39; privacy and personal space? Um, no thanks! While my heart breaks for those innocent piglets in their hay-covered oppression, I have to obey my court-ordered a restraining order. I am legally obligated to stay 100 feet away from petting zoos at all times. My ankle bracelet monitor, which is made out of non-recycled plastic by the way, can &lt;b&gt;prove my innocence&lt;/b&gt; this time.
+The petting zoo? That human-centric, non-consensual invasion of animals&#39; privacy and personal space? Um, no thanks! While my heart breaks for those innocent piglets in their hay-covered oppression, I have to obey my court-ordered a restraining order. I am legally obligated to stay 100 feet away from petting zoos at all times. My ankle bracelet monitor, which is made from non-recycled plastic by the way, can &lt;b&gt;prove my innocence&lt;/b&gt; this time.
 
 If you&#39;re looking for the perpitrator, I am well versed in civil disobedience. I would talk to that washed up rocker &lt;b&gt;Roger&lt;/b&gt;. I saw him coming out of the petting zoo with a twig of hay in his teeth.  And I wouldn&#39;t trust &lt;b&gt;Fiona&lt;/b&gt; and &lt;b&gt;Kenny&lt;/b&gt; either, both barkers for this swine-rights abomination of a carnival. They&#39;re all complicit to the system.
 
@@ -827,9 +828,9 @@ Now that politician &lt;b&gt;Paul&lt;/b&gt;? He is a camera magnet incarnate tha
 &lt;div class=&quot;scene-content&quot;&gt;
 The pigs?! I ain&#39;t sayin&#39; I got a criminal records, but I don&#39;t want no cops around here.
 
-Oh, you mean the petting zoo. Yeah, those piglets are alright, ain&#39;t they? I feel a spiritual connection with them. We both eat slop, live in a sty, and sleep on the ground. But nah, I think they like their sty. I just let &#39;em be.
+Oh, you mean the petting zoo. Yeah, those piglets are alright, ain&#39;t they? I feel a spiritual connection with them. We both eat slop, live in a sty, and sleep on the ground. It&#39;s a pretty sweet life, so I just let &#39;em be.
 
-Who do I think released the piglets? I&#39;d check with that dukkering &lt;b&gt;Fiona&lt;/b&gt;. She&#39;s always talking about &quot;freeing the spiritt&quot; and could read the pigs&#39; tails or something.  And I don&#39;t trust that old rocker dude &lt;b&gt;Roger&lt;/b&gt;. Maybe he&#39;s writin&#39; a ballad of freeing the pigs, or somethin&#39; dumb like that.
+Who do I think released the piglets? I&#39;d check with that dukkering &lt;b&gt;Fiona&lt;/b&gt;. She&#39;s always talking about &quot;freeing the spirit&quot; and could read the pigs&#39; tails or something.  And I don&#39;t trust that old rocker dude &lt;b&gt;Roger&lt;/b&gt;. Maybe he&#39;s writin&#39; a ballad of freeing the pigs, or somethin&#39; dumb like that.
 
 &lt;&lt;KennyNav&gt;&gt;
 &lt;/div&gt;
@@ -864,7 +865,7 @@ Let me be perfectly clear. I have not stepped foot inside that petting zoo. I ha
 
 As a fully transparent civil servant, I released my medical records to the general public. My doctor, a fine alumni of the American eductation system, can &lt;b&gt;vouch for my innocence&lt;/b&gt; in this barnyard breach.
 
-However for the public record, I saw &lt;b&gt;Fiona&lt;/b&gt; trying to read the stripes on the zebra this afternoon. And &lt;b&gt;Kenny&lt;/b&gt; was loitering near the barn door this evening, presumably looking for a dry place to sleep tonight. I am not making accusations, I am just presenting the facts.
+However for the public record, I saw &lt;b&gt;Fiona&lt;/b&gt; trying to read the stripes on the zebra this afternoon. And &lt;b&gt;Kenny&lt;/b&gt; was loitering near the barn this evening, presumably looking for a dry place to sleep tonight. I am not making accusations, I am just presenting the facts.
 
 &lt;&lt;PaulNav&gt;&gt;
 &lt;/div&gt;
@@ -894,7 +895,7 @@ With the piglets on the loose, my money&#39;s on one of them. Or maybe the pigle
 &lt;img src=&quot;https://www.mapsandlines.com/twine/fair/annie.jpg&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;scene-content&quot;&gt;
-Ugh, the ring toss. Late stage capitalism at its worst. It&#39;s like... Sure, give us five of your priviledged American dollars to try to win some petroleum-based, materialistic crap you don&#39;t need, that will ievitably spend the next 10,000 years in a landfill. Oh, and let&#39;s prey on our youngest and most vulnerable citizens. Might as well teach &#39;em young!
+Ugh, the ring toss. Late stage capitalism at its worst. It&#39;s like... Sure, give us five of your priviledged American dollars to try to win some petroleum-based, materialistic crap you don&#39;t need, that will inevitably spend the next 10,000 years in a landfill. Oh, and let&#39;s prey on our youngest and most vulnerable citizens. Might as well teach &#39;em young!
 
 As for the booth, I saw that invertebrate &lt;b&gt;Paul&lt;/b&gt; hanging out by the ring toss, probably trying to take a bribe for looking the other way at the unwinnable game. And then there&#39;s that  flaky fortune teller &lt;b&gt;Fiona&lt;/b&gt;. She was there this afternoon, doing a spiritual awakening with the stuffed frogs.
 
@@ -909,9 +910,9 @@ As for the booth, I saw that invertebrate &lt;b&gt;Paul&lt;/b&gt; hanging out by
 &lt;img src=&quot;https://www.mapsandlines.com/twine/fair/annie.jpg&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;scene-content&quot;&gt;
-I hope you&#39;re aware that the five minutes we spent talking could have been better used providing radical kindness to our unhoused neighbors. But that&#39;s okay. You can go back to your fatcat McMansion, with your inorganic pants and toxic-dye soaked shirt.
+I hope you&#39;re aware that the five minutes we spent talking could have been better used providing radical kindness for our unhoused neighbors. But that&#39;s okay. You can go back to your fatcat McMansion, with your inorganic pants and toxic-dye soaked shirt.
 
-Now if you&#39;ll excuse me, I need to go ask that carnie if his corn dogs are sustainably harvested and made with certified free range corn.
+Now if you&#39;ll excuse me, I need to go ask that carnie if his corn dogs are sustainably harvested and made with certified free-range corn.
 
 &lt;&lt;if $interviewsLeft is 0&gt;&gt;[[End Interviews]]&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $interviewsLeft &gt; 0&gt;&gt;[[Interview another suspect|Interview the Suspects]]&lt;&lt;/if&gt;&gt;
@@ -929,7 +930,7 @@ Thanks, kid. What a long, strange trip it&#39;s been, huh? &lt;span class=&quot;
 
 Now, where was I? Oh right, I need to find my Pepto Bismol. If you have any follow up questions, I&#39;ll be headlining Davenport HuskFest next week, and Fort Wayne Tractor Pull after that. Don&#39;t forget to tip your lemonade vendor.
 
-And hey, seriously now. I really need you to please buy one of my tapes. I&#39;ll be selling them out of the trunk of my &#39;79 Pinto tonight. Thanks, man. Peace, love, and &lt;span class=&quot;cough&quot;&gt;[cough]&lt;/span&gt; &lt;span class=&quot;cough&quot;&gt;[hack]&lt;/span&gt; &lt;span class=&quot;cough&quot;&gt;[sputter]&lt;/span&gt;!
+And hey, seriously now. I need you to buy one of my tapes. I&#39;ll be selling them out of the trunk of my &#39;79 Pinto tonight. Thanks, man. Peace, love, and &lt;span class=&quot;cough&quot;&gt;[cough]&lt;/span&gt; &lt;span class=&quot;cough&quot;&gt;[hack]&lt;/span&gt; &lt;span class=&quot;cough&quot;&gt;[sputter]&lt;/span&gt;!
 
 &lt;&lt;if $interviewsLeft is 0&gt;&gt;[[End Interviews]]&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $interviewsLeft &gt; 0&gt;&gt;[[Interview another suspect|Interview the Suspects]]&lt;&lt;/if&gt;&gt;
@@ -995,7 +996,7 @@ The ring toss? I know the flattie that runs that joint, and I wouldn&#39;t drop 
 
 You can ask any of the carnie trash that works the midway, and they will &lt;b&gt;vouch for my innocence.&lt;/b&gt;
 
-Now that angry lady &lt;b&gt;Annie&lt;/b&gt; who hates everything? The agent might give her a prize just to stop yappin&#39; &#39;bout consumerism greed.  And &lt;b&gt;Fiona&lt;/b&gt;? I&#39;m guessin&#39; she could use her glass eye to figure out how to win that gaffed joint.
+Now that angry lady &lt;b&gt;Annie&lt;/b&gt; who hates everything? The agent might give her a prize just to get het stop yappin&#39; &#39;bout consumerism greed.  And &lt;b&gt;Fiona&lt;/b&gt;? I&#39;m guessin&#39; she could use her glass eye to figure out how to win that gaffed joint.
 
 &lt;&lt;KennyNav&gt;&gt;
 &lt;/div&gt;
@@ -1222,7 +1223,7 @@ The police arrive. Kenny flinches.
  
  &quot;Oh sure, blame the activist,&quot; Annie says. &quot;Just another example of fascist government overreach. I will be calling all the collective, and we will march through this capitalist hellscape of a fair until justice is served!&quot;
  
- You look at your notes and realize you made a mistake. Paul is definitely not the cuprit.
+ You look at your notes and realize you made a mistake. Annie is definitely not the cuprit.
  
 [[Accuse Another Suspect|The Accusation]]
 [[Accept Your Fate]] 
@@ -1242,9 +1243,9 @@ The police arrive. Kenny flinches.
  
  &quot;Impossible!&quot; one of the police officers says. &quot;I know all these clowns, and she couldn&#39;t have done it. Fiona won&#39;t go anywhere near a camera.&quot;
  
- &quot;You have committed a grave humanistic error,&quot; Fiona says. &quot;To falsely accuse a medium is to invite a lifetime of metaphysical misfortune. My crystal ball sees a summons from my lawyer in your future.&quot;
+ &quot;You have committed a grave humanistic error,&quot; Fiona tells you. &quot;To falsely accuse a medium is to invite a lifetime of metaphysical misfortune. My crystal ball sees a summons from my lawyer in your future.&quot;
  
- You look at your notes and realize you made a mistake. Paul is definitely not the cuprit.
+ You look at your notes and realize you made a mistake. Fiona is definitely not the cuprit.
  
 [[Accuse Another Suspect|The Accusation]]
 [[Accept Your Fate]] 
@@ -1264,9 +1265,9 @@ The police arrive. Kenny flinches.
  
  &quot;Impossible!&quot; one of the police officers says. &quot;I know all these clowns, and he couldn&#39;t have done it. Kenny knows better than to go anywhere near the ring toss game.&quot;
  
- &quot;Man, that&#39;s so bogus!&quot; Kenny says. &quot;Word travels fast on the midway. If I were you, I&#39;d stay far away from any food joint at this fair, unless you want to find a mystery ingredient in your cotton candy. I hope you like the taste of axel grease.&quot;
+ &quot;Man, that&#39;s so bogus!&quot; Kenny tells you. &quot;Word travels fast on the midway. If I were you, I&#39;d stay far away from any food joint at this fair, unless you want to find a mystery ingredient in your cotton candy. I hope you like the taste of axle grease.&quot;
  
- You look at your notes and realize you made a mistake. Paul is definitely not the cuprit.
+ You look at your notes and realize you made a mistake. Kenny is definitely not the cuprit.
  
 [[Accuse Another Suspect|The Accusation]]
 [[Accept Your Fate]] 
@@ -1277,8 +1278,8 @@ The police arrive. Kenny flinches.
 &lt;img src=&quot;https://www.mapsandlines.com/twine/fair/sweep.jpg&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;scene-content&quot;&gt;
-&lt;div class=&quot;page-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;Disgraced Safety Inspector&lt;&lt;/type&gt;&gt;&lt;/div&gt;
-You look at your notes again, and realize you were wrong.  Manny fires you as safety inspector.  For a good reason, you agree.
+&lt;div class=&quot;page-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;Disgrace&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+You look at your notes again, and realize you were wrong.  Manny fires you as safety inspector.  And for good reason, you agree.
 
 &lt;&lt;nobr&gt;&gt;
 
@@ -1308,7 +1309,7 @@ You go read the midway, looking for money. Fiona ignores you, and Kenny gives yo
 
 [[The End]]
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="56" name="The Confession" tags="" position="1200,3300" size="100,100">&lt;div class=&quot;scene&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="56" name="The Confession" tags="noProfilesLink" position="1200,3300" size="100,100">&lt;div class=&quot;scene&quot;&gt;
 &lt;div class=&quot;scene-image&quot;&gt;
 &lt;img src=&quot;https://www.mapsandlines.com/twine/fair/roger-confession.jpg&quot;&gt;
 &lt;/div&gt;
@@ -1333,10 +1334,10 @@ I went to the zoo, feelin&#39; fine,
 opened the latch and released the swine.
 
 When no one was looking, I took that frog,
-and I jammed it deep in the ferris wheel&#39;s cog.
+and I jammed it right in the ferris wheel&#39;s cog.
 
-My plan was a hit, and while the pigs did squeal,
-and the Queen got stuck on the ferris wheel.
+My plan went off, and while the pigs did squeal,
+the Queen got stuck on the ferris wheel.
 
 That&#39;s my story and I&#39;m not messin&#39;,
 &#39;cuz I&#39;m a rock god, and that&#39;s my confession.
@@ -1344,7 +1345,7 @@ That&#39;s my story and I&#39;m not messin&#39;,
 [[The Encore]]
  
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="57" name="The Encore" tags="" position="1200,3500" size="100,100">&lt;div class=&quot;scene&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="57" name="The Encore" tags="noProfilesLink" position="1200,3500" size="100,100">&lt;div class=&quot;scene&quot;&gt;
 &lt;div class=&quot;scene-image&quot;&gt;
 &lt;img src=&quot;https://www.mapsandlines.com/twine/fair/roger.jpg&quot;&gt;
 &lt;/div&gt;
@@ -1352,26 +1353,30 @@ That&#39;s my story and I&#39;m not messin&#39;,
  &lt;div class=&quot;page-title&quot;&gt;&lt;i&gt;&lt;&lt;type 80ms&gt;&gt;The Encore&lt;&lt;/type&gt;&gt;&lt;/i&gt;&lt;/div&gt;
 The crowd cheers as Roger takes a bow from his last rock star moment. The police take him away in handcuffs as he screams, &quot;Rock and roll!&quot;
 
-Manny pats you on the back and promotes you to Chief Safety Inspector.
+The Queen eventually descends from the ferris wheel, after an hour of carnies pulling frog fuzz out of the ferris wheel machinery.
+
+Manny pats you on the back and promotes you to Chief Safety Inspector. To celebrate, Kenny makes you his special deep-fried bacon-covered oreos.
 
 [[End of the Tour]]
  
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="58" name="End of the Tour" tags="" position="1200,3700" size="100,100">&lt;div class=&quot;scene&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="58" name="End of the Tour" tags="noProfilesLink" position="1200,3700" size="100,100">&lt;div class=&quot;scene&quot;&gt;
 &lt;div class=&quot;scene-image&quot;&gt;
 &lt;img src=&quot;https://www.mapsandlines.com/twine/fair/tea-cups.jpg&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;scene-content&quot;&gt;
  &lt;div class=&quot;page-title&quot;&gt;&lt;i&gt;&lt;&lt;type 80ms&gt;&gt;Three Months Later...&lt;&lt;/type&gt;&gt;&lt;/i&gt;&lt;/div&gt;
-&lt;b&gt;Paul the Politician&lt;/b&gt; milked the &quot;Carnival Crisis&quot; for all the publicity he could to coast to a landslide election. He broke 90% of his campaign promises, but stayed true to his base on one key issue. He designated all carnie booths as non-profit entities, and made all carnie food tax deductible.
+Your promotion to Chief Safety Inspector goes great! You have some of the best nps of your life, and you get all the carnival food you want, as long as you look the other way on certain issues.  
 
-&lt;b&gt;Annie the Activist&lt;/b&gt; became a cult hero in the activist community. After a brief stint in an off-the-grid commune, she had a breakthrough in therapy regarding her &quot;self-rightous anger&quot;. She considered it a big step forward dared buy a bandana that was not organically sourced.
+&lt;b&gt;Paul the Politician&lt;/b&gt; milked the &quot;Carnival Crisis&quot; for all the publicity he could, and coasted to a landslide election win. He broke 90% of his campaign promises, but stayed true to his base on one key issue. He designated all carnie booths as non-profit entities, and made all carnie food tax deductible.
+
+&lt;b&gt;Annie the Activist&lt;/b&gt; became a cult hero in the activist community. After a brief stint in an off-the-grid commune, she had a breakthrough in therapy regarding her &quot;self-rightous anger&quot;. She considered it a big step forward, and dared to buy a bandana that was not organically sourced.
 
 &lt;b&gt;Fiona the Fortune Teller&lt;/b&gt; saw her business triple overnight after her oft-mocked proficy of the Queen&#39;s peril came true. She moved to New Orleans, where she opened her own practice and works as Nicolas Cage&#39;s personal medium. 
 
 &lt;b&gt;Kenny the Carnie&lt;/b&gt; became a celebrity chef, and signed a deal for a show on the Food Network called &quot;Carnie Desires&quot;. With his newfound wealth, he reached his lifelong dream of owning a bed and a chair, and he now usually sleeps indoors.
 
-&lt;b&gt;The Queen of Havensborough&lt;/b&gt; returned home with a newfound appreciation for American ingenuity. She has declared the deep fried oreo as an official part of the royal menu.
+&lt;b&gt;The Queen of Havensborough&lt;/b&gt; was eventually rescued, after an hour of carnies pulling frog hair out of the machinery. She returned home with a newfound appreciation for American ingenuity, and declared the deep fried oreo as an official part of the royal menu.
 
 &lt;b&gt;Roger the Rocker&lt;/b&gt; had a massive comeback hit with his confessional banger &quot;God Strand the Queen&quot;. He is currently recording his follow-up album &quot;Live from Cell Block B&quot;, and enjoys the greatest fame of his life from prison.
 
