@@ -106,15 +106,21 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 	</div>
 	<tw-storydata name="Scandal on Karaoke Night" startnode="1" creator="Twine" creator-version="2.11.1" format="SugarCube" format-version="2.37.3" ifid="F836E2B1-9BA7-42F2-A43C-D6D6358B9A5F" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.title-page {font-size: 30px; text-align: center;}
 .page-title {font-size: 1.4em; font-weight: bold; height: 1.1em; font-style: italic;}
-a {padding: 5px 15px; border: 0px solid darkgreen; border-radius: 10px; background-color: darkblue; color: #fff; display: inline-block; margin: 5px 0px; box-sizing: border-box}
+a {padding: 5px 15px; border: 0px solid darkgreen; border-radius: 10px; background-color: darkblue; color: #fff; display: inline-block; margin: 5px 0px; box-sizing: border-box; line-height: 1.3em;}
 a:hover {color: darkblue; background-color: lightblue; text-decoration: none;}
 #menu li a {background-color: #222;}
 .no-back a {background-color: #000}
 
-.simple-link, .simple-link a {padding: 0px; border: 0px; display: inline-block; background-color: #000;}
+.simple-link a {padding: 0px; border: 0px; display: inline-block; background-color: #000; width: auto !important; color: lightblue;}
 .simple-link:hover, .simple-link a:hover {background: none; color: #fff;}
 .interview-suspects a {padding: 5px; border: 0px; display: block; border: 1px solid darkblue; background-color: darkblue; border-radius: 5px;}
 .interview-suspects a:hover {background-color: lightblue;}
+
+.suspect-notes {display: flex; width: 100%; justify-content: space-between; text-align: center; font-size: .8em}
+.suspect-notes img {width: 150px; border-radius: 10px;}
+.suspect-notes > div {max-width: 150px; line-height: 1.2em;}
+.suspect-notes hr {width: 30%; margin: 15px auto 15px auto;}
+.suspect-notes b {color: palegoldenrod;}
 
 .tweet-storm {width: 90%; display: block; margin-top: 15px;}
 .tweet-storm a {border: 2px solid #333; width: 100% !important; display: block; color: lightblue; padding: 5px 15px; box-sizing: border-box; font-size: .9em;}
@@ -138,6 +144,9 @@ a:hover {color: darkblue; background-color: lightblue; text-decoration: none;}
 .interview-suspects li { margin-bottom: 10px;}
 .interview {font-size: .8em; margin: 10px auto 0px auto;}
 
+  
+ .desktop-only {display: block;}
+.mobile-only {display: none;} 
 
 @media screen and (max-width: 800px) {
   .scene {flex-direction: column;}
@@ -164,11 +173,13 @@ a:hover {color: darkblue; background-color: lightblue; text-decoration: none;}
     margin-right: 2.0em;
     margin-top: 20px;
 }
-
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="widget" color="purple"></tw-tag><tw-passagedata pid="1" name="Start" tags="" position="400,100" size="100,100">&lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/story-poster.jpg&quot;&gt;
-
-
-[[Begin]]</tw-passagedata><tw-passagedata pid="2" name="Begin" tags="" position="600,100" size="100,100">&lt;div class=&quot;scene&quot;&gt;
+  
+ .desktop-only {display: none;}
+.mobile-only {display: block;} 
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="widget" color="purple"></tw-tag><tw-passagedata pid="1" name="Start" tags="" position="400,100" size="100,100">&lt;div style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/story-poster.jpg&quot; style=&quot;margin: auto; width: 100%; max-width: 600px;&quot; class=&quot;desktop-only&quot;&gt;&lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/story-poster-square.jpg&quot; style=&quot;margin: auto; width: 100%; max-width: 600px;&quot; class=&quot;mobile-only&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;text-align: center;;&quot;&gt;
+[[Begin]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="Begin" tags="" position="600,100" size="100,100">&lt;div class=&quot;scene&quot;&gt;
 &lt;div class=&quot;scene-image&quot;&gt;
 &lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/mayor.jpg&quot;&gt;
 &lt;/div&gt;
@@ -211,7 +222,7 @@ You stifle a laugh.
 &lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Hilarious, but it wasn&#39;t me" tags="" position="600,500" size="100,100">&lt;div class=&quot;scene&quot;&gt;
 &lt;div class=&quot;scene-image&quot;&gt;
-&lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/mayor-phone.jpg&quot;&gt;
+&lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/mayor-smudge.jpg&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;scene-content&quot;&gt;
 &quot;How else did my phone get in your tip jar?&quot; the mayor asks. 
@@ -220,6 +231,7 @@ The phone dings. The mayor reads the message. You notice an orange smudge on the
 
 &quot;The tweets are still coming!&quot; he says. &quot;Someone scheduled a bunch of tweets, and they&#39;ve changed my password! You did this!&quot;
 
+&lt;&lt;TimeUpdate&gt;&gt;
 [[I&#39;m being framed!]]
 
 &lt;/div&gt;
@@ -287,25 +299,28 @@ There were five finalists at karaoke night:
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-[[The Clues]] </tw-passagedata><tw-passagedata pid="7" name="Why would someone do that?" tags="" position="400,500" size="100,100">&lt;div class=&quot;scene&quot;&gt;
+&lt;div style=&quot;text-align: center;&quot;&gt;[[The Clues]]&lt;/div&gt; </tw-passagedata><tw-passagedata pid="7" name="Why would someone do that?" tags="" position="400,500" size="100,100">&lt;div class=&quot;scene&quot;&gt;
 &lt;div class=&quot;scene-image&quot;&gt;
 &lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/mayor-smudge.jpg&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;scene-content&quot;&gt;
 &quot;They did it to embarrass me, right when I am up for reelection.  Just look at what they are tweeting under my account!&quot;
 
-The mayor holds up the phone for you to see.
+The mayor holds up the phone for you to see.&lt;&lt;nobr&gt;&gt;
 &lt;div class=&quot;simple-link tweet-storm&quot;&gt;
-&lt;&lt;linkreplace &quot;&lt;li&gt;Tweet  9:51PM&lt;/li&gt;&quot;&gt;&gt;&lt;i&gt;9:51PM&lt;br&gt;When I am re-elected, I will ban loofas and make bar soap mandatory!&lt;/i&gt;&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;linkreplace&quot;&lt;li&gt;Tweet 10:02PM&lt;/li&gt;&quot;&gt;&gt;&lt;i&gt;10:02PM&lt;br&gt;We&#39;re gonna be the Cincinnati of the east coast!&lt;/i&gt;&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;linkreplace &quot;&lt;li&gt;Tweet 10:09PM&lt;/li&gt;&quot;&gt;&gt;&lt;i&gt;10:09PM&lt;br&gt;Should I get a new toupee? I&#39;m thinking of something in an auburn brown.&lt;/i&gt;&lt;&lt;/linkreplace&gt;&gt;
-&lt;/div&gt;
 
+&lt;&lt;linkreplace &quot;&lt;li&gt;Tweet  9:51PM &lt;span class=&#39;tweet-alert&#39;&gt; New Tweet from @RealMayorMcMayorson&lt;/span&gt;&lt;/li&gt;&quot;&gt;&gt;&lt;i&gt;&lt;div class=&quot;tweet-author&quot;&gt;9:51PM &amp;middot; @RealMayorMcMayorson&lt;/div&gt;When I am re-elected, I will ban loofas and make bar soap mandatory!&lt;/i&gt;&lt;&lt;/linkreplace&gt;&gt;
+
+&lt;&lt;linkreplace&quot;&lt;li&gt;Tweet 10:02PM &lt;span class=&#39;tweet-alert&#39;&gt; New Tweet from @RealMayorMcMayorson&lt;/span&gt;&lt;/li&gt;&quot;&gt;&gt;&lt;i&gt;&lt;div class=&quot;tweet-author&quot;&gt;10:02PM &amp;middot; @RealMayorMcMayorson&lt;/div&gt;We&#39;re gonna be the Cincinnati of the east coast!&lt;/i&gt;&lt;&lt;/linkreplace&gt;&gt;
+
+&lt;&lt;linkreplace &quot;&lt;li&gt;Tweet 10:09PM &lt;span class=&#39;tweet-alert&#39;&gt; New Tweet from @RealMayorMcMayorson&lt;/span&gt;&lt;/li&gt;&quot;&gt;&gt;&lt;i&gt;&lt;div class=&quot;tweet-author&quot;&gt;10:08PM &amp;middot; @RealMayorMcMayorson&lt;/div&gt;Should I get a new toupee? I&#39;m thinking of something in an auburn brown.&lt;/i&gt;&lt;&lt;/linkreplace&gt;&gt;
+&lt;/div&gt;&lt;&lt;/nobr&gt;&gt;
 &quot;Did you do this???&quot;
 
 [[Hilarious, but it wasn&#39;t me]]
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="The Clues" tags="" position="800,100" size="100,100">&lt;div class=&quot;scene&quot;&gt;
+&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="8" name="The Clues" tags="" position="800,100" size="100,100">&lt;div class=&quot;scene&quot;&gt;
 &lt;div class=&quot;scene-image&quot;&gt;
 &lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/clues.jpg&quot;&gt;
 &lt;/div&gt;
@@ -419,6 +434,7 @@ You have 20 minutes to prove your innocence.
 
 &quot;I spoke with the five karaoke finalists before they went on stage,&quot; the mayor says. &quot;Now if you&#39;ll excuse me, I need to figure out how to get back into my account before any more tweets come out!&quot;
 
+&lt;&lt;TimeUpdate&gt;&gt;
 [[Meet the Suspects]]
 
 &lt;/div&gt;
@@ -496,7 +512,11 @@ You want to interview me? Hmm... &lt;i&gt;Local resident interviews news anchor&
 [[Do you know the mayor?|Nina Mayor]]
 
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="Wilma Mayor" tags="" position="1200,500" size="100,100">&lt;div class=&quot;scene&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="Wilma Mayor" tags="" position="1200,500" size="100,100">&lt;&lt;nobr&gt;&gt;
+	&lt;&lt;if $WilmaMotiveDone is &quot;no&quot;&gt;&gt;
+	&lt;&lt;set $WilmaMotiveDone=&quot;yes&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;&lt;div class=&quot;scene&quot;&gt;
 &lt;div class=&quot;scene-image&quot;&gt;
 &lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/wilma.jpg&quot;&gt;
 &lt;/div&gt;
@@ -663,6 +683,7 @@ Wait, what was the question again? I&#39;m so tired.
 
 Oh yeah, mice. &lt;b&gt;Wilma&lt;/b&gt; said something about a mouse problem at the clubhouse where she plays canasta.  And you know that creepy guy &lt;b&gt;Mo&lt;/b&gt; who works at the morgue? He probably eats mice for dinner. 
 
+&lt;&lt;TimeUpdate&gt;&gt;
 &lt;&lt;UptonNav&gt;&gt;
 
 &lt;/div&gt;
@@ -681,6 +702,7 @@ Funny story: I once delievered an order of hot wings to a guy named &lt;i&gt;Hol
 
 Anyway, I saw that weirdo &lt;b&gt;Mo&lt;/b&gt; with a bucket of hot wings. I think he was sacrificing them to the grim reaper or something. And that mysterious lady &lt;b&gt;Sierra&lt;/b&gt;? she mentioned her penchant for hot wings after an long-term undercover sting at a Buffalo speakeasy.
 
+&lt;&lt;TimeUpdate&gt;&gt;
 &lt;&lt;UptonNav&gt;&gt;
 
 &lt;/div&gt;
@@ -699,6 +721,7 @@ So what were we talking about? Cleveland? Oh right, Cincinnati.
 
 I overheard &lt;b&gt;Nina&lt;/b&gt; talking about going to Cincy next week for the Independent Journalist awards. Try asking her.
 
+&lt;&lt;TimeUpdate&gt;&gt;
 &lt;&lt;UptonNav&gt;&gt;
 
 &lt;/div&gt;
@@ -738,6 +761,7 @@ I was running a black bag job at an embassy in Papua New Guinea. When the target
 
 I&#39;ve never quite recovered. Indiana Jones has his snakes, and I have mice. If you doubt my story, the Director of the CIA can &lt;b&gt;vouch for my innocence&lt;/b&gt;. I have him on speed dial, and he can confirm my rodent-phobic state is on file at Langley.
 
+&lt;&lt;TimeUpdate&gt;&gt;
 &lt;&lt;SierraNav&gt;&gt;
 
 &lt;/div&gt;
@@ -754,6 +778,7 @@ If you want to talk hot wings, let&#39;s talk about the President of Mongolia. I
 
 As for the local variety, just two days ago I had that driver &lt;b&gt;Upton&lt;/b&gt; deliver a tactical supply of hot wings. He kept going on about how his love of hot buffalo sauce. I also overheard that creepy civilian &lt;b&gt;Mo&lt;/b&gt; asking about hot wings. I think he wanted to turn the bones into some sort of macabre wind chime.
 
+&lt;&lt;TimeUpdate&gt;&gt;
 &lt;&lt;SierraNav&gt;&gt;
 
 &lt;/div&gt;
@@ -772,6 +797,7 @@ Funny story: I once ran into an agent from Turkmenistan deep in the bowels of th
 
 But if you&#39;re looking for more Cincy stories, last week I watched &lt;b&gt;Nina&lt;/b&gt; do a hard-hitting report about stuffed koalas at the Cincinnati zoo.  &lt;b&gt;Wilma&lt;/b&gt; also said something about mailing a postcard to her cousin in Cincinnati.
 
+&lt;&lt;TimeUpdate&gt;&gt;
 &lt;&lt;SierraNav&gt;&gt;
 
 &lt;/div&gt;
@@ -809,6 +835,7 @@ In science news, researchers are using mice to predict stock market trends. Star
 
 And in related coverage, our cameras spotted that Uber driver &lt;b&gt;Upton&lt;/b&gt; making a stop at the pet store yesterday. He certainly has the capability to obtain a mouse. We also have developing reports on local mortician &lt;b&gt;Mo&lt;/b&gt;, who is always digging in his cemetary. Early indications are that he&#39;s got plenty of mice friends there.
 
+&lt;&lt;TimeUpdate&gt;&gt;
 &lt;&lt;NinaNav&gt;&gt;
 
 &lt;/div&gt;
@@ -825,6 +852,7 @@ This just in: a developing story regarding my allergies to buffalo sauce. I brok
 
 Joining us now via satellite to &lt;b&gt;confirm my innocence&lt;/b&gt; is my primary care physician. Doctor, can you speak to the severity of... What’s that? I&#39;m being told we’re having some trouble with the audio? Okay, we will bring you that &#39;interview as soon as we resolve these technical difficulties. Please stay tuned.
 
+&lt;&lt;TimeUpdate&gt;&gt;
 &lt;&lt;NinaNav&gt;&gt;
 
 &lt;/div&gt;
@@ -841,6 +869,7 @@ We have a cold front coming into the tri-state area, which should bring some sca
 
 In related news, earlier today I spotted that agent &lt;b&gt;Sierra&lt;/b&gt; getting off a flight from Cincinnati.  And earlier this evening, that Walmart receptionist &lt;b&gt;Wilma&lt;/b&gt; pitched me a less-than-riveting story about the quilting scene in Cincinnati.
 
+&lt;&lt;TimeUpdate&gt;&gt;
 &lt;&lt;NinaNav&gt;&gt;
 
 &lt;/div&gt;
@@ -865,7 +894,11 @@ Have a wonderful evening. This is Nina the News Anchor signing off.
 &lt;&lt;/nobr&gt;&gt;
 
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Mo Mayor" tags="" position="1500,500" size="100,100">&lt;div class=&quot;scene&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Mo Mayor" tags="" position="1500,500" size="100,100">&lt;&lt;nobr&gt;&gt;
+	&lt;&lt;if $MoMotiveDone is &quot;no&quot;&gt;&gt;
+	&lt;&lt;set $MoMotiveDone=&quot;yes&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;&lt;div class=&quot;scene&quot;&gt;
 &lt;div class=&quot;scene-image&quot;&gt;
 &lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/mo.jpg&quot;&gt;
 &lt;/div&gt;
@@ -880,7 +913,11 @@ The only bird I worship quoths &quot;Nevermore&quot;.
 &lt;&lt;MoNav&gt;&gt;
 
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Upton Mayor" tags="" position="2100,500" size="100,100">&lt;div class=&quot;scene&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Upton Mayor" tags="" position="2100,500" size="100,100">&lt;&lt;nobr&gt;&gt;
+	&lt;&lt;if $UptonMotiveDone is &quot;no&quot;&gt;&gt;
+	&lt;&lt;set $UptonMotiveDone=&quot;yes&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;&lt;div class=&quot;scene&quot;&gt;
 &lt;div class=&quot;scene-image&quot;&gt;
 &lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/upton.jpg&quot;&gt;
 &lt;/div&gt;
@@ -891,10 +928,15 @@ He wants to extend Grove Street, which would be terrible for my business. I have
 
 But I wouldn&#39;t swipe his phone. I&#39;ve delivered food to his offices many times. I wouldn&#39;t want to risk that business, even if his meager tipping is abysmal.
 
+&lt;&lt;TimeUpdate&gt;&gt;
 &lt;&lt;UptonNav&gt;&gt;
 
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Sierra Mayor" tags="" position="1800,500" size="100,100">&lt;div class=&quot;scene&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Sierra Mayor" tags="" position="1800,500" size="100,100">&lt;&lt;nobr&gt;&gt;
+	&lt;&lt;if $SierraMotiveDone is &quot;no&quot;&gt;&gt;
+	&lt;&lt;set $SierraMotiveDone=&quot;yes&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;&lt;div class=&quot;scene&quot;&gt;
 &lt;div class=&quot;scene-image&quot;&gt;
 &lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/sierra.jpg&quot;&gt;
 &lt;/div&gt;
@@ -905,10 +947,15 @@ I am not a fan of the mayor. That new car he drives was a gift from the Mongolia
 
 As for his phone? Oh, please. If I wanted to hack his phone, I would have intercepted his signal from my untraceable servers on Grove Street. I don&#39;t waste time with that type of smash-and-grab thuggery.
 
+&lt;&lt;TimeUpdate&gt;&gt;
 &lt;&lt;SierraNav&gt;&gt;
 
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="Nina Mayor" tags="" position="2400,500" size="100,100">&lt;div class=&quot;scene&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="Nina Mayor" tags="" position="2400,500" size="100,100">&lt;&lt;nobr&gt;&gt;
+	&lt;&lt;if $NinaMotiveDone is &quot;no&quot;&gt;&gt;
+	&lt;&lt;set $NinaMotiveDone=&quot;yes&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;&lt;div class=&quot;scene&quot;&gt;
 &lt;div class=&quot;scene-image&quot;&gt;
 &lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/nina.jpg&quot;&gt;
 &lt;/div&gt;
@@ -919,6 +966,7 @@ And don&#39;t get me started on the Grove Street extension he is proposing. The 
 
 But I would never steal the mayor&#39;s phone. If I wanted to embarrass him, I&#39;d release the hot mic moment I have of him calling the Pope a &quot;patsy, wannabe boy scout.&quot;
 
+&lt;&lt;TimeUpdate&gt;&gt;
 &lt;&lt;NinaNav&gt;&gt;
 
 &lt;/div&gt;
@@ -986,10 +1034,10 @@ That weary driver &lt;b&gt;Upton&lt;/b&gt; told me of his desire to relocate the
 &lt;&lt;set $theAccused = &quot;&quot;&gt;&gt;
 &lt;&lt;set $TimeUpdate = 10&gt;&gt;
 
-&lt;&lt;set $WilmaMotive = &quot;&lt;hr&gt;&quot;&gt;&gt;
-&lt;&lt;set $WilmaMouse = &quot;&lt;hr&gt;&quot;&gt;&gt;
-&lt;&lt;set $WilmaHotWings = &quot;&lt;hr&gt;&quot;&gt;&gt;
-&lt;&lt;set $WilmaCin = &quot;&lt;hr&gt;&quot;&gt;&gt;
+&lt;&lt;set $WilmaMotive = &quot;&lt;hr&gt;The mayor will pave over Wilma&#39;s golf cart route.&quot;&gt;&gt;
+&lt;&lt;set $WilmaMouse = &quot;&lt;hr&gt;&lt;b&gt;Nina&lt;/b&gt; and &lt;b&gt;Upton&lt;/b&gt; had access to a mouse.&quot;&gt;&gt;
+&lt;&lt;set $WilmaHotWings = &quot;&lt;hr&gt;Wilma does &lt;u&gt;not&lt;/u&gt; eat hot wings.&quot;&gt;&gt;
+&lt;&lt;set $WilmaCin = &quot;&lt;hr&gt;&lt;b&gt;Sierra&lt;/b&gt; and &lt;b&gt;Upton&lt;/b&gt; are familiar with Cincinnati.&quot;&gt;&gt;
 &lt;&lt;set $WilmaMotiveDone = &quot;no&quot;&gt;&gt;
 &lt;&lt;set $WilmaMouseDone = &quot;no&quot;&gt;&gt;
 &lt;&lt;set $WilmaHotWingsDone = &quot;no&quot;&gt;&gt;
@@ -999,10 +1047,10 @@ That weary driver &lt;b&gt;Upton&lt;/b&gt; told me of his desire to relocate the
 &lt;&lt;set $WilmaAccused = &quot;no&quot;&gt;&gt;
 
 
-&lt;&lt;set $MoMotive = &quot;&lt;hr&gt;&quot;&gt;&gt;
-&lt;&lt;set $MoMouse = &quot;&lt;hr&gt;&quot;&gt;&gt;
-&lt;&lt;set $MoHotWings = &quot;&lt;hr&gt;&quot;&gt;&gt;
-&lt;&lt;set $MoCin = &quot;&lt;hr&gt;&quot;&gt;&gt;
+&lt;&lt;set $MoMotive = &quot;&lt;hr&gt;The mayor will pave over Mo&#39;s graveyard.&quot;&gt;&gt;
+&lt;&lt;set $MoMouse = &quot;&lt;hr&gt;&lt;b&gt;Wilma&lt;/b&gt; and &lt;b&gt;Nina&lt;/b&gt; have access to a mouse.&quot;&gt;&gt;
+&lt;&lt;set $MoHotWings = &quot;&lt;hr&gt;&lt;b&gt;Upton&lt;/b&gt; and &lt;b&gt;Sierra&lt;/b&gt; like hot wings.&quot;&gt;&gt;
+&lt;&lt;set $MoCin = &quot;&lt;hr&gt;Mo has &lt;u&gt;not&lt;/u&gt; been to Cincinnati.&lt;br&gt;&lt;br&gt;&lt;b&gt;Upton&lt;/b&gt; is familiar with Cincinnati.&quot;&gt;&gt;
 &lt;&lt;set $MoMotiveDone = &quot;no&quot;&gt;&gt;
 &lt;&lt;set $MoMouseDone = &quot;no&quot;&gt;&gt;
 &lt;&lt;set $MoHotWingsDone = &quot;no&quot;&gt;&gt;
@@ -1012,10 +1060,10 @@ That weary driver &lt;b&gt;Upton&lt;/b&gt; told me of his desire to relocate the
 &lt;&lt;set $MoAccused = &quot;no&quot;&gt;&gt;
 
 
-&lt;&lt;set $SierraMotive = &quot;&lt;hr&gt;&quot;&gt;&gt;
-&lt;&lt;set $SierraMouse = &quot;&lt;hr&gt;&quot;&gt;&gt;
-&lt;&lt;set $SierraHotWings = &quot;&lt;hr&gt;&quot;&gt;&gt;
-&lt;&lt;set $SierraCin = &quot;&lt;hr&gt;&quot;&gt;&gt;
+&lt;&lt;set $SierraMotive = &quot;&lt;hr&gt;The mayor will expose Sierra&#39;s secret office.&quot;&gt;&gt;
+&lt;&lt;set $SierraMouse = &quot;&lt;hr&gt;Sierra does &lt;u&gt;not&lt;/u&gt; have access to a mouse.&quot;&gt;&gt;
+&lt;&lt;set $SierraHotWings = &quot;&lt;hr&gt;&lt;b&gt;Upton&lt;/b&gt; and &lt;b&gt;Mo&lt;/b&gt; like hot wings.&quot;&gt;&gt;
+&lt;&lt;set $SierraCin = &quot;&lt;hr&gt;&lt;b&gt;Nina&lt;/b&gt; and &lt;b&gt;Wilma&lt;/b&gt; are familiar with Cincinnati.&quot;&gt;&gt;
 &lt;&lt;set $SierraMotiveDone = &quot;no&quot;&gt;&gt;
 &lt;&lt;set $SierraMouseDone = &quot;no&quot;&gt;&gt;
 &lt;&lt;set $SierraHotWingsDone = &quot;no&quot;&gt;&gt;
@@ -1025,10 +1073,10 @@ That weary driver &lt;b&gt;Upton&lt;/b&gt; told me of his desire to relocate the
 &lt;&lt;set $SierraAccused = &quot;no&quot;&gt;&gt;
 
 
-&lt;&lt;set $UptonMotive = &quot;&lt;hr&gt;&quot;&gt;&gt;
-&lt;&lt;set $UptonMouse = &quot;&lt;hr&gt;&quot;&gt;&gt;
-&lt;&lt;set $UptonHotWings = &quot;&lt;hr&gt;&quot;&gt;&gt;
-&lt;&lt;set $UptonCin = &quot;&lt;hr&gt;&quot;&gt;&gt;
+&lt;&lt;set $UptonMotive = &quot;&lt;hr&gt;They mayor will take from Upton&#39;s business.&quot;&gt;&gt;
+&lt;&lt;set $UptonMouse = &quot;&lt;hr&gt;&lt;b&gt;Mo&lt;/b&gt; and &lt;b&gt;Wilma&lt;/b&gt; have access to a mouse.&quot;&gt;&gt;
+&lt;&lt;set $UptonHotWings = &quot;&lt;hr&gt;&lt;b&gt;Sierra&lt;/b&gt; and &lt;b&gt;Mo&lt;/b&gt; like hot wings.&quot;&gt;&gt;
+&lt;&lt;set $UptonCin = &quot;&lt;hr&gt;&lt;b&gt;Nina&lt;/b&gt; and &lt;b&gt;Wilma&lt;/b&gt; are familiar with Cincinnati.&quot;&gt;&gt;
 &lt;&lt;set $UptonMotiveDone = &quot;no&quot;&gt;&gt;
 &lt;&lt;set $UptonMouseDone = &quot;no&quot;&gt;&gt;
 &lt;&lt;set $UptonHotWingsDone = &quot;no&quot;&gt;&gt;
@@ -1038,10 +1086,10 @@ That weary driver &lt;b&gt;Upton&lt;/b&gt; told me of his desire to relocate the
 &lt;&lt;set $UptonAccused = &quot;no&quot;&gt;&gt;
 
 
-&lt;&lt;set $NinaMotive = &quot;&lt;hr&gt;&quot;&gt;&gt;
-&lt;&lt;set $NinaMouse = &quot;&lt;hr&gt;&quot;&gt;&gt;
-&lt;&lt;set $NinaHotWings = &quot;&lt;hr&gt;&quot;&gt;&gt;
-&lt;&lt;set $NinaCin = &quot;&lt;hr&gt;&quot;&gt;&gt;
+&lt;&lt;set $NinaMotive = &quot;&lt;hr&gt;The mayor will ruin Nina&#39;s sleep.&quot;&gt;&gt;
+&lt;&lt;set $NinaMouse = &quot;&lt;hr&gt;&lt;b&gt;Upton&lt;/b&gt; and &lt;b&gt;Mo&lt;/b&gt; have access to a mouse.&quot;&gt;&gt;
+&lt;&lt;set $NinaHotWings = &quot;&lt;hr&gt;Nina does &lt;u&gt;not&lt;/u&gt; like hot wings.&quot;&gt;&gt;
+&lt;&lt;set $NinaCin = &quot;&lt;hr&gt;&lt;b&gt;Sierra&lt;/b&gt; and &lt;b&gt;Wilma&lt;/b&gt; are familiar with Cincinnati.&quot;&gt;&gt;
 &lt;&lt;set $NinaMotiveDone = &quot;no&quot;&gt;&gt;
 &lt;&lt;set $NinaMouseDone = &quot;no&quot;&gt;&gt;
 &lt;&lt;set $NinaHotWingsDone = &quot;no&quot;&gt;&gt;
@@ -1067,7 +1115,7 @@ That weary driver &lt;b&gt;Upton&lt;/b&gt; told me of his desire to relocate the
 &lt;/div&gt;
 &lt;div class=&quot;scene-content&quot;&gt;
 &lt;div class=&quot;page-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;&lt;i&gt;Notes&lt;/i&gt;&lt;&lt;/type&gt;&gt;&lt;/div&gt;
-You study your notes as you wait for the lawyers.  There is only one suspect who:
+You &lt;span class=&quot;simple-link&quot;&gt;[[look through your notes|Review Suspect Notes]]&lt;/span&gt; as you wait for the lawyers.  There is only one suspect who:
 
 &lt;ul&gt;
 &lt;li&gt;Had access to a live mouse&lt;/li&gt;
@@ -1078,7 +1126,70 @@ Who could it be?
 
 [[The Lawyers]]
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="PassageFooter" tags="" position="100,500" size="100,100">&lt;hr style=&quot;margin-top: 30px; margin-bottom: 0px; border-top: 1px solid #aaa;&quot;&gt;&lt;div style=&quot;font-size: 12px; margin-top: 5px; text-align: right; width: 100%; color: #aaa&quot;&gt;$storyTitle&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="PassageHeader" tags="" position="100,600" size="100,100">&lt;div style=&quot;font-size: 12px; margin-top: 0px; width: 100%; color: #aaa; display: flex; justify-content: space-between;&quot;&gt;&lt;div&gt;$storyTitle&lt;/div&gt;&lt;div class=&quot;simple-link&quot;&gt;&lt;&lt;if !tags().includes(&quot;noProfilesLink&quot;)&gt;&gt;[[Review Suspect Notes]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;margin-top: 5px; margin-bottom: 0px; border-top: 1px solid #aaa;&quot;&gt;</tw-passagedata><tw-passagedata pid="46" name="Review Suspect Notes" tags="" position="300,800" size="100,100"></tw-passagedata><tw-passagedata pid="47" name="Time Update" tags="widget" position="100,1000" size="100,100">&lt;&lt;widget &quot;TimeUpdate&quot;&gt;&gt;&lt;&lt;nobr&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="PassageFooter" tags="" position="100,500" size="100,100">&lt;hr style=&quot;margin-top: 30px; margin-bottom: 0px; border-top: 1px solid #aaa;&quot;&gt;&lt;div style=&quot;font-size: 12px; margin-top: 5px; text-align: right; width: 100%; color: #aaa&quot;&gt;$storyTitle&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="PassageHeader" tags="" position="100,600" size="100,100">&lt;div style=&quot;font-size: 12px; margin-top: 0px; width: 100%; color: #aaa; display: flex; justify-content: space-between;&quot;&gt;&lt;div&gt;$storyTitle&lt;/div&gt;&lt;div class=&quot;simple-link&quot;&gt;&lt;&lt;if !tags().includes(&quot;noProfilesLink&quot;)&gt;&gt;[[Review Suspect Notes]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;margin-top: 5px; margin-bottom: 0px; border-top: 1px solid #aaa;&quot;&gt;</tw-passagedata><tw-passagedata pid="46" name="Review Suspect Notes" tags="" position="300,800" size="100,100">&lt;div class=&quot;page-title&quot;&gt;Suspect Notes&lt;/div&gt;
+&lt;div class=&quot;suspect-notes&quot;&gt;
+&lt;div&gt;
+&lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/wilma.jpg&quot;&gt;
+
+&lt;b style=&quot;color: #fff;&quot;&gt;Wilma the Politician&lt;/b&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;if $WilmaMotiveDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$WilmaMotive&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $WilmaMouseDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$WilmaMouse&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $WilmaHotWingsDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$WilmaHotWings&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $WilmaCinDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$WilmaCin&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/mo.jpg&quot;&gt;
+
+&lt;b style=&quot;color: #fff;&quot;&gt;Mo the Rocker&lt;/b&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;if $MoMotiveDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$MoMotive&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $MoMouseDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$MoMouse&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $MoHotWingsDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$MoHotWings&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $MoCinDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$MoCin&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/sierra.jpg&quot;&gt;
+
+&lt;b style=&quot;color: #fff;&quot;&gt;Sierra the Activist&lt;/b&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;if $SierraMotiveDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$SierraMotive&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $SierraMouseDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$SierraMouse&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $SierraHotWingsDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$SierraHotWings&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $SierraCinDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$SierraCin&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/upton.jpg&quot;&gt;
+
+&lt;b style=&quot;color: #fff;&quot;&gt;Upton the Fortune Teller&lt;/b&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;if $UptonMotiveDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$UptonMotive&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $UptonMouseDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$UptonMouse&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $UptonHotWingsDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$UptonHotWings&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $UptonCinDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$UptonCin&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/nina.jpg&quot;&gt;
+
+&lt;b style=&quot;color: #fff;&quot;&gt;Nina the Carnie&lt;/b&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;if $NinaMotiveDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$NinaMotive&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $NinaMouseDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$NinaMouse&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $NinaHotWingsDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$NinaHotWings&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $NinaCinDone is &quot;yes&quot;&gt;&gt;&lt;div&gt;$NinaCin&lt;/div&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;text-align: center;&quot;&gt;&lt;&lt;back&gt;&gt;&lt;/div&gt; </tw-passagedata><tw-passagedata pid="47" name="Time Update" tags="widget" position="100,1000" size="100,100">&lt;&lt;widget &quot;TimeUpdate&quot;&gt;&gt;&lt;&lt;nobr&gt;&gt;
 &lt;&lt;set $TimeUpdate += 1&gt;&gt;
 &lt;&lt;set $NewTweet = &quot;NEW TWEET&quot;&gt;&gt;
 &lt;&lt;set $TweetNum = $numberPool[$TimeUpdate]&gt;&gt;
@@ -1127,10 +1238,10 @@ Who could it be?
 &lt;/div&gt;
 &lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="The Lawyers" tags="" position="1800,2000" size="100,100">&lt;div class=&quot;scene&quot;&gt;
 &lt;div class=&quot;scene-image&quot;&gt;
-&lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/karaoke-night.jpg&quot;&gt;
+&lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/lawyer.jpg&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;scene-content&quot;&gt;
-&lt;div class=&quot;page-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;The Lawyers&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;page-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;The Lawyer&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 The lawyer arrives. &quot;The mayor found his phone hidden in your tip jar,&quot; one of them says. &quot;Can you give us any reason not to sue you for $10 million?&quot;
 
 &quot;No problem,&quot; you say confidently.
@@ -1274,7 +1385,7 @@ You look at your notes and realize the lawyer is right. You got this wrong. You 
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;&lt;div class=&quot;scene&quot;&gt;
 &lt;div class=&quot;scene-image&quot;&gt;
-&lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/upton-mic.jpg&quot;&gt;
+&lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/upton-singing.jpg&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;scene-content&quot;&gt;
 &lt;div class=&quot;page-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;&lt;i&gt;Upton did it!&lt;/i&gt;&lt;&lt;/type&gt;&gt;&lt;/div&gt;
@@ -1348,6 +1459,7 @@ Money is tight, and the job market is slim, particularly for a disgraced bartend
 &lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/upton-singing.jpg&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;scene-content&quot;&gt;
+&lt;div class=&quot;page-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;&lt;i&gt;Karaoke Confession&lt;/i&gt;&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 It&#39;s 9 o&#39;clock on a Saturday, 
 the regular crowd shuffles in.
 The mayor&#39;s sitting next to me, 
@@ -1386,11 +1498,12 @@ and a phone prank to make us unite.
 
 [[The encore]]
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="57" name="The End" tags="" position="1500,2900" size="100,100">&lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/story-bow.jpg&quot;&gt;</tw-passagedata><tw-passagedata pid="58" name="The encore" tags="" position="2100,2900" size="100,100">&lt;div class=&quot;scene&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="57" name="The End" tags="" position="1500,2900" size="100,100">&lt;div style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/story-bow.jpg&quot; style=&quot;margin: auto; width: 100%; max-width: 600px;&quot; class=&quot;desktop-only&quot;&gt;&lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/story-bow-square.jpg&quot; style=&quot;margin: auto; width: 100%; max-width: 600px;&quot; class=&quot;mobile-only&quot;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="58" name="The encore" tags="" position="2100,2900" size="100,100">&lt;div class=&quot;scene&quot;&gt;
 &lt;div class=&quot;scene-image&quot;&gt;
 &lt;img src=&quot;https://www.mapsandlines.com/twine/karaoke/mo-trophy.jpg&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;scene-content&quot;&gt;
+&lt;div class=&quot;page-title&quot;&gt;&lt;&lt;type 80ms&gt;&gt;&lt;i&gt;Encore!&lt;/i&gt;&lt;&lt;/type&gt;&gt;&lt;/div&gt;
 The lawyers hand Upton a bunch of paper work and threaten to see him in court. Upton laughs it off, saying something about adding it to his mountain of debt. He leaves the bar before the karaoke winner is announced to finish the last 8 hours of his 36 hour shift.
 
 In a shocking upset that &lt;u&gt;nobody&lt;/u&gt; saw coming, Mo wins the karaoke finals. As an encore, he does a rousing rending of &lt;i&gt;Don&#39;t Fear the Reaper&lt;/i&gt;, with Nina, Sierra, Wilma, and the mayor backing him up.
