@@ -1,0 +1,123 @@
+:root {
+  --bg: #F6F1E8;
+  --accent: #EAF6FD;
+  --hover: #7DBDE7;
+}
+
+
+
+
+body {
+  font-family: "Nunito", sans-serif;
+	font-size: 18px;
+	background-color: var(--bg);
+	border: 0px solid red;
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.2em;
+	height: 100%;
+	color: #545454;
+}
+
+
+
+
+
+
+a {text-decoration: none; color: #1b407d;}
+
+.pagestructure {
+border: 0px solid green;
+margin-top: 30px;
+}
+
+
+
+
+.pagename {
+	font-family: "Special Elite", system-ui;
+text-align: center;
+font-size: 26px;
+display: block;
+line-height: 60px;
+margin-bottom: 30px;
+text-transform: uppercase; 
+color: #888;
+}
+
+.list-numbers li {
+	margin: 8px 0px;
+	padding-left: 5px;
+}
+
+
+.mini-text {font-size: .8em;}
+.footnote {font-size: .8em;  max-width: 800px; margin: auto;}
+
+
+
+
+
+
+
+.list-shell {
+
+  border: 1px solid red;
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: system-ui, sans-serif;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 800px;
+  border: 2px solid #999;
+}
+
+.list-name {
+  width: 100%;
+  text-align: left;
+  padding: 12px 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 0;
+  background: #fff;
+  cursor: pointer;
+}
+
+.list-name:hover {
+  background: var(--hover);
+}
+
+
+
+.list-name:focus-visible {
+  outline: 2px solid #4c9ffe;
+  outline-offset: -2px;
+}
+
+/* We animate the container using a CSS variable for height */
+.list-numbers {
+  overflow: clip; /* or hidden; clip is nicer where supported */
+  height: 0;
+  opacity: 0;
+  transition: height 260ms ease, opacity 200ms ease;
+  will-change: height, opacity;
+background-color: var(--accent);
+  padding: 6px 14px;
+}
+
+/* when open */
+.list-numbers.is-open {
+  height: var(--target-height, auto);
+  opacity: 1;
+}
+
+.list-numbers ol {
+  margin: 0;
+  padding: 20px 40px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .list-numbers {
+    transition: none;
+  }
+}
