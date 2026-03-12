@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html><head>
+<title>Weather Info</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="weatherdata.css">
+<script type="text/javascript" src="weatherdata.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+<div class="pageouter">
+
+<div class="locationbox box-spacing">
+
+<div>Current conditions in <span id="weather-location" class="measurement"></span></div>
+
+<form id="zipform">
+  <label for="zipcode">Zip Code:</label>
+  <input type="text" id="zipcode" name="zipcode" placeholder="Zip Code">
+  <button type="submit" id="FindCityData">Go!</button>
+</form>
+
+</div>
+
+<div class="weatherbox  box-spacing">
+
+	<div class="weatherbox-columns">
+		<div><img class="weather-icon" id="weather-icon"><span id="weather-temperature"></span></div>
+		<div><span id="weather-skies"></span></div>
+
+	</div><div>
+
+		<div>Humidity: <span id="weather-humidity" class="measurement"></span></div>
+		<div>Wind: <span id="weather-wind" class="measurement"></span></div>
+		<div>Visibility: <span id="weather-visibility" class="measurement"></span></div>
+		<div>Sunrise: <span id="weather-sunrise" class="measurement"></span></div>
+		<div>Sunset: <span id="weather-sunset" class="measurement"></span></div>
+		<div>Moon Phase: <span id="weather-moon" class="measurement"></span></div>
+	</div>
+
+</div>
+
+
+<div class="box-spacing">
+	<div>Vampire Activity: <span id="threat-vampire"></span></div>
+	<div>Werewolf Activity: <span id="threat-werewolf"></span></div>
+	<div>Swamp Monster: <span id="threat-swampmonster"></span></div>
+	<div>Alien Invasion: <span id="threat-aliens"></span></div>
+	<div>Mummy Awakening: <span id="threat-mummy"></span></div>
+	<div>Dragon Activity: <span id="threat-dragon"></span></div>
+	<div>Zombie Apocalypse: <span id="threat-zombie"></span></div>
+	<div>Evil Clowns: <span id="threat-clowns"></span></div>
+	<div>Mad Scientist: <span id="threat-scientist"></span></div>
+	<div>Yeti Attack: <span id="threat-scientist"></span></div>
+</div>
+
+
+</div>
+
+
+</body>
