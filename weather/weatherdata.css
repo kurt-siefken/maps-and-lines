@@ -7,9 +7,10 @@
   --text-secondary: #2F3F46;
 
   --threat-low: #2E7D32;
-  --threat-medium: #F9A825;
-  --threat-high: #EF6C00;
-  --threat-severe: #C62828;
+  --threat-medium: #ebd834;
+  --threat-high: #eb7d34;
+  --threat-veryhigh: #eb3434;
+  --threat-severe: #960808;
 }
 
 body {
@@ -24,12 +25,33 @@ body {
 .pageouter {max-width: 800px; margin: 0px auto; background: #fff;}
 .locationbox {display: flex; justify-content: space-between;}
 .weatherbox {background: var(--panel-bg); display: flex; flex-wrap: wrap; gap: 10px 20px; width: 100%; }
-.weatherbox-columns {width: 45%;}
+.weatherbox-columns {width: 60%;}
 .weatherbox-columns > div {margin: auto; text-align: center;}
-.weather-icon {width: 60px;}
+.weather-icon {width: 60px; height: 60px;}
+.weatherbox-two {display: flex; justify-content: center; align-items: center; gap: 20px;}
 
 .box-spacing {padding: 20px; box-sizing: border-box;}
 
 #weather-temperature {font-size: 3em;}
 
 .measurement {font-weight: bold;}
+
+.box-spacing {display: flex; flex-wrap: wrap; gap: 10px;}
+.threat-box {border: 1px solid gray; width: 49%; padding: 10px; box-sizing: border-box;}
+.threat-meter {display: flex; gap: 3px;}
+.threat-meter > div {width: 20%; border: 1px solid black; height: 20px;}
+
+.threat-low {background: var(--threat-low);}
+.threat-moderate {background: var(--threat-medium);}
+.threat-high {background: var(--threat-high);}
+.threat-veryhigh {background: var(--threat-veryhigh);}
+.threat-severe {background: var(--threat-severe);}
+.threat-off {opacity: .2;}
+
+
+
+@media only screen and (max-width: 600px) {
+	.threat-box {width: 100%}
+	.weatherbox-columns {width: 100%; margin: auto; margin-bottom: 20px;}
+}
+
