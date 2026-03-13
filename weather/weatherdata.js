@@ -42,6 +42,7 @@ function onSuccess(position) {
 
 	// getCityFromCoords(loclat, loclon);
 	getWeather(loclat, loclon);
+	document.getElementById("weather-location").innerHTML = "Current conditions in your area"
 
     }
 

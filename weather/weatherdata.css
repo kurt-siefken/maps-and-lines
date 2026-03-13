@@ -1,7 +1,7 @@
 :root {
   --bg-page: #fafafa;
   --panel-bg: #93dbfa;
-  --panel-border: #5F7E8A;
+  --panel-border: darkblue;
 
   --text-primary: #1E2A30;
   --text-secondary: #2F3F46;
@@ -24,8 +24,7 @@ body {
 
 .pageouter {max-width: 800px; margin: 0px auto; background: #fff;}
 .locationbox {display: flex; justify-content: space-between;}
-.weatherbox {background: var(--panel-bg); display: flex; flex-wrap: wrap; gap: 10px 20px; width: 100%; background: #93DBFA;
-background: linear-gradient(319deg,rgba(147, 219, 250, 1) 0%, rgba(147, 219, 250, 1) 44%, rgba(181, 239, 255, 1) 99%);}
+.weatherbox {background: var(--panel-bg); display: flex; flex-wrap: wrap; gap: 10px 20px; width: 100%; background: #93DBFA; border: background: linear-gradient(319deg,rgba(147, 219, 250, 1) 0%, rgba(147, 219, 250, 1) 44%, rgba(181, 239, 255, 1) 99%);}
 .weatherbox-columns {width: 60%;}
 .weatherbox-columns > div {margin: auto; text-align: center;}
 .weather-icon {width: 60px; height: 60px;}
@@ -37,7 +36,7 @@ background: linear-gradient(319deg,rgba(147, 219, 250, 1) 0%, rgba(147, 219, 250
 
 .measurement {font-weight: bold;}
 
-.threat-meters-title {text-align: center; background: #000; color: #fff;}
+.threat-meters-title {text-align: center; background: var(--panel-border); color: #fff;}
 
 .box-spacing {display: flex; flex-wrap: wrap; gap: 10px;}
 .threat-box {border: 1px solid gray; width: 49%; padding: 10px; box-sizing: border-box;}
