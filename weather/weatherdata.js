@@ -249,6 +249,18 @@ const totalweather = {
 	document.getElementById("threat-yeti").innerHTML = yetithreat;
 	document.getElementById("yeti-" + yetithreat.toLowerCase().replaceAll(' ', '')).classList.remove("threat-off");
 
+	// - Salesmen
+	var salesmenthreat = getSalesmenThreat(totalweather);
+	document.getElementById("threat-salesmen").innerHTML = salesmenthreat;
+	document.getElementById("salesmen-" + salesmenthreat.toLowerCase().replaceAll(' ', '')).classList.remove("threat-off");
+
+	// - Angst
+	var angstthreat = getAngstThreat(totalweather);
+	document.getElementById("threat-angst").innerHTML = angstthreat;
+	document.getElementById("angst-" + angstthreat.toLowerCase().replaceAll(' ', '')).classList.remove("threat-off");
+
+
+
 }
 
 
@@ -773,3 +785,90 @@ function getYetiThreat(weather) {
 
   return levels[threat - 1];
 }
+
+
+///////////////////////////////////////////////////////////////
+
+function getSalesmenThreat(weather) {
+
+let threat = 1;
+
+  // --- Daytime required ---
+  if (weather.isDay === 1) threat += 2;
+  else threat -= 1;
+
+  // --- Temperature (°F) ---
+  if (weather.temp >= 55 && weather.temp <= 80) threat += 2;
+  else if (weather.temp >= 45 && weather.temp <= 90) threat += 1;
+  else threat -= 1;
+
+  // --- Clear sky bonus ---
+  const clearCodes = [0, 1, 2];
+  if (clearCodes.includes(weather.weatherCode)) threat += 1;
+
+  // --- Precipitation penalty ---
+  const wetCodes = [
+    51,53,55,56,57,61,63,65,66,67,80,81,82
+  ];
+  if (wetCodes.includes(weather.weatherCode)) threat -= 2;
+
+  // --- Wind penalty ---
+  if (weather.windSpeed > 20) threat -= 1;
+
+  // Clamp
+  threat = Math.max(1, Math.min(5, threat));
+
+  const levels = ["LOW", "MODERATE", "HIGH", "VERY HIGH", "SEVERE"];
+
+  return levels[threat - 1];
+
+
+}
+
+
+
+
+
+///////////////////////////////////////////////////////////////
+
+function getAngstThreat(weather) {
+
+  let threat = 1;
+
+  // --- Night bonus ---
+  if (weather.isDay === 0) threat += 2;
+
+  // --- Overcast / gloomy skies ---
+  const gloomyCodes = [2, 3]; // partly cloudy, overcast
+  if (gloomyCodes.includes(weather.weatherCode)) threat += 2;
+
+  // --- Light rain / drizzle ---
+  const drizzleCodes = [51, 53, 55, 61];
+  if (drizzleCodes.includes(weather.weatherCode)) threat += 1;
+
+  // --- Humidity (heavy air effect) ---
+  if (weather.humidity >= 70) threat += 2;
+  else if (weather.humidity >= 55) threat += 1;
+
+  // --- Mild temperatures (°F) ---
+  if (weather.temp >= 55 && weather.temp <= 75) threat += 1;
+
+  // --- Calm air ---
+  if (weather.windSpeed < 5) threat += 1;
+
+  // --- Bright clear day reduces angst ---
+  if (weather.isDay === 1 && weather.weatherCode === 0) threat -= 2;
+
+  // Clamp
+  threat = Math.max(1, Math.min(5, threat));
+
+  const levels = ["MODERATE", "MODERATE", "HIGH", "VERY HIGH", "SEVERE"];
+
+  return levels[threat - 1];
+
+}
+
+
+
+
+

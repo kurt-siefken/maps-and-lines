@@ -36,6 +36,8 @@ body {
 
 .measurement {font-weight: bold;}
 
+.threat-meters-title {text-align: center; background: #000; color: #fff;}
+
 .box-spacing {display: flex; flex-wrap: wrap; gap: 10px;}
 .threat-box {border: 1px solid gray; width: 49%; padding: 10px; box-sizing: border-box;}
 .threat-meter {display: flex; gap: 3px;}
