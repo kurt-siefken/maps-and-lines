@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Which Happened First?</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="events.js" defer></script>
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main class="game">
+    <h1>Which Happened First?</h1>
+    <div class="stats">
+      <div class="stat"><strong id="score">0</strong><span>Correct</span></div>
+      <div class="stat"><strong id="streak">0</strong><span>Current Streak</span></div>
+      <div class="stat"><strong id="best">0</strong><span>Best Streak</span></div>
+    </div>
+    <p class="prompt">WHICH HAPPENED FIRST?</p>
+    <div class="cards">
+      <button type="button" class="event" id="event0"></button>
+      <button type="button" class="event" id="event1"></button>
+    </div>
+    <div id="feedback" aria-live="polite"></div>
+    <button type="button" id="next" hidden>Next Question →</button>
+  </main>
+</body>
+</html>
