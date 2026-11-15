@@ -6,6 +6,7 @@ const usedPairs = new Set();
 let score = 0;
 let streak = 0;
 let best = 0;
+let totalGuesses = 0;
 let currentPair = null;
 let answered = false;
 
@@ -70,6 +71,7 @@ function newQuestion() {
 function makeGuess(index) {
   if (answered || !currentPair) return;
   answered = true;
+  totalGuesses++;
   const correctIndex = currentPair[0].year < currentPair[1].year ? 0 : 1;
   const correct = index === correctIndex;
 
@@ -91,6 +93,7 @@ function makeGuess(index) {
   document.getElementById("score").textContent = score;
   document.getElementById("streak").textContent = streak;
   document.getElementById("best").textContent = best;
+  document.getElementById("percent").textContent =  Math.round((score / totalGuesses) * 100) + "%";
 
   const first = currentPair[correctIndex];
   const second = currentPair[1 - correctIndex];

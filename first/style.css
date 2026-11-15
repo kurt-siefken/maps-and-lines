@@ -13,7 +13,7 @@ body {
 h1 { font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 8px; }
 .subtitle { color: #9ca9bd; }
 .stats { display: flex; justify-content: center; gap: 45px; margin: 35px 0; }
-.stat strong { display: block; font-size: 2rem; color: #fbbf24; }
+.stat strong { display: block; font-size: 1.5rem; color: #fbbf24; }
 .stat span { color: #9ca9bd; font-size: .85rem; }
 .prompt { color: #fbbf24; font-weight: 700; letter-spacing: .12em; }
 .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
@@ -47,10 +47,11 @@ h1 { font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 8px; }
 #next[hidden] { display: none; }
 @media (max-width: 500px) {
   .cards { grid-template-columns: 1fr; }
-  .event { min-height: 145px; }
+  .event { min-height: 145px; padding: 14px;}
   .stats { gap: 22px; margin: 20px 0;}
   body {  min-height: auto;}
   .event .description { font-size: 1.2rem; font-weight: 650; line-height: 1.4rem; }
   h1 { font-size: clamp(1.6rem, 6vw, 3rem); margin-bottom: 8px; margin-top: 10px;}
   .prompt { font-size: .8em; }
+  #feedback { min-height: 40px;}
 }

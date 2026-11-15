@@ -269,7 +269,7 @@ const events = [
 { text: "Emilio Palma becomes the first person born on the Antarctic continent", year: 1978, category: "Pop Culture & Weird News" },
 { text: "Fifteen athletes compete in Hawaii's first Ironman Triathlon, combining swimming, cycling, and running", year: 1978, category: "Sports" },
 { text: "The term glass ceiling begins appearing as a metaphor for invisible barriers to women's professional advancement", year: 1978, category: "History & Politics" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 13 cents to 15 cents", year: 1978, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 13 cents to 15 cents", year: 1978, category: "Pop Culture & Weird News" },
 { text: "The Star Wars Holiday Special airs on television, featuring Chewbacca's family and a bizarre musical appearance by Bea Arthur", year: 1978, category: "Movies & Television" },
 
 
@@ -379,8 +379,8 @@ const events = [
 { text: "Rubik's Cube becomes an international toy craze, frustrating puzzle solvers around the world", year: 1981, category: "Pop Culture & Weird News" },
 { text: "Simon & Garfunkel reunite for a free Central Park concert attended by an estimated 500,000 people", year: 1981, category: "Pop Culture & Weird News" },
 { text: "Muhammad Ali loses to Trevor Berbick in the final professional fight of his career", year: 1981, category: "Sports" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 15 cents to 18 cents", year: 1981, category: "Pop Culture & Weird News" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp for the second time in a year, from 18 cents to 20 cents", year: 1981, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 15 cents to 18 cents", year: 1981, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp for the second time in a year, from 18 cents to 20 cents", year: 1981, category: "Pop Culture & Weird News" },
 
 
 
@@ -538,7 +538,7 @@ const events = [
 { text: "California Pizza Kitchen opens its first restaurant in Beverly Hills, popularizing gourmet-style pizzas", year: 1985, category: "Pop Culture & Weird News" },
 { text: "Chick-fil-A introduces its signature waffle potato fries", year: 1985, category: "Pop Culture & Weird News" },
 { text: "The first Cinnabon bakery opens at SeaTac Mall near Seattle, Washington", year: 1985, category: "Pop Culture & Weird News" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 20 cents to 22 cents", year: 1985, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 20 cents to 22 cents", year: 1985, category: "Pop Culture & Weird News" },
 
 
 
@@ -635,7 +635,7 @@ const events = [
 { text: "E.T. the Extra-Terrestrial sells more than 15 million VHS copies in its home video debut", year: 1988, category: "Pop Culture & Weird News" },
 { text: "Kirk Gibson hits a pinch-hit, walk-off home run in Game 1 of the World Series despite two injured legs", year: 1988, category: "Sports" },
 { text: "Florence Griffith Joyner sets world records in the 100 and 200 meters", year: 1988, category: "Sports" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 22 cents to 25 cents", year: 1988, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 22 cents to 25 cents", year: 1988, category: "Pop Culture & Weird News" },
 
 
 
@@ -737,7 +737,7 @@ const events = [
 { text: "The United States wins the first FIFA Women's World Cup, defeating Norway 2-1", year: 1991, category: "Sports" },
 { text: "Serial killer Jeffrey Dahmer is arrested", year: 1991, category: "Pop Culture & Weird News" },
 { text: "The term grunge becomes associated with the Seattle alternative rock scene", year: 1991, category: "Music" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 25 cents to 29 cents", year: 1991, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 25 cents to 29 cents", year: 1991, category: "Pop Culture & Weird News" },
 { text: "The Super Soaker water gun becomes a summer toy obsession, triggering neighborhood water battles across America", year: 1991, category: "Pop Culture & Weird News" },
 
 
@@ -812,7 +812,7 @@ const events = [
 { text: "The Montreal Canadiens win their 24th Stanley Cup, defeating the Los Angeles Kings", year: 1993, category: "Sports" },
 { text: "The Eiffel Tower receives its 150 millionth visitor", year: 1993, category: "Pop Culture & Weird News" },
 { text: "Michael Jordan retires from basketball to play minor league baseball", year: 1993, category: "Sports" },
-{ text: "The term information superhighway gains widespread political attention during the Clinton administration", year: 1993, category: "Tech & Internet" },
+{ text: "The term information superhighway gains widespread political attention", year: 1993, category: "Tech & Internet" },
 { text: "The term spam becomes widely associated with unsolicited mass messages on the internet", year: 1993, category: "Tech & Internet" },
 { text: "Chipotle Mexican Grill opens its first restaurant in Denver, Colorado", year: 1993, category: "Pop Culture & Weird News" },
 { text: "The first McCafé opens in Melbourne, Australia", year: 1993, category: "Pop Culture & Weird News" },
@@ -894,7 +894,7 @@ const events = [
 { text: "Cal Ripken Jr. plays his 2,131st consecutive baseball game, breaking Lou Gehrig's record", year: 1995, category: "Sports" },
 { text: "Michael Jordan returns to the NBA after playing minor league baseball", year: 1995, category: "Sports" },
 { text: "The phrase go postal gains national attention as slang for becoming violently angry or unstable", year: 1995, category: "Pop Culture & Weird News" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 29 cents to 32 cents", year: 1995, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 29 cents to 32 cents", year: 1995, category: "Pop Culture & Weird News" },
 
 
 
@@ -919,7 +919,7 @@ const events = [
 { text: "Dolly the sheep is born in Scotland, becoming the first mammal cloned from an adult cell", year: 1996, category: "Science & Discovery" },
 { text: "NASA announces possible evidence of ancient Martian life in a meteorite found in Antarctica", year: 1996, category: "Science & Discovery" },
 { text: "Tickle Me Elmo becomes a holiday shopping sensation, with stores struggling to meet demand", year: 1996, category: "Pop Culture & Weird News" },
-{ text: "Bandai launches Tamagotchi, introducing a virtual pet that needs regular feeding and care", year: 1996, category: "Pop Culture & Weird News" },
+{ text: "Tamagotchi gain popularity, a virtual pet that needs regular feeding and care", year: 1996, category: "Pop Culture & Weird News" },
 { text: "Taco Bell announces it has purchased the Liberty Bell in an elaborate April Fools' Day prank", year: 1996, category: "Pop Culture & Weird News" },
 { text: "Oprah Winfrey launches her television book club", year: 1996, category: "Pop Culture & Weird News" },
 { text: "McDonald's introduces the Arch Deluxe, an upscale hamburger marketed toward adults", year: 1996, category: "Pop Culture & Weird News" },
@@ -1040,7 +1040,7 @@ const events = [
 { text: "The term Y2K becomes a cultural obsession as the world prepares for possible computer failures", year: 1999, category: "Tech & Internet" },
 { text: "The phrase reality TV gains new cultural importance following the success of shows such as Big Brother", year: 1999, category: "Movies & Television" },
 { text: "The Blair Witch Project inspires a Burger King promotional campaign featuring the Blair Witch Whopper", year: 1999, category: "Movies & Television" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 32 cents to 33 cents", year: 1999, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 32 cents to 33 cents", year: 1999, category: "Pop Culture & Weird News" },
 { text: "The Blair Witch Project becomes a surprise blockbuster thanks in part to an internet marketing campaign suggesting the footage might be real", year: 1999, category: "Movies & Television" },
 { text: "Americans stockpile supplies and brace for computer failures as fears about the Y2K bug reach their peak", year: 1999, category: "Tech & Internet" },
 
@@ -1122,7 +1122,7 @@ const events = [
 { text: "Michael Jordan returns to the NBA at age 38, joining the Washington Wizards", year: 2001, category: "Sports" },
 { text: "The abbreviation 9/11 becomes a permanent part of American political and cultural vocabulary", year: 2001, category: "History & Politics" },
 { text: "Shake Shack begins as a hot dog cart in New York City's Madison Square Park", year: 2001, category: "Pop Culture & Weird News" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 33 cents to 34 cents", year: 2001, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 33 cents to 34 cents", year: 2001, category: "Pop Culture & Weird News" },
 
 
 
@@ -1158,7 +1158,7 @@ const events = [
 { text: "The Oakland Athletics win 20 consecutive baseball games, setting an American League record", year: 2002, category: "Sports" },
 { text: "The word selfie appears in an Australian online forum to describe a self-taken photograph", year: 2002, category: "Pop Culture & Weird News" },
 { text: "McDonald's launches its Dollar Menu nationwide, offering popular items for one dollar", year: 2002, category: "Pop Culture & Weird News" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 34 cents to 37 cents", year: 2002, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 34 cents to 37 cents", year: 2002, category: "Pop Culture & Weird News" },
 
 
 
@@ -1323,7 +1323,7 @@ const events = [
 { text: "The term crowdsourcing is coined by Jeff Howe to describe outsourcing tasks to large groups of people", year: 2006, category: "Tech & Internet" },
 { text: "Wendy's introduces the vanilla Frosty, expanding the dessert beyond its original chocolate flavor", year: 2006, category: "Pop Culture & Weird News" },
 { text: "Chipotle goes public on the New York Stock Exchange, drawing major investor attention to the fast-casual restaurant industry", year: 2006, category: "Pop Culture & Weird News" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 37 cents to 39 cents", year: 2006, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 37 cents to 39 cents", year: 2006, category: "Pop Culture & Weird News" },
 { text: "The Snakes on a Plane movie becomes an internet-fueled pop culture phenomenon before its theatrical release", year: 2006, category: "Movies & Television" },
 { text: "The television show Deal or No Deal becomes a national obsession with its numbered briefcases and mysterious banker", year: 2006, category: "Movies & Television" },
 
@@ -1358,7 +1358,7 @@ const events = [
 { text: "Barry Bonds hits his 756th career home run, breaking Hank Aaron's Major League Baseball record", year: 2007, category: "Sports" },
 { text: "The hashtag convention is proposed by Chris Messina as a way to organize conversations on Twitter", year: 2007, category: "Tech & Internet" },
 { text: "Domino's launches online and mobile pizza ordering", year: 2007, category: "Tech & Internet" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 39 cents to 41 cents", year: 2007, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 39 cents to 41 cents", year: 2007, category: "Pop Culture & Weird News" },
 { text: "The U.S. Postal Service introduces the Forever stamp, which remains valid for mailing a one-ounce letter regardless of future price increases", year: 2007, category: "Pop Culture & Weird News" },
 { text: "A dramatic viral video shows a fan crying and demanding that the media leave Britney Spears alone", year: 2007, category: "Pop Culture & Weird News" },
 { text: "Rickrolling becomes an internet prank in which unsuspecting users are redirected to Rick Astley's Never Gonna Give You Up", year: 2007, category: "Tech & Internet" },
@@ -1400,7 +1400,7 @@ const events = [
 { text: "The name Bitcoin is introduced in a white paper describing a decentralized digital currency", year: 2008, category: "Tech & Internet" },
 { text: "Subway launches its nationally famous $5 Footlong promotion", year: 2008, category: "Pop Culture & Weird News" },
 { text: "Domino's introduces Pizza Tracker, allowing customers to follow their order's progress online", year: 2008, category: "Tech & Internet" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 41 cents to 42 cents", year: 2008, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 41 cents to 42 cents", year: 2008, category: "Pop Culture & Weird News" },
 
 
 
@@ -1439,7 +1439,7 @@ const events = [
 { text: "Tareq and Michaele Salah, a socialite couple, breach security and con their way into the White House state dinner", year: 2009, category: "History & Politics" },
 { text: "The term unfriend gains mainstream attention as removing social media connections becomes commonplace", year: 2009, category: "Tech & Internet" },
 { text: "The term influencer becomes increasingly associated with individuals shaping consumer behavior through online audiences", year: 2009, category: "Pop Culture & Weird News" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 42 cents to 44 cents", year: 2009, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 42 cents to 44 cents", year: 2009, category: "Pop Culture & Weird News" },
 
 
 
@@ -1528,7 +1528,7 @@ const events = [
 { text: "The term Brexit is coined to describe the possibility of Britain leaving the European Union", year: 2012, category: "History & Politics" },
 { text: "Taco Bell introduces Doritos Locos Tacos, featuring a taco shell made from Doritos-flavored tortilla chips", year: 2012, category: "Pop Culture & Weird News" },
 { text: "Taco Bell airlifts 10,000 Doritos Locos Tacos to residents of Bethel, Alaska, after a local publicity hoax", year: 2012, category: "Pop Culture & Weird News" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 44 cents to 45 cents", year: 2012, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 44 cents to 45 cents", year: 2012, category: "Pop Culture & Weird News" },
 
 
 
@@ -1553,7 +1553,7 @@ const events = [
 { text: "Dennis Rodman visits North Korea and develops an unlikely friendship with Kim Jong Un", year: 2013, category: "Pop Culture & Weird News" },
 { text: "Sharknado premieres on Syfy, featuring tornadoes that carry sharks into Los Angeles", year: 2013, category: "Pop Culture & Weird News" },
 { text: "A giant inflatable rubber duck by artist Florentijn Hofman draws crowds in Hong Kong's Victoria Harbour", year: 2013, category: "Pop Culture & Weird News" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 45 cents to 46 cents", year: 2013, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 45 cents to 46 cents", year: 2013, category: "Pop Culture & Weird News" },
 
 
 
@@ -1578,7 +1578,7 @@ const events = [
 { text: "LeBron James returns to the Cleveland Cavaliers after four seasons with the Miami Heat", year: 2014, category: "Sports" },
 { text: "Russia hosts the Winter Olympics in Sochi, featuring a record 98 medal events", year: 2014, category: "Sports" },
 { text: "Taco Bell launches mobile ordering and payment through its smartphone app", year: 2014, category: "Tech & Internet" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 46 cents to 49 cents", year: 2014, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 46 cents to 49 cents", year: 2014, category: "Pop Culture & Weird News" },
 
 
 
@@ -1639,7 +1639,7 @@ const events = [
 { text: "The phrase fake news becomes a major political catchphrase during the U.S. presidential election", year: 2016, category: "History & Politics" },
 { text: "The term post-truth is selected as Oxford's Word of the Year amid growing concern about political misinformation", year: 2016, category: "History & Politics" },
 { text: "Chipotle temporarily closes all its U.S. restaurants for a nationwide food safety meeting following outbreaks of foodborne illness", year: 2016, category: "Pop Culture & Weird News" },
-{ text: "In a rare price decrease, the U.S. Postal Service lowers the price of a First-Class stamp from 49 cents to 47 cents", year: 2016, category: "Pop Culture & Weird News" },
+{ text: "In a rare price decrease, the U.S. Postal Service lowers the price of a first class stamp from 49 cents to 47 cents", year: 2016, category: "Pop Culture & Weird News" },
 { text: "Reports of creepy clown sightings spread across the United States, sparking fear, copycat incidents, and widespread media coverage", year: 2016, category: "Pop Culture & Weird News" },
 
 
@@ -1665,7 +1665,7 @@ const events = [
 { text: "Fidget spinners become a worldwide toy craze, selling millions of units", year: 2017, category: "Pop Culture & Weird News" },
 { text: "The term deepfake emerges online to describe highly realistic AI-manipulated images and videos", year: 2017, category: "Tech & Internet" },
 { text: "Taco Bell begins offering wedding ceremonies at its Las Vegas Cantina restaurant", year: 2017, category: "Pop Culture & Weird News" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 47 cents back to 49 cents", year: 2017, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 47 cents back to 49 cents", year: 2017, category: "Pop Culture & Weird News" },
 { text: "A man interrupts a live BBC interview when his young children enter the room behind him, creating a viral television moment", year: 2017, category: "Movies & Television" },
 
 
@@ -1697,7 +1697,7 @@ const events = [
 { text: "An early documented use of the word doomscrolling describes compulsively scrolling through distressing online content", year: 2018, category: "Tech & Internet" },
 { text: "The phrase cancel culture gains prominence in conversations about public accountability and online backlash", year: 2018, category: "Pop Culture & Weird News" },
 { text: "The phrase climate anxiety becomes increasingly visible as concern about global warming grows", year: 2018, category: "Science & Discovery" },
-{ text: "The price of a U.S. First-Class postage stamp reaches 50 cents for the first time", year: 2018, category: "Pop Culture & Weird News" },
+{ text: "The price of a U.S. first class postage stamp reaches 50 cents for the first time", year: 2018, category: "Pop Culture & Weird News" },
 
 
 
@@ -1721,7 +1721,7 @@ const events = [
 { text: "The term situationship gains popularity for romantic relationships without clearly defined expectations", year: 2019, category: "Pop Culture & Weird News" },
 { text: "Popeyes launches its chicken sandwich, sparking a viral fast-food rivalry and nationwide shortages", year: 2019, category: "Pop Culture & Weird News" },
 { text: "Burger King rolls out the plant-based Impossible Whopper across the United States", year: 2019, category: "Science & Discovery" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 50 cents to 55 cents", year: 2019, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 50 cents to 55 cents", year: 2019, category: "Pop Culture & Weird News" },
 
 
 
@@ -1777,7 +1777,7 @@ const events = [
 { text: "The postponed Tokyo Olympics take place without spectators at most venues because of COVID-19 restrictions", year: 2021, category: "Sports" },
 { text: "Simone Biles withdraws from several Olympic gymnastics events before returning to win bronze on balance beam", year: 2021, category: "Sports" },
 { text: "The abbreviation NFT becomes a mainstream buzzword during the digital collectibles boom", year: 2021, category: "Tech & Internet" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 55 cents to 58 cents", year: 2021, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 55 cents to 58 cents", year: 2021, category: "Pop Culture & Weird News" },
 { text: "A lawyer accidentally appears as a talking cat during a Zoom court hearing and reassures the judge that he is not a cat", year: 2021, category: "Tech & Internet" },
 
 
@@ -1807,7 +1807,7 @@ const events = [
 { text: "The term enshittification is coined by Cory Doctorow to describe the decline of online platforms as they prioritize extracting value", year: 2022, category: "Tech & Internet" },
 { text: "McDonald's introduces adult Happy Meals featuring collectible toys through a collaboration with Cactus Plant Flea Market", year: 2022, category: "Pop Culture & Weird News" },
 { text: "Chipotle opens its 3,000th restaurant in Phoenix, Arizona", year: 2022, category: "Pop Culture & Weird News" },
-{ text: "The price of a U.S. First-Class postage stamp reaches 60 cents for the first time", year: 2022, category: "Pop Culture & Weird News" },
+{ text: "The price of a U.S. first class postage stamp reaches 60 cents for the first time", year: 2022, category: "Pop Culture & Weird News" },
 
 
 
@@ -1832,8 +1832,8 @@ const events = [
 { text: "Shohei Ohtani signs a record 10-year, $700 million contract with the Los Angeles Dodgers", year: 2023, category: "Sports" },
 { text: "The Grimace Shake becomes a viral social media phenomenon as users post bizarre, mock-horror videos featuring the purple McDonald's mascot", year: 2023, category: "Pop Culture & Weird News" },
 { text: "McDonald's launches CosMc's, a beverage-focused spinoff restaurant concept, with its first location in Illinois", year: 2023, category: "Pop Culture & Weird News" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 60 cents to 63 cents", year: 2023, category: "Pop Culture & Weird News" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp for the second time in a year, from 63 cents to 66 cents", year: 2023, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 60 cents to 63 cents", year: 2023, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp for the second time in a year, from 63 cents to 66 cents", year: 2023, category: "Pop Culture & Weird News" },
 { text: "A Chinese high-altitude balloon crossing the United States becomes a national spectacle before being shot down off the coast of South Carolina", year: 2023, category: "History & Politics" },
 
 
@@ -1858,8 +1858,8 @@ const events = [
 { text: "The phrase brat summer becomes a cultural phenomenon following the release of Charli XCX's album Brat", year: 2024, category: "Music" },
 { text: "The phrase rage bait gains renewed prominence for online content deliberately designed to provoke anger", year: 2024, category: "Tech & Internet" },
 { text: "McDonald's introduces the Collector's Meal featuring nostalgic collectible cups inspired by past promotions", year: 2024, category: "Pop Culture & Weird News" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 66 cents to 68 cents", year: 2024, category: "Pop Culture & Weird News" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 68 cents to 73 cents", year: 2024, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 66 cents to 68 cents", year: 2024, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 68 cents to 73 cents", year: 2024, category: "Pop Culture & Weird News" },
 
 
 
@@ -1878,7 +1878,7 @@ const events = [
 { text: "The phrase 6-7 becomes a viral meme and earns Dictionary.com's Word of the Year designation", year: 2025, category: "Pop Culture & Weird News" },
 { text: "The term vibe coding is coined by Andrej Karpathy to describe developing software by directing AI through natural-language prompts", year: 2025, category: "Tech & Internet" },
 { text: "The term slop is selected as the American Dialect Society's Word of the Year for 2025, reflecting concern about low-quality AI-generated content", year: 2025, category: "Tech & Internet" },
-{ text: "The U.S. Postal Service raises the price of a First-Class stamp from 73 cents to 78 cents", year: 2025, category: "Pop Culture & Weird News" },
+{ text: "The U.S. Postal Service raises the price of a first class stamp from 73 cents to 78 cents", year: 2025, category: "Pop Culture & Weird News" },
 
   
 
