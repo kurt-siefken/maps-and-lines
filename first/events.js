@@ -204,6 +204,7 @@ const events = [
 { text: "The New York City Marathon expands to a course through all five boroughs for the first time", year: 1976, category: "Sports" },
 { text: "The term couch potato is coined to describe someone who spends excessive time watching television", year: 1976, category: "Pop Culture & Weird News" },
 { text: "Windows on the World restaurant opens atop the World Trade Center in New York City", year: 1976, category: "Pop Culture & Weird News" },
+{ text: "Price Club opens its first warehouse store in a converted airplane hangar in San Diego, helping launch the membership warehouse shopping concept", year: 1976, category: "Pop Culture & Weird News" },
 
 
 
@@ -304,6 +305,7 @@ const events = [
 { text: "ESPN launches with SportsCenter, introducing a television network devoted to sports coverage", year: 1979, category: "Sports" },
 { text: "Wendy's introduces salad bars at its restaurants", year: 1979, category: "Pop Culture & Weird News" },
 { text: "Americans line up to buy gasoline amid shortages, with some states rationing gas by license plate numbers", year: 1979, category: "History & Politics" },
+{ text: "The first two Home Depot stores open in Atlanta, introducing massive warehouse-style home improvement shopping", year: 1979, category: "Pop Culture & Weird News" },
 
 
 
@@ -344,6 +346,9 @@ const events = [
 { text: "Applebee's opens its first restaurant in Atlanta, Georgia, originally named T.J. Applebee's Rx for Edibles & Elixirs", year: 1980, category: "Pop Culture & Weird News" },
 { text: "Star Wars Christmas Album is released, featuring the song 'R2-D2 We Wish You a Merry Christmas' with a young Jon Bon Jovi", year: 1980, category: "Pop Culture & Weird News" },
 { text: "The television series Dallas reveals who shot J.R. Ewing after months of nationwide speculation", year: 1980, category: "Movies & Television" },
+{ text: "Walmart reaches $1 billion in annual sales, becoming one of the fastest-growing retailers in American history", year: 1980, category: "Pop Culture & Weird News" },
+
+
 
 
 
@@ -436,7 +441,6 @@ const events = [
 { text: "He-Man and the Masters of the Universe premieres as an animated television series", year: 1983, category: "Movies & Television" },
 { text: "Reading Rainbow premieres on PBS with LeVar Burton encouraging children to read", year: 1983, category: "Movies & Television" },
 { text: "President Ronald Reagan announces the Strategic Defense Initiative, nicknamed Star Wars", year: 1983, category: "History & Politics" },
-{ text: "The United States invades Grenada following a violent political crisis", year: 1983, category: "History & Politics" },
 { text: "President Reagan signs legislation establishing Martin Luther King Jr. Day as a federal holiday", year: 1983, category: "History & Politics" },
 { text: "A bombing at the U.S. Embassy in Beirut kills 63 people", year: 1983, category: "History & Politics" },
 { text: "Microsoft releases the first version of Word", year: 1983, category: "Tech & Internet" },
@@ -455,6 +459,8 @@ const events = [
 { text: "Domino's Pizza opens its first international restaurant in Winnipeg, Canada", year: 1983, category: "Pop Culture & Weird News" },
 { text: "Atari buries truckloads of unsold video game cartridges in a New Mexico landfill following the video game market crash", year: 1983, category: "Tech & Internet" },
 { text: "Parents fight over scarce Cabbage Patch Kids dolls as a holiday shopping frenzy sweeps the country", year: 1983, category: "Pop Culture & Weird News" },
+{ text: "The first Sam's Club opens in Midwest City, Oklahoma, offering warehouse-style discount shopping to members", year: 1983, category: "Pop Culture & Weird News" },
+{ text: "The first Costco warehouse opens in Seattle, Washington, offering bulk merchandise at discounted prices", year: 1983, category: "Pop Culture & Weird News" },
 
 
 
@@ -539,6 +545,7 @@ const events = [
 { text: "Chick-fil-A introduces its signature waffle potato fries", year: 1985, category: "Pop Culture & Weird News" },
 { text: "The first Cinnabon bakery opens at SeaTac Mall near Seattle, Washington", year: 1985, category: "Pop Culture & Weird News" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 20 cents to 22 cents", year: 1985, category: "Pop Culture & Weird News" },
+{ text: "The first Blockbuster Video store opens in Dallas, Texas, offering thousands of VHS tapes for rent", year: 1985, category: "Pop Culture & Weird News" },
 
 
 
@@ -636,6 +643,7 @@ const events = [
 { text: "Kirk Gibson hits a pinch-hit, walk-off home run in Game 1 of the World Series despite two injured legs", year: 1988, category: "Sports" },
 { text: "Florence Griffith Joyner sets world records in the 100 and 200 meters", year: 1988, category: "Sports" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 22 cents to 25 cents", year: 1988, category: "Pop Culture & Weird News" },
+{ text: "Walmart opens its first Supercenter in Washington, Missouri, combining a discount department store with a full supermarket", year: 1988, category: "Pop Culture & Weird News" },
 
 
 
@@ -704,6 +712,9 @@ const events = [
 { text: "Roseanne Barr screeches the national anthem and grabs her crotch at a Padres game", year: 1990, category: "Pop Culture & Weird News" },
 { text: "The first McDonald's restaurant opens in Moscow, serving more than 30,000 customers on opening day", year: 1990, category: "History & Politics" },
 { text: "Taco Bell launches its 59-cent, 79-cent, and 99-cent value menu strategy", year: 1990, category: "Pop Culture & Weird News" },
+{ text: "Walmart overtakes its competitors to become the largest retailer in the United States", year: 1990, category: "Pop Culture & Weird News" },
+
+
 
 
 
@@ -739,6 +750,8 @@ const events = [
 { text: "The term grunge becomes associated with the Seattle alternative rock scene", year: 1991, category: "Music" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 25 cents to 29 cents", year: 1991, category: "Pop Culture & Weird News" },
 { text: "The Super Soaker water gun becomes a summer toy obsession, triggering neighborhood water battles across America", year: 1991, category: "Pop Culture & Weird News" },
+{ text: "Walmart begins its international expansion by opening a Sam's Club in Mexico City", year: 1991, category: "Pop Culture & Weird News" },
+
 
 
 
@@ -818,6 +831,8 @@ const events = [
 { text: "The first McCafé opens in Melbourne, Australia", year: 1993, category: "Pop Culture & Weird News" },
 { text: "Domino's discontinues its famous 30-minute pizza delivery guarantee in the United States amid safety concerns", year: 1993, category: "Pop Culture & Weird News" },
 { text: "The movie Free Willy inspires public fascination with orcas and campaigns to free captive killer whales", year: 1993, category: "Movies & Television" },
+{ text: "Costco and Price Club merge to create PriceCostco, combining two of America's largest warehouse shopping chains", year: 1993, category: "Pop Culture & Weird News" },
+
 
 
 
@@ -866,6 +881,8 @@ const events = [
 { text: "The term friend zone is used on the television sitcom Friends to describe an unreciprocated romantic attraction", year: 1994, category: "Movies & Television" },
 { text: "The QR code is invented in Japan as a new type of machine-readable barcode", year: 1994, category: "Tech & Internet" },
 { text: "The famous McDonald's hot coffee lawsuit results in a jury verdict for Stella Liebeck, igniting a national debate over product liability", year: 1994, category: "History & Politics" },
+{ text: "Walmart enters Canada by purchasing 122 former Woolco department stores", year: 1994, category: "Pop Culture & Weird News" },
+
 
 
 
@@ -895,6 +912,7 @@ const events = [
 { text: "Michael Jordan returns to the NBA after playing minor league baseball", year: 1995, category: "Sports" },
 { text: "The phrase go postal gains national attention as slang for becoming violently angry or unstable", year: 1995, category: "Pop Culture & Weird News" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 29 cents to 32 cents", year: 1995, category: "Pop Culture & Weird News" },
+{ text: "Walmart opens its first store in Vermont, becoming a retailer with locations in all 50 U.S. states", year: 1995, category: "Pop Culture & Weird News" },
 
 
 
@@ -929,6 +947,7 @@ const events = [
 { text: "Tiger Woods turns professional at age 20 and wins his first two PGA Tour events", year: 1996, category: "Sports" },
 { text: "The phrase soccer mom becomes a prominent political label during the U.S. presidential election", year: 1996, category: "History & Politics" },
 { text: "The phrase viral marketing gains popularity as businesses explore person-to-person promotion on the internet", year: 1996, category: "Tech & Internet" },
+{ text: "Walmart establishes Walmart.com as it begins expanding into online shopping", year: 1996, category: "Tech & Internet" },
 
 
 
@@ -972,6 +991,7 @@ const events = [
 { text: "The WNBA plays its first game, with the New York Liberty defeating the Los Angeles Sparks", year: 1997, category: "Sports" },
 { text: "The term millennium bug gains prominence as concerns grow about computers handling the year 2000", year: 1997, category: "Tech & Internet" },
 { text: "Taco Bell's talking Chihuahua becomes a national advertising sensation with the catchphrase Yo quiero Taco Bell", year: 1997, category: "Movies & Television" },
+{ text: "Costco adopts its present name after operating for several years under the PriceCostco name", year: 1997, category: "Pop Culture & Weird News" },
 
 
 
@@ -1043,6 +1063,8 @@ const events = [
 { text: "The U.S. Postal Service raises the price of a first class stamp from 32 cents to 33 cents", year: 1999, category: "Pop Culture & Weird News" },
 { text: "The Blair Witch Project becomes a surprise blockbuster thanks in part to an internet marketing campaign suggesting the footage might be real", year: 1999, category: "Movies & Television" },
 { text: "Americans stockpile supplies and brace for computer failures as fears about the Y2K bug reach their peak", year: 1999, category: "Tech & Internet" },
+{ text: "Kmart launches BlueLight.com, attempting to bring its famous Blue Light Specials to the internet", year: 1999, category: "Tech & Internet" },
+
 
 
 
@@ -1077,6 +1099,8 @@ const events = [
 { text: "The Summer Olympics take place in Sydney, Australia, featuring memorable performances by Cathy Freeman and other international athletes", year: 2000, category: "Sports" },
 { text: "The term chad becomes nationally recognized during the disputed U.S. presidential election recount", year: 2000, category: "History & Politics" },
 { text: "The phrase cyberbullying gains prominence as online harassment becomes a growing social concern", year: 2000, category: "Tech & Internet" },
+{ text: "Pets.com announces its liquidation, turning its famous sock-puppet mascot into a symbol of the dot-com retail crash", year: 2000, category: "Tech & Internet" },
+
 
 
 
@@ -1105,7 +1129,7 @@ const events = [
 { text: "Apple introduces the first iPod, capable of storing approximately 1,000 songs", year: 2001, category: "Tech & Internet" },
 { text: "Wikipedia launches as a free encyclopedia that anyone can edit", year: 2001, category: "Tech & Internet" },
 { text: "Microsoft launches the original Xbox", year: 2001, category: "Tech & Internet" },
-{ text: "Apple opens its first two retail stores in Virginia and California", year: 2001, category: "Tech & Internet" },
+{ text: "Apple opens its first retail stores in Tysons Corner, Virginia, and Glendale, California", year: 2001, category: "Tech & Internet" },
 { text: "Nintendo launches the GameCube in Japan and North America", year: 2001, category: "Tech & Internet" },
 { text: "Grand Theft Auto III introduces a fully 3D Liberty City with open-world gameplay", year: 2001, category: "Tech & Internet" },
 { text: "Napster suspends its original file-sharing service following a legal battle with record labels", year: 2001, category: "Tech & Internet" },
@@ -1159,6 +1183,7 @@ const events = [
 { text: "The word selfie appears in an Australian online forum to describe a self-taken photograph", year: 2002, category: "Pop Culture & Weird News" },
 { text: "McDonald's launches its Dollar Menu nationwide, offering popular items for one dollar", year: 2002, category: "Pop Culture & Weird News" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 34 cents to 37 cents", year: 2002, category: "Pop Culture & Weird News" },
+{ text: "Kmart files for Chapter 11 bankruptcy protection as the once-dominant discount retailer struggles with competition", year: 2002, category: "Pop Culture & Weird News" },
 
 
 
@@ -1240,6 +1265,8 @@ const events = [
 { text: "The acronym FOMO, meaning fear of missing out, gains attention in discussions of social behavior", year: 2004, category: "Pop Culture & Weird News" },
 { text: "Shake Shack opens its first permanent restaurant kiosk in New York City's Madison Square Park", year: 2004, category: "Pop Culture & Weird News" },
 { text: "Taco Bell introduces Mountain Dew Baja Blast, originally available exclusively at its restaurants", year: 2004, category: "Pop Culture & Weird News" },
+{ text: "Sears announces plans to merge with Kmart, bringing together two struggling American retail giants", year: 2004, category: "Pop Culture & Weird News" },
+{ text: "Blockbuster launches an online DVD rental service in an effort to compete with Netflix", year: 2004, category: "Tech & Internet" },
 
 
 
@@ -1440,6 +1467,7 @@ const events = [
 { text: "The term unfriend gains mainstream attention as removing social media connections becomes commonplace", year: 2009, category: "Tech & Internet" },
 { text: "The term influencer becomes increasingly associated with individuals shaping consumer behavior through online audiences", year: 2009, category: "Pop Culture & Weird News" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 42 cents to 44 cents", year: 2009, category: "Pop Culture & Weird News" },
+{ text: "Circuit City announces that it will liquidate its remaining stores after failing to find a buyer", year: 2009, category: "Pop Culture & Weird News" },
 
 
 
@@ -1477,6 +1505,7 @@ const events = [
 { text: "Chick-fil-A introduces its Spicy Chicken Sandwich", year: 2010, category: "Pop Culture & Weird News" },
 { text: "McDonald's brings back the McRib nationwide for the first time since 1994", year: 2010, category: "Pop Culture & Weird News" },
 { text: "The Double Rainbow video becomes a viral sensation as a man reacts emotionally to seeing two rainbows", year: 2010, category: "Tech & Internet" },
+{ text: "Blockbuster files for bankruptcy protection after years of losing customers to Netflix, Redbox, and digital entertainment", year: 2010, category: "Pop Culture & Weird News" },
 
 
 
@@ -1501,6 +1530,7 @@ const events = [
 { text: "The final episode of The Oprah Winfrey Show airs after 25 seasons", year: 2011, category: "Pop Culture & Weird News" },
 { text: "The world's population reaches an estimated 7 billion people, according to the United Nations", year: 2011, category: "Pop Culture & Weird News" },
 { text: "The acronym YOLO becomes a major catchphrase following its use in Drake's song The Motto", year: 2011, category: "Music" },
+{ text: "Borders closes its last bookstores, ending the once-prominent national bookselling chain", year: 2011, category: "Pop Culture & Weird News" },
 
 
   
@@ -1554,6 +1584,7 @@ const events = [
 { text: "Sharknado premieres on Syfy, featuring tornadoes that carry sharks into Los Angeles", year: 2013, category: "Pop Culture & Weird News" },
 { text: "A giant inflatable rubber duck by artist Florentijn Hofman draws crowds in Hong Kong's Victoria Harbour", year: 2013, category: "Pop Culture & Weird News" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 45 cents to 46 cents", year: 2013, category: "Pop Culture & Weird News" },
+{ text: "Blockbuster announces the closure of its remaining company-owned U.S. retail stores", year: 2013, category: "Pop Culture & Weird News" },
 
 
 
@@ -1604,6 +1635,8 @@ const events = [
 { text: "Back to the Future fans celebrate October 21, the date Marty McFly travels to in the film's sequel", year: 2015, category: "Pop Culture & Weird News" },
 { text: "The term ghosting becomes widely recognized as slang for abruptly ending communication without explanation", year: 2015, category: "Pop Culture & Weird News" },
 { text: "McDonald's launches all-day breakfast in the United States, allowing customers to order selected breakfast items after 10:30 a.m.", year: 2015, category: "Pop Culture & Weird News" },
+{ text: "RadioShack files for bankruptcy protection after decades as a destination for electronics hobbyists and computer enthusiasts", year: 2015, category: "Pop Culture & Weird News" },
+{ text: "The A&P supermarket chain liquidates its remaining stores after more than 150 years in American grocery retailing", year: 2015, category: "Pop Culture & Weird News" },
 
 
 
@@ -1698,6 +1731,11 @@ const events = [
 { text: "The phrase cancel culture gains prominence in conversations about public accountability and online backlash", year: 2018, category: "Pop Culture & Weird News" },
 { text: "The phrase climate anxiety becomes increasingly visible as concern about global warming grows", year: 2018, category: "Science & Discovery" },
 { text: "The price of a U.S. first class postage stamp reaches 50 cents for the first time", year: 2018, category: "Pop Culture & Weird News" },
+{ text: "Toys R Us closes its remaining U.S. stores during liquidation, leaving millions nostalgic for the iconic toy retailer", year: 2018, category: "Pop Culture & Weird News" },
+{ text: "The Blockbuster Video store in Bend, Oregon, becomes the last remaining Blockbuster in the United States", year: 2018, category: "Pop Culture & Weird News" },
+{ text: "Target opens its first Vermont location, finally expanding its retail stores into all 50 U.S. states", year: 2018, category: "Pop Culture & Weird News" },
+{ text: "Sears Holdings files for bankruptcy protection after decades of declining sales and store closures", year: 2018, category: "Pop Culture & Weird News" },
+{ text: "Amazon opens its first Amazon Go convenience store to the public in Seattle, allowing shoppers to leave without using a traditional checkout", year: 2018, category: "Tech & Internet" },
 
 
 
@@ -1722,6 +1760,8 @@ const events = [
 { text: "Popeyes launches its chicken sandwich, sparking a viral fast-food rivalry and nationwide shortages", year: 2019, category: "Pop Culture & Weird News" },
 { text: "Burger King rolls out the plant-based Impossible Whopper across the United States", year: 2019, category: "Science & Discovery" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 50 cents to 55 cents", year: 2019, category: "Pop Culture & Weird News" },
+{ text: "The Blockbuster store in Bend, Oregon, becomes the last Blockbuster in the world after the final Australian location closes", year: 2019, category: "Pop Culture & Weird News" },
+{ text: "Payless ShoeSource announces plans to close all of its approximately 2,100 remaining U.S. stores", year: 2019, category: "Pop Culture & Weird News" },
 
 
 
@@ -1756,6 +1796,7 @@ const events = [
 { text: "The term doomscrolling enters mainstream vocabulary as people compulsively consume negative pandemic news", year: 2020, category: "Tech & Internet" },
 { text: "McDonald's opens a net-zero-energy-designed restaurant at Walt Disney World in Florida", year: 2020, category: "Science & Discovery" },
 { text: "The internet becomes obsessed with sourdough bread baking as millions of people spend more time at home", year: 2020, category: "Pop Culture & Weird News" },
+{ text: "Pier 1 Imports announces plans to close all its physical stores after failing to find a buyer during bankruptcy proceedings", year: 2020, category: "Pop Culture & Weird News" },
 
 
 
@@ -1835,6 +1876,7 @@ const events = [
 { text: "The U.S. Postal Service raises the price of a first class stamp from 60 cents to 63 cents", year: 2023, category: "Pop Culture & Weird News" },
 { text: "The U.S. Postal Service raises the price of a first class stamp for the second time in a year, from 63 cents to 66 cents", year: 2023, category: "Pop Culture & Weird News" },
 { text: "A Chinese high-altitude balloon crossing the United States becomes a national spectacle before being shot down off the coast of South Carolina", year: 2023, category: "History & Politics" },
+{ text: "Bed Bath & Beyond files for bankruptcy protection and announces plans to liquidate its remaining stores", year: 2023, category: "Pop Culture & Weird News" },
 
 
 
@@ -1860,6 +1902,8 @@ const events = [
 { text: "McDonald's introduces the Collector's Meal featuring nostalgic collectible cups inspired by past promotions", year: 2024, category: "Pop Culture & Weird News" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 66 cents to 68 cents", year: 2024, category: "Pop Culture & Weird News" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 68 cents to 73 cents", year: 2024, category: "Pop Culture & Weird News" },
+{ text: "Kmart closes its last full-size store in the continental United States, located in Bridgehampton, New York", year: 2024, category: "Pop Culture & Weird News" },
+{ text: "Big Lots announces plans for going-out-of-business sales at all remaining locations before a subsequent deal preserves part of the brand", year: 2024, category: "Pop Culture & Weird News" },
 
 
 
@@ -1879,6 +1923,8 @@ const events = [
 { text: "The term vibe coding is coined by Andrej Karpathy to describe developing software by directing AI through natural-language prompts", year: 2025, category: "Tech & Internet" },
 { text: "The term slop is selected as the American Dialect Society's Word of the Year for 2025, reflecting concern about low-quality AI-generated content", year: 2025, category: "Tech & Internet" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 73 cents to 78 cents", year: 2025, category: "Pop Culture & Weird News" },
+{ text: "Joann announces the liquidation of all approximately 800 craft and fabric stores after its second bankruptcy filing", year: 2025, category: "Pop Culture & Weird News" },
+{ text: "Rite Aid closes its last remaining stores after its second bankruptcy, bringing an end to the long-running American pharmacy chain's retail operations", year: 2025, category: "Pop Culture & Weird News" }
 
   
 

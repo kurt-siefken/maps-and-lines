@@ -52,6 +52,5 @@ h1 { font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 8px; }
   body {  min-height: auto;}
   .event .description { font-size: 1.2rem; font-weight: 650; line-height: 1.4rem; }
   h1 { font-size: clamp(1.6rem, 6vw, 3rem); margin-bottom: 8px; margin-top: 10px;}
-  .prompt { font-size: .8em; }
   #feedback { min-height: 40px;}
 }
