@@ -26,6 +26,8 @@ const events = [
 { text: "New York City holds its first Pride march to commemorate the Stonewall uprising", year: 1970, category: "Pop Culture & Weird News" },
 { text: "Garry Trudeau's comic strip Doonesbury makes its newspaper debut", year: 1970, category: "Pop Culture & Weird News" },
 { text: "The first New York City Marathon takes place entirely in Central Park, with 127 entrants and 55 finishers", year: 1970, category: "Sports" },
+{ text: "National Public Radio, better known as NPR, is founded as a nationwide public radio network", year: 1970, category: "History & Politics" },
+
 
 
 { text: "John Lennon releases Imagine, featuring the title song that becomes one of his signature recordings", year: 1971, category: "Music" },
@@ -58,6 +60,7 @@ const events = [
 { text: "Amtrak begins operating passenger trains across the United States", year: 1971, category: "Pop Culture & Weird News" },
 { text: "Greenpeace begins with a protest voyage from Canada against U.S. nuclear testing near Alaska", year: 1971, category: "Pop Culture & Weird News" },
 { text: "Coca-Cola launches its I'd Like to Buy the World a Coke commercial, featuring singers gathered on a hillside", year: 1971, category: "Pop Culture & Weird News" },
+{ text: "NPR begins broadcasting and launches All Things Considered, its flagship afternoon news program", year: 1971, category: "History & Politics" },
 
 
 
@@ -83,6 +86,7 @@ const events = [
 { text: "Two giant pandas named Ling-Ling and Hsing-Hsing arrive at Washington's National Zoo as gifts from China", year: 1972, category: "Pop Culture & Weird News" },
 { text: "London hosts its first Gay Pride march, attracting hundreds of participants", year: 1972, category: "Pop Culture & Weird News" },
 { text: "Baseball star Roberto Clemente dies in a plane crash while delivering earthquake relief supplies to Nicaragua", year: 1972, category: "Sports" },
+{ text: "Sesame Street introduces Count von Count, a friendly vampire obsessed with counting numbers", year: 1972, category: "Movies & Television" },
 
 
 
@@ -306,6 +310,7 @@ const events = [
 { text: "Wendy's introduces salad bars at its restaurants", year: 1979, category: "Pop Culture & Weird News" },
 { text: "Americans line up to buy gasoline amid shortages, with some states rationing gas by license plate numbers", year: 1979, category: "History & Politics" },
 { text: "The first two Home Depot stores open in Atlanta, introducing massive warehouse-style home improvement shopping", year: 1979, category: "Pop Culture & Weird News" },
+{ text: "NPR launches Morning Edition, establishing its signature morning news program", year: 1979, category: "History & Politics" },
 
 
 
@@ -380,7 +385,6 @@ const events = [
 { text: "Elizabeth Carr becomes the first baby born through in vitro fertilization in the United States", year: 1981, category: "Science & Discovery" },
 { text: "Surgeons at Stanford perform the first successful human heart-lung transplant", year: 1981, category: "Science & Discovery" },
 { text: "Prince Charles marries Lady Diana Spencer in a ceremony watched by an estimated 750 million people worldwide", year: 1981, category: "Pop Culture & Weird News" },
-{ text: "The DeLorean DMC-12 enters production with gull-wing doors and a stainless-steel body", year: 1981, category: "Pop Culture & Weird News" },
 { text: "Rubik's Cube becomes an international toy craze, frustrating puzzle solvers around the world", year: 1981, category: "Pop Culture & Weird News" },
 { text: "Simon & Garfunkel reunite for a free Central Park concert attended by an estimated 500,000 people", year: 1981, category: "Pop Culture & Weird News" },
 { text: "Muhammad Ali loses to Trevor Berbick in the final professional fight of his career", year: 1981, category: "Sports" },
@@ -461,6 +465,8 @@ const events = [
 { text: "Parents fight over scarce Cabbage Patch Kids dolls as a holiday shopping frenzy sweeps the country", year: 1983, category: "Pop Culture & Weird News" },
 { text: "The first Sam's Club opens in Midwest City, Oklahoma, offering warehouse-style discount shopping to members", year: 1983, category: "Pop Culture & Weird News" },
 { text: "The first Costco warehouse opens in Seattle, Washington, offering bulk merchandise at discounted prices", year: 1983, category: "Pop Culture & Weird News" },
+{ text: "Cassette tapes outsell vinyl LP records in the United States for the first time, signaling a major shift in how Americans listen to music", year: 1983, category: "Music" },
+{ text: "Sesame Street addresses the death of beloved shopkeeper Mr. Hooper in an emotional Thanksgiving episode designed to help children understand loss", year: 1983, category: "Movies & Television" },
 
 
 
@@ -490,7 +496,7 @@ const events = [
 { text: "Alexey Pajitnov creates Tetris while working at a Soviet research center", year: 1984, category: "Tech & Internet" },
 { text: "Michael Dell starts a computer business from his college dorm room with $1,000", year: 1984, category: "Tech & Internet" },
 { text: "Hewlett-Packard introduces the LaserJet, bringing laser printing to desktop computers", year: 1984, category: "Tech & Internet" },
-{ text: "Apple's 1984 Super Bowl commercial introduces the Macintosh through an Orwell-inspired advertisement", year: 1984, category: "Tech & Internet" },
+{ text: "Apple's Super Bowl commercial introduces the Macintosh through an Orwell-inspired advertisement", year: 1984, category: "Tech & Internet" },
 { text: "The CD-ROM format emerges as a way to store hundreds of megabytes of digital information", year: 1984, category: "Tech & Internet" },
 { text: "Svetlana Savitskaya becomes the first woman to perform a spacewalk", year: 1984, category: "Science & Discovery" },
 { text: "Kathryn Sullivan becomes the first American woman to walk in space", year: 1984, category: "Science & Discovery" },
@@ -507,6 +513,7 @@ const events = [
 { text: "The Soviet Union and several allied countries boycott the Los Angeles Summer Olympics", year: 1984, category: "Sports" },
 { text: "Michael Jordan joins the Chicago Bulls as the third overall pick in the NBA draft", year: 1984, category: "Sports" },
 { text: "Subway begins baking fresh bread inside its U.S. restaurants", year: 1984, category: "Pop Culture & Weird News" },
+{ text: "Ben & Jerry's creates Chocolate Chip Cookie Dough ice cream after a customer suggests mixing chunks of raw cookie dough into vanilla ice cream", year: 1984, category: "Pop Culture & Weird News" },
 
 
 
@@ -528,7 +535,7 @@ const events = [
 { text: "Ronald Reagan begins his second term as president of the United States", year: 1985, category: "History & Politics" },
 { text: "Microsoft releases Windows 1.0, bringing a graphical interface to IBM-compatible PCs", year: 1985, category: "Tech & Internet" },
 { text: "Nintendo launches the NES in the United States, helping revive the home video game market", year: 1985, category: "Tech & Internet" },
-{ text: "The first registered .com domain name, Symbolics.com, appears on the internet", year: 1985, category: "Tech & Internet" },
+{ text: "The first registered .com domain name appears on the internet", year: 1985, category: "Tech & Internet" },
 { text: "Microsoft releases the first version of Excel for the Apple Macintosh", year: 1985, category: "Tech & Internet" },
 { text: "Explorers discover the wreck of the Titanic nearly 12,500 feet beneath the Atlantic Ocean", year: 1985, category: "Science & Discovery" },
 { text: "British scientists announce the discovery of a massive hole in the ozone layer above Antarctica", year: 1985, category: "Science & Discovery" },
@@ -546,6 +553,7 @@ const events = [
 { text: "The first Cinnabon bakery opens at SeaTac Mall near Seattle, Washington", year: 1985, category: "Pop Culture & Weird News" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 20 cents to 22 cents", year: 1985, category: "Pop Culture & Weird News" },
 { text: "The first Blockbuster Video store opens in Dallas, Texas, offering thousands of VHS tapes for rent", year: 1985, category: "Pop Culture & Weird News" },
+{ text: "Sesame Street finally introduces Mr. Snuffleupagus, ending years of adults believing he was merely Big Bird's imaginary friend", year: 1985, category: "Movies & Television" },
 
 
 
@@ -617,6 +625,8 @@ const events = [
 { text: "The GIF image format is introduced, eventually becoming a cornerstone of internet humor and animation", year: 1987, category: "Tech & Internet" },
 { text: "McDonald's introduces its Monopoly game promotion, offering customers a chance to collect game pieces and win prizes", year: 1987, category: "Pop Culture & Weird News" },
 { text: "Howard Schultz purchases Starbucks and begins transforming it into an international coffeehouse chain", year: 1987, category: "Pop Culture & Weird News" },
+{ text: "St. Louis Bread Company opens its first bakery-cafe in St. Louis, Missouri, beginning the restaurant business that eventually becomes Panera Bread", year: 1987, category: "Pop Culture & Weird News" },
+{ text: "Where's Waldo? makes its debut, challenging readers to find a bespectacled traveler in elaborate illustrations filled with hundreds of people", year: 1987, category: "Pop Culture & Weird News" },
 
 
 
@@ -819,10 +829,9 @@ const events = [
 { text: "Astronomers discover Comet Shoemaker-Levy 9, which is on a collision course with Jupiter", year: 1993, category: "Science & Discovery" },
 { text: "NASA loses contact with its Mars Observer spacecraft just days before it enters Mars orbit", year: 1993, category: "Science & Discovery" },
 { text: "Michael Jackson gives a rare television interview to Oprah Winfrey, watched by 90 million Americans", year: 1993, category: "Pop Culture & Weird News" },
-{ text: "The first version of the Magic: The Gathering trading card game goes on sale", year: 1993, category: "Pop Culture & Weird News" },
+{ text: "The first version of the Magic: The Gathering trading card game goes on sale, popularizing card trading games", year: 1993, category: "Pop Culture & Weird News" },
 { text: "The first UFC event takes place in Denver, with no weight classes or judges", year: 1993, category: "Pop Culture & Weird News" },
 { text: "Monica Seles is stabbed during a tennis match in Hamburg, Germany", year: 1993, category: "Sports" },
-{ text: "The Montreal Canadiens win their 24th Stanley Cup, defeating the Los Angeles Kings", year: 1993, category: "Sports" },
 { text: "The Eiffel Tower receives its 150 millionth visitor", year: 1993, category: "Pop Culture & Weird News" },
 { text: "Michael Jordan retires from basketball to play minor league baseball", year: 1993, category: "Sports" },
 { text: "The term information superhighway gains widespread political attention", year: 1993, category: "Tech & Internet" },
@@ -832,6 +841,7 @@ const events = [
 { text: "Domino's discontinues its famous 30-minute pizza delivery guarantee in the United States amid safety concerns", year: 1993, category: "Pop Culture & Weird News" },
 { text: "The movie Free Willy inspires public fascination with orcas and campaigns to free captive killer whales", year: 1993, category: "Movies & Television" },
 { text: "Costco and Price Club merge to create PriceCostco, combining two of America's largest warehouse shopping chains", year: 1993, category: "Pop Culture & Weird News" },
+{ text: "Major League Soccer is formally established as the United States prepares to host the 1994 FIFA World Cup", year: 1993, category: "Sports" },
 
 
 
@@ -913,6 +923,8 @@ const events = [
 { text: "The phrase go postal gains national attention as slang for becoming violently angry or unstable", year: 1995, category: "Pop Culture & Weird News" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 29 cents to 32 cents", year: 1995, category: "Pop Culture & Weird News" },
 { text: "Walmart opens its first store in Vermont, becoming a retailer with locations in all 50 U.S. states", year: 1995, category: "Pop Culture & Weird News" },
+{ text: "Pizza Hut introduces Stuffed Crust Pizza nationwide, encouraging customers to eat their pizza crusts backward to enjoy the melted cheese inside", year: 1995, category: "Pop Culture & Weird News" },
+{ text: "The Rock & Roll Hall of Fame museum opens in Cleveland, Ohio, with a massive concert celebrating the history of popular music", year: 1995, category: "Music" },
 
 
 
@@ -948,6 +960,7 @@ const events = [
 { text: "The phrase soccer mom becomes a prominent political label during the U.S. presidential election", year: 1996, category: "History & Politics" },
 { text: "The phrase viral marketing gains popularity as businesses explore person-to-person promotion on the internet", year: 1996, category: "Tech & Internet" },
 { text: "Walmart establishes Walmart.com as it begins expanding into online shopping", year: 1996, category: "Tech & Internet" },
+{ text: "Major League Soccer begins its inaugural season with 10 teams, launching a new era of professional soccer in the United States", year: 1996, category: "Sports" },
 
 
 
@@ -987,11 +1000,11 @@ const events = [
 { text: "Comedian Chris Farley dies at age 33 in his Chicago apartment", year: 1997, category: "Pop Culture & Weird News" },
 { text: "Tiger Woods wins the Masters at age 21 by a record 12 strokes", year: 1997, category: "Sports" },
 { text: "Michael Jordan battles illness and scores 38 points in Game 5 of the NBA Finals", year: 1997, category: "Sports" },
-{ text: "The Florida Marlins win their first World Series in just their fifth season", year: 1997, category: "Sports" },
 { text: "The WNBA plays its first game, with the New York Liberty defeating the Los Angeles Sparks", year: 1997, category: "Sports" },
 { text: "The term millennium bug gains prominence as concerns grow about computers handling the year 2000", year: 1997, category: "Tech & Internet" },
 { text: "Taco Bell's talking Chihuahua becomes a national advertising sensation with the catchphrase Yo quiero Taco Bell", year: 1997, category: "Movies & Television" },
 { text: "Costco adopts its present name after operating for several years under the PriceCostco name", year: 1997, category: "Pop Culture & Weird News" },
+{ text: "The sitcom Friends sparks a lasting national debate over whether Ross and Rachel were actually on a break", year: 1997, category: "Movies & Television" },
 
 
 
@@ -1024,6 +1037,8 @@ const events = [
 { text: "The term search engine optimization gains traction as website owners compete for search visibility", year: 1998, category: "Tech & Internet" },
 { text: "Taco Bell introduces Gorditas nationwide", year: 1998, category: "Pop Culture & Weird News" },
 { text: "OpenTable is founded, beginning a shift toward booking restaurant reservations online", year: 1998, category: "Tech & Internet" },
+{ text: "America experiences a brief swing music revival on mainstream radio", year: 1998, category: "Music" },
+{ text: "A Gap commercial featuring swing dancers in khaki pants helps fuel a nationwide revival of swing dancing and 1940s-inspired fashion", year: 1998, category: "Pop Culture & Weird News" },
 
 
 
@@ -1064,6 +1079,9 @@ const events = [
 { text: "The Blair Witch Project becomes a surprise blockbuster thanks in part to an internet marketing campaign suggesting the footage might be real", year: 1999, category: "Movies & Television" },
 { text: "Americans stockpile supplies and brace for computer failures as fears about the Y2K bug reach their peak", year: 1999, category: "Tech & Internet" },
 { text: "Kmart launches BlueLight.com, attempting to bring its famous Blue Light Specials to the internet", year: 1999, category: "Tech & Internet" },
+{ text: "Two students carry out a mass shooting at Columbine High School in Colorado, killing 12 students and a teacher", year: 1999, category: "History & Politics" },
+{ text: "A divorcing Las Vegas couple is ordered by a judge to sit on the courtroom floor and divide their valuable Beanie Baby collection one stuffed animal at a time", year: 1999, category: "Pop Culture & Weird News" },
+{ text: "The company behind St. Louis Bread Company adopts the Panera Bread name", year: 1999, category: "Pop Culture & Weird News" },
 
 
 
@@ -1184,6 +1202,8 @@ const events = [
 { text: "McDonald's launches its Dollar Menu nationwide, offering popular items for one dollar", year: 2002, category: "Pop Culture & Weird News" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 34 cents to 37 cents", year: 2002, category: "Pop Culture & Weird News" },
 { text: "Kmart files for Chapter 11 bankruptcy protection as the once-dominant discount retailer struggles with competition", year: 2002, category: "Pop Culture & Weird News" },
+{ text: "Sesame Street responds to the September 11 attacks with an episode helping children cope with frightening events", year: 2002, category: "Movies & Television" },
+{ text: "The South African version of Sesame Street introduces Kami, an HIV-positive Muppet designed to educate children and combat stigma surrounding AIDS", year: 2002, category: "Movies & Television" },
 
 
 
@@ -1267,6 +1287,7 @@ const events = [
 { text: "Taco Bell introduces Mountain Dew Baja Blast, originally available exclusively at its restaurants", year: 2004, category: "Pop Culture & Weird News" },
 { text: "Sears announces plans to merge with Kmart, bringing together two struggling American retail giants", year: 2004, category: "Pop Culture & Weird News" },
 { text: "Blockbuster launches an online DVD rental service in an effort to compete with Netflix", year: 2004, category: "Tech & Internet" },
+{ text: "The Da Vinci Code becomes the bestselling fiction book of the year in the United States, fueling widespread fascination with religious mysteries and hidden codes", year: 2004, category: "Pop Culture & Weird News" },
 
 
 
@@ -1313,6 +1334,7 @@ const events = [
 { text: "McDonald's launches a McRib Farewell Tour, turning the sandwich's supposed retirement into a marketing event", year: 2005, category: "Pop Culture & Weird News" },
 { text: "A viral video shows a man enthusiastically demonstrating his love of the song Numa Numa while dancing at his computer", year: 2005, category: "Tech & Internet" },
 { text: "The Dancing with the Stars craze transforms unlikely celebrities into competitive ballroom dancers on prime-time television", year: 2005, category: "Movies & Television" },
+{ text: "Sesame Street teaches children that cookies are a sometimes food, prompting headlines about Cookie Monster adopting healthier eating habits", year: 2005, category: "Movies & Television" },
 
 
 
@@ -1552,7 +1574,7 @@ const events = [
 { text: "Grumpy Cat becomes an internet celebrity after photos of her distinctive expression appear online", year: 2012, category: "Pop Culture & Weird News" },
 { text: "McKayla Maroney's unimpressed Olympic podium expression becomes a widely shared internet meme", year: 2012, category: "Pop Culture & Weird News" },
 { text: "Michael Phelps finishes the London Olympics with a record 22 career medals, including 18 golds", year: 2012, category: "Sports" },
-{ text: "Usain Bolt wins Olympic gold in the 100 and 200 meters for the second consecutive Games", year: 2012, category: "Sports" },
+{ text: "Usain Bolt wins gold in the 100 and 200 meters for the second consecutive Olympic Games", year: 2012, category: "Sports" },
 { text: "Lance Armstrong is stripped of his seven Tour de France titles following a doping investigation", year: 2012, category: "Sports" },
 { text: "The word selfie becomes increasingly popular as smartphone photography and social media expand", year: 2012, category: "Pop Culture & Weird News" },
 { text: "The term Brexit is coined to describe the possibility of Britain leaving the European Union", year: 2012, category: "History & Politics" },
@@ -1582,7 +1604,6 @@ const events = [
 { text: "The Oxford Dictionaries name selfie their Word of the Year", year: 2013, category: "Pop Culture & Weird News" },
 { text: "Dennis Rodman visits North Korea and develops an unlikely friendship with Kim Jong Un", year: 2013, category: "Pop Culture & Weird News" },
 { text: "Sharknado premieres on Syfy, featuring tornadoes that carry sharks into Los Angeles", year: 2013, category: "Pop Culture & Weird News" },
-{ text: "A giant inflatable rubber duck by artist Florentijn Hofman draws crowds in Hong Kong's Victoria Harbour", year: 2013, category: "Pop Culture & Weird News" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 45 cents to 46 cents", year: 2013, category: "Pop Culture & Weird News" },
 { text: "Blockbuster announces the closure of its remaining company-owned U.S. retail stores", year: 2013, category: "Pop Culture & Weird News" },
 
@@ -1637,6 +1658,7 @@ const events = [
 { text: "McDonald's launches all-day breakfast in the United States, allowing customers to order selected breakfast items after 10:30 a.m.", year: 2015, category: "Pop Culture & Weird News" },
 { text: "RadioShack files for bankruptcy protection after decades as a destination for electronics hobbyists and computer enthusiasts", year: 2015, category: "Pop Culture & Weird News" },
 { text: "The A&P supermarket chain liquidates its remaining stores after more than 150 years in American grocery retailing", year: 2015, category: "Pop Culture & Weird News" },
+{ text: "Music streaming surpasses physical music sales in U.S. recording industry revenue for the first time", year: 2015, category: "Music" },
 
 
 
@@ -1668,12 +1690,13 @@ const events = [
 { text: "The Chicago Cubs win their first World Series in 108 years, defeating the Cleveland Indians in seven games", year: 2016, category: "Sports" },
 { text: "Michael Phelps wins five gold medals in Rio, increasing his Olympic career total to 23 golds", year: 2016, category: "Sports" },
 { text: "Simone Biles wins four gymnastics gold medals and one bronze at the Rio Olympics", year: 2016, category: "Sports" },
-{ text: "Usain Bolt wins the Olympic 100 and 200 meters for the third consecutive Games", year: 2016, category: "Sports" },
+{ text: "Usain Bolt wins the 100 and 200 meters for the third consecutive Olympic Games", year: 2016, category: "Sports" },
 { text: "The phrase fake news becomes a major political catchphrase during the U.S. presidential election", year: 2016, category: "History & Politics" },
 { text: "The term post-truth is selected as Oxford's Word of the Year amid growing concern about political misinformation", year: 2016, category: "History & Politics" },
 { text: "Chipotle temporarily closes all its U.S. restaurants for a nationwide food safety meeting following outbreaks of foodborne illness", year: 2016, category: "Pop Culture & Weird News" },
 { text: "In a rare price decrease, the U.S. Postal Service lowers the price of a first class stamp from 49 cents to 47 cents", year: 2016, category: "Pop Culture & Weird News" },
 { text: "Reports of creepy clown sightings spread across the United States, sparking fear, copycat incidents, and widespread media coverage", year: 2016, category: "Pop Culture & Weird News" },
+{ text: "Sesame Street begins airing new episodes on HBO, adopting a shorter 30-minute format while continuing to make episodes available on PBS", year: 2016, category: "Movies & Television" },
 
 
 
@@ -1700,6 +1723,8 @@ const events = [
 { text: "Taco Bell begins offering wedding ceremonies at its Las Vegas Cantina restaurant", year: 2017, category: "Pop Culture & Weird News" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 47 cents back to 49 cents", year: 2017, category: "Pop Culture & Weird News" },
 { text: "A man interrupts a live BBC interview when his young children enter the room behind him, creating a viral television moment", year: 2017, category: "Movies & Television" },
+{ text: "President Donald Trump accidentally tweets the word covfefe", year: 2017, category: "History & Politics" },
+{ text: "Sesame Street introduces Julia, a four-year-old Muppet with autism, as a regular character to help children understand neurological differences", year: 2017, category: "Movies & Television" },
 
 
 
@@ -1762,6 +1787,7 @@ const events = [
 { text: "The U.S. Postal Service raises the price of a first class stamp from 50 cents to 55 cents", year: 2019, category: "Pop Culture & Weird News" },
 { text: "The Blockbuster store in Bend, Oregon, becomes the last Blockbuster in the world after the final Australian location closes", year: 2019, category: "Pop Culture & Weird News" },
 { text: "Payless ShoeSource announces plans to close all of its approximately 2,100 remaining U.S. stores", year: 2019, category: "Pop Culture & Weird News" },
+{ text: "Sesame Street celebrates its 50th anniversary and becomes the first television program to receive the Kennedy Center Honors", year: 2019, category: "Movies & Television" },
 
 
 
@@ -1797,6 +1823,7 @@ const events = [
 { text: "McDonald's opens a net-zero-energy-designed restaurant at Walt Disney World in Florida", year: 2020, category: "Science & Discovery" },
 { text: "The internet becomes obsessed with sourdough bread baking as millions of people spend more time at home", year: 2020, category: "Pop Culture & Weird News" },
 { text: "Pier 1 Imports announces plans to close all its physical stores after failing to find a buyer during bankruptcy proceedings", year: 2020, category: "Pop Culture & Weird News" },
+{ text: "Rudy Giuliani holds a press conference at Four Seasons Total Landscaping, located between a crematorium and an adult bookstore", year: 2020, category: "History & Politics" },
 
 
 
