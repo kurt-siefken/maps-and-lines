@@ -119,6 +119,8 @@ const events = [
 { text: "Marlon Brando refuses his Best Actor Oscar and sends Sacheen Littlefeather to speak at the ceremony", year: 1973, category: "Pop Culture & Weird News" },
 { text: "A bank robbery in Stockholm leads to a six-day hostage crisis that inspires the term Stockholm syndrome", year: 1973, category: "Pop Culture & Weird News" },
 { text: "Secretariat wins the Triple Crown, taking the Belmont Stakes by a record 31 lengths", year: 1973, category: "Sports" },
+{ text: "Federal Express, later known as FedEx, begins overnight delivery operations with 14 aircraft delivering 186 packages to 25 American cities", year: 1973, category: "Pop Culture & Weird News" },
+{ text: "A Charlie Brown Thanksgiving premieres on CBS, with Charlie Brown serving popcorn, toast, and jelly beans for Thanksgiving dinner", year: 1973, category: "Movies & Television" },
 
 
 
@@ -174,6 +176,7 @@ const events = [
 { text: "President Gerald Ford survives two separate assassination attempts in California within 17 days", year: 1975, category: "Pop Culture & Weird News" },
 { text: "Arthur Ashe becomes the first Black man to win the Wimbledon singles championship", year: 1975, category: "Sports" },
 { text: "Muhammad Ali defeats Joe Frazier in the Thrilla in Manila, their third and final boxing match", year: 1975, category: "Sports" },
+{ text: "Pop Rocks candy is introduced, with tiny carbonated crystals that explode and fizz when placed in the mouth", year: 1975, category: "Pop Culture & Weird News" },
 
 
 
@@ -276,6 +279,8 @@ const events = [
 { text: "The term glass ceiling begins appearing as a metaphor for invisible barriers to women's professional advancement", year: 1978, category: "History & Politics" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 13 cents to 15 cents", year: 1978, category: "Pop Culture & Weird News" },
 { text: "The Star Wars Holiday Special airs on television, featuring Chewbacca's family and a bizarre musical appearance by Bea Arthur", year: 1978, category: "Movies & Television" },
+{ text: "The Cheesecake Factory opens its first restaurant in Beverly Hills, California", year: 1978, category: "Pop Culture & Weird News" },
+{ text: "Jim Davis introduces Garfield, the lazy, lasagna-loving orange cat, in a comic strip syndicated in 41 newspapers", year: 1978, category: "Pop Culture & Weird News" },
 
 
 
@@ -390,6 +395,9 @@ const events = [
 { text: "Muhammad Ali loses to Trevor Berbick in the final professional fight of his career", year: 1981, category: "Sports" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 15 cents to 18 cents", year: 1981, category: "Pop Culture & Weird News" },
 { text: "The U.S. Postal Service raises the price of a first class stamp for the second time in a year, from 18 cents to 20 cents", year: 1981, category: "Pop Culture & Weird News" },
+{ text: "The Great Muppet Caper premieres in theaters, sending Kermit, Fozzie, and Gonzo to London to investigate a jewel theft", year: 1981, category: "Movies & Television" },
+
+
 
 
 
@@ -514,6 +522,7 @@ const events = [
 { text: "Michael Jordan joins the Chicago Bulls as the third overall pick in the NBA draft", year: 1984, category: "Sports" },
 { text: "Subway begins baking fresh bread inside its U.S. restaurants", year: 1984, category: "Pop Culture & Weird News" },
 { text: "Ben & Jerry's creates Chocolate Chip Cookie Dough ice cream after a customer suggests mixing chunks of raw cookie dough into vanilla ice cream", year: 1984, category: "Pop Culture & Weird News" },
+{ text: "The Muppets Take Manhattan arrives in theaters, as Kermit, Miss Piggy, and friends attempt to bring a musical to Broadway", year: 1984, category: "Movies & Television" },
 
 
 
@@ -761,6 +770,7 @@ const events = [
 { text: "The U.S. Postal Service raises the price of a first class stamp from 25 cents to 29 cents", year: 1991, category: "Pop Culture & Weird News" },
 { text: "The Super Soaker water gun becomes a summer toy obsession, triggering neighborhood water battles across America", year: 1991, category: "Pop Culture & Weird News" },
 { text: "Walmart begins its international expansion by opening a Sam's Club in Mexico City", year: 1991, category: "Pop Culture & Weird News" },
+{ text: "Hypercolor clothing becomes a nationwide fashion craze, with heat-sensitive shirts that change color when touched or exposed to body heat", year: 1991, category: "Pop Culture & Weird News" },
 
 
 
@@ -799,6 +809,8 @@ const events = [
 { text: "McDonald's introduces the McJordan Special, a burger named for basketball superstar Michael Jordan", year: 1992, category: "Sports" },
 { text: "Domino's introduces breadsticks as its first nationally available non-pizza menu item", year: 1992, category: "Pop Culture & Weird News" },
 { text: "Ross Perot's presidential campaign features unusual television infomercials filled with charts explaining the national debt", year: 1992, category: "History & Politics" },
+{ text: "Hip-hop duo Kris Kross becomes famous for wearing their clothes backward as their debut single Jump becomes a massive hit", year: 1992, category: "Music" },
+{ text: "The Muppet Christmas Carol arrives in theaters, featuring Michael Caine as Ebenezer Scrooge", year: 1992, category: "Movies & Television" },
 
 
 
@@ -842,6 +854,8 @@ const events = [
 { text: "The movie Free Willy inspires public fascination with orcas and campaigns to free captive killer whales", year: 1993, category: "Movies & Television" },
 { text: "Costco and Price Club merge to create PriceCostco, combining two of America's largest warehouse shopping chains", year: 1993, category: "Pop Culture & Weird News" },
 { text: "Major League Soccer is formally established as the United States prepares to host the 1994 FIFA World Cup", year: 1993, category: "Sports" },
+{ text: "NBC launches its Must See TV promotional slogan, branding its popular Thursday night television lineup as essential viewing", year: 1993, category: "Movies & Television" },
+{ text: "Hip-hop group Tag Team releases Whoomp! (There It Is), a party anthem that becomes a fixture at sporting events and celebrations", year: 1993, category: "Music" },
 
 
 
@@ -883,14 +897,13 @@ const events = [
 { text: "Thieves steal The Scream from a Norwegian museum and leave a note mocking its security", year: 1994, category: "Pop Culture & Weird News" },
 { text: "A jury awards nearly $3 million in the McDonald's hot coffee lawsuit", year: 1994, category: "Pop Culture & Weird News" },
 { text: "Anna Nicole Smith, 26, marries 89-year-old billionaire J. Howard Marshall", year: 1994, category: "Pop Culture & Weird News" },
-{ text: "Major League Baseball cancels the World Series because of a players' strike", year: 1994, category: "Sports" },
+{ text: "Major League Baseball cancels the World Series due to a players' strike", year: 1994, category: "Sports" },
 { text: "Michael Jordan leaves basketball to play minor league baseball", year: 1994, category: "Sports" },
 { text: "George Foreman becomes boxing's oldest heavyweight champion at age 45", year: 1994, category: "Sports" },
 { text: "Norway hosts the Winter Olympics in Lillehammer", year: 1994, category: "Sports" },
 { text: "Nancy Kerrigan wins Olympic silver weeks after an attack on her knee", year: 1994, category: "Sports" },
 { text: "The term friend zone is used on the television sitcom Friends to describe an unreciprocated romantic attraction", year: 1994, category: "Movies & Television" },
 { text: "The QR code is invented in Japan as a new type of machine-readable barcode", year: 1994, category: "Tech & Internet" },
-{ text: "The famous McDonald's hot coffee lawsuit results in a jury verdict for Stella Liebeck, igniting a national debate over product liability", year: 1994, category: "History & Politics" },
 { text: "Walmart enters Canada by purchasing 122 former Woolco department stores", year: 1994, category: "Pop Culture & Weird News" },
 
 
@@ -1005,6 +1018,8 @@ const events = [
 { text: "Taco Bell's talking Chihuahua becomes a national advertising sensation with the catchphrase Yo quiero Taco Bell", year: 1997, category: "Movies & Television" },
 { text: "Costco adopts its present name after operating for several years under the PriceCostco name", year: 1997, category: "Pop Culture & Weird News" },
 { text: "The sitcom Friends sparks a lasting national debate over whether Ross and Rachel were actually on a break", year: 1997, category: "Movies & Television" },
+{ text: "Toyota introduces the Prius in Japan, launching the world's first mass-produced gasoline-electric hybrid passenger car", year: 1997, category: "Science & Discovery" },
+{ text: "The NBA's Washington Bullets officially change their name to the Washington Wizards following concerns about the team's violent-sounding name", year: 1997, category: "Sports" },
 
 
 
@@ -1039,6 +1054,7 @@ const events = [
 { text: "OpenTable is founded, beginning a shift toward booking restaurant reservations online", year: 1998, category: "Tech & Internet" },
 { text: "America experiences a brief swing music revival on mainstream radio", year: 1998, category: "Music" },
 { text: "A Gap commercial featuring swing dancers in khaki pants helps fuel a nationwide revival of swing dancing and 1940s-inspired fashion", year: 1998, category: "Pop Culture & Weird News" },
+{ text: "Garmin introduces the StreetPilot, an early automotive GPS navigation device that helps bring electronic driving directions to ordinary motorists", year: 1998, category: "Tech & Internet" },
 
 
 
@@ -1118,6 +1134,8 @@ const events = [
 { text: "The term chad becomes nationally recognized during the disputed U.S. presidential election recount", year: 2000, category: "History & Politics" },
 { text: "The phrase cyberbullying gains prominence as online harassment becomes a growing social concern", year: 2000, category: "Tech & Internet" },
 { text: "Pets.com announces its liquidation, turning its famous sock-puppet mascot into a symbol of the dot-com retail crash", year: 2000, category: "Tech & Internet" },
+{ text: "The final original Peanuts comic strip appears in newspapers, one day after the death of creator Charles M. Schulz", year: 2000, category: "Pop Culture & Weird News" },
+{ text: "Toyota begins selling the Prius hybrid in the United States, introducing American motorists to a mass-produced gasoline-electric hybrid car", year: 2000, category: "Science & Discovery" },
 
 
 
@@ -1204,6 +1222,8 @@ const events = [
 { text: "Kmart files for Chapter 11 bankruptcy protection as the once-dominant discount retailer struggles with competition", year: 2002, category: "Pop Culture & Weird News" },
 { text: "Sesame Street responds to the September 11 attacks with an episode helping children cope with frightening events", year: 2002, category: "Movies & Television" },
 { text: "The South African version of Sesame Street introduces Kami, an HIV-positive Muppet designed to educate children and combat stigma surrounding AIDS", year: 2002, category: "Movies & Television" },
+{ text: "British street artist Banksy creates Girl with Balloon, depicting a young girl reaching toward a red heart-shaped balloon on London's Waterloo Bridge", year: 2002, category: "Pop Culture & Weird News" },
+{ text: "Crocs introduces its distinctive foam clogs, initially marketed as boating shoes before becoming an unlikely fashion phenomenon", year: 2002, category: "Pop Culture & Weird News" },
 
 
 
@@ -1246,6 +1266,8 @@ const events = [
 { text: "McDonald's introduces its global I'm Lovin' It advertising campaign, featuring a jingle associated with Justin Timberlake", year: 2003, category: "Music" },
 { text: "The television series Joe Millionaire convinces contestants they are competing to marry a wealthy man who is actually a construction worker", year: 2003, category: "Movies & Television" },
 { text: "The Atkins diet craze sends Americans scrambling for low-carbohydrate foods and drives a boom in bunless burgers", year: 2003, category: "Pop Culture & Weird News" },
+{ text: "DVD rentals surpass VHS tape rentals in the United States for the first time, marking a major turning point in home entertainment", year: 2003, category: "Tech & Internet" },
+{ text: "Toyota introduces the second-generation Prius, with its distinctive hatchback design", year: 2003, category: "Science & Discovery" },
 
 
 
@@ -1375,6 +1397,8 @@ const events = [
 { text: "The U.S. Postal Service raises the price of a first class stamp from 37 cents to 39 cents", year: 2006, category: "Pop Culture & Weird News" },
 { text: "The Snakes on a Plane movie becomes an internet-fueled pop culture phenomenon before its theatrical release", year: 2006, category: "Movies & Television" },
 { text: "The television show Deal or No Deal becomes a national obsession with its numbered briefcases and mysterious banker", year: 2006, category: "Movies & Television" },
+{ text: "Crocs become a mainstream footwear sensation, with millions of Americans embracing the colorful foam clogs despite their controversial appearance", year: 2006, category: "Pop Culture & Weird News" },
+{ text: "Ceres is officially classified as a dwarf planet, placing the largest object in the asteroid belt in the same category as Pluto", year: 2006, category: "Science & Discovery" },
 
 
 
@@ -1490,6 +1514,7 @@ const events = [
 { text: "The term influencer becomes increasingly associated with individuals shaping consumer behavior through online audiences", year: 2009, category: "Pop Culture & Weird News" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 42 cents to 44 cents", year: 2009, category: "Pop Culture & Weird News" },
 { text: "Circuit City announces that it will liquidate its remaining stores after failing to find a buyer", year: 2009, category: "Pop Culture & Weird News" },
+{ text: "Google introduces free turn-by-turn driving directions in Google Maps Navigation for Android phones, helping replace dedicated GPS devices", year: 2009, category: "Tech & Internet" },
 
 
 
@@ -1606,6 +1631,7 @@ const events = [
 { text: "Sharknado premieres on Syfy, featuring tornadoes that carry sharks into Los Angeles", year: 2013, category: "Pop Culture & Weird News" },
 { text: "The U.S. Postal Service raises the price of a first class stamp from 45 cents to 46 cents", year: 2013, category: "Pop Culture & Weird News" },
 { text: "Blockbuster announces the closure of its remaining company-owned U.S. retail stores", year: 2013, category: "Pop Culture & Weird News" },
+{ text: "Desktop 3D printers become increasingly popular to make home manufacturing more accessible", year: 2013, category: "Tech & Internet" },
 
 
 
@@ -1788,6 +1814,7 @@ const events = [
 { text: "The Blockbuster store in Bend, Oregon, becomes the last Blockbuster in the world after the final Australian location closes", year: 2019, category: "Pop Culture & Weird News" },
 { text: "Payless ShoeSource announces plans to close all of its approximately 2,100 remaining U.S. stores", year: 2019, category: "Pop Culture & Weird News" },
 { text: "Sesame Street celebrates its 50th anniversary and becomes the first television program to receive the Kennedy Center Honors", year: 2019, category: "Movies & Television" },
+{ text: "Tesla unveils the Cybertruck, with its demonstration going viral after a metal ball cracks its supposedly shatter-resistant window", year: 2019, category: "Tech & Internet" },
 
 
 
@@ -1824,6 +1851,8 @@ const events = [
 { text: "The internet becomes obsessed with sourdough bread baking as millions of people spend more time at home", year: 2020, category: "Pop Culture & Weird News" },
 { text: "Pier 1 Imports announces plans to close all its physical stores after failing to find a buyer during bankruptcy proceedings", year: 2020, category: "Pop Culture & Weird News" },
 { text: "Rudy Giuliani holds a press conference at Four Seasons Total Landscaping, located between a crematorium and an adult bookstore", year: 2020, category: "History & Politics" },
+{ text: "Washington's NFL franchise retires its Redskins name following decades of criticism that it is a racial slur against Native Americans", year: 2020, category: "Sports" },
+{ text: "Air fryers become a pandemic-era kitchen craze as millions of Americans cook more meals at home", year: 2020, category: "Pop Culture & Weird News" },
 
 
 
@@ -1876,6 +1905,8 @@ const events = [
 { text: "McDonald's introduces adult Happy Meals featuring collectible toys through a collaboration with Cactus Plant Flea Market", year: 2022, category: "Pop Culture & Weird News" },
 { text: "Chipotle opens its 3,000th restaurant in Phoenix, Arizona", year: 2022, category: "Pop Culture & Weird News" },
 { text: "The price of a U.S. first class postage stamp reaches 60 cents for the first time", year: 2022, category: "Pop Culture & Weird News" },
+{ text: "The Cleveland Guardians begin their first season under their new name after more than a century as the Cleveland Indians", year: 2022, category: "Sports" },
+{ text: "Washington's NFL franchise officially adopts the name Washington Commanders after two seasons competing as the Washington Football Team", year: 2022, category: "Sports" },
 
 
 
@@ -1904,6 +1935,7 @@ const events = [
 { text: "The U.S. Postal Service raises the price of a first class stamp for the second time in a year, from 63 cents to 66 cents", year: 2023, category: "Pop Culture & Weird News" },
 { text: "A Chinese high-altitude balloon crossing the United States becomes a national spectacle before being shot down off the coast of South Carolina", year: 2023, category: "History & Politics" },
 { text: "Bed Bath & Beyond files for bankruptcy protection and announces plans to liquidate its remaining stores", year: 2023, category: "Pop Culture & Weird News" },
+{ text: "Tesla begins delivering its long-delayed Cybertruck to American roads", year: 2023, category: "Tech & Internet" },
 
 
 
