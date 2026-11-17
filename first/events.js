@@ -3,30 +3,30 @@ const events = [
 
 
 { text: "The Beatles announce their breakup after a decade together", year: 1970, category: "Music" },
-{ text: "Simon & Garfunkel's Bridge Over Troubled Water spends six weeks at No. 1 and becomes Billboard's top song of the year", year: 1970, category: "Music" },
+{ text: "Simon & Garfunkel's Bridge Over Troubled Water becomes Billboard's top song of the year", year: 1970, category: "Music" },
 { text: "The Jackson 5 score four No. 1 singles in one year, including ABC and I'll Be There", year: 1970, category: "Music" },
-{ text: "The Carpenters' (They Long to Be) Close to You spends four weeks at No. 1 on the Billboard Hot 100", year: 1970, category: "Music" },
+{ text: "The Carpenters' Close to You spends four weeks at No. 1", year: 1970, category: "Music" },
 { text: "Diana Ross earns her first solo No. 1 hit with Ain't No Mountain High Enough", year: 1970, category: "Music" },
-{ text: "Jimi Hendrix dies at age 27 in London, just three years after his breakthrough performance at Monterey Pop", year: 1970, category: "Music" },
+{ text: "Jimi Hendrix dies at age 27 in London", year: 1970, category: "Music" },
 { text: "Janis Joplin dies at age 27 while recording what becomes her posthumous album Pearl", year: 1970, category: "Music" },
 { text: "Airport earns more than $100 million domestically and helps popularize disaster movies", year: 1970, category: "Movies & Television" },
 { text: "M*A*S*H brings a dark comedy about Korean War surgeons to movie theaters", year: 1970, category: "Movies & Television" },
 { text: "The Mary Tyler Moore Show premieres on CBS, following a single woman working in a Minneapolis newsroom", year: 1970, category: "Movies & Television" },
-{ text: "The Partridge Family premieres on ABC, featuring a fictional family pop band led by Shirley Jones", year: 1970, category: "Movies & Television" },
-{ text: "President Richard Nixon announces a U.S. military operation in Cambodia, triggering widespread campus protests", year: 1970, category: "History & Politics" },
+{ text: "The Partridge Family premieres on ABC, featuring a fictional family pop band", year: 1970, category: "Movies & Television" },
+{ text: "Richard Nixon announces a U.S. military operation in Cambodia, triggering widespread campus protests", year: 1970, category: "History & Politics" },
 { text: "The United States establishes the Environmental Protection Agency to enforce federal environmental laws", year: 1970, category: "History & Politics" },
 { text: "President Nixon signs major amendments to the Clean Air Act, strengthening federal air pollution controls", year: 1970, category: "History & Politics" },
 { text: "Xerox opens its Palo Alto Research Center, which becomes a major center for computer innovation", year: 1970, category: "Tech & Internet" },
 { text: "Boeing's 747 jumbo jet begins commercial passenger service with Pan American World Airways", year: 1970, category: "Tech & Internet" },
-{ text: "Apollo 13 astronauts survive an oxygen tank explosion and return safely to Earth after abandoning their Moon landing", year: 1970, category: "Science & Discovery" },
+{ text: "Apollo 13 astronauts survive an oxygen tank explosion and return safely to Earth after abandoning their moon landing", year: 1970, category: "Science & Discovery" },
 { text: "The first Earth Day draws an estimated 20 million Americans to environmental demonstrations", year: 1970, category: "Pop Culture & Weird News" },
 { text: "The first San Diego Comic-Con attracts a few hundred comic book and science fiction fans", year: 1970, category: "Pop Culture & Weird News" },
-{ text: "Elvis Presley visits President Richard Nixon at the White House and requests a federal narcotics badge", year: 1970, category: "Pop Culture & Weird News" },
+{ text: "Elvis Presley visits President Richard Nixon at the White House", year: 1970, category: "Pop Culture & Weird News" },
 { text: "The Nerf Ball becomes the first Nerf toy, offering a foam ball marketed as safe for indoor play", year: 1970, category: "Pop Culture & Weird News" },
 { text: "New York City holds its first Pride march to commemorate the Stonewall uprising", year: 1970, category: "Pop Culture & Weird News" },
 { text: "Garry Trudeau's comic strip Doonesbury makes its newspaper debut", year: 1970, category: "Pop Culture & Weird News" },
 { text: "The first New York City Marathon takes place entirely in Central Park, with 127 entrants and 55 finishers", year: 1970, category: "Sports" },
-{ text: "National Public Radio, better known as NPR, is founded as a nationwide public radio network", year: 1970, category: "History & Politics" },
+{ text: "NPR is founded as a nationwide public radio network", year: 1970, category: "History & Politics" },
 
 
 
@@ -34,12 +34,11 @@ const events = [
 { text: "Marvin Gaye releases What's Going On, addressing war, poverty, and environmental concerns", year: 1971, category: "Music" },
 { text: "Led Zeppelin releases its untitled fourth album, featuring Stairway to Heaven and Black Dog", year: 1971, category: "Music" },
 { text: "Don McLean releases American Pie, an eight-minute song reflecting on changes in American music and culture", year: 1971, category: "Music" },
-{ text: "Rod Stewart's Maggie May spends five consecutive weeks at No. 1 on the Billboard Hot 100", year: 1971, category: "Music" },
-{ text: "Three Dog Night's Joy to the World spends six weeks at No. 1 and becomes Billboard's top song of the year", year: 1971, category: "Music" },
+{ text: "Rod Stewart's Maggie May spends five consecutive weeks at No. 1", year: 1971, category: "Music" },
+{ text: "Three Dog Night's Joy to the World becomes Billboard's top song of the year", year: 1971, category: "Music" },
 { text: "Janis Joplin's Me and Bobby McGee reaches No. 1 five months after her death", year: 1971, category: "Music" },
 { text: "The Rolling Stones' Brown Sugar reaches No. 1 on the Billboard Hot 100", year: 1971, category: "Music" },
 { text: "Fiddler on the Roof earns more than $80 million worldwide, becoming one of the year's biggest films", year: 1971, category: "Movies & Television" },
-{ text: "The French Connection introduces Gene Hackman as detective Popeye Doyle in a crime thriller", year: 1971, category: "Movies & Television" },
 { text: "Dirty Harry introduces Clint Eastwood as San Francisco police inspector Harry Callahan", year: 1971, category: "Movies & Television" },
 { text: "Willy Wonka & the Chocolate Factory stars Gene Wilder as an eccentric candy manufacturer", year: 1971, category: "Movies & Television" },
 { text: "A Clockwork Orange brings Stanley Kubrick's controversial dystopian thriller to movie theaters", year: 1971, category: "Movies & Television" },
@@ -47,25 +46,25 @@ const events = [
 { text: "The New York Times begins publishing the Pentagon Papers, exposing previously secret details of the Vietnam War", year: 1971, category: "History & Politics" },
 { text: "President Richard Nixon ends the U.S. dollar's direct convertibility into gold", year: 1971, category: "History & Politics" },
 { text: "The 26th Amendment lowers the U.S. voting age from 21 to 18", year: 1971, category: "History & Politics" },
-{ text: "Ray Tomlinson sends the first networked email between computers connected to ARPANET", year: 1971, category: "Tech & Internet" },
-{ text: "Ray Tomlinson adopts the @ symbol to separate usernames from computer addresses in email", year: 1971, category: "Tech & Internet" },
+{ text: "The first email is sent", year: 1971, category: "Tech & Internet" },
+{ text: "The @ symbol is adapted to separate usernames from computer addresses in email", year: 1971, category: "Tech & Internet" },
 { text: "IBM introduces the eight-inch floppy disk as a removable storage medium", year: 1971, category: "Tech & Internet" },
 { text: "Apollo 14 astronaut Alan Shepard hits golf balls on the Moon using a makeshift club", year: 1971, category: "Science & Discovery" },
 { text: "Walt Disney World opens in Florida, welcoming approximately 10,000 visitors on its first day", year: 1971, category: "Pop Culture & Weird News" },
-{ text: "Starbucks opens its first store in Seattle, selling coffee beans, tea, and brewing equipment", year: 1971, category: "Pop Culture & Weird News" },
+{ text: "Starbucks opens its first store in Seattle", year: 1971, category: "Pop Culture & Weird News" },
 { text: "A hijacker calling himself D. B. Cooper parachutes from an airplane with $200,000 and disappears", year: 1971, category: "Pop Culture & Weird News" },
 { text: "The first Hard Rock Cafe opens in London, combining American food with rock music memorabilia", year: 1971, category: "Pop Culture & Weird News" },
-{ text: "McDonald's opens its first restaurant in Japan, bringing the Big Mac to Tokyo's Ginza district", year: 1971, category: "Pop Culture & Weird News" },
+{ text: "McDonald's opens its first restaurant in Japan", year: 1971, category: "Pop Culture & Weird News" },
 { text: "Dr. Seuss publishes The Lorax, a children's book exploring environmental destruction", year: 1971, category: "Pop Culture & Weird News" },
 { text: "Amtrak begins operating passenger trains across the United States", year: 1971, category: "Pop Culture & Weird News" },
 { text: "Greenpeace begins with a protest voyage from Canada against U.S. nuclear testing near Alaska", year: 1971, category: "Pop Culture & Weird News" },
-{ text: "Coca-Cola launches its I'd Like to Buy the World a Coke commercial, featuring singers gathered on a hillside", year: 1971, category: "Pop Culture & Weird News" },
+{ text: "Coca-Cola launches its I'd Like to Buy the World a Coke commercial", year: 1971, category: "Pop Culture & Weird News" },
 { text: "NPR begins broadcasting and launches All Things Considered, its flagship afternoon news program", year: 1971, category: "History & Politics" },
 
 
 
-{ text: "Roberta Flack's The First Time Ever I Saw Your Face spends six weeks at No. 1 and becomes Billboard's top song of the year", year: 1972, category: "Music" },
-{ text: "Don McLean's American Pie spends four weeks at No. 1 on the Billboard Hot 100", year: 1972, category: "Music" },
+{ text: "Roberta Flack's The First Time Ever I Saw Your Face becomes Billboard's top song of the year", year: 1972, category: "Music" },
+{ text: "Don McLean's American Pie spends four weeks at No. 1 on the charts", year: 1972, category: "Music" },
 { text: "Bill Withers' Lean on Me spends three weeks at No. 1 on the Billboard Hot 100", year: 1972, category: "Music" },
 { text: "David Bowie releases The Rise and Fall of Ziggy Stardust and the Spiders from Mars", year: 1972, category: "Music" },
 { text: "Stevie Wonder releases Talking Book, featuring Superstition and You Are the Sunshine of My Life", year: 1972, category: "Music" },
@@ -76,13 +75,13 @@ const events = [
 { text: "M*A*S*H premieres on CBS, following Army medical personnel during the Korean War", year: 1972, category: "Movies & Television" },
 { text: "The Waltons premieres on CBS, portraying family life in rural Virginia during the Great Depression", year: 1972, category: "Movies & Television" },
 { text: "The Price Is Right returns to television with Bob Barker as host", year: 1972, category: "Movies & Television" },
-{ text: "Richard Nixon visits China, becoming the first sitting U.S. president to visit the People's Republic", year: 1972, category: "History & Politics" },
-{ text: "Five burglars are arrested inside Democratic National Committee headquarters at the Watergate complex", year: 1972, category: "History & Politics" },
+{ text: "Richard Nixon becomes the first sitting U.S. president to visit China", year: 1972, category: "History & Politics" },
+{ text: "Five burglars are arrested inside DNC headquarters at the Watergate complex", year: 1972, category: "History & Politics" },
 { text: "Richard Nixon defeats George McGovern in a landslide presidential election, winning 49 states", year: 1972, category: "History & Politics" },
 { text: "Atari releases Pong, helping establish the commercial video game industry", year: 1972, category: "Tech & Internet" },
-{ text: "Atari is founded by Nolan Bushnell and Ted Dabney in California", year: 1972, category: "Tech & Internet" },
+{ text: "Atari is founded in California", year: 1972, category: "Tech & Internet" },
 { text: "Apollo 17 completes humanity's last crewed Moon landing of the 20th century", year: 1972, category: "Science & Discovery" },
-{ text: "Sixteen survivors of a plane crash in the Andes are rescued after spending 72 days in the mountains", year: 1972, category: "Pop Culture & Weird News" },
+{ text: "Sixteen survivors of a plane crash in the Andes are rescued after 72 days", year: 1972, category: "Pop Culture & Weird News" },
 { text: "Two giant pandas named Ling-Ling and Hsing-Hsing arrive at Washington's National Zoo as gifts from China", year: 1972, category: "Pop Culture & Weird News" },
 { text: "London hosts its first Gay Pride march, attracting hundreds of participants", year: 1972, category: "Pop Culture & Weird News" },
 { text: "Baseball star Roberto Clemente dies in a plane crash while delivering earthquake relief supplies to Nicaragua", year: 1972, category: "Sports" },
@@ -119,7 +118,7 @@ const events = [
 { text: "Marlon Brando refuses his Best Actor Oscar and sends Sacheen Littlefeather to speak at the ceremony", year: 1973, category: "Pop Culture & Weird News" },
 { text: "A bank robbery in Stockholm leads to a six-day hostage crisis that inspires the term Stockholm syndrome", year: 1973, category: "Pop Culture & Weird News" },
 { text: "Secretariat wins the Triple Crown, taking the Belmont Stakes by a record 31 lengths", year: 1973, category: "Sports" },
-{ text: "Federal Express, later known as FedEx, begins overnight delivery operations with 14 aircraft delivering 186 packages to 25 American cities", year: 1973, category: "Pop Culture & Weird News" },
+{ text: "Federal Express begins overnight delivery operations to 25 American cities", year: 1973, category: "Pop Culture & Weird News" },
 { text: "A Charlie Brown Thanksgiving premieres on CBS, with Charlie Brown serving popcorn, toast, and jelly beans for Thanksgiving dinner", year: 1973, category: "Movies & Television" },
 
 
@@ -263,7 +262,6 @@ const events = [
 { text: "Dallas premieres on CBS, introducing the wealthy and feuding Ewing family", year: 1978, category: "Movies & Television" },
 { text: "Mork & Mindy premieres on ABC with Robin Williams playing an alien from the planet Ork", year: 1978, category: "Movies & Television" },
 { text: "Taxi premieres on ABC, following the drivers and employees of a New York City cab company", year: 1978, category: "Movies & Television" },
-{ text: "Pope John Paul I dies after just 33 days as pope, and John Paul II becomes the third pope of the year", year: 1978, category: "History & Politics" },
 { text: "President Jimmy Carter signs the Airline Deregulation Act, reducing federal control over airfares and routes", year: 1978, category: "History & Politics" },
 { text: "Texas Instruments introduces Speak & Spell, an educational toy that uses synthesized speech", year: 1978, category: "Tech & Internet" },
 { text: "Milton Bradley introduces Simon, an electronic game that challenges players to repeat sequences of lights and sounds", year: 1978, category: "Tech & Internet" },
@@ -392,8 +390,8 @@ const events = [
 { text: "Rubik's Cube becomes an international toy craze, frustrating puzzle solvers around the world", year: 1981, category: "Pop Culture & Weird News" },
 { text: "Simon & Garfunkel reunite for a free Central Park concert attended by an estimated 500,000 people", year: 1981, category: "Pop Culture & Weird News" },
 { text: "Muhammad Ali loses to Trevor Berbick in the final professional fight of his career", year: 1981, category: "Sports" },
-{ text: "The Great Muppet Caper premieres in theaters, sending Kermit, Fozzie, and Gonzo to London to investigate a jewel theft", year: 1981, category: "Movies & Television" },
-
+{ text: "The Great Muppet Caper premieres in theaters, sending the Muppets to London to investigate a jewel theft", year: 1981, category: "Movies & Television" },
+{ text: "Ronald Reagan order 3.5 tons of red, white, and blue jelly beans for his presidential inauguration", year: 1981, category: "History & Politics" },
 
 
 
@@ -519,7 +517,7 @@ const events = [
 { text: "Michael Jordan joins the Chicago Bulls as the third overall pick in the NBA draft", year: 1984, category: "Sports" },
 { text: "Subway begins baking fresh bread inside its U.S. restaurants", year: 1984, category: "Pop Culture & Weird News" },
 { text: "Ben & Jerry's creates Chocolate Chip Cookie Dough ice cream after a customer suggests mixing chunks of raw cookie dough into vanilla ice cream", year: 1984, category: "Pop Culture & Weird News" },
-{ text: "The Muppets Take Manhattan arrives in theaters, as Kermit, Miss Piggy, and friends attempt to bring a musical to Broadway", year: 1984, category: "Movies & Television" },
+{ text: "The Muppets Take Manhattan arrives in theaters, as the Muppets attempt to bring a musical to Broadway", year: 1984, category: "Movies & Television" },
 
 
 
@@ -1122,7 +1120,7 @@ const events = [
 { text: "Harry Potter and the Goblet of Fire is released, drawing enormous crowds to bookstores for midnight launch parties", year: 2000, category: "Pop Culture & Weird News" },
 { text: "The Sacagawea golden dollar coin enters circulation, with the U.S. Mint hoping Americans will embrace a new dollar coin", year: 2000, category: "Pop Culture & Weird News" },
 { text: "Subway begins featuring Jared Fogle in national advertisements highlighting his dramatic weight loss from eating Subway sandwiches", year: 2000, category: "Pop Culture & Weird News" },
-{ text: "The Summer Olympics take place in Sydney, Australia, featuring memorable performances by Cathy Freeman and other international athletes", year: 2000, category: "Sports" },
+{ text: "The Summer Olympics take place in Sydney, Australia", year: 2000, category: "Sports" },
 { text: "The term chad becomes nationally recognized during the disputed U.S. presidential election recount", year: 2000, category: "History & Politics" },
 { text: "The phrase cyberbullying gains prominence as online harassment becomes a growing social concern", year: 2000, category: "Tech & Internet" },
 { text: "Pets.com announces its liquidation, turning its famous sock-puppet mascot into a symbol of the dot-com retail crash", year: 2000, category: "Tech & Internet" },
@@ -1214,7 +1212,7 @@ const events = [
 { text: "The South African version of Sesame Street introduces Kami, an HIV-positive Muppet designed to educate children and combat stigma surrounding AIDS", year: 2002, category: "Movies & Television" },
 { text: "British street artist Banksy creates Girl with Balloon, depicting a young girl reaching toward a red heart-shaped balloon on London's Waterloo Bridge", year: 2002, category: "Pop Culture & Weird News" },
 { text: "Crocs introduces its distinctive foam clogs, initially marketed as boating shoes before becoming an unlikely fashion phenomenon", year: 2002, category: "Pop Culture & Weird News" },
-
+{ text: "President Bush chokes on a pretzel while watching a football game, briefly losing consciousness", year: 2002, category: "History & Politics" },
 
 
 
@@ -1319,7 +1317,6 @@ const events = [
 { text: "The Colbert Report premieres on Comedy Central with Stephen Colbert parodying cable news personalities", year: 2005, category: "Movies & Television" },
 { text: "Hurricane Katrina devastates the Gulf Coast and floods much of New Orleans", year: 2005, category: "History & Politics" },
 { text: "Angela Merkel becomes Germany's first female chancellor", year: 2005, category: "History & Politics" },
-{ text: "Pope John Paul II dies at age 84, and Cardinal Joseph Ratzinger becomes Pope Benedict XVI", year: 2005, category: "History & Politics" },
 { text: "The Kyoto Protocol takes effect, committing participating countries to reduce greenhouse gas emissions", year: 2005, category: "History & Politics" },
 { text: "Civil rights pioneer Rosa Parks dies at age 92", year: 2005, category: "History & Politics" },
 { text: "YouTube launches, with its first video showing co-founder Jawed Karim at the San Diego Zoo", year: 2005, category: "Tech & Internet" },
@@ -1388,6 +1385,8 @@ const events = [
 { text: "The television show Deal or No Deal becomes a national obsession with its numbered briefcases and mysterious banker", year: 2006, category: "Movies & Television" },
 { text: "Crocs become a mainstream footwear sensation, with millions of Americans embracing the colorful foam clogs despite their controversial appearance", year: 2006, category: "Pop Culture & Weird News" },
 { text: "Ceres is officially classified as a dwarf planet, placing the largest object in the asteroid belt in the same category as Pluto", year: 2006, category: "Science & Discovery" },
+{ text: "Downloadable ringtones peak in popularity, selling $600 million in a single year", year: 2007, category: "Tech & Internet" },
+
 
 
 
@@ -1423,6 +1422,7 @@ const events = [
 { text: "The U.S. Postal Service introduces the Forever stamp, which remains valid for mailing a one-ounce letter regardless of future price increases", year: 2007, category: "Pop Culture & Weird News" },
 { text: "A dramatic viral video shows a fan crying and demanding that the media leave Britney Spears alone", year: 2007, category: "Pop Culture & Weird News" },
 { text: "Rickrolling becomes an internet prank in which unsuspecting users are redirected to Rick Astley's Never Gonna Give You Up", year: 2007, category: "Tech & Internet" },
+
 
 
 
@@ -1944,7 +1944,7 @@ const events = [
 { text: "Ozzy Osbourne dies at age 76, weeks after performing a farewell concert with Black Sabbath", year: 2025, category: "Music" },
 { text: "A Minecraft Movie earns more than $400 million at the North American box office", year: 2025, category: "Movies & Television" },
 { text: "KPop Demon Hunters becomes Netflix's most-watched movie, featuring the fictional group HUNTR/X", year: 2025, category: "Movies & Television" },
-{ text: "Pope Francis dies at age 88, and Robert Prevost becomes Pope Leo XIV, the first U.S.-born pope", year: 2025, category: "History & Politics" },
+{ text: "Robert Prevost becomes Pope Leo XIV, the first U.S.-born pope", year: 2025, category: "History & Politics" },
 { text: "President Trump announces sweeping new tariffs on imports, prompting retaliation from several trading partners", year: 2025, category: "History & Politics" },
 { text: "Nintendo launches the Switch 2, selling more than 3.5 million units worldwide in its first four days", year: 2025, category: "Tech & Internet" },
 { text: "TikTok briefly goes offline in the United States amid uncertainty over a federal divest-or-ban law", year: 2025, category: "Tech & Internet" },
