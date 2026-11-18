@@ -3,10 +3,10 @@ const events = [
 
 
 { text: "The Beatles announce their breakup after a decade together", year: 1970, category: "Music" },
-{ text: "Simon & Garfunkel's Bridge Over Troubled Water becomes Billboard's top song of the year", year: 1970, category: "Music" },
-{ text: "The Jackson 5 score four No. 1 singles in one year, including ABC and I'll Be There", year: 1970, category: "Music" },
-{ text: "The Carpenters' Close to You spends four weeks at No. 1", year: 1970, category: "Music" },
-{ text: "Diana Ross earns her first solo No. 1 hit with Ain't No Mountain High Enough", year: 1970, category: "Music" },
+{ text: "Simon & Garfunkel's Bridge Over Troubled Water becomes the #1 song of the year", year: 1970, category: "Music" },
+{ text: "The Jackson 5 score four #1 singles in one year, including ABC and I'll Be There", year: 1970, category: "Music" },
+{ text: "The Carpenters' Close to You spends four weeks at #1", year: 1970, category: "Music" },
+{ text: "Diana Ross earns her first solo #1 hit with Ain't No Mountain High Enough", year: 1970, category: "Music" },
 { text: "Jimi Hendrix dies at age 27 in London", year: 1970, category: "Music" },
 { text: "Janis Joplin dies at age 27 while recording what becomes her posthumous album Pearl", year: 1970, category: "Music" },
 { text: "Airport earns more than $100 million domestically and helps popularize disaster movies", year: 1970, category: "Movies & Television" },
@@ -34,10 +34,10 @@ const events = [
 { text: "Marvin Gaye releases What's Going On, addressing war, poverty, and environmental concerns", year: 1971, category: "Music" },
 { text: "Led Zeppelin releases its untitled fourth album, featuring Stairway to Heaven and Black Dog", year: 1971, category: "Music" },
 { text: "Don McLean releases American Pie, an eight-minute song reflecting on changes in American music and culture", year: 1971, category: "Music" },
-{ text: "Rod Stewart's Maggie May spends five consecutive weeks at No. 1", year: 1971, category: "Music" },
-{ text: "Three Dog Night's Joy to the World becomes Billboard's top song of the year", year: 1971, category: "Music" },
-{ text: "Janis Joplin's Me and Bobby McGee reaches No. 1 five months after her death", year: 1971, category: "Music" },
-{ text: "The Rolling Stones' Brown Sugar reaches No. 1 on the Billboard Hot 100", year: 1971, category: "Music" },
+{ text: "Rod Stewart's Maggie May spends five consecutive weeks at #1", year: 1971, category: "Music" },
+{ text: "Three Dog Night's Joy to the World becomes the #1 song of the year", year: 1971, category: "Music" },
+{ text: "Janis Joplin's Me and Bobby McGee reaches #1 five months after her death", year: 1971, category: "Music" },
+{ text: "The Rolling Stones' Brown Sugar reaches #1", year: 1971, category: "Music" },
 { text: "Fiddler on the Roof earns more than $80 million worldwide, becoming one of the year's biggest films", year: 1971, category: "Movies & Television" },
 { text: "Dirty Harry introduces Clint Eastwood as San Francisco police inspector Harry Callahan", year: 1971, category: "Movies & Television" },
 { text: "Willy Wonka & the Chocolate Factory stars Gene Wilder as an eccentric candy manufacturer", year: 1971, category: "Movies & Television" },
@@ -63,13 +63,13 @@ const events = [
 
 
 
-{ text: "Roberta Flack's The First Time Ever I Saw Your Face becomes Billboard's top song of the year", year: 1972, category: "Music" },
-{ text: "Don McLean's American Pie spends four weeks at No. 1 on the charts", year: 1972, category: "Music" },
-{ text: "Bill Withers' Lean on Me spends three weeks at No. 1 on the Billboard Hot 100", year: 1972, category: "Music" },
+{ text: "Roberta Flack's The First Time Ever I Saw Your Face becomes the #1 song of the year", year: 1972, category: "Music" },
+{ text: "Don McLean's American Pie spends four weeks at #1", year: 1972, category: "Music" },
+{ text: "Bill Withers' Lean on Me spends three weeks at #1", year: 1972, category: "Music" },
 { text: "David Bowie releases The Rise and Fall of Ziggy Stardust and the Spiders from Mars", year: 1972, category: "Music" },
 { text: "Stevie Wonder releases Talking Book, featuring Superstition and You Are the Sunshine of My Life", year: 1972, category: "Music" },
-{ text: "Michael Jackson scores his first solo No. 1 hit on the Billboard Hot 100 with Ben", year: 1972, category: "Music" },
-{ text: "Chuck Berry earns his only Billboard Hot 100 No. 1 hit with My Ding-a-Ling", year: 1972, category: "Music" },
+{ text: "Michael Jackson scores his first solo #1 hit with Ben", year: 1972, category: "Music" },
+{ text: "Chuck Berry earns his only #1 hit with My Ding-a-Ling", year: 1972, category: "Music" },
 { text: "The Godfather becomes the year's highest-grossing movie, earning more than $130 million domestically", year: 1972, category: "Movies & Television" },
 { text: "Deliverance features four friends whose canoe trip through Georgia turns into a fight for survival", year: 1972, category: "Movies & Television" },
 { text: "M*A*S*H premieres on CBS, following Army medical personnel during the Korean War", year: 1972, category: "Movies & Television" },
@@ -79,7 +79,6 @@ const events = [
 { text: "Five burglars are arrested inside DNC headquarters at the Watergate complex", year: 1972, category: "History & Politics" },
 { text: "Richard Nixon defeats George McGovern in a landslide presidential election, winning 49 states", year: 1972, category: "History & Politics" },
 { text: "Atari releases Pong, helping establish the commercial video game industry", year: 1972, category: "Tech & Internet" },
-{ text: "Atari is founded in California", year: 1972, category: "Tech & Internet" },
 { text: "Apollo 17 completes humanity's last crewed Moon landing of the 20th century", year: 1972, category: "Science & Discovery" },
 { text: "Sixteen survivors of a plane crash in the Andes are rescued after 72 days", year: 1972, category: "Pop Culture & Weird News" },
 { text: "Two giant pandas named Ling-Ling and Hsing-Hsing arrive at Washington's National Zoo as gifts from China", year: 1972, category: "Pop Culture & Weird News" },
@@ -89,33 +88,32 @@ const events = [
 
 
 
-{ text: "Pink Floyd releases The Dark Side of the Moon, which eventually spends more than 900 weeks on the Billboard 200", year: 1973, category: "Music" },
-{ text: "Elton John's Crocodile Rock becomes his first No. 1 single on the Billboard Hot 100", year: 1973, category: "Music" },
-{ text: "Marvin Gaye's Let's Get It On reaches No. 1 on the Billboard Hot 100", year: 1973, category: "Music" },
+{ text: "Pink Floyd releases The Dark Side of the Moon, which eventually spends more than 900 weeks on the charts", year: 1973, category: "Music" },
+{ text: "Elton John's Crocodile Rock becomes his first #1 single", year: 1973, category: "Music" },
+{ text: "Marvin Gaye's Let's Get It On reaches #1", year: 1973, category: "Music" },
 { text: "Led Zeppelin releases Houses of the Holy, which tops the album charts in the United States and Britain", year: 1973, category: "Music" },
 { text: "Elton John releases Goodbye Yellow Brick Road, a double album featuring Bennie and the Jets", year: 1973, category: "Music" },
-{ text: "Jim Croce dies in a plane crash at age 30, months after Bad, Bad Leroy Brown reaches No. 1", year: 1973, category: "Music" },
-{ text: "Tony Orlando and Dawn's Tie a Yellow Ribbon Round the Ole Oak Tree becomes Billboard's No. 1 song of the year", year: 1973, category: "Music" },
+{ text: "Jim Croce dies in a plane crash at age 30, months after Bad, Bad Leroy Brown reaches #1", year: 1973, category: "Music" },
+{ text: "Tony Orlando and Dawn's Tie a Yellow Ribbon Round the Ole Oak Tree becomes the #1 song of the year", year: 1973, category: "Music" },
 { text: "The Exorcist becomes the year's highest-grossing film, with its supernatural horror attracting enormous audiences", year: 1973, category: "Movies & Television" },
 { text: "The Sting reunites Paul Newman and Robert Redford in a story about two Depression-era con artists", year: 1973, category: "Movies & Television" },
 { text: "American Graffiti earns more than $100 million domestically on a production budget of roughly $775,000", year: 1973, category: "Movies & Television" },
 { text: "Live and Let Die introduces Roger Moore as James Bond", year: 1973, category: "Movies & Television" },
-{ text: "Westworld depicts a futuristic amusement park where lifelike robots turn against visitors", year: 1973, category: "Movies & Television" },
-{ text: "The Young and the Restless premieres on CBS, following rival families in the fictional Genoa City", year: 1973, category: "Movies & Television" },
+{ text: "The Young and the Restless premieres on CBS", year: 1973, category: "Movies & Television" },
 { text: "Schoolhouse Rock! premieres on ABC, using animated songs to teach multiplication and grammar", year: 1973, category: "Movies & Television" },
 { text: "The U.S. Supreme Court rules in Roe v. Wade that the Constitution protects a right to abortion", year: 1973, category: "History & Politics" },
 { text: "The Paris Peace Accords lead to the withdrawal of the last U.S. combat troops from Vietnam", year: 1973, category: "History & Politics" },
 { text: "Televised Senate hearings expose details of the Watergate scandal and President Nixon's secret recordings", year: 1973, category: "History & Politics" },
 { text: "Vice President Spiro Agnew resigns after pleading no contest to a federal tax evasion charge", year: 1973, category: "History & Politics" },
 { text: "Gerald Ford becomes vice president following Agnew's resignation, the first appointment under the 25th Amendment", year: 1973, category: "History & Politics" },
-{ text: "Motorola engineer Martin Cooper makes the first public handheld cellular telephone call", year: 1973, category: "Tech & Internet" },
+{ text: "Tthe first public handheld cellular telephone call is made", year: 1973, category: "Tech & Internet" },
 { text: "Xerox develops the Alto, an experimental computer featuring a graphical interface and mouse", year: 1973, category: "Tech & Internet" },
 { text: "NASA launches Skylab, the first American space station, into Earth orbit", year: 1973, category: "Science & Discovery" },
 { text: "The Sydney Opera House officially opens after 14 years of construction", year: 1973, category: "Pop Culture & Weird News" },
 { text: "Chicago's Sears Tower becomes the world's tallest building, surpassing the World Trade Center", year: 1973, category: "Pop Culture & Weird News" },
 { text: "Martial arts star Bruce Lee dies at age 32, just weeks before the American premiere of Enter the Dragon", year: 1973, category: "Pop Culture & Weird News" },
 { text: "Pablo Picasso dies at age 91, leaving behind thousands of paintings, drawings, and sculptures", year: 1973, category: "Pop Culture & Weird News" },
-{ text: "Marlon Brando refuses his Best Actor Oscar and sends Sacheen Littlefeather to speak at the ceremony", year: 1973, category: "Pop Culture & Weird News" },
+{ text: "Marlon Brando refuses his Best Actor Oscar", year: 1973, category: "Pop Culture & Weird News" },
 { text: "A bank robbery in Stockholm leads to a six-day hostage crisis that inspires the term Stockholm syndrome", year: 1973, category: "Pop Culture & Weird News" },
 { text: "Secretariat wins the Triple Crown, taking the Belmont Stakes by a record 31 lengths", year: 1973, category: "Sports" },
 { text: "Federal Express begins overnight delivery operations to 25 American cities", year: 1973, category: "Pop Culture & Weird News" },
@@ -124,22 +122,22 @@ const events = [
 
 
 { text: "ABBA wins the Eurovision Song Contest with Waterloo, launching the Swedish group's international career", year: 1974, category: "Music" },
-{ text: "Barbra Streisand's The Way We Were becomes Billboard's No. 1 song of the year", year: 1974, category: "Music" },
-{ text: "Eric Clapton reaches No. 1 on the Billboard Hot 100 with his cover of Bob Marley's I Shot the Sheriff", year: 1974, category: "Music" },
-{ text: "John Denver's Annie's Song becomes his second No. 1 hit on the Billboard Hot 100", year: 1974, category: "Music" },
-{ text: "Blazing Saddles earns approximately $119 million domestically, becoming the highest-grossing American film released in 1974", year: 1974, category: "Movies & Television" },
-{ text: "The Godfather Part II brings Robert De Niro and Al Pacino together in parallel stories about the Corleone family", year: 1974, category: "Movies & Television" },
+{ text: "Barbra Streisand's The Way We Were becomes the #1 song of the year", year: 1974, category: "Music" },
+{ text: "Eric Clapton reaches #1 with his cover of Bob Marley's I Shot the Sheriff", year: 1974, category: "Music" },
+{ text: "John Denver's Annie's Song becomes his second #1 hit", year: 1974, category: "Music" },
+{ text: "Blazing Saddles earns approximately $119 million domestically, becoming the highest-grossing film of the year", year: 1974, category: "Movies & Television" },
+{ text: "The Godfather Part II is released", year: 1974, category: "Movies & Television" },
 { text: "Young Frankenstein reunites Gene Wilder and Mel Brooks for a black-and-white parody of classic horror films", year: 1974, category: "Movies & Television" },
 { text: "The Texas Chain Saw Massacre introduces Leatherface in a horror film made for approximately $140,000", year: 1974, category: "Movies & Television" },
 { text: "Murder on the Orient Express brings Agatha Christie's famous mystery to theaters with an ensemble cast", year: 1974, category: "Movies & Television" },
-{ text: "Happy Days premieres on ABC, introducing Richie Cunningham and Arthur Fonzarelli", year: 1974, category: "Movies & Television" },
-{ text: "Little House on the Prairie premieres on NBC with Michael Landon playing Charles Ingalls", year: 1974, category: "Movies & Television" },
-{ text: "Richard Nixon resigns as U.S. president amid the Watergate scandal, becoming the first president to leave office by resignation", year: 1974, category: "History & Politics" },
+{ text: "Happy Days premieres on ABC", year: 1974, category: "Movies & Television" },
+{ text: "Little House on the Prairie premieres on NBC", year: 1974, category: "Movies & Television" },
+{ text: "Richard Nixon resigns as U.S. president amid the Watergate scandal", year: 1974, category: "History & Politics" },
 { text: "Gerald Ford becomes the 38th U.S. president without having been elected president or vice president", year: 1974, category: "History & Politics" },
 { text: "President Gerald Ford grants Richard Nixon a full pardon for possible federal crimes committed during his presidency", year: 1974, category: "History & Politics" },
 { text: "Intel introduces the 8080 microprocessor, which becomes a foundation for early personal computers", year: 1974, category: "Tech & Internet" },
 { text: "A supermarket in Ohio scans a pack of Wrigley's chewing gum in the first commercial UPC barcode transaction", year: 1974, category: "Tech & Internet" },
-{ text: "Scientists discover Lucy, a 3.2-million-year-old Australopithecus afarensis skeleton in Ethiopia", year: 1974, category: "Science & Discovery" },
+{ text: "Scientists discover Lucy, the 3.2-million-year-old bones of one of humanity's earliest relatives", year: 1974, category: "Science & Discovery" },
 { text: "Philippe Petit walks on a tightrope between the World Trade Center's Twin Towers without a safety harness", year: 1974, category: "Pop Culture & Weird News" },
 { text: "Ernő Rubik invents the puzzle that becomes known worldwide as the Rubik's Cube", year: 1974, category: "Pop Culture & Weird News" },
 { text: "Dungeons & Dragons makes its debut, introducing a fantasy role-playing game built around dice and imagination", year: 1974, category: "Pop Culture & Weird News" },
@@ -151,30 +149,30 @@ const events = [
 
 
 
-{ text: "Queen releases Bohemian Rhapsody, which spends nine consecutive weeks at No. 1 in the UK", year: 1975, category: "Music" },
-{ text: "Bruce Springsteen releases Born to Run and appears on the covers of Time and Newsweek in the same week", year: 1975, category: "Music" },
-{ text: "Bob Dylan releases Blood on the Tracks, which reaches No. 1 on the Billboard album chart", year: 1975, category: "Music" },
-{ text: "David Bowie's Fame becomes his first No. 1 single on the Billboard Hot 100", year: 1975, category: "Music" },
-{ text: "Elton John's Philadelphia Freedom spends two weeks at No. 1 on the Billboard Hot 100", year: 1975, category: "Music" },
+{ text: "Queen releases Bohemian Rhapsody, which spends nine consecutive weeks at #1 in the UK", year: 1975, category: "Music" },
+{ text: "Bruce Springsteen releases Born to Run and appears on the covers of Time and Newsweek", year: 1975, category: "Music" },
+{ text: "Bob Dylan releases Blood on the Tracks", year: 1975, category: "Music" },
+{ text: "David Bowie's Fame becomes his first #1 single", year: 1975, category: "Music" },
+{ text: "Elton John's Philadelphia Freedom spends two weeks at #1", year: 1975, category: "Music" },
 { text: "Jaws becomes the first movie to earn more than $100 million at the North American box office", year: 1975, category: "Movies & Television" },
 { text: "One Flew Over the Cuckoo's Nest stars Jack Nicholson as a patient challenging a psychiatric hospital's authority", year: 1975, category: "Movies & Television" },
 { text: "The Rocky Horror Picture Show introduces audiences to Dr. Frank-N-Furter and the song Time Warp", year: 1975, category: "Movies & Television" },
 { text: "Monty Python and the Holy Grail follows King Arthur's knights on a low-budget quest for the legendary relic", year: 1975, category: "Movies & Television" },
 { text: "Saturday Night Live premieres on NBC with George Carlin as its first host", year: 1975, category: "Movies & Television" },
-{ text: "The Jeffersons premieres on CBS, following George and Louise Jefferson as they move to Manhattan", year: 1975, category: "Movies & Television" },
+{ text: "The Jeffersons premieres on CBS", year: 1975, category: "Movies & Television" },
 { text: "Wheel of Fortune premieres on NBC with Chuck Woolery as its original host", year: 1975, category: "Movies & Television" },
 { text: "Bill Gates and Paul Allen establish Microsoft, initially developing software for personal computers", year: 1975, category: "Tech & Internet" },
-{ text: "American and Soviet spacecraft dock in orbit during the Apollo-Soyuz mission, and their crews shake hands in space", year: 1975, category: "Science & Discovery" },
+{ text: "American and Soviet spacecraft dock in orbit, and their crews shake hands in space", year: 1975, category: "Science & Discovery" },
 { text: "The Pet Rock becomes a holiday shopping sensation, selling more than a million ordinary stones packaged as pets", year: 1975, category: "Pop Culture & Weird News" },
 { text: "Mood rings become a fashion craze, supposedly changing color according to the wearer's emotions", year: 1975, category: "Pop Culture & Weird News" },
-{ text: "The Broadway musical A Chorus Line opens and follows dancers auditioning for a musical production", year: 1975, category: "Pop Culture & Weird News" },
-{ text: "Charlie Chaplin receives a knighthood from Queen Elizabeth II at age 85", year: 1975, category: "Pop Culture & Weird News" },
+{ text: "A Chorus Line opens on Broadway, following dancers as they audition for a musical production", year: 1975, category: "Pop Culture & Weird News" },
+{ text: "Charlie Chaplin is knighted at age 85", year: 1975, category: "Pop Culture & Weird News" },
 { text: "Hello Kitty merchandise goes on sale in Japan, introducing the character on a small vinyl coin purse", year: 1975, category: "Pop Culture & Weird News" },
 { text: "Giorgio Armani establishes his fashion company in Milan, Italy", year: 1975, category: "Pop Culture & Weird News" },
 { text: "Space Mountain opens at Walt Disney World, bringing an indoor roller coaster to the Magic Kingdom", year: 1975, category: "Pop Culture & Weird News" },
 { text: "President Gerald Ford survives two separate assassination attempts in California within 17 days", year: 1975, category: "Pop Culture & Weird News" },
 { text: "Arthur Ashe becomes the first Black man to win the Wimbledon singles championship", year: 1975, category: "Sports" },
-{ text: "Muhammad Ali defeats Joe Frazier in the Thrilla in Manila, their third and final boxing match", year: 1975, category: "Sports" },
+{ text: "Muhammad Ali defeats Joe Frazier in the Thrilla in Manila", year: 1975, category: "Sports" },
 { text: "Pop Rocks candy is introduced, with tiny carbonated crystals that explode and fizz when placed in the mouth", year: 1975, category: "Pop Culture & Weird News" },
 
 
@@ -185,20 +183,19 @@ const events = [
 
 { text: "Stevie Wonder releases Songs in the Key of Life, featuring Sir Duke and Isn't She Lovely", year: 1976, category: "Music" },
 { text: "The Eagles release Hotel California, featuring the title track and New Kid in Town", year: 1976, category: "Music" },
-{ text: "ABBA releases Dancing Queen, which reaches No. 1 in the UK and several other countries", year: 1976, category: "Music" },
-{ text: "Elton John and Kiki Dee's Don't Go Breaking My Heart spends four weeks at No. 1 in the United States", year: 1976, category: "Music" },
-{ text: "Wild Cherry's Play That Funky Music spends three weeks atop the Billboard Hot 100", year: 1976, category: "Music" },
+{ text: "ABBA releases Dancing Queen, which reaches #1 in the UK", year: 1976, category: "Music" },
+{ text: "Elton John and Kiki Dee's Don't Go Breaking My Heart spends four weeks at #1", year: 1976, category: "Music" },
+{ text: "Wild Cherry's Play That Funky Music spends three weeks at #1", year: 1976, category: "Music" },
 { text: "Rocky becomes the highest-grossing film of the year, earning more than $100 million domestically", year: 1976, category: "Movies & Television" },
 { text: "Taxi Driver introduces Robert De Niro as Travis Bickle, a troubled New York City cabdriver", year: 1976, category: "Movies & Television" },
 { text: "The Omen introduces Damien, a mysterious child believed to be the Antichrist", year: 1976, category: "Movies & Television" },
 { text: "King Kong returns to movie theaters in a remake featuring Jeff Bridges and Jessica Lange", year: 1976, category: "Movies & Television" },
-{ text: "Charlie's Angels premieres on ABC, introducing private investigators played by Farrah Fawcett, Kate Jackson, and Jaclyn Smith", year: 1976, category: "Movies & Television" },
+{ text: "Charlie's Angels premieres on ABC", year: 1976, category: "Movies & Television" },
 { text: "The Muppet Show premieres, bringing Kermit, Miss Piggy, and celebrity guests to television audiences", year: 1976, category: "Movies & Television" },
 { text: "Laverne & Shirley premieres on ABC as a spin-off of Happy Days", year: 1976, category: "Movies & Television" },
 { text: "Family Feud premieres on ABC with Richard Dawson as its original host", year: 1976, category: "Movies & Television" },
 { text: "Jimmy Carter defeats Gerald Ford to win the U.S. presidential election", year: 1976, category: "History & Politics" },
 { text: "North and South Vietnam formally reunify as the Socialist Republic of Vietnam", year: 1976, category: "History & Politics" },
-{ text: "Steve Jobs, Steve Wozniak, and Ronald Wayne establish Apple Computer on April 1", year: 1976, category: "Tech & Internet" },
 { text: "Apple begins selling the Apple I computer for $666.66", year: 1976, category: "Tech & Internet" },
 { text: "Atari releases Breakout, an arcade game in which players use a paddle to destroy rows of bricks", year: 1976, category: "Tech & Internet" },
 { text: "NASA's Viking 1 becomes the first American spacecraft to land successfully on Mars", year: 1976, category: "Science & Discovery" },
@@ -210,73 +207,73 @@ const events = [
 { text: "The New York City Marathon expands to a course through all five boroughs for the first time", year: 1976, category: "Sports" },
 { text: "The term couch potato is coined to describe someone who spends excessive time watching television", year: 1976, category: "Pop Culture & Weird News" },
 { text: "Windows on the World restaurant opens atop the World Trade Center in New York City", year: 1976, category: "Pop Culture & Weird News" },
-{ text: "Price Club opens its first warehouse store in a converted airplane hangar in San Diego, helping launch the membership warehouse shopping concept", year: 1976, category: "Pop Culture & Weird News" },
+{ text: "Price Club opens its first warehouse store, helping launch the membership warehouse shopping concept", year: 1976, category: "Pop Culture & Weird News" },
 
 
 
 
-{ text: "Fleetwood Mac releases Rumours, which spends 31 weeks at No. 1 on the Billboard 200", year: 1977, category: "Music" },
+{ text: "Fleetwood Mac releases Rumours, which spends 31 weeks at #1", year: 1977, category: "Music" },
 { text: "Elvis Presley dies at age 42 at his Graceland home in Memphis", year: 1977, category: "Music" },
-{ text: "The Eagles' Hotel California reaches No. 1 on the Billboard Hot 100", year: 1977, category: "Music" },
-{ text: "The Bee Gees release How Deep Is Your Love, launching a string of disco-era chart-toppers", year: 1977, category: "Music" },
-{ text: "ABBA's Dancing Queen becomes the group's only No. 1 hit in the United States", year: 1977, category: "Music" },
+{ text: "The Eagles' Hotel California reaches #1", year: 1977, category: "Music" },
+{ text: "The Bee Gees release How Deep Is Your Love, launching a string of disco-era #1 hits", year: 1977, category: "Music" },
+{ text: "ABBA's Dancing Queen becomes the group's only #1 hit in the United States", year: 1977, category: "Music" },
 { text: "Queen releases We Will Rock You and We Are the Champions as a double A-side single", year: 1977, category: "Music" },
-{ text: "Star Wars becomes the year's biggest movie, earning more than $200 million in its original North American theatrical run", year: 1977, category: "Movies & Television" },
-{ text: "Close Encounters of the Third Kind brings Steven Spielberg's story of alien contact to theaters", year: 1977, category: "Movies & Television" },
-{ text: "Smokey and the Bandit earns more than $126 million domestically with Burt Reynolds behind the wheel", year: 1977, category: "Movies & Television" },
-{ text: "Three's Company premieres on ABC, introducing roommates Jack, Janet, and Chrissy", year: 1977, category: "Movies & Television" },
+{ text: "Star Wars is the year's #1 movie, earning more than $200 million", year: 1977, category: "Movies & Television" },
+{ text: "Close Encounters of the Third Kind is released in theaters", year: 1977, category: "Movies & Television" },
+{ text: "Smokey and the Bandit earns more than $126 million domestically", year: 1977, category: "Movies & Television" },
+{ text: "Three's Company premieres on ABC", year: 1977, category: "Movies & Television" },
 { text: "CHiPs premieres on NBC, following California Highway Patrol motorcycle officers", year: 1977, category: "Movies & Television" },
 { text: "The Love Boat premieres on ABC, combining romance and comedy aboard a cruise ship", year: 1977, category: "Movies & Television" },
 { text: "Jimmy Carter takes office as the 39th president of the United States", year: 1977, category: "History & Politics" },
 { text: "The United States creates the Department of Energy under President Jimmy Carter", year: 1977, category: "History & Politics" },
 { text: "Atari launches the Video Computer System, later known as the Atari 2600, with interchangeable game cartridges", year: 1977, category: "Tech & Internet" },
 { text: "Radio Shack launches the TRS-80, selling approximately 10,000 computers in its first month", year: 1977, category: "Tech & Internet" },
-{ text: "Apple Computer incorporates, with Steve Jobs, Steve Wozniak, and Mike Markkula among its founders", year: 1977, category: "Tech & Internet" },
-{ text: "Hewlett-Packard introduces the HP-01, a digital wristwatch with a built-in calculator", year: 1977, category: "Tech & Internet" },
+{ text: "Apple Computer is incorporated", year: 1977, category: "Tech & Internet" },
+{ text: "Hewlett-Packard a digital wristwatch with a built-in calculator", year: 1977, category: "Tech & Internet" },
 { text: "Mattel introduces Electronic Football, an early handheld sports video game", year: 1977, category: "Tech & Internet" },
 { text: "Studio 54 opens in Manhattan, becoming a celebrity-filled symbol of disco nightlife", year: 1977, category: "Pop Culture & Weird News" },
-{ text: "Police arrest David Berkowitz, the serial killer known as Son of Sam, after a year of attacks in New York City", year: 1977, category: "Pop Culture & Weird News" },
+{ text: "Police arrest the serial killer known as Son of Sam after a year of attacks in New York City", year: 1977, category: "Pop Culture & Weird News" },
 { text: "Bing Crosby dies at age 74 after playing a round of golf in Spain", year: 1977, category: "Pop Culture & Weird News" },
 { text: "Charlie Chaplin dies at age 88 in Switzerland on Christmas Day", year: 1977, category: "Pop Culture & Weird News" },
 { text: "Concorde begins scheduled supersonic passenger flights between London and New York", year: 1977, category: "Pop Culture & Weird News" },
-{ text: "The first Chuck E. Cheese's Pizza Time Theatre opens in San Jose, combining pizza with arcade games", year: 1977, category: "Pop Culture & Weird News" },
+{ text: "The first Chuck E. Cheese's Pizza Time Theatre opens, combining pizza with arcade games", year: 1977, category: "Pop Culture & Weird News" },
 { text: "Star Wars sells early bird toy certificates after its action figures miss the Christmas shopping season", year: 1977, category: "Pop Culture & Weird News" },
 { text: "Reggie Jackson hits three home runs on three consecutive pitches in Game 6 of the World Series", year: 1977, category: "Sports" },
 { text: "Denny's introduces the Grand Slam Breakfast in honor of baseball legend Hank Aaron", year: 1977, category: "Sports" },
 { text: "Subway introduces its Snak sandwich, later renamed the six-inch sub", year: 1977, category: "Pop Culture & Weird News" },
-{ text: "The movie Saturday Night Fever sparks a nationwide disco craze, complete with white suits and light-up dance floors", year: 1977, category: "Movies & Television" },
+{ text: "Saturday Night Fever sparks a nationwide disco craze, complete with white suits and light-up dance floors", year: 1977, category: "Movies & Television" },
 { text: "A New York City blackout leads to widespread looting and chaos across the city", year: 1977, category: "History & Politics" },
 
 
 
 
 
-{ text: "The Bee Gees' Night Fever spends eight consecutive weeks at No. 1 on the Billboard Hot 100", year: 1978, category: "Music" },
-{ text: "Andy Gibb's Shadow Dancing spends seven weeks at No. 1 and becomes Billboard's top song of the year", year: 1978, category: "Music" },
-{ text: "The Village People release Y.M.C.A., which becomes an international disco hit", year: 1978, category: "Music" },
-{ text: "The Grease soundtrack becomes one of the year's best-selling albums, featuring John Travolta and Olivia Newton-John", year: 1978, category: "Music" },
-{ text: "Grease becomes the highest-grossing movie released in 1978, earning more than $150 million domestically", year: 1978, category: "Movies & Television" },
-{ text: "Superman introduces Christopher Reeve as the Man of Steel in a major Hollywood blockbuster", year: 1978, category: "Movies & Television" },
-{ text: "National Lampoon's Animal House earns more than $100 million domestically on a budget of roughly $3 million", year: 1978, category: "Movies & Television" },
-{ text: "Halloween introduces Michael Myers in a horror film made for approximately $300,000", year: 1978, category: "Movies & Television" },
+{ text: "The Bee Gees' Night Fever spends eight consecutive weeks at #1", year: 1978, category: "Music" },
+{ text: "Andy Gibb's Shadow Dancing spends seven weeks at #1 and becomes the #1 song of the year", year: 1978, category: "Music" },
+{ text: "The Village People release Y.M.C.A.", year: 1978, category: "Music" },
+{ text: "The Grease soundtrack becomes one of the year's best-selling albums", year: 1978, category: "Music" },
+{ text: "Grease becomes the highest-grossing movie of the year, earning more than $150 million domestically", year: 1978, category: "Movies & Television" },
+{ text: "Superman introduces Christopher Reeve as the Man of Steel", year: 1978, category: "Movies & Television" },
+{ text: "Animal House earns more than $100 million domestically", year: 1978, category: "Movies & Television" },
+{ text: "Halloween introduces Michael Myers as the iconic horror villain", year: 1978, category: "Movies & Television" },
 { text: "Dallas premieres on CBS, introducing the wealthy and feuding Ewing family", year: 1978, category: "Movies & Television" },
 { text: "Mork & Mindy premieres on ABC with Robin Williams playing an alien from the planet Ork", year: 1978, category: "Movies & Television" },
 { text: "Taxi premieres on ABC, following the drivers and employees of a New York City cab company", year: 1978, category: "Movies & Television" },
 { text: "President Jimmy Carter signs the Airline Deregulation Act, reducing federal control over airfares and routes", year: 1978, category: "History & Politics" },
-{ text: "Texas Instruments introduces Speak & Spell, an educational toy that uses synthesized speech", year: 1978, category: "Tech & Internet" },
-{ text: "Milton Bradley introduces Simon, an electronic game that challenges players to repeat sequences of lights and sounds", year: 1978, category: "Tech & Internet" },
-{ text: "Louise Brown becomes the world's first baby born through in vitro fertilization in England", year: 1978, category: "Science & Discovery" },
+{ text: "The Speak & Spell is introduced, an educational toy that uses synthesized speech", year: 1978, category: "Tech & Internet" },
+{ text: "The electronig game Simon is introduced, challenging players to repeat sequences of lights and sounds", year: 1978, category: "Tech & Internet" },
+{ text: "The world's first baby born through in vitro fertilization is born in England", year: 1978, category: "Science & Discovery" },
 { text: "Astronomers discover Charon, the largest moon of Pluto", year: 1978, category: "Science & Discovery" },
 { text: "Garfield makes his comic strip debut in 41 newspapers across the United States", year: 1978, category: "Pop Culture & Weird News" },
-{ text: "The rainbow flag designed by Gilbert Baker makes its first appearance at San Francisco's Gay Freedom Day Parade", year: 1978, category: "Pop Culture & Weird News" },
+{ text: "The rainbow flag makes its first appearance at San Francisco's Gay Freedom Day Parade", year: 1978, category: "Pop Culture & Weird News" },
 { text: "LEGO introduces its modern minifigures, giving the tiny characters movable arms and legs", year: 1978, category: "Pop Culture & Weird News" },
 { text: "Ben & Jerry's opens its first ice cream shop in a renovated gas station in Burlington, Vermont", year: 1978, category: "Pop Culture & Weird News" },
-{ text: "Resorts International opens in Atlantic City, becoming the first legal casino in the eastern United States", year: 1978, category: "Pop Culture & Weird News" },
-{ text: "Emilio Palma becomes the first person born on the Antarctic continent", year: 1978, category: "Pop Culture & Weird News" },
+{ text: "The first legal casino in the eastern United States opens in Atlantic City", year: 1978, category: "Pop Culture & Weird News" },
+{ text: "The first baby is born on the Antarctic continent", year: 1978, category: "Pop Culture & Weird News" },
 { text: "Fifteen athletes compete in Hawaii's first Ironman Triathlon, combining swimming, cycling, and running", year: 1978, category: "Sports" },
 { text: "The term glass ceiling begins appearing as a metaphor for invisible barriers to women's professional advancement", year: 1978, category: "History & Politics" },
 { text: "The Star Wars Holiday Special airs on television, featuring Chewbacca's family and a bizarre musical appearance by Bea Arthur", year: 1978, category: "Movies & Television" },
-{ text: "The Cheesecake Factory opens its first restaurant in Beverly Hills, California", year: 1978, category: "Pop Culture & Weird News" },
+{ text: "The Cheesecake Factory opens its first restaurant in Beverly Hills", year: 1978, category: "Pop Culture & Weird News" },
 { text: "Jim Davis introduces Garfield, the lazy, lasagna-loving orange cat, in a comic strip syndicated in 41 newspapers", year: 1978, category: "Pop Culture & Weird News" },
 
 
@@ -285,34 +282,34 @@ const events = [
 
 { text: "Michael Jackson releases Off the Wall, featuring Don't Stop 'Til You Get Enough and Rock with You", year: 1979, category: "Music" },
 { text: "Pink Floyd releases The Wall, a double album featuring Another Brick in the Wall, Part 2", year: 1979, category: "Music" },
-{ text: "The Knack's My Sharona spends six consecutive weeks at No. 1 on the Billboard Hot 100", year: 1979, category: "Music" },
-{ text: "Gloria Gaynor's I Will Survive reaches No. 1 and becomes a disco anthem", year: 1979, category: "Music" },
+{ text: "The Knack's My Sharona spends six consecutive weeks at #1", year: 1979, category: "Music" },
+{ text: "Gloria Gaynor's I Will Survive reaches #1 and becomes a disco anthem", year: 1979, category: "Music" },
 { text: "The Sugarhill Gang releases Rapper's Delight, bringing hip-hop to a mainstream record-buying audience", year: 1979, category: "Music" },
 { text: "AC/DC releases Highway to Hell, the band's final studio album with singer Bon Scott", year: 1979, category: "Music" },
 { text: "The Clash releases London Calling in the UK, blending punk with reggae, rockabilly, and ska", year: 1979, category: "Music" },
-{ text: "Kramer vs. Kramer becomes the highest-grossing American film released in 1979, earning over $100 million domestically", year: 1979, category: "Movies & Television" },
+{ text: "Kramer vs. Kramer becomes the highest-grossing film of the year", year: 1979, category: "Movies & Television" },
 { text: "Alien introduces Sigourney Weaver as Ellen Ripley aboard a spaceship stalked by a deadly creature", year: 1979, category: "Movies & Television" },
 { text: "Apocalypse Now brings Francis Ford Coppola's Vietnam War epic to theaters after a troubled production", year: 1979, category: "Movies & Television" },
 { text: "Rocky II earns more than $85 million domestically as Rocky Balboa faces Apollo Creed again", year: 1979, category: "Movies & Television" },
 { text: "Star Trek: The Motion Picture reunites the original television cast for its first theatrical film", year: 1979, category: "Movies & Television" },
-{ text: "The Muppet Movie introduces Kermit and his friends to movie theaters, featuring Rainbow Connection", year: 1979, category: "Movies & Television" },
+{ text: "The Muppet Movie comes to theaters, featuring Rainbow Connection", year: 1979, category: "Movies & Television" },
 { text: "The Dukes of Hazzard premieres on CBS, introducing the General Lee and the Duke cousins", year: 1979, category: "Movies & Television" },
 { text: "The Facts of Life premieres on NBC as a spin-off of Diff'rent Strokes", year: 1979, category: "Movies & Television" },
 { text: "Margaret Thatcher becomes Britain's first female prime minister", year: 1979, category: "History & Politics" },
 { text: "A nuclear accident at Three Mile Island in Pennsylvania becomes the most serious in U.S. commercial nuclear power history", year: 1979, category: "History & Politics" },
-{ text: "Saddam Hussein becomes president of Iraq after Ahmed Hassan al-Bakr resigns", year: 1979, category: "History & Politics" },
+{ text: "Saddam Hussein becomes president of Iraq", year: 1979, category: "History & Politics" },
 { text: "Sony launches the Walkman, allowing people to listen to cassette tapes through lightweight headphones", year: 1979, category: "Tech & Internet" },
 { text: "Atari releases Asteroids, an arcade game that becomes one of its biggest hits", year: 1979, category: "Tech & Internet" },
-{ text: "McDonald's introduces the Happy Meal nationwide, combining children's food with a toy", year: 1979, category: "Pop Culture & Weird News" },
-{ text: "Disco Demolition Night at Chicago's Comiskey Park ends in a riot and a forfeited baseball game", year: 1979, category: "Pop Culture & Weird News" },
-{ text: "Canadian journalists Chris Haney and Scott Abbott invent the board game Trivial Pursuit", year: 1979, category: "Pop Culture & Weird News" },
+{ text: "McDonald's introduces the Happy Meal nationwide", year: 1979, category: "Pop Culture & Weird News" },
+{ text: "Disco Demolition Night at Comiskey Park ends in a riot and a forfeited baseball game", year: 1979, category: "Pop Culture & Weird News" },
+{ text: "Canadian journalists invent the board game Trivial Pursuit", year: 1979, category: "Pop Culture & Weird News" },
 { text: "Tens of thousands attend the first National March on Washington for Lesbian and Gay Rights", year: 1979, category: "Pop Culture & Weird News" },
 { text: "Pope John Paul II visits the United States for the first time as pope, drawing enormous crowds", year: 1979, category: "Pop Culture & Weird News" },
 { text: "ESPN launches with SportsCenter, introducing a television network devoted to sports coverage", year: 1979, category: "Sports" },
 { text: "Wendy's introduces salad bars at its restaurants", year: 1979, category: "Pop Culture & Weird News" },
-{ text: "Americans line up to buy gasoline amid shortages, with some states rationing gas by license plate numbers", year: 1979, category: "History & Politics" },
-{ text: "The first two Home Depot stores open in Atlanta, introducing massive warehouse-style home improvement shopping", year: 1979, category: "Pop Culture & Weird News" },
-{ text: "NPR launches Morning Edition, establishing its signature morning news program", year: 1979, category: "History & Politics" },
+{ text: "Americans line up to buy gasoline amid shortages as rationing", year: 1979, category: "History & Politics" },
+{ text: "Home Depot launches its first two stores in Atlanta", year: 1979, category: "Pop Culture & Weird News" },
+{ text: "NPR launches Morning Edition, its signature morning news program", year: 1979, category: "History & Politics" },
 
 
 
@@ -322,15 +319,14 @@ const events = [
 
 { text: "AC/DC releases Back in Black, its first album following the death of singer Bon Scott", year: 1980, category: "Music" },
 { text: "John Lennon is shot and killed outside his New York City apartment at age 40", year: 1980, category: "Music" },
-{ text: "Queen's Another One Bites the Dust spends three weeks at No. 1 on the Billboard Hot 100", year: 1980, category: "Music" },
-{ text: "Pink Floyd's Another Brick in the Wall, Part 2 spends four weeks at No. 1 in the United States", year: 1980, category: "Music" },
-{ text: "Blondie's Call Me becomes Billboard's No. 1 song of the year", year: 1980, category: "Music" },
-{ text: "Bruce Springsteen releases The River, his first album to top the Billboard 200", year: 1980, category: "Music" },
-{ text: "Kenny Rogers and Dolly Parton each reach No. 1 with separate versions of songs written by the Bee Gees", year: 1980, category: "Music" },
-{ text: "The Empire Strikes Back becomes the highest-grossing movie of the year at the U.S. box office", year: 1980, category: "Movies & Television" },
-{ text: "The Shining introduces Jack Nicholson's famous 'Here's Johnny!' scene", year: 1980, category: "Movies & Television" },
+{ text: "Queen's Another One Bites the Dust spends three weeks at #1", year: 1980, category: "Music" },
+{ text: "Pink Floyd's Another Brick in the Wall, Part 2 spends four weeks at #1 in the United States", year: 1980, category: "Music" },
+{ text: "Blondie's Call Me becomes the #1 song of the year", year: 1980, category: "Music" },
+{ text: "Bruce Springsteen releases The River, his first #1 album", year: 1980, category: "Music" },
+{ text: "Kenny Rogers and Dolly Parton each reach #1 with separate versions of songs written by the Bee Gees", year: 1980, category: "Music" },
+{ text: "The Empire Strikes Back becomes the highest-grossing movie of the year", year: 1980, category: "Movies & Television" },
+{ text: "The Shining is released in theaters", year: 1980, category: "Movies & Television" },
 { text: "Airplane! turns disaster movies into a comedy filled with deadpan jokes", year: 1980, category: "Movies & Television" },
-{ text: "The Blues Brothers reunites John Belushi and Dan Aykroyd as Jake and Elwood Blues", year: 1980, category: "Movies & Television" },
 { text: "9 to 5 brings Jane Fonda, Lily Tomlin, and Dolly Parton together in a workplace comedy", year: 1980, category: "Movies & Television" },
 { text: "Friday the 13th introduces moviegoers to the summer camp where Jason Voorhees drowned", year: 1980, category: "Movies & Television" },
 { text: "Magnum, P.I. premieres on CBS with Tom Selleck playing a private investigator in Hawaii", year: 1980, category: "Movies & Television" },
@@ -361,11 +357,11 @@ const events = [
 
 { text: "McDonald's introduces the McRib sandwich in the Kansas City area", year: 1981, category: "Pop Culture & Weird News" },
 { text: "MTV begins broadcasting with The Buggles' Video Killed the Radio Star", year: 1981, category: "Music" },
-{ text: "Olivia Newton-John's Physical begins a 10-week run at No. 1 on the Billboard Hot 100", year: 1981, category: "Music" },
-{ text: "Diana Ross and Lionel Richie's Endless Love spends nine weeks atop the Billboard Hot 100", year: 1981, category: "Music" },
+{ text: "Olivia Newton-John's Physical begins a 10-week run at #1", year: 1981, category: "Music" },
+{ text: "Diana Ross and Lionel Richie's Endless Love spends nine weeks at #1", year: 1981, category: "Music" },
 { text: "Journey releases Escape, featuring Don't Stop Believin' and Open Arms", year: 1981, category: "Music" },
-{ text: "The Rolling Stones release Tattoo You, which spends nine weeks atop the Billboard 200", year: 1981, category: "Music" },
-{ text: "Queen and David Bowie release Under Pressure, which reaches No. 1 in the UK", year: 1981, category: "Music" },
+{ text: "The Rolling Stones release Tattoo You, which spends nine weeks at #1", year: 1981, category: "Music" },
+{ text: "Queen and David Bowie release Under Pressure, which reaches #1 in the UK", year: 1981, category: "Music" },
 { text: "Lars Ulrich and James Hetfield form the heavy metal band Metallica in Los Angeles", year: 1981, category: "Music" },
 { text: "Reggae legend Bob Marley dies of cancer at age 36", year: 1981, category: "Music" },
 { text: "Raiders of the Lost Ark becomes the highest-grossing movie of the year worldwide", year: 1981, category: "Movies & Television" },
@@ -397,8 +393,8 @@ const events = [
 
 
 { text: "Michael Jackson releases Thriller, featuring Billie Jean, Beat It, and the title track", year: 1982, category: "Music" },
-{ text: "Joan Jett & the Blackhearts spend seven weeks at No. 1 with I Love Rock 'n Roll", year: 1982, category: "Music" },
-{ text: "Survivor's Eye of the Tiger spends six consecutive weeks at No. 1 on the Billboard Hot 100", year: 1982, category: "Music" },
+{ text: "Joan Jett & the Blackhearts spend seven weeks at #1 with I Love Rock 'n Roll", year: 1982, category: "Music" },
+{ text: "Survivor's Eye of the Tiger spends six consecutive weeks at #1", year: 1982, category: "Music" },
 { text: "Prince releases 1999, featuring Little Red Corvette and the title track", year: 1982, category: "Music" },
 { text: "Duran Duran releases Rio, featuring Hungry Like the Wolf", year: 1982, category: "Music" },
 { text: "Lionel Richie releases his debut solo album after finding success with the Commodores", year: 1982, category: "Music" },
@@ -434,7 +430,7 @@ const events = [
 
 { text: "Michael Jackson's Thriller becomes the best-selling album of the year in the United States", year: 1983, category: "Music" },
 { text: "Michael Jackson performs the moonwalk on television during Motown 25", year: 1983, category: "Music" },
-{ text: "The Police's Every Breath You Take spends eight weeks at No. 1 on the Billboard Hot 100", year: 1983, category: "Music" },
+{ text: "The Police's Every Breath You Take spends eight weeks at #1", year: 1983, category: "Music" },
 { text: "Madonna releases her self-titled debut album, featuring Holiday and Lucky Star", year: 1983, category: "Music" },
 { text: "Cyndi Lauper releases She's So Unusual, featuring Girls Just Want to Have Fun", year: 1983, category: "Music" },
 { text: "David Bowie releases Let's Dance, featuring the chart-topping title track", year: 1983, category: "Music" },
@@ -476,12 +472,12 @@ const events = [
 
 
 
-{ text: "Prince releases Purple Rain, which spends 24 consecutive weeks at No. 1 on the Billboard 200", year: 1984, category: "Music" },
+{ text: "Prince releases Purple Rain, which spends 24 consecutive weeks at #1", year: 1984, category: "Music" },
 { text: "Bruce Springsteen releases Born in the U.S.A., featuring Dancing in the Dark", year: 1984, category: "Music" },
-{ text: "Madonna releases Like a Virgin, her first album to reach No. 1 on the Billboard 200", year: 1984, category: "Music" },
+{ text: "Madonna releases Like a Virgin, her first album to reach #1", year: 1984, category: "Music" },
 { text: "Michael Jackson wins a record eight Grammy Awards in a single night", year: 1984, category: "Music" },
 { text: "Band Aid records Do They Know It's Christmas? to raise money for famine relief in Ethiopia", year: 1984, category: "Music" },
-{ text: "Wham! reaches No. 1 in the UK with Wake Me Up Before You Go-Go", year: 1984, category: "Music" },
+{ text: "Wham! reaches #1 in the UK with Wake Me Up Before You Go-Go", year: 1984, category: "Music" },
 { text: "Beverly Hills Cop becomes the highest-grossing movie of the year at the U.S. box office", year: 1984, category: "Movies & Television" },
 { text: "Ghostbusters brings Bill Murray, Dan Aykroyd, and Harold Ramis together as paranormal investigators", year: 1984, category: "Movies & Television" },
 { text: "The Terminator introduces Arnold Schwarzenegger as a cyborg assassin from the future", year: 1984, category: "Movies & Television" },
@@ -524,8 +520,8 @@ const events = [
 
 { text: "Live Aid concerts in London and Philadelphia raise more than $100 million for African famine relief", year: 1985, category: "Music" },
 { text: "Michael Jackson and Lionel Richie write We Are the World, recorded by more than 40 famous musicians", year: 1985, category: "Music" },
-{ text: "Whitney Houston releases her debut album and scores her first No. 1 hit with Saving All My Love for You", year: 1985, category: "Music" },
-{ text: "A-ha's Take On Me reaches No. 1 with a music video blending animation and live action", year: 1985, category: "Music" },
+{ text: "Whitney Houston releases her debut album and scores her first #1 hit with Saving All My Love for You", year: 1985, category: "Music" },
+{ text: "A-ha's Take On Me reaches #1 with a music video blending animation and live action", year: 1985, category: "Music" },
 { text: "Dire Straits releases Brothers in Arms, becoming one of the first major successes of the compact disc", year: 1985, category: "Music" },
 { text: "The first Farm Aid concert brings together musicians to support American family farmers", year: 1985, category: "Music" },
 { text: "MTV launches VH1, a music video channel aimed at an older audience", year: 1985, category: "Music" },
@@ -557,6 +553,7 @@ const events = [
 { text: "The first Cinnabon bakery opens at SeaTac Mall near Seattle, Washington", year: 1985, category: "Pop Culture & Weird News" },
 { text: "The first Blockbuster Video store opens in Dallas, Texas, offering thousands of VHS tapes for rent", year: 1985, category: "Pop Culture & Weird News" },
 { text: "Sesame Street finally introduces Mr. Snuffleupagus, ending years of adults believing he was merely Big Bird's imaginary friend", year: 1985, category: "Movies & Television" },
+{ text: "Weird Al Yankovic wins his first Grammy Award for Eat It, establishing him as one of America's most successful musical comedians", year: 1985, category: "Music" },
 
 
 
@@ -565,7 +562,7 @@ const events = [
 { text: "Janet Jackson releases Control, establishing her as a solo pop star", year: 1986, category: "Music" },
 { text: "Madonna releases True Blue, which tops the album charts in 28 countries", year: 1986, category: "Music" },
 { text: "Run-D.M.C. and Aerosmith collaborate on Walk This Way, bringing rap and rock to a wider audience", year: 1986, category: "Music" },
-{ text: "The Bangles reach No. 1 with Walk Like an Egyptian", year: 1986, category: "Music" },
+{ text: "The Bangles reach #1 with Walk Like an Egyptian", year: 1986, category: "Music" },
 { text: "Beastie Boys release Licensed to Ill, their debut studio album", year: 1986, category: "Music" },
 { text: "Paul Simon releases Graceland, incorporating South African musical styles", year: 1986, category: "Music" },
 { text: "Top Gun becomes the highest-grossing movie of the year at the U.S. box office", year: 1986, category: "Movies & Television" },
@@ -597,12 +594,12 @@ const events = [
 
 
 { text: "Michael Jackson releases Bad, his first studio album since Thriller", year: 1987, category: "Music" },
-{ text: "U2 releases The Joshua Tree, which tops the Billboard 200 for nine consecutive weeks", year: 1987, category: "Music" },
+{ text: "U2 releases The Joshua Tree, the #1 album for nine weeks", year: 1987, category: "Music" },
 { text: "Aretha Franklin becomes the first woman inducted into the Rock & Roll Hall of Fame", year: 1987, category: "Music" },
 { text: "George Michael releases his debut solo album, Faith", year: 1987, category: "Music" },
-{ text: "Rick Astley's Never Gonna Give You Up spends five weeks at No. 1 in the UK", year: 1987, category: "Music" },
+{ text: "Rick Astley's Never Gonna Give You Up spends five weeks at #1 in the UK", year: 1987, category: "Music" },
 { text: "Guns N' Roses releases its debut album, Appetite for Destruction", year: 1987, category: "Music" },
-{ text: "Bon Jovi's Livin' on a Prayer reaches No. 1 on the Billboard Hot 100", year: 1987, category: "Music" },
+{ text: "Bon Jovi's Livin' on a Prayer reaches #1", year: 1987, category: "Music" },
 { text: "Three Men and a Baby becomes the highest-grossing movie of the year at the U.S. box office", year: 1987, category: "Movies & Television" },
 { text: "Dirty Dancing turns Patrick Swayze and Jennifer Grey into box office stars", year: 1987, category: "Movies & Television" },
 { text: "Star Trek: The Next Generation premieres with Patrick Stewart as Captain Jean-Luc Picard", year: 1987, category: "Movies & Television" },
@@ -634,11 +631,11 @@ const events = [
 
 
 
-{ text: "Guns N' Roses reaches No. 1 on the Billboard Hot 100 with Sweet Child o' Mine", year: 1988, category: "Music" },
-{ text: "Bobby McFerrin's Don't Worry, Be Happy becomes the first a cappella song to top the Billboard Hot 100", year: 1988, category: "Music" },
+{ text: "Guns N' Roses reaches #1 with Sweet Child o' Mine", year: 1988, category: "Music" },
+{ text: "Bobby McFerrin's Don't Worry, Be Happy becomes the first a cappella song to top the charts", year: 1988, category: "Music" },
 { text: "N.W.A releases Straight Outta Compton, bringing gangsta rap to a wider audience", year: 1988, category: "Music" },
-{ text: "George Michael's Faith becomes Billboard's No. 1 song of the year", year: 1988, category: "Music" },
-{ text: "Rick Astley's Never Gonna Give You Up reaches No. 1 in the United States", year: 1988, category: "Music" },
+{ text: "George Michael's Faith becomes the #1 song of the year", year: 1988, category: "Music" },
+{ text: "Rick Astley's Never Gonna Give You Up reaches #1 in the United States", year: 1988, category: "Music" },
 { text: "Rain Man becomes the highest-grossing movie of the year worldwide", year: 1988, category: "Movies & Television" },
 { text: "Who Framed Roger Rabbit combines live-action actors with animated characters from competing studios", year: 1988, category: "Movies & Television" },
 { text: "Die Hard introduces Bruce Willis as New York police officer John McClane", year: 1988, category: "Movies & Television" },
@@ -664,8 +661,8 @@ const events = [
 { text: "Janet Jackson releases Rhythm Nation 1814, featuring songs about social issues and inequality", year: 1989, category: "Music" },
 { text: "The B-52's release Cosmic Thing, featuring Love Shack and Roam", year: 1989, category: "Music" },
 { text: "Billy Joel releases We Didn't Start the Fire, referencing more than 100 historical events and cultural figures", year: 1989, category: "Music" },
-{ text: "New Kids on the Block score their first No. 1 hit with I'll Be Loving You (Forever)", year: 1989, category: "Music" },
-{ text: "Paula Abdul's Forever Your Girl reaches No. 1 on the Billboard 200 more than a year after its release", year: 1989, category: "Music" },
+{ text: "New Kids on the Block score their first #1 hit with I'll Be Loving You (Forever)", year: 1989, category: "Music" },
+{ text: "Paula Abdul's Forever Your Girl reaches #1 more than a year after its release", year: 1989, category: "Music" },
 { text: "Batman earns more than $250 million domestically, becoming the year's biggest U.S. box office hit", year: 1989, category: "Movies & Television" },
 { text: "Indiana Jones and the Last Crusade becomes the highest-grossing film of the year worldwide", year: 1989, category: "Movies & Television" },
 { text: "The Little Mermaid launches a new era for Disney animation with songs including Under the Sea", year: 1989, category: "Movies & Television" },
@@ -692,17 +689,18 @@ const events = [
 { text: "Nolan Ryan becomes the first pitcher in Major League Baseball history to record 5,000 strikeouts", year: 1989, category: "Sports" },
 { text: "Tim Berners-Lee proposes the World Wide Web, giving a name to a new system of interconnected documents", year: 1989, category: "Tech & Internet" },
 { text: "Wendy's introduces its Super Value Menu with nine items priced at 99 cents each", year: 1989, category: "Pop Culture & Weird News" },
+{ text: "American Bandstand ends its 37-year television run after helping generations of Americans discover new music and dance trends", year: 1989, category: "Movies & Television" },
 
 
 
 
 
 
-{ text: "MC Hammer releases Please Hammer Don't Hurt 'Em, which spends 21 weeks at No. 1", year: 1990, category: "Music" },
+{ text: "MC Hammer releases Please Hammer Don't Hurt 'Em, which spends 21 weeks at #1", year: 1990, category: "Music" },
 { text: "Madonna's Vogue tops the charts and brings voguing to mainstream audiences", year: 1990, category: "Music" },
-{ text: "Sinéad O'Connor spends four weeks at No. 1 with Nothing Compares 2 U", year: 1990, category: "Music" },
-{ text: "Vanilla Ice becomes the first solo rapper to top the Billboard Hot 100 with Ice Ice Baby", year: 1990, category: "Music" },
-{ text: "Wilson Phillips' Hold On becomes Billboard's No. 1 song of the year", year: 1990, category: "Music" },
+{ text: "Sinéad O'Connor spends four weeks at #1 with Nothing Compares 2 U", year: 1990, category: "Music" },
+{ text: "Vanilla Ice becomes the first solo rapper to top the charts with Ice Ice Baby", year: 1990, category: "Music" },
+{ text: "Wilson Phillips' Hold On becomes the #1 song of the year", year: 1990, category: "Music" },
 { text: "Garth Brooks releases No Fences, featuring Friends in Low Places", year: 1990, category: "Music" },
 { text: "Milli Vanilli becomes the first musical act to have a Grammy Award revoked", year: 1990, category: "Music" },
 { text: "Home Alone makes Macaulay Culkin a star and earns more than $285 million domestically during its theatrical run", year: 1990, category: "Movies & Television" },
@@ -731,7 +729,7 @@ const events = [
 
 
 { text: "Nirvana releases Nevermind, featuring Smells Like Teen Spirit", year: 1991, category: "Music" },
-{ text: "Metallica releases its self-titled Black Album, which debuts at No. 1 on the Billboard 200", year: 1991, category: "Music" },
+{ text: "Metallica releases its self-titled Black Album, which debuts at #1", year: 1991, category: "Music" },
 { text: "Michael Jackson releases Dangerous, featuring Black or White and Remember the Time", year: 1991, category: "Music" },
 { text: "Pearl Jam releases its debut album, Ten", year: 1991, category: "Music" },
 { text: "Guns N' Roses releases Use Your Illusion I and II on the same day", year: 1991, category: "Music" },
@@ -767,11 +765,11 @@ const events = [
 
 
 
-{ text: "Whitney Houston's I Will Always Love You begins a 14-week run at No. 1 on the Billboard Hot 100", year: 1992, category: "Music" },
+{ text: "Whitney Houston's I Will Always Love You begins a 14-week run at #1", year: 1992, category: "Music" },
 { text: "Dr. Dre releases his debut solo album, The Chronic", year: 1992, category: "Music" },
-{ text: "Nirvana's Nevermind reaches No. 1 on the Billboard 200, knocking Michael Jackson's Dangerous off the top", year: 1992, category: "Music" },
-{ text: "Billy Ray Cyrus spends 17 weeks at No. 1 on the country chart with Achy Breaky Heart", year: 1992, category: "Music" },
-{ text: "Boyz II Men's End of the Road spends 13 consecutive weeks at No. 1", year: 1992, category: "Music" },
+{ text: "Nirvana's Nevermind reaches #1, knocking Michael Jackson's Dangerous off the top", year: 1992, category: "Music" },
+{ text: "Billy Ray Cyrus spends 17 weeks at #1 on the country chart with Achy Breaky Heart", year: 1992, category: "Music" },
+{ text: "Boyz II Men's End of the Road spends 13 consecutive weeks at #1", year: 1992, category: "Music" },
 { text: "Aladdin becomes the highest-grossing film of the year worldwide", year: 1992, category: "Movies & Television" },
 { text: "The Bodyguard pairs Whitney Houston and Kevin Costner in a romantic thriller", year: 1992, category: "Movies & Television" },
 { text: "A Few Good Men introduces moviegoers to Jack Nicholson's 'You can't handle the truth!'", year: 1992, category: "Movies & Television" },
@@ -807,9 +805,9 @@ const events = [
 
 
 { text: "Prince changes his stage name to an unpronounceable symbol", year: 1993, category: "Music" },
-{ text: "Whitney Houston's I Will Always Love You becomes Billboard's No. 1 song of the year", year: 1993, category: "Music" },
-{ text: "Snoop Dogg releases Doggystyle, which debuts at No. 1 on the Billboard 200", year: 1993, category: "Music" },
-{ text: "Meat Loaf's I'd Do Anything for Love (But I Won't Do That) reaches No. 1", year: 1993, category: "Music" },
+{ text: "Whitney Houston's I Will Always Love You becomes the #1 song of the year", year: 1993, category: "Music" },
+{ text: "Snoop Dogg releases Doggystyle, which debuts at #1", year: 1993, category: "Music" },
+{ text: "Meat Loaf's I'd Do Anything for Love (But I Won't Do That) reaches #1", year: 1993, category: "Music" },
 { text: "The Smashing Pumpkins release Siamese Dream", year: 1993, category: "Music" },
 { text: "Wu-Tang Clan releases its debut album, Enter the Wu-Tang (36 Chambers)", year: 1993, category: "Music" },
 { text: "Michael Jackson performs at the Super Bowl halftime show, drawing over 130 million viewers", year: 1993, category: "Music" },
@@ -902,8 +900,8 @@ const events = [
 
 
 { text: "Alanis Morissette releases Jagged Little Pill, featuring You Oughta Know and Ironic", year: 1995, category: "Music" },
-{ text: "TLC's Waterfalls spends seven consecutive weeks at No. 1 on the Billboard Hot 100", year: 1995, category: "Music" },
-{ text: "Coolio's Gangsta's Paradise becomes Billboard's No. 1 song of the year", year: 1995, category: "Music" },
+{ text: "TLC's Waterfalls spends seven consecutive weeks at #1", year: 1995, category: "Music" },
+{ text: "Coolio's Gangsta's Paradise becomes the #1 song of the year", year: 1995, category: "Music" },
 { text: "The Beatles release Free as a Bird, their first new single in 25 years", year: 1995, category: "Music" },
 { text: "Jerry Garcia, guitarist and founding member of the Grateful Dead, dies at age 53", year: 1995, category: "Music" },
 { text: "Toy Story becomes the first feature-length computer-animated film", year: 1995, category: "Movies & Television" },
@@ -935,7 +933,7 @@ const events = [
 
 
 { text: "The Spice Girls release Wannabe, beginning a seven-week run atop the UK singles chart", year: 1996, category: "Music" },
-{ text: "Los del Río's Macarena spends 14 consecutive weeks at No. 1 on the Billboard Hot 100", year: 1996, category: "Music" },
+{ text: "Los del Río's Macarena spends 14 consecutive weeks at #1", year: 1996, category: "Music" },
 { text: "Tupac Shakur dies at age 25, six days after being shot in Las Vegas", year: 1996, category: "Music" },
 { text: "Independence Day becomes the highest-grossing movie of the year, earning more than $800 million worldwide", year: 1996, category: "Movies & Television" },
 { text: "Scream brings masked killer Ghostface to movie theaters", year: 1996, category: "Movies & Television" },
@@ -972,8 +970,8 @@ const events = [
 
 { text: "Elton John's Candle in the Wind 1997 sells more than 30 million copies worldwide as a tribute to Princess Diana", year: 1997, category: "Music" },
 { text: "The Notorious B.I.G. is killed in a drive-by shooting in Los Angeles at age 24", year: 1997, category: "Music" },
-{ text: "Hanson's MMMBop reaches No. 1 on the Billboard Hot 100", year: 1997, category: "Music" },
-{ text: "The Spice Girls' Wannabe spends four weeks at No. 1 on the Billboard Hot 100", year: 1997, category: "Music" },
+{ text: "Hanson's MMMBop reaches #1", year: 1997, category: "Music" },
+{ text: "The Spice Girls' Wannabe spends four weeks at #1", year: 1997, category: "Music" },
 { text: "Lilith Fair launches its first tour, featuring female artists including Sarah McLachlan and Sheryl Crow", year: 1997, category: "Music" },
 { text: "Titanic opens in theaters and earns more than $100 million domestically", year: 1997, category: "Movies & Television" },
 { text: "Men in Black earns more than $250 million at the U.S. box office during the year", year: 1997, category: "Movies & Television" },
@@ -1018,12 +1016,12 @@ const events = [
 
 
 { text: "Cher releases Believe, bringing Auto-Tune's distinctive vocal effect into mainstream pop music", year: 1998, category: "Music" },
-{ text: "Celine Dion's My Heart Will Go On reaches No. 1 on the Billboard Hot 100", year: 1998, category: "Music" },
+{ text: "Celine Dion's My Heart Will Go On reaches #1", year: 1998, category: "Music" },
 { text: "Madonna releases Ray of Light, incorporating electronic dance music into her sound", year: 1998, category: "Music" },
-{ text: "Lauryn Hill releases The Miseducation of Lauryn Hill, which debuts at No. 1 on the Billboard 200", year: 1998, category: "Music" },
+{ text: "Lauryn Hill releases The Miseducation of Lauryn Hill, which debuts at #1", year: 1998, category: "Music" },
 { text: "Britney Spears releases her debut single, ...Baby One More Time, at age 16", year: 1998, category: "Music" },
 { text: "NSYNC releases its self-titled debut album in the United States", year: 1998, category: "Music" },
-{ text: "Barenaked Ladies reaches No. 1 on the Billboard Hot 100 with One Week", year: 1998, category: "Music" },
+{ text: "Barenaked Ladies reaches #1 with One Week", year: 1998, category: "Music" },
 { text: "Titanic becomes the first movie to earn more than $1 billion worldwide", year: 1998, category: "Movies & Television" },
 { text: "Titanic wins 11 Academy Awards, tying the record set by Ben-Hur", year: 1998, category: "Movies & Television" },
 { text: "Seinfeld ends its nine-season run with a finale watched by approximately 76 million Americans", year: 1998, category: "Movies & Television" },
@@ -1046,14 +1044,15 @@ const events = [
 { text: "America experiences a brief swing music revival on mainstream radio", year: 1998, category: "Music" },
 { text: "A Gap commercial featuring swing dancers in khaki pants helps fuel a nationwide revival of swing dancing and 1940s-inspired fashion", year: 1998, category: "Pop Culture & Weird News" },
 { text: "Garmin introduces the StreetPilot, an early automotive GPS navigation device that helps bring electronic driving directions to ordinary motorists", year: 1998, category: "Tech & Internet" },
+{ text: "Crayola introduces its 120-color crayon assortment", year: 1998, category: "Pop Culture & Weird News" },
 
 
 
 
-{ text: "Ricky Martin's Livin' la Vida Loca spends five consecutive weeks at No. 1", year: 1999, category: "Music" },
+{ text: "Ricky Martin's Livin' la Vida Loca spends five consecutive weeks at #1", year: 1999, category: "Music" },
 { text: "Eminem releases The Slim Shady LP, featuring My Name Is", year: 1999, category: "Music" },
 { text: "Santana releases Supernatural, featuring the chart-topping hit Smooth with Rob Thomas", year: 1999, category: "Music" },
-{ text: "TLC's No Scrubs spends four consecutive weeks at No. 1 on the Billboard Hot 100", year: 1999, category: "Music" },
+{ text: "TLC's No Scrubs spends four consecutive weeks at #1", year: 1999, category: "Music" },
 { text: "Woodstock '99 draws more than 200,000 people but ends amid fires, violence, and reports of sexual assaults", year: 1999, category: "Music" },
 { text: "Star Wars: Episode I - The Phantom Menace becomes the highest-grossing movie of the year worldwide", year: 1999, category: "Movies & Television" },
 { text: "The Matrix introduces audiences to bullet-time effects and Keanu Reeves as Neo", year: 1999, category: "Movies & Television" },
@@ -1130,9 +1129,9 @@ const events = [
 
 
 
-{ text: "Alicia Keys releases her debut album, Songs in A Minor, which debuts at No. 1 on the Billboard 200", year: 2001, category: "Music" },
-{ text: "Lifehouse's Hanging by a Moment becomes Billboard's No. 1 song of the year without ever topping the weekly Hot 100", year: 2001, category: "Music" },
-{ text: "Destiny's Child releases Survivor, which debuts at No. 1 on the Billboard 200", year: 2001, category: "Music" },
+{ text: "Alicia Keys releases her debut album, Songs in A Minor, which debuts at #1", year: 2001, category: "Music" },
+{ text: "Lifehouse's Hanging by a Moment becomes the #1 song of the year", year: 2001, category: "Music" },
+{ text: "Destiny's Child releases Survivor, which debuts at #1", year: 2001, category: "Music" },
 { text: "NSYNC's Celebrity sells nearly 1.9 million copies in its first week in the United States", year: 2001, category: "Music" },
 { text: "Britney Spears releases I'm a Slave 4 U and performs with a live python at the MTV Video Music Awards", year: 2001, category: "Music" },
 { text: "Michael Jackson releases Invincible, his final studio album of original material", year: 2001, category: "Music" },
@@ -1176,7 +1175,7 @@ const events = [
 
 
 { text: "Eminem releases The Eminem Show, the best-selling album of the year in the United States", year: 2002, category: "Music" },
-{ text: "Nelly's Hot in Herre spends seven consecutive weeks at No. 1 on the Billboard Hot 100", year: 2002, category: "Music" },
+{ text: "Nelly's Hot in Herre spends seven consecutive weeks at #1", year: 2002, category: "Music" },
 { text: "Justin Timberlake releases his debut solo album, Justified, after finding fame with NSYNC", year: 2002, category: "Music" },
 { text: "Kelly Clarkson wins the first season of American Idol and releases A Moment Like This", year: 2002, category: "Music" },
 { text: "Norah Jones releases her debut album, Come Away with Me", year: 2002, category: "Music" },
@@ -1249,7 +1248,7 @@ const events = [
 { text: "David Blaine spends 44 days suspended in a transparent box above London's River Thames", year: 2003, category: "Pop Culture & Weird News" },
 { text: "The Simple Life premieres with Paris Hilton and Nicole Richie working on a farm in Arkansas", year: 2003, category: "Pop Culture & Weird News" },
 { text: "Fred Rogers, beloved host of Mister Rogers' Neighborhood, dies at age 74", year: 2003, category: "Pop Culture & Weird News" },
-{ text: "LeBron James becomes the No. 1 pick in the NBA draft, joining the Cleveland Cavaliers at age 18", year: 2003, category: "Sports" },
+{ text: "LeBron James becomes the #1 pick in the NBA draft, joining the Cleveland Cavaliers at age 18", year: 2003, category: "Sports" },
 { text: "Serena Williams wins the Australian Open, completing her run of four consecutive Grand Slam titles", year: 2003, category: "Sports" },
 { text: "McDonald's introduces its global I'm Lovin' It advertising campaign, featuring a jingle associated with Justin Timberlake", year: 2003, category: "Music" },
 { text: "The television series Joe Millionaire convinces contestants they are competing to marry a wealthy man who is actually a construction worker", year: 2003, category: "Movies & Television" },
@@ -1298,6 +1297,7 @@ const events = [
 { text: "Sears announces plans to merge with Kmart, bringing together two struggling American retail giants", year: 2004, category: "Pop Culture & Weird News" },
 { text: "Blockbuster launches an online DVD rental service in an effort to compete with Netflix", year: 2004, category: "Tech & Internet" },
 { text: "The Da Vinci Code becomes the bestselling fiction book of the year in the United States, fueling widespread fascination with religious mysteries and hidden codes", year: 2004, category: "Pop Culture & Weird News" },
+{ text: "Casey Kasem steps down as host of American Top 40, handing the legendary radio countdown to Ryan Seacrest", year: 2004, category: "Music" },
 
 
 
@@ -1347,7 +1347,7 @@ const events = [
 
 
 
-{ text: "Daniel Powter's Bad Day becomes Billboard's No. 1 song of the year", year: 2006, category: "Music" },
+{ text: "Daniel Powter's Bad Day becomes the #1 song of the year", year: 2006, category: "Music" },
 { text: "Gnarls Barkley's Crazy becomes the first song to top the UK singles chart through downloads alone", year: 2006, category: "Music" },
 { text: "Taylor Swift releases her self-titled debut album at age 16", year: 2006, category: "Music" },
 { text: "Amy Winehouse releases Back to Black, featuring Rehab", year: 2006, category: "Music" },
@@ -1386,11 +1386,12 @@ const events = [
 { text: "Crocs become a mainstream footwear sensation, with millions of Americans embracing the colorful foam clogs despite their controversial appearance", year: 2006, category: "Pop Culture & Weird News" },
 { text: "Ceres is officially classified as a dwarf planet, placing the largest object in the asteroid belt in the same category as Pluto", year: 2006, category: "Science & Discovery" },
 { text: "Downloadable ringtones peak in popularity, selling $600 million in a single year", year: 2007, category: "Tech & Internet" },
+{ text: "Weird Al Yankovic releases White & Nerdy, a parody of Chamillionaire's Ridin' that becomes his first top-ten hit", year: 2006, category: "Music" },
 
 
 
 
-{ text: "Rihanna's Umbrella spends seven consecutive weeks at No. 1 on the Billboard Hot 100", year: 2007, category: "Music" },
+{ text: "Rihanna's Umbrella spends seven consecutive weeks at #1", year: 2007, category: "Music" },
 { text: "Kanye West releases Graduation, selling 957,000 copies in its first week in the United States", year: 2007, category: "Music" },
 { text: "Radiohead releases In Rainbows online, allowing fans to choose how much to pay", year: 2007, category: "Music" },
 { text: "Pirates of the Caribbean: At World's End becomes the highest-grossing movie of the year worldwide", year: 2007, category: "Movies & Television" },
@@ -1426,11 +1427,11 @@ const events = [
 
 
 
-{ text: "Flo Rida's Low spends 10 weeks at No. 1 and becomes Billboard's top song of the year", year: 2008, category: "Music" },
+{ text: "Flo Rida's Low spends 10 weeks at #1 and becomes the #1 song of the year", year: 2008, category: "Music" },
 { text: "Beyoncé releases I Am... Sasha Fierce, featuring Single Ladies and If I Were a Boy", year: 2008, category: "Music" },
-{ text: "Katy Perry's I Kissed a Girl spends seven consecutive weeks atop the Billboard Hot 100", year: 2008, category: "Music" },
+{ text: "Katy Perry's I Kissed a Girl spends seven weeks at #1", year: 2008, category: "Music" },
 { text: "Lady Gaga releases her debut album, The Fame, featuring Just Dance and Poker Face", year: 2008, category: "Music" },
-{ text: "Taylor Swift releases Fearless, which debuts at No. 1 on the Billboard 200", year: 2008, category: "Music" },
+{ text: "Taylor Swift releases Fearless, which debuts at #1", year: 2008, category: "Music" },
 { text: "The Dark Knight becomes the first superhero movie to earn more than $500 million domestically", year: 2008, category: "Movies & Television" },
 { text: "Iron Man introduces Robert Downey Jr. as Tony Stark, launching the Marvel Cinematic Universe", year: 2008, category: "Movies & Television" },
 { text: "Twilight earns nearly $70 million during its opening weekend in North America", year: 2008, category: "Movies & Television" },
@@ -1466,10 +1467,10 @@ const events = [
 
 
 { text: "Michael Jackson dies at age 50, triggering a worldwide surge in sales of his music", year: 2009, category: "Music" },
-{ text: "The Black Eyed Peas spend 26 consecutive weeks at No. 1 with Boom Boom Pow and I Gotta Feeling", year: 2009, category: "Music" },
-{ text: "Lady Gaga's Poker Face reaches No. 1 on the Billboard Hot 100", year: 2009, category: "Music" },
-{ text: "Taylor Swift's Fearless becomes Billboard's No. 1 album of the year", year: 2009, category: "Music" },
-{ text: "Miley Cyrus releases Party in the U.S.A., which reaches No. 2 on the Billboard Hot 100", year: 2009, category: "Music" },
+{ text: "The Black Eyed Peas spend 26 consecutive weeks at #1 with Boom Boom Pow and I Gotta Feeling", year: 2009, category: "Music" },
+{ text: "Lady Gaga's Poker Face reaches #1", year: 2009, category: "Music" },
+{ text: "Taylor Swift's Fearless becomes the #1 album of the year", year: 2009, category: "Music" },
+{ text: "Miley Cyrus releases Party in the U.S.A.", year: 2009, category: "Music" },
 { text: "Susan Boyle releases I Dreamed a Dream, which becomes the world's best-selling album of the year", year: 2009, category: "Music" },
 { text: "Avatar opens in theaters, introducing audiences to the alien world of Pandora", year: 2009, category: "Movies & Television" },
 { text: "The Hangover earns more than $275 million at the U.S. box office", year: 2009, category: "Movies & Television" },
@@ -1501,16 +1502,17 @@ const events = [
 { text: "The term influencer becomes increasingly associated with individuals shaping consumer behavior through online audiences", year: 2009, category: "Pop Culture & Weird News" },
 { text: "Circuit City announces that it will liquidate its remaining stores after failing to find a buyer", year: 2009, category: "Pop Culture & Weird News" },
 { text: "Google introduces free turn-by-turn driving directions in Google Maps Navigation for Android phones, helping replace dedicated GPS devices", year: 2009, category: "Tech & Internet" },
+{ text: "The Simpsons surpasses Gunsmoke for the most seasons of an American scripted television series", year: 2009, category: "Movies & Television" },
 
 
 
 
 
-{ text: "Kesha's Tik Tok spends nine weeks at No. 1 and becomes Billboard's top song of the year", year: 2010, category: "Music" },
+{ text: "Kesha's Tik Tok spends nine weeks at #1 and becomes the #1 song of the year", year: 2010, category: "Music" },
 { text: "Lady Gaga wears a dress made of raw beef to the MTV Video Music Awards", year: 2010, category: "Music" },
 { text: "Justin Bieber releases My World 2.0, his first full-length studio album, featuring Baby", year: 2010, category: "Music" },
-{ text: "Bruno Mars reaches No. 1 on the Billboard Hot 100 with his debut solo single Just the Way You Are", year: 2010, category: "Music" },
-{ text: "Kanye West releases My Beautiful Dark Twisted Fantasy, which debuts at No. 1 on the Billboard 200", year: 2010, category: "Music" },
+{ text: "Bruno Mars reaches #1 with his debut solo single Just the Way You Are", year: 2010, category: "Music" },
+{ text: "Kanye West releases My Beautiful Dark Twisted Fantasy, which debuts at #1", year: 2010, category: "Music" },
 { text: "Lady Antebellum's Need You Now becomes one of the year's biggest crossover country hits", year: 2010, category: "Music" },
 { text: "Toy Story 3 becomes the first animated movie to earn more than $1 billion worldwide", year: 2010, category: "Movies & Television" },
 { text: "Inception stars Leonardo DiCaprio as a thief who enters people's dreams", year: 2010, category: "Movies & Television" },
@@ -1543,9 +1545,9 @@ const events = [
 
 
 { text: "Adele releases 21, which sells more than 5.8 million copies in the United States during the year", year: 2011, category: "Music" },
-{ text: "Adele's Rolling in the Deep becomes Billboard's No. 1 song of the year", year: 2011, category: "Music" },
+{ text: "Adele's Rolling in the Deep becomes the #1 song of the year", year: 2011, category: "Music" },
 { text: "Lady Gaga releases Born This Way, selling more than 1.1 million copies in its first week", year: 2011, category: "Music" },
-{ text: "Katy Perry becomes the first woman to score five No. 1 singles from the same album on the Billboard Hot 100", year: 2011, category: "Music" },
+{ text: "Katy Perry becomes the first woman to score five #1 singles from the same album", year: 2011, category: "Music" },
 { text: "Amy Winehouse dies at age 27 in her London home", year: 2011, category: "Music" },
 { text: "Harry Potter and the Deathly Hallows: Part 2 earns more than $1.3 billion worldwide", year: 2011, category: "Movies & Television" },
 { text: "Game of Thrones premieres on HBO, introducing the rival families of Westeros", year: 2011, category: "Movies & Television" },
@@ -1567,8 +1569,8 @@ const events = [
 
 
   
-{ text: "Gotye's Somebody That I Used to Know spends eight consecutive weeks at No. 1 on the Billboard Hot 100", year: 2012, category: "Music" },
-{ text: "Carly Rae Jepsen's Call Me Maybe spends nine consecutive weeks at No. 1 on the Billboard Hot 100", year: 2012, category: "Music" },
+{ text: "Gotye's Somebody That I Used to Know spends eight consecutive weeks at #1", year: 2012, category: "Music" },
+{ text: "Carly Rae Jepsen's Call Me Maybe spends nine consecutive weeks at #1", year: 2012, category: "Music" },
 { text: "PSY's Gangnam Style becomes the first YouTube video to reach 1 billion views", year: 2012, category: "Music" },
 { text: "Adele wins six Grammy Awards in one night, including Album of the Year for 21", year: 2012, category: "Music" },
 { text: "Whitney Houston dies at age 48, one day before the Grammy Awards", year: 2012, category: "Music" },
@@ -1595,11 +1597,11 @@ const events = [
 
 
 
-{ text: "Macklemore and Ryan Lewis's Thrift Shop spends six weeks at No. 1 on the Billboard Hot 100", year: 2013, category: "Music" },
-{ text: "Robin Thicke's Blurred Lines spends 12 consecutive weeks at No. 1 on the Billboard Hot 100", year: 2013, category: "Music" },
-{ text: "Lorde's Royals spends nine consecutive weeks at No. 1 on the Billboard Hot 100", year: 2013, category: "Music" },
-{ text: "Miley Cyrus reaches No. 1 with Wrecking Ball, her first Billboard Hot 100 chart-topper", year: 2013, category: "Music" },
-{ text: "Katy Perry's Roar spends two weeks at No. 1 on the Billboard Hot 100", year: 2013, category: "Music" },
+{ text: "Macklemore and Ryan Lewis's Thrift Shop spends six weeks at #1", year: 2013, category: "Music" },
+{ text: "Robin Thicke's Blurred Lines spends 12 consecutive weeks at #1", year: 2013, category: "Music" },
+{ text: "Lorde's Royals spends nine consecutive weeks at #1", year: 2013, category: "Music" },
+{ text: "Miley Cyrus releases her first #1 song, Wrecking Ball", year: 2013, category: "Music" },
+{ text: "Katy Perry's Roar spends two weeks at #1", year: 2013, category: "Music" },
 { text: "Iron Man 3 earns more than $1.2 billion worldwide, becoming the year's highest-grossing movie", year: 2013, category: "Movies & Television" },
 { text: "Frozen introduces Elsa and Anna, with Let It Go becoming a signature Disney song", year: 2013, category: "Movies & Television" },
 { text: "Breaking Bad ends its five-season run with a finale watched by 10.3 million Americans", year: 2013, category: "Movies & Television" },
@@ -1620,9 +1622,9 @@ const events = [
 
 
 { text: "Taylor Swift releases 1989, selling 1.3 million copies in its first week", year: 2014, category: "Music" },
-{ text: "Pharrell Williams' Happy spends 10 weeks at No. 1 and becomes Billboard's top song of the year", year: 2014, category: "Music" },
+{ text: "Pharrell Williams' Happy spends 10 weeks at #1 and becomes the #1 song of the year", year: 2014, category: "Music" },
 { text: "U2 forces its album Songs of Innocence to hundreds of millions of iTunes users", year: 2014, category: "Music" },
-{ text: "Taylor Swift becomes the first woman to replace herself at No. 1 on the Billboard Hot 100 with Blank Space", year: 2014, category: "Music" },
+{ text: "Taylor Swift becomes the first woman to replace herself at #1 with Blank Space", year: 2014, category: "Music" },
 { text: "Transformers: Age of Extinction becomes the highest-grossing movie of the year worldwide, earning more than $1 billion", year: 2014, category: "Movies & Television" },
 { text: "Guardians of the Galaxy becomes the year's highest-grossing movie at the U.S. box office", year: 2014, category: "Movies & Television" },
 { text: "Frozen crosses $1 billion worldwide, becoming Disney's highest-grossing animated movie at the time", year: 2014, category: "Movies & Television" },
@@ -1640,12 +1642,13 @@ const events = [
 { text: "LeBron James returns to the Cleveland Cavaliers after four seasons with the Miami Heat", year: 2014, category: "Sports" },
 { text: "Russia hosts the Winter Olympics in Sochi, featuring a record 98 medal events", year: 2014, category: "Sports" },
 { text: "Taco Bell launches mobile ordering and payment through its smartphone app", year: 2014, category: "Tech & Internet" },
+{ text: "Weird Al Yankovic scores his first #1 album with Mandatory Fun, more than three decades into his recording career", year: 2014, category: "Music" },
 
 
 
 
 
-{ text: "Bruno Mars' Uptown Funk spends 14 consecutive weeks at No. 1 on the Billboard Hot 100", year: 2015, category: "Music" },
+{ text: "Bruno Mars' Uptown Funk spends 14 consecutive weeks at #1", year: 2015, category: "Music" },
 { text: "Adele releases 25, selling a record 3.38 million copies in its first week in the United States", year: 2015, category: "Music" },
 { text: "Lin-Manuel Miranda's Hamilton opens on Broadway, combining hip-hop with American history", year: 2015, category: "Music" },
 { text: "Star Wars: The Force Awakens earns a record $248 million during its opening weekend in North America", year: 2015, category: "Movies & Television" },
@@ -1674,7 +1677,7 @@ const events = [
 
 
 
-{ text: "Justin Bieber's Love Yourself becomes Billboard's No. 1 song of the year", year: 2016, category: "Music" },
+{ text: "Justin Bieber's Love Yourself becomes the #1 song of the year", year: 2016, category: "Music" },
 { text: "Beyoncé releases Lemonade as a surprise visual album on HBO and Tidal", year: 2016, category: "Music" },
 { text: "David Bowie dies at age 69, two days after releasing his final album, Blackstar", year: 2016, category: "Music" },
 { text: "Prince dies at age 57, prompting tributes to the musician behind Purple Rain", year: 2016, category: "Music" },
@@ -1708,7 +1711,7 @@ const events = [
 
 
 
-{ text: "Ed Sheeran's Shape of You spends 12 weeks at No. 1 and becomes Billboard's top song of the year", year: 2017, category: "Music" },
+{ text: "Ed Sheeran's Shape of You spends 12 weeks at #1 and becomes the #1 song of the year", year: 2017, category: "Music" },
 { text: "Tom Petty dies at age 66, days after completing a 40th-anniversary tour with the Heartbreakers", year: 2017, category: "Music" },
 { text: "Star Wars: The Last Jedi becomes the highest-grossing movie released in 2017, earning more than $1.3 billion worldwide", year: 2017, category: "Movies & Television" },
 { text: "Beauty and the Beast earns more than $1.2 billion worldwide with Emma Watson playing Belle", year: 2017, category: "Movies & Television" },
@@ -1736,9 +1739,9 @@ const events = [
 
 
 
-{ text: "Drake's God's Plan spends 11 consecutive weeks at No. 1 and becomes Billboard's top song of the year", year: 2018, category: "Music" },
-{ text: "Childish Gambino's This Is America debuts at No. 1 on the Billboard Hot 100", year: 2018, category: "Music" },
-{ text: "BTS becomes the first Korean act to top the Billboard 200 with Love Yourself: Tear", year: 2018, category: "Music" },
+{ text: "Drake's God's Plan spends 11 consecutive weeks at #1 and becomes the #1 song of the year", year: 2018, category: "Music" },
+{ text: "Childish Gambino's This Is America debuts at #1", year: 2018, category: "Music" },
+{ text: "BTS becomes the first Korean act to top the U.S. charts with Love Yourself: Tear", year: 2018, category: "Music" },
 { text: "Lady Gaga and Bradley Cooper release Shallow from the soundtrack of A Star Is Born", year: 2018, category: "Music" },
 { text: "Aretha Franklin, known as the Queen of Soul, dies at age 76", year: 2018, category: "Music" },
 { text: "Avengers: Infinity War earns more than $2 billion worldwide, becoming the year's highest-grossing movie", year: 2018, category: "Movies & Television" },
@@ -1767,14 +1770,15 @@ const events = [
 { text: "Target opens its first Vermont location, finally expanding its retail stores into all 50 U.S. states", year: 2018, category: "Pop Culture & Weird News" },
 { text: "Sears Holdings files for bankruptcy protection after decades of declining sales and store closures", year: 2018, category: "Pop Culture & Weird News" },
 { text: "Amazon opens its first Amazon Go convenience store to the public in Seattle", year: 2018, category: "Tech & Internet" },
+{ text: "The Simpsons airs its 636th episode, surpassing Gunsmoke for the most episodes of an American scripted television series", year: 2018, category: "Movies & Television" },
 
 
 
 
 
-{ text: "Lil Nas X's Old Town Road spends a record 19 weeks at No. 1 on the Billboard Hot 100", year: 2019, category: "Music" },
+{ text: "Lil Nas X's Old Town Road spends a record 19 weeks at #1", year: 2019, category: "Music" },
 { text: "Billie Eilish releases her debut album, When We All Fall Asleep, Where Do We Go?, at age 17", year: 2019, category: "Music" },
-{ text: "Mariah Carey's All I Want for Christmas Is You reaches No. 1 for the first time, 25 years after its release", year: 2019, category: "Music" },
+{ text: "Mariah Carey's All I Want for Christmas Is You reaches #1 for the first time, 25 years after its release", year: 2019, category: "Music" },
 { text: "Avengers: Endgame earns nearly $2.8 billion worldwide, surpassing Avatar's original box-office record", year: 2019, category: "Movies & Television" },
 { text: "Joker becomes the first R-rated movie to earn more than $1 billion worldwide", year: 2019, category: "Movies & Television" },
 { text: "Frozen II earns more than $1 billion worldwide within a month of its release", year: 2019, category: "Movies & Television" },
@@ -1798,8 +1802,8 @@ const events = [
 
 
 
-{ text: "The Weeknd's Blinding Lights becomes Billboard's No. 1 song of the year", year: 2020, category: "Music" },
-{ text: "BTS becomes the first all-South Korean group to reach No. 1 on the Billboard Hot 100 with Dynamite", year: 2020, category: "Music" },
+{ text: "The Weeknd's Blinding Lights becomes the #1 song of the year", year: 2020, category: "Music" },
+{ text: "BTS becomes the first all-South Korean group to reach #1 with Dynamite", year: 2020, category: "Music" },
 { text: "Billie Eilish wins all four major Grammy categories at age 18", year: 2020, category: "Music" },
 { text: "Parasite becomes the first non-English-language film to win the Academy Award for Best Picture", year: 2020, category: "Movies & Television" },
 { text: "Bad Boys for Life earns more than $200 million domestically, becoming the year's biggest U.S. box-office release", year: 2020, category: "Movies & Television" },
@@ -1835,9 +1839,9 @@ const events = [
 
 
 
-{ text: "Dua Lipa's Levitating becomes Billboard's No. 1 song of the year despite never topping the weekly Hot 100", year: 2021, category: "Music" },
+{ text: "Dua Lipa's Levitating becomes the #1 song of the year", year: 2021, category: "Music" },
 { text: "Adele releases 30, selling 839,000 album-equivalent units in its first week in the United States", year: 2021, category: "Music" },
-{ text: "Billie Eilish releases Happier Than Ever, which debuts at No. 1 on the Billboard 200", year: 2021, category: "Music" },
+{ text: "Billie Eilish releases Happier Than Ever, which debuts at #1", year: 2021, category: "Music" },
 { text: "Spider-Man: No Way Home becomes the first movie since 2019 to earn more than $1 billion worldwide", year: 2021, category: "Movies & Television" },
 { text: "Squid Game becomes Netflix's most-watched original series at the time, with 142 million households watching in its first 28 days", year: 2021, category: "Movies & Television" },
 { text: "No Time to Die marks Daniel Craig's fifth and final appearance as James Bond", year: 2021, category: "Movies & Television" },
@@ -1860,7 +1864,7 @@ const events = [
 
 
 { text: "Taylor Swift releases Midnights, earning more than 1.5 million album-equivalent units in its first week", year: 2022, category: "Music" },
-{ text: "Bad Bunny releases Un Verano Sin Ti, which becomes Billboard's No. 1 album of the year", year: 2022, category: "Music" },
+{ text: "Bad Bunny releases Un Verano Sin Ti, which becomes the #1 album of the year", year: 2022, category: "Music" },
 { text: "Country music legend Loretta Lynn dies at age 90", year: 2022, category: "Music" },
 { text: "Avatar: The Way of Water earns more than $1 billion worldwide within 14 days of its release", year: 2022, category: "Movies & Television" },
 { text: "Top Gun: Maverick earns nearly $1.5 billion worldwide, becoming Tom Cruise's highest-grossing movie", year: 2022, category: "Movies & Television" },
@@ -1888,10 +1892,10 @@ const events = [
 
 
 
-{ text: "Morgan Wallen's Last Night spends 16 nonconsecutive weeks at No. 1 on the Billboard Hot 100", year: 2023, category: "Music" },
-{ text: "Miley Cyrus's Flowers spends eight weeks at No. 1 and becomes Billboard's top song of the year", year: 2023, category: "Music" },
+{ text: "Morgan Wallen's Last Night spends 16 weeks at #1", year: 2023, category: "Music" },
+{ text: "Miley Cyrus's Flowers spends eight weeks at #1 and becomes the #1 song of the year", year: 2023, category: "Music" },
 { text: "Taylor Swift's Eras Tour becomes the first concert tour to surpass $1 billion in estimated ticket sales", year: 2023, category: "Music" },
-{ text: "Country singer Luke Combs reaches No. 2 on the Billboard Hot 100 with his cover of Fast Car", year: 2023, category: "Music" },
+{ text: "Country singer Luke Combs releases his cover of Fast Car", year: 2023, category: "Music" },
 { text: "Tina Turner, known as the Queen of Rock 'n' Roll, dies at age 83", year: 2023, category: "Music" },
 { text: "Barbie earns more than $1.4 billion worldwide, becoming the highest-grossing movie of the year", year: 2023, category: "Movies & Television" },
 { text: "The Super Mario Bros. Movie earns more than $1.3 billion worldwide", year: 2023, category: "Movies & Television" },
@@ -1915,8 +1919,8 @@ const events = [
 
 
 
-{ text: "Shaboozey's A Bar Song (Tipsy) spends 19 weeks at No. 1, tying the Billboard Hot 100 record", year: 2024, category: "Music" },
-{ text: "Teddy Swims' Lose Control becomes Billboard's No. 1 song of the year", year: 2024, category: "Music" },
+{ text: "Shaboozey's A Bar Song (Tipsy) spends 19 weeks at #1", year: 2024, category: "Music" },
+{ text: "Teddy Swims' Lose Control becomes the #1 song of the year", year: 2024, category: "Music" },
 { text: "Charli XCX releases Brat, inspiring a summer trend centered on the album's bright green artwork", year: 2024, category: "Music" },
 { text: "Inside Out 2 earns nearly $1.7 billion worldwide, becoming the highest-grossing animated film at the time", year: 2024, category: "Movies & Television" },
 { text: "Deadpool & Wolverine earns more than $1.3 billion worldwide, setting a box-office record for R-rated films", year: 2024, category: "Movies & Television" },
@@ -1940,7 +1944,7 @@ const events = [
 
 
 
-{ text: "Lady Gaga and Bruno Mars' Die with a Smile becomes Billboard's No. 1 song of the year", year: 2025, category: "Music" },
+{ text: "Lady Gaga and Bruno Mars' Die with a Smile becomes the #1 song of the year", year: 2025, category: "Music" },
 { text: "Ozzy Osbourne dies at age 76, weeks after performing a farewell concert with Black Sabbath", year: 2025, category: "Music" },
 { text: "A Minecraft Movie earns more than $400 million at the North American box office", year: 2025, category: "Movies & Television" },
 { text: "KPop Demon Hunters becomes Netflix's most-watched movie, featuring the fictional group HUNTR/X", year: 2025, category: "Movies & Television" },
