@@ -927,6 +927,7 @@ const events = [
 { text: "Walmart opens its first store in Vermont, becoming a retailer with locations in all 50 U.S. states", year: 1995, category: "Pop Culture & Weird News" },
 { text: "Pizza Hut introduces Stuffed Crust Pizza nationwide, encouraging customers to eat their pizza crusts backward to enjoy the melted cheese inside", year: 1995, category: "Pop Culture & Weird News" },
 { text: "The Rock & Roll Hall of Fame museum opens in Cleveland, Ohio, with a massive concert celebrating the history of popular music", year: 1995, category: "Music" },
+{ text: "Budweiser introduces its three frogs croaking Bud, Weis, and Er in one of the decade's most memorable commercials", year: 1995, category: "Pop Culture & Weird News" },
 
 
 
@@ -1123,8 +1124,9 @@ const events = [
 { text: "The term chad becomes nationally recognized during the disputed U.S. presidential election recount", year: 2000, category: "History & Politics" },
 { text: "The phrase cyberbullying gains prominence as online harassment becomes a growing social concern", year: 2000, category: "Tech & Internet" },
 { text: "Pets.com announces its liquidation, turning its famous sock-puppet mascot into a symbol of the dot-com retail crash", year: 2000, category: "Tech & Internet" },
-{ text: "The final original Peanuts comic strip appears in newspapers, one day after the death of creator Charles M. Schulz", year: 2000, category: "Pop Culture & Weird News" },
-{ text: "Toyota begins selling the Prius hybrid in the United States, introducing American motorists to a mass-produced gasoline-electric hybrid car", year: 2000, category: "Science & Discovery" },
+{ text: "The final original Peanuts comic strip appears in newspapers, one day after the death of creator Charles Schulz", year: 2000, category: "Pop Culture & Weird News" },
+{ text: "Toyota begins selling the Prius hybrid, introducing motorists to a mass-produced gasoline-electric hybrid car", year: 2000, category: "Science & Discovery" },
+{ text: "Budweiser's Whassuuuuup? campaign becomes inescapable pop culture catchphrase", year: 2000, category: "Pop Culture & Weird News" },
 
 
 
@@ -1190,7 +1192,7 @@ const events = [
 { text: "Ice Age introduces Manny, Sid, and Scrat in a computer-animated prehistoric adventure", year: 2002, category: "Movies & Television" },
 { text: "Euro banknotes and coins enter circulation in 12 European countries", year: 2002, category: "History & Politics" },
 { text: "East Timor becomes an independent nation after years of Indonesian occupation", year: 2002, category: "History & Politics" },
-{ text: "A series of sniper attacks in the Washington, D.C., area kills 10 people and injures three", year: 2002, category: "History & Politics" },
+{ text: "A series of sniper attacks in the Washington, D.C. area kills 10 people and injures three", year: 2002, category: "History & Politics" },
 { text: "The United States establishes the Department of Homeland Security through federal legislation", year: 2002, category: "History & Politics" },
 { text: "Friendster launches, allowing users to create profiles and connect with friends online", year: 2002, category: "Tech & Internet" },
 { text: "SpaceX is founded by Elon Musk with the goal of reducing space transportation costs", year: 2002, category: "Tech & Internet" },
@@ -1853,11 +1855,11 @@ const events = [
 { text: "Apple releases the AirTag, a coin-sized device for tracking misplaced belongings", year: 2021, category: "Tech & Internet" },
 { text: "Bernie Sanders' mittens and folding chair at Joe Biden's inauguration become an internet meme", year: 2021, category: "Pop Culture & Weird News" },
 { text: "Britney Spears' 13-year conservatorship ends after a lengthy legal battle", year: 2021, category: "Pop Culture & Weird News" },
-{ text: "Alec Baldwin accidentally shoots and kills cinematographer Halyna Hutchins on the set of Rust", year: 2021, category: "Pop Culture & Weird News" },
+{ text: "Alec Baldwin accidentally shoots and kills a cinematographer on the set of Rust", year: 2021, category: "Pop Culture & Weird News" },
 { text: "The postponed Tokyo Olympics take place without spectators at most venues because of COVID-19 restrictions", year: 2021, category: "Sports" },
 { text: "Simone Biles withdraws from several Olympic gymnastics events before returning to win bronze on balance beam", year: 2021, category: "Sports" },
 { text: "The abbreviation NFT becomes a mainstream buzzword during the digital collectibles boom", year: 2021, category: "Tech & Internet" },
-{ text: "A lawyer accidentally appears as a talking cat during a Zoom court hearing and reassures the judge that he is not a cat", year: 2021, category: "Tech & Internet" },
+{ text: "A lawyer goes viral as he accidentally appears as a talking cat during a Zoom court hearing and reassures the judge that he is not a cat", year: 2021, category: "Tech & Internet" },
 
 
 
