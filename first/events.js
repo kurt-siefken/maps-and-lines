@@ -493,7 +493,7 @@ const events = [
 { text: "Madonna releases 'Like a Virgin,' launching her transformation into a global pop superstar", year: 1984, category: "Music" },
 { text: "Michael Jackson wins a record eight Grammy Awards in one night, mostly for 'Thriller'", year: 1984, category: "Music" },
 { text: "Band Aid records 'Do They Know It's Christmas?' to raise money for Ethiopian famine relief", year: 1984, category: "Music" },
-{ text: "Wham! tops the British charts with the irresistibly catchy 'Wake Me Up Before You Go-Go'", year: 1984, category: "Music" },
+{ text: "Wham! tops the British charts with 'Wake Me Up Before You Go-Go'", year: 1984, category: "Music" },
 { text: "Beverly Hills Cop becomes a massive hit, turning Eddie Murphy's Axel Foley into an action-comedy icon", year: 1984, category: "Movies & Television" },
 { text: "Ghostbusters becomes a blockbuster, introducing proton packs, the Stay Puft Marshmallow Man, and 'Who you gonna call?'", year: 1984, category: "Movies & Television" },
 { text: "The Terminator introduces Arnold Schwarzenegger's killer cyborg and the immortal line 'I'll be back'", year: 1984, category: "Movies & Television" },
@@ -526,7 +526,7 @@ const events = [
 { text: "Carl Lewis wins four Olympic gold medals in Los Angeles, matching Jesse Owens' legendary 1936 achievement", year: 1984, category: "Sports" },
 { text: "Mary Lou Retton becomes the first American woman to win Olympic all-around gymnastics gold", year: 1984, category: "Sports" },
 { text: "The Soviet Union boycotts the Los Angeles Olympics, four years after the American boycott of Moscow", year: 1984, category: "Sports" },
-{ text: "The Chicago Bulls draft Michael Jordan third overall, changing basketball history forever", year: 1984, category: "Sports" },
+{ text: "The Chicago Bulls draft Michael Jordan third overall", year: 1984, category: "Sports" },
 { text: "Subway begins baking bread in its restaurants, making the fresh-baked smell part of its identity", year: 1984, category: "Pop Culture & Weird News" },
 { text: "Ben & Jerry's invents Chocolate Chip Cookie Dough ice cream after a customer suggests mixing raw dough into vanilla", year: 1984, category: "Pop Culture & Weird News" },
 { text: "The Muppets Take Manhattan hits theaters, bringing Kermit, Miss Piggy, and the gang to Broadway", year: 1984, category: "Movies & Television" },
@@ -569,7 +569,7 @@ const events = [
 { text: "Chick-fil-A introduces its waffle potato fries, creating one of its signature menu items", year: 1985, category: "Pop Culture & Weird News" },
 { text: "The first Cinnabon opens near Seattle, beginning a shopping-mall cinnamon roll phenomenon", year: 1985, category: "Pop Culture & Weird News" },
 { text: "Sesame Street's adults finally meet Mr. Snuffleupagus, proving Big Bird wasn't imagining his giant friend", year: 1985, category: "Movies & Television" },
-{ text: "Weird Al Yankovic wins his first Grammy for 'Eat It,' his hilarious parody of Michael Jackson's 'Beat It'", year: 1985, category: "Music" },
+{ text: "Weird Al Yankovic wins his first Grammy for 'Eat It,' his parody of Michael Jackson's 'Beat It'", year: 1985, category: "Music" },
 
 
 
@@ -868,7 +868,7 @@ const events = [
 { text: "Costco and Price Club merge into PriceCostco, creating a major new force in warehouse-club shopping", year: 1993, category: "Pop Culture & Weird News" },
 { text: "Major League Soccer is announced as the planned American professional league following the country's successful World Cup bid", year: 1993, category: "Sports" },
 { text: "NBC introduces 'Must See TV,' turning its Thursday night programming into one of television's most famous promotional brands", year: 1993, category: "Movies & Television" },
-{ text: "Tag Team's 'Whoomp! (There It Is)' becomes an irresistible party anthem and a lasting stadium chant", year: 1993, category: "Music" },
+{ text: "Tag Team's 'Whoomp! (There It Is)' becomes a party anthem and a lasting stadium chant", year: 1993, category: "Music" },
 
 
 
