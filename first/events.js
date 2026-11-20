@@ -985,7 +985,6 @@ const events = [
 { text: "Kerri Strug lands an Olympic vault on an injured ankle as the U.S. women's gymnastics team wins its first gold", year: 1996, category: "Sports" },
 { text: "Tiger Woods turns professional at 20, beginning a golf career that will transform the sport", year: 1996, category: "Sports" },
 { text: "'Soccer mom' becomes a political buzzword for suburban mothers viewed as crucial swing voters in the presidential election", year: 1996, category: "History & Politics" },
-{ text: "Hotmail helps pioneer viral marketing by adding a promotional invitation to emails sent by its users", year: 1996, category: "Tech & Internet" },
 { text: "Walmart begins its first online commerce initiative, creating Walmart.com and Sam's Club websites", year: 1996, category: "Tech & Internet" },
 { text: "Major League Soccer kicks off its inaugural season with 10 teams, establishing a new professional soccer league in America", year: 1996, category: "Sports" },
 
